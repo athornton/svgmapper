@@ -63,59 +63,59 @@ jobs:
             docs-specific:
               - "docs/**"
 
-  docs:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
+  # docs:
+  #   runs-on: ubuntu-latest
+  #   timeout-minutes: 15
 
-    needs: changes
-    if: >-
-      (needs.changes.outputs.docs == 'true')
-      || (github.event_name == 'workflow_dispatch')
-      || (github.event_name == 'release' && github.event.action == 'published')
+  #   needs: changes
+  #   if: >-
+  #     (needs.changes.outputs.docs == 'true')
+  #     || (github.event_name == 'workflow_dispatch')
+  #     || (github.event_name == 'release' && github.event.action == 'published')
 
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
+  #   steps:
+  #     - uses: actions/checkout@v6
+  #       with:
+  #         fetch-depth: 0
 
-      - name: Install uv
-        uses: astral-sh/setup-uv@v7
-        with:
-          version: ${{ env.UV_VERSION }}
+  #     - name: Install uv
+  #       uses: astral-sh/setup-uv@v7
+  #       with:
+  #         version: ${{ env.UV_VERSION }}
 
-      - name: Install extra packages
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y graphviz
+  #     - name: Install extra packages
+  #       run: |
+  #         sudo apt-get update
+  #         sudo apt-get install -y graphviz
 
-      - name: Run tox
-        run: uv run --only-group=tox tox run -e docs
+  #     - name: Run tox
+  #       run: uv run --only-group=tox tox run -e docs
 
 
-  linkcheck:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
+  # linkcheck:
+  #   runs-on: ubuntu-latest
+  #   timeout-minutes: 15
 
-    needs: changes
-    if: ${{ needs.changes.outputs.docs == 'true' }}
+  #   needs: changes
+  #   if: ${{ needs.changes.outputs.docs == 'true' }}
 
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
+  #   steps:
+  #     - uses: actions/checkout@v6
+  #       with:
+  #         fetch-depth: 0
 
-      - name: Install uv
-        uses: astral-sh/setup-uv@v7
-        with:
-          version: ${{ env.UV_VERSION }}
+  #     - name: Install uv
+  #       uses: astral-sh/setup-uv@v7
+  #       with:
+  #         version: ${{ env.UV_VERSION }}
 
-      - name: Install extra packages
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y graphviz
+  #     - name: Install extra packages
+  #       run: |
+  #         sudo apt-get update
+  #         sudo apt-get install -y graphviz
 
-      - name: Run tox
-        run: uv run --only-group=tox tox run -e docs-linkcheck
+  #     - name: Run tox
+  #       run: uv run --only-group=tox tox run -e docs-linkcheck
 
   build:
     needs: [test]

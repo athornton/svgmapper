@@ -5,11 +5,11 @@ copyright = "2026 Adam Thornton"
 [project.python]
 package = "svgmapper"
 
-[project.openapi]
-openapi_path = "_static/openapi.json"
+#[project.openapi]
+#openapi_path = "_static/openapi.json"
 
-[project.openapi.generator]
-function = "svgmapper.main:create_openapi"
+#[project.openapi.generator]
+#function = "svgmapper.main:create_openapi"
 
 [sphinx]
 extensions = [
@@ -54,13 +54,6 @@ ignore = [
 ]
 
 [sphinx.redirects]
-"development/github" = "dev/github"
-"development/idfdev" = "dev/idfdev"
 "development/index" = "dev/index"
-"development/sentry" = "dev/sentry"
-"user_guide/flocks" = "user-guide/flocks"
-"user_guide/github/ci" = "user-guide/github/ci"
-"user_guide/github/index" = "user-guide/github/index"
-"user_guide/github/refresh" = "user-guide/github/refresh"
-"user_guide/in_repo_config" = "user-guide/in-repo-config"
-"user_guide/index" = "user-guide/index"
+"user_guide/convert" = "user-guide/converter"
+"user_guide/creator" = "user-guide/creator"
