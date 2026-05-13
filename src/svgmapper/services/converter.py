@@ -1,4 +1,4 @@
-"""SVG Mapper."""
+"""Convert from old-style to new-style format."""
 
 from pathlib import Path
 
@@ -17,8 +17,8 @@ from ..models.v1.input import (
 )
 
 
-class SVGMapper:
-    """SVG Mapper and converter."""
+class Converter:
+    """Convert from old-style numeric format to new-style."""
 
     def __init__(
         self, inp: Path, output: Path, *, debug: bool = False

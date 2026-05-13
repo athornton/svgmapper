@@ -1,0 +1,769 @@
+# Level description file:
+# Each line has six fields: kind, startx, starty, endx, endy, type
+# is a comment line
+
+# kind: 1 = straight wall
+#       2 = arc (not implemented yet)
+#    3 = door (startx,starty are left/top of door)
+#       5 = filled block
+#    6 = filled ellipse (endx/endy are rx/ry)
+#    7 = spiral stairs (startx/starty are center)
+#    8 = toilet (hey, there are a lot)
+#       9 = text (endx is text to print, endy is "b" for bold, type is size)
+#      99 = continuation of previous (useful for blocks)
+
+# Type for lines
+# type: 1 = normal
+#       2 = thick
+#       3 = dashed
+#       4 = dotted
+#       5 = thin
+
+# Type for fill
+# type: 1 = solid
+#       2 = white
+#       3 = hatched
+#    4+n = Thin outline
+#       99 = end of polygon
+
+# Type for door
+#  type: 1 = vertical
+#        2 = horizontal
+#        3 = vertical double
+#        4 = horizontal double
+
+# Type for toilet
+#  type: 1 = vertical
+#  type: 2 = horizontal
+
+# For text
+#  endx: Text to use (Can't contain commas)
+#  endy: "s" means use Soutane font (serif)
+
+# Map Edge
+line,0.0,0.0,0.0,30.0,thick
+line,0.0,30.0,30.0,30.0,thick
+line,30.0,30.0,30.0,0.0,thick
+line,30.0,0.0,0.0,0.0,thick
+
+# Carlotta's apartments
+line,2.0,0.0,2.0,3.0,normal
+line,3.0,0.0,3.0,3.0,normal
+line,0.0,1.0,2.0,1.0,normal
+line,0.0,3.0,3.0,3.0,normal
+
+# Yorick's apartments
+line,6.0,0.0,6.0,3.0,normal
+line,6.0,3.0,18.0,3.0,normal
+line,18.0,3.0,21.0,0.0,normal
+line,19.0,0.0,19.0,2.0,normal
+line,18.0,0.0,18.0,3.0,normal
+line,16.0,1.0,16.0,3.0,normal
+line,16.0,1.0,18.0,1.0,normal
+line,13.0,0.0,13.0,3.0,normal
+line,14.0,0.0,14.0,1.0,normal
+line,13.0,1.0,14.0,1.0,normal
+line,18.0,3.0,18.0,2.0,normal
+line,18.0,2.0,19.0,2.0,normal
+
+# Rest of Church outline
+line,0.0,6.0,3.0,6.0,normal
+line,3.0,6.0,3.0,9.0,normal
+line,3.0,9.0,6.0,9.0,normal
+line,6.0,9.0,6.0,6.0,normal
+line,6.0,6.0,18.0,6.0,normal
+line,18.0,6.0,18.0,3.0,normal
+
+# Edgar's apartments
+#  Interior walls
+line,26.0,0.0,26.0,1.0,normal
+line,28.0,0.0,28.0,2.0,normal
+line,28.0,1.0,30.0,1.0,normal
+line,28.0,2.0,30.0,2.0,normal
+line,28.0,3.0,30.0,3.0,normal
+line,28.0,3.0,30.0,3.0,normal
+line,28.0,3.0,28.0,5.0,normal
+line,25.0,1.0,27.0,1.0,normal
+line,27.0,1.0,27.0,5.0,normal
+line,25.0,3.0,27.0,3.0,normal
+#  Exterior Wall: fill polygon
+block,24.0,0.0,24.0,6.0,solid
+continuation,24.0,6.0,30.0,6.0,solid
+continuation,30.0,6.0,30.0,5.0,solid
+continuation,30.0,5.0,25.0,5.0,solid
+continuation,25.0,5.0,25.0,0.0,solid
+continuation,25.0,0.0,24.0,0.0,polygon_end
+
+# Corner of church and Knight Bridge
+block,6.0,6.0,6.0,9.0,solid
+continuation,6.0,9.0,9.0,6.0,solid
+continuation,9.0,6.0,6.0,6.0,polygon_end
+
+# Knight Bridge Pits
+block,11.0,6.0,19.0,6.0,white_thin
+continuation,19.0,6.0,19.0,8.5,white_thin
+continuation,19.0,9.5,11.0,8.5,white_thin
+continuation,11.0,8.5,11.0,6.0,polygon_end
+block,11.0,6.0,19.0,6.0,hatched
+continuation,19.0,6.0,19.0,8.5,hatched
+continuation,19.0,9.5,11.0,8.5,hatched
+continuation,11.0,8.5,11.0,6.0,polygon_end
+
+block,11.0,9.0,19.0,9.0,white_thin
+continuation,19.0,9.0,19.0,12.0,white_thin
+continuation,19.0,12.0,11.0,12.0,white_thin
+continuation,11.0,12.0,11.0,9.0,polygon_end
+block,11.0,9.0,19.0,9.0,hatched
+continuation,19.0,9.0,19.0,12.0,hatched
+continuation,19.0,12.0,11.0,12.0,hatched
+continuation,11.0,12.0,11.0,9.0,polygon_end
+
+block,19.5,6.0,23.0,6.0,white_thin
+continuation,23.0,6.0,23.0,8.5,white_thin
+continuation,23.0,9.5,19.5,8.5,white_thin
+continuation,19.5,8.5,19.5,6.0,polygon_end
+block,19.5,6.0,23.0,6.0,hatched
+continuation,23.0,6.0,23.0,8.5,hatched
+continuation,23.0,9.5,19.5,8.5,hatched
+continuation,19.5,8.5,19.5,6.0,polygon_end
+
+block,19.5,9.0,23.0,9.0,white_thin
+continuation,23.0,9.0,23.0,12.0,white_thin
+continuation,23.0,12.0,19.5,12.0,white_thin
+continuation,19.5,12.0,19.5,9.0,polygon_end
+block,19.5,9.0,23.0,9.0,hatched
+continuation,23.0,9.0,23.0,12.0,hatched
+continuation,23.0,12.0,19.5,12.0,hatched
+continuation,19.5,12.0,19.5,9.0,polygon_end
+
+#Knight Bridge Walls
+line,6.0,6.0,18.0,6.0,normal
+line,6.0,9.0,8.0,11.0,normal
+line,8.0,11.0,8.0,13.0,normal
+line,8.0,13.0,9.5,13.0,normal
+line,11.5,13.0,20.0,13.0,normal
+line,20.0,13.0,23.0,16.0,thick
+line,23.0,16.0,23.0,17.0,thick
+line,23.0,17.0,26.0,17.0,thick
+line,25.0,17.0,25.0,12.0,normal
+line,24.0,12.0,23.0,12.0,normal
+
+block,21.0,13.0,24.0,13.0,solid
+continuation,24.0,13.0,24.0,16.0,solid
+continuation,24.0,16.0,21.0,13.0,polygon_end
+
+block,23.0,16.0,24.0,17.0,solid
+continuation,24.0,17.0,23.0,17.0,solid_thin
+continuation,23.0,17.0,23.0,16.0,polygon_end
+
+# Sewer Drain
+ellipse,10.5,12.5,1.5,1.5,None
+ellipse,10.5,12.5,0.8,0.8,None
+ellipse,10.5,12.5,0.8,0.8,None
+
+# Wight Lairs
+#  Columns
+block,24.0,7.0,25.0,7.0,solid
+continuation,25.0,7.0,25.0,8.0,solid
+continuation,25.0,8.0,24.0,8.0,solid
+continuation,24.0,8.0,24.0,7.0,polygon_end
+
+block,24.0,9.0,25.0,9.0,solid
+continuation,25.0,9.0,25.0,10.0,solid
+continuation,25.0,10.0,24.0,10.0,solid
+continuation,24.0,10.0,24.0,9.0,polygon_end
+#  Shaft
+ellipse,24.5,9.5,0.4,0.4,None
+ellipse,24.5,9.5,0.4,0.4,None
+
+block,23.0,11.0,25.0,11.0,solid
+continuation,25.0,11.0,25.0,12.0,solid
+continuation,25.0,12.0,23.0,12.0,solid
+continuation,23.0,12.0,23.0,11.0,polygon_end
+
+# Walls
+line,24.5,6.0,24.5,7.0,normal
+line,24.5,8.0,24.5,9.0,normal
+line,24.5,10.0,24.5,11.0,normal
+line,25.0,7.0,30.0,7.0,normal
+line,25.0,8.0,30.0,8.0,normal
+line,25.0,9.0,30.0,9.0,normal
+line,25.0,10.0,30.0,10.0,normal
+line,25.0,11.0,30.0,11.0,normal
+
+# Churchyard
+line,1.0,7.0,2.0,7.0,normal
+line,2.0,7.0,2.0,8.0,normal
+line,2.0,8.0,1.0,8.0,normal
+line,1.0,8.0,1.0,7.0,normal
+
+line,0.0,9.0,1.0,9.0,normal
+line,1.0,9.0,1.0,10.0,normal
+line,1.0,10.0,0.0,10.0,normal
+line,1.0,10.0,0.0,10.0,normal
+
+line,2.0,9.0,3.0,9.0,normal
+line,3.0,9.0,3.0,10.0,normal
+line,3.0,10.0,2.0,10.0,normal
+line,2.0,10.0,2.0,9.0,normal
+
+line,0.0,11.0,1.0,11.0,normal
+line,1.0,11.0,1.0,12.0,normal
+line,1.0,12.0,0.0,12.0,normal
+line,0.0,12.0,0.0,11.0,normal
+
+line,2.0,11.0,3.0,11.0,normal
+line,3.0,11.0,3.0,12.0,normal
+line,3.0,12.0,2.0,12.0,normal
+line,2.0,12.0,2.0,11.0,normal
+
+line,0.0,13.0,1.0,13.0,normal
+line,1.0,13.0,1.0,14.0,normal
+line,1.0,14.0,0.0,14.0,normal
+line,0.0,14.0,0.0,13.0,normal
+
+line,2.0,13.0,3.0,13.0,normal
+line,3.0,13.0,3.0,14.0,normal
+line,3.0,14.0,2.0,14.0,normal
+line,2.0,14.0,2.0,13.0,normal
+
+line,3.0,10.0,3.0,11.0,dotted
+line,3.0,12.0,3.0,13.0,dotted
+line,0.0,15.0,3.0,15.0,dotted
+line,3.0,15.0,3.0,14.0,normal
+
+# Shadow Maze
+block,7.0,13.0,9.5,13.0,solid
+continuation,9.5,13.0,10.5,13.5,solid
+continuation,10.5,13.5,11.5,13.5,solid
+continuation,11.5,13.5,11.0,14.0,solid
+continuation,11.0,14.0,9.0,16.0,solid
+continuation,9.0,16.0,9.0,17.0,solid
+continuation,9.0,17.0,7.0,15.0,solid
+continuation,7.0,15.0,7.0,13.0,polygon_end
+#  Walls
+line,6.0,14.0,3.0,11.0,normal
+line,4.0,12.0,5.0,11.0,normal
+line,4.0,11.0,5.0,10.0,normal
+line,5.0,10.0,6.0,11.0,normal
+block,3.0,9.0,4.0,10.0,solid
+continuation,4.0,10.0,3.0,10.0,solid
+continuation,3.0,10.0,3.0,9.0,polygon_end
+#  Rectangle
+block,5.0,12.0,6.0,11.0,solid
+continuation,6.0,11.0,6.4,11.4,solid
+continuation,6.4,11.4,5.4,12.4,solid
+continuation,5.4,12.4,5.0,12.0,polygon_end
+#  Triangle
+block,6.0,13.0,7.0,12.0,solid
+continuation,7.0,12.0,7.0,13.0,solid
+continuation,7.0,13.0,6.0,13.0,polygon_end
+line,6.0,13.0,5.0,12.0,normal
+
+# Hall of Bone
+line,3.0,15.0,8.0,20.0,thick
+line,8.0,20.0,9.0,20.0,normal
+line,9.0,21.0,9.0,22.0,normal
+line,10.0,20.0,10.0,21.0,normal
+line,12.0,20.0,9.0,17.0,normal
+line,11.0,20.0,7.7,16.7,dotted
+line,3.0,14.0,5.0,16.0,dotted
+line,6.0,17.0,9.0,20.0,dotted
+line,3.0,12.0,4.0,13.0,dotted
+line,4.7,13.7,7.0,16.0,dotted
+line,10.0,20.0,20.0,20.0,normal
+line,20.0,20.0,20.0,23.0,thick
+line,20.0,23.0,9.0,23.0,normal
+line,9.0,22.0,13.0,22.0,dotted
+line,14.0,22.0,17.0,22.0,dotted
+line,17.0,22.0,19.0,22.0,dotted
+line,19.0,22.0,19.0,21.0,dotted
+line,19.0,21.0,15.0,21.0,dotted
+line,14.0,21.0,10.0,21.0,dotted
+
+# Staircase
+line,5.0,20.0,9.0,20.0,normal
+line,9.0,20.0,9.0,24.0,normal
+line,9.0,24.0,5.0,24.0,normal
+line,5.0,24.0,5.0,20.0,normal
+block,6.0,21.0,8.0,21.0,white_thin
+continuation,8.0,21.0,8.0,23.0,white_thin
+continuation,8.0,23.0,6.0,23.0,white_thin
+continuation,6.0,23.0,6.0,21.0,polygon_end
+block,6.0,21.0,8.0,21.0,hatched
+continuation,8.0,21.0,8.0,23.0,hatched
+continuation,8.0,23.0,6.0,23.0,hatched
+continuation,6.0,23.0,6.0,21.0,polygon_end
+
+# Spiral Passage
+line,25.0,17.0,25.0,12.0,normal
+line,30.0,17.0,26.0,17.0,normal
+line,26.0,17.0,26.0,12.0,normal
+line,26.0,12.0,29.0,12.0,normal
+line,29.0,12.0,29.0,16.0,normal
+line,29.0,16.0,27.0,16.0,normal
+line,27.0,16.0,27.0,13.0,normal
+line,27.0,13.0,28.0,13.0,normal
+line,28.0,13.0,28.0,15.0,normal
+block,26.0,17.0,27.0,17.0,solid
+continuation,27.0,17.0,27.0,18.0,solid
+continuation,27.0,18.0,26.0,17.0,polygon_end
+
+# Mummy's Tomb
+line,20.0,20.0,23.0,17.0,thick
+block,18.0,14.0,19.0,14.0,solid
+continuation,19.0,14.0,19.0,15.0,solid
+continuation,19.0,15.0,18.0,15.0,solid
+continuation,18.0,15.0,18.0,14.0,polygon_end
+block,18.0,16.0,19.0,16.0,solid
+continuation,19.0,16.0,19.0,17.0,solid
+continuation,19.0,17.0,18.0,17.0,solid
+continuation,18.0,17.0,18.0,16.0,polygon_end
+block,18.0,18.0,19.0,18.0,solid
+continuation,19.0,18.0,19.0,19.0,solid
+continuation,19.0,19.0,18.0,19.0,solid
+continuation,18.0,19.0,18.0,18.0,polygon_end
+block,16.0,15.0,17.0,15.0,solid
+continuation,17.0,15.0,17.0,16.0,solid
+continuation,17.0,16.0,16.0,16.0,solid
+continuation,16.0,16.0,16.0,15.0,polygon_end
+block,14.0,18.0,15.0,18.0,solid
+continuation,15.0,18.0,15.0,19.0,solid
+continuation,15.0,19.0,14.0,19.0,solid
+continuation,14.0,19.0,14.0,18.0,polygon_end
+block,14.0,16.0,15.0,16.0,solid
+continuation,15.0,16.0,15.0,17.0,solid
+continuation,14.0,17.0,14.0,17.0,solid
+continuation,14.0,17.0,14.0,16.0,polygon_end
+ellipse,14.5,14.5,0.5,0.5,None
+ellipse,14.5,14.5,0.2,0.2,None
+ellipse,14.5,14.5,0.2,0.2,None
+ellipse,14.5,18.5,0.4,0.4,None
+ellipse,14.5,18.5,0.4,0.4,None
+ellipse,16.5,17.5,0.5,0.5,None
+line,13.0,13.0,13.0,20.0,normal
+#  Mummy Maze
+line,12.0,16.0,12.0,18.0,normal
+line,11.0,15.0,11.0,17.0,normal
+line,11.0,17.0,10.0,17.0,normal
+line,10.0,15.0,10.0,18.0,normal
+block,12.0,14.0,12.0,15.0,hatched
+continuation,12.0,15.0,11.0,15.0,hatched
+continuation,11.0,15.0,12.0,14.0,polygon_end
+block,12.0,19.0,12.0,18.0,hatched
+continuation,12.0,18.0,11.0,18.0,hatched
+continuation,11.0,18.0,12.0,19.0,polygon_end
+
+# Quasqueton Room
+line,26.0,17.0,29.0,20.0,thick
+line,29.0,20.0,29.0,23.0,thick
+line,29.0,23.0,26.0,26.0,thick
+line,26.0,26.0,23.0,26.0,thick
+line,23.0,26.0,20.0,23.0,thick
+
+# Armory
+line,27.0,17.0,30.0,17.0,normal
+line,29.0,20.0,30.0,20.0,normal
+line,29.0,23.0,30.0,23.0,normal
+
+#Zombocalypse
+line,29.0,26.0,27.0,28.0,normal
+line,28.0,27.0,30.0,29.0,normal
+line,25.0,29.0,23.0,29.0,normal
+line,23.0,29.0,23.0,30.0,normal
+line,19.5,29.0,19.5,28.0,normal
+line,19.5,28.0,18.0,28.0,normal
+line,15.0,23.0,15.0,24.0,normal
+line,15.0,26.0,13.0,26.0,normal
+line,13.0,26.0,13.0,27.0,normal
+line,13.0,27.0,15.0,27.0,normal
+line,15.0,27.0,15.0,29.0,normal
+line,15.0,29.0,13.5,29.0,normal
+line,12.0,23.0,12.0,24.0,normal
+line,12.0,24.0,14.0,24.0,normal
+line,10.0,28.0,10.0,29.0,normal
+line,7.0,28.0,9.0,28.0,normal
+line,6.0,28.0,6.0,30.0,normal
+line,5.0,17.0,3.0,19.0,thick
+line,3.0,19.0,4.0,20.0,thick
+block,5.0,20.0,6.5,18.5,solid
+continuation,6.5,18.5,8.0,20.0,solid
+continuation,8.0,20.0,5.0,20.0,polygon_end
+block,9.0,24.0,10.0,23.0,solid
+continuation,10.0,23.0,9.0,23.0,solid
+continuation,9.0,23.0,9.0,24.0,polygon_end
+line,0.0,26.0,1.0,26.5,normal
+line,2.0,27.0,3.0,28.0,normal
+line,3.5,29.0,4.0,30.0,normal
+line,2.5,27.5,5.0,24.0,dashed
+line,12.0,24.0,13.0,26.0,dashed
+line,13.5,30.0,13.5,29.0,dashed
+line,19.0,28.0,22.0,25.0,dashed
+
+# Doors
+#  Carlotta
+door,2.0,0.0,2.0,1.0,vertical
+door,2.0,2.0,2.0,3.0,vertical
+#  Abbey
+door,6.0,1.0,6.0,2.0,vertical
+door,13.0,1.0,12.0,2.0,vertical
+door,13.0,1.0,14.0,1.0,horizonal
+door,16.0,1.0,16.0,1.0,horizonal
+door,18.0,0.0,17.0,1.0,vertical
+door,18.0,2.0,19.0,2.0,horizonal
+door,18.0,4.0,18.0,5.0,vertical_double
+#  Edgar
+door,26.0,0.0,26.0,1.0,vertical
+door,28.0,0.0,28.0,1.0,vertical
+door,27.0,2.0,27.0,3.0,vertical
+door,29.0,2.0,30.0,2.0,horizonal
+door,28.0,3.0,29.0,3.0,horizonal
+door,27.0,4.0,27.0,5.0,vertical
+#  Ghoulyard
+door,1.0,8.0,2.0,8.0,horizonal
+door,1.0,9.0,1.0,10.0,vertical
+door,2.0,9.0,2.0,10.0,vertical
+door,1.0,11.0,1.0,12.0,vertical
+door,2.0,11.0,2.0,12.0,vertical
+door,1.0,13.0,1.0,14.0,vertical
+door,2.0,13.0,2.0,14.0,vertical
+door,3.0,14.0,3.0,15.0,vertical_double
+#  Knight Bridge
+door,8.0,11.0,8.0,12.0,vertical
+door,17.0,13.0,18.0,13.0,horizonal
+door,24.0,17.0,25.0,17.0,horizonal
+door,25.0,16.0,25.0,16.0,vertical
+#  Wights
+door,24.5,6.0,24.5,7.0,vertical
+door,24.5,8.0,24.5,9.0,vertical
+door,24.5,10.0,24.5,11.0,vertical
+door,26.0,7.0,27.0,7.0,horizonal
+door,26.0,8.0,27.0,8.0,horizonal
+door,26.0,9.0,27.0,9.0,horizonal
+door,26.0,10.0,27.0,10.0,horizonal
+#  Mummy
+door,17.0,20.0,18.0,20.0,horizonal
+door,13.0,16.0,13.0,17.0,vertical_double
+door,10.0,16.0,10.0,17.0,vertical_double
+#  Armory
+door,29.0,20.0,30.0,20.0,horizonal
+#  Stairway
+door,9.0,20.0,9.0,21.0,vertical
+#  Zombocalypse
+door,17.0,23.0,18.0,23.0,horizonal
+door,24.0,26.0,25.0,26.0,horizonal
+# Spiral Stairs
+#  Church
+spiral_stairs,4.5,4.5,1.0,1.0,None
+#  Edgar
+spiral_stairs,28.5,1.5,1.0,1.0,None
+#  Spiral Passage
+spiral_stairs,27.5,13.5,1.0,1.0,None
+#  Mummy
+spiral_stairs,21.5,16.5,1.0,1.0,None
+
+# Toilets
+#  Abbey
+toilet,13.5,0.4,0.0,0.0,vertical
+#  Yorick's
+toilet,18.2,2.4,0.0,0.0,horizontal
+#  Edgar's
+toilet,25.3,0.5,0.0,0.0,horizontal
+
+# Quasqueton pools
+ellipse,22.5,18.5,0.4,0.4,None
+ellipse,24.5,18.5,0.4,0.4,None
+ellipse,26.5,18.5,0.4,0.4,None
+ellipse,23.5,20.0,0.4,0.4,None
+ellipse,25.5,20.0,0.4,0.4,None
+ellipse,20.5,21.5,0.4,0.4,None
+ellipse,22.5,21.5,0.4,0.4,None
+ellipse,24.5,21.5,0.4,0.4,None
+ellipse,26.5,21.5,0.4,0.4,None
+ellipse,28.5,21.5,0.4,0.4,None
+ellipse,23.5,23.0,0.4,0.4,None
+ellipse,25.5,23.0,0.4,0.4,None
+ellipse,22.5,24.5,0.4,0.4,None
+ellipse,24.5,24.5,0.4,0.4,None
+ellipse,26.5,24.5,0.4,0.4,None
+
+# Zombocalypse Fountain
+ellipse,3.0,22.0,0.6,0.6,None
+ellipse,3.0,22.0,0.3,0.3,None
+
+# Altar
+block,1.5,4.0,2.0,4.0,white_thin
+continuation,2.0,4.0,2.0,5.0,white_thin
+continuation,2.0,5.0,1.5,5.0,white_thin
+continuation,1.5,5.0,1.5,4.0,polygon_end
+
+# Carlotta's Furniture
+line,0.0,2.0,0.3,2.0,thin
+line,0.3,2.0,0.3,1.3,thin
+line,0.3,1.3,1.0,1.3,thin
+line,1.0,1.3,1.0,1.0,thin
+
+block,0.8,1.8,1.7,1.8,white_thin
+continuation,1.7,1.8,1.7,2.3,white_thin
+continuation,1.7,2.3,0.8,2.3,white_thin
+continuation,0.8,2.3,0.8,1.8,polygon_end
+
+# Carlotta's Coffin
+block,0.2,0.4,0.4,0.3,white_thin
+continuation,0.4,0.3,0.9,0.4,white_thin
+continuation,0.9,0.4,0.9,0.6,white_thin
+continuation,0.9,0.6,0.4,0.7,white_thin
+continuation,0.4,0.7,0.2,0.6,white_thin
+continuation,0.2,0.6,0.2,0.4,polygon_end
+
+# Pillars in Refectory
+ellipse,7.0,1.0,0.2,0.2,None
+ellipse,8.0,1.0,0.2,0.2,None
+ellipse,11.0,1.0,0.2,0.2,None
+ellipse,12.0,1.0,0.2,0.2,None
+ellipse,7.0,2.0,0.2,0.2,None
+ellipse,8.0,2.0,0.2,0.2,None
+ellipse,11.0,2.0,0.2,0.2,None
+ellipse,12.0,2.0,0.2,0.2,None
+
+# Table in Refectory
+ellipse,9.5,1.5,0.7,0.3,None
+
+# Hearth
+line,14.0,0.6,14.2,0.6,thin
+line,14.2,0.6,14.2,0.4,thin
+line,14.2,0.4,14.8,0.4,thin
+line,14.8,0.4,14.8,0.6,thin
+line,14.8,0.6,15.0,0.6,thin
+line,15.0,0.6,15.0,0.0,thin
+block,14.2,0.1,14.8,0.1,solid_thin
+continuation,14.8,0.1,14.8,0.3,solid_thin
+continuation,14.8,0.3,14.2,0.3,solid_thin
+continuation,14.2,0.3,14.2,0.1,polygon_end
+
+# Sink
+line,13.0,2.4,14.5,2.4,thin
+line,14.5,2.4,14.5,3.0,thin
+ellipse,13.7,2.6,0.2,0.1,None
+
+# Beds
+line,16.0,1.4,16.7,1.4,thin
+line,16.7,1.4,16.7,1.7,thin
+line,16.7,1.7,16.0,1.7,thin
+
+line,16.0,2.4,16.7,2.4,thin
+line,16.7,2.4,16.7,2.7,thin
+line,16.7,2.7,16.0,2.7,thin
+
+line,18.0,1.4,17.3,1.4,thin
+line,17.3,1.4,17.3,1.7,thin
+line,17.3,1.7,18.0,1.7,thin
+
+line,18.0,2.4,17.3,2.4,thin
+line,17.3,2.4,17.3,2.7,thin
+line,17.3,2.7,18.0,2.7,thin
+
+# Abbot
+line,19.0,1.1,18.7,1.1,thin
+line,18.7,1.1,18.7,1.8,thin
+line,18.7,1.8,19.0,1.8,thin
+
+# Edgar
+#  Hearth
+line,28.0,0.0,28.0,0.3,thin
+line,28.0,0.3,29.4,0.3,thin
+line,29.4,0.3,29.4,0.8,thin
+line,29.4,0.8,29.0,0.8,thin
+line,29.0,0.8,29.0,1.0,thin
+ellipse,28.5,0.15,0.2,0.1,None
+block,29.6,0.4,29.8,0.4,solid_thin
+continuation,29.8,0.4,29.8,0.6,solid_thin
+continuation,29.8,0.6,29.6,0.6,solid_thin
+continuation,29.6,0.6,29.6,0.4,polygon_end
+#  Bedroom
+line,25.0,4.5,25.9,4.5,thin
+line,25.9,4.5,25.9,5.0,thin
+block,25.0,3.2,26.8,3.2,white_thin
+continuation,26.8,3.2,26.8,3.8,white_thin
+continuation,26.8,3.8,27.0,3.8,white_thin
+continuation,27.0,3.8,27.0,3.0,white_thin
+continuation,27.0,3.0,25.0,3.0,white_thin
+continuation,25.0,3.0,25.0,3.2,polygon_end
+#  Table
+ellipse,26.0,2.0,0.7,0.3,None
+#  Beds
+line,28.0,3.4,28.7,3.4,thin
+line,28.7,3.4,28.7,3.7,thin
+line,28.7,3.7,28.0,3.7,thin
+
+line,28.0,4.4,28.7,4.4,thin
+line,28.7,4.4,28.7,4.7,thin
+line,28.7,4.7,28.0,4.7,thin
+
+line,30.0,3.4,29.3,3.4,thin
+line,29.3,3.4,29.3,3.7,thin
+line,29.3,3.7,30.0,3.7,thin
+
+line,30.0,4.4,29.3,4.4,thin
+line,29.3,4.4,29.3,4.7,thin
+line,29.3,4.7,30.0,4.7,thin
+
+# Sarcophagus
+ellipse,9.2,16.5,0.15,0.4,None
+
+# Stairway decorations
+#  Down
+line,7.9,20.1,7.9,20.9,normal
+line,7.7,20.2,7.7,20.8,normal
+line,7.5,20.3,7.5,20.7,normal
+line,7.3,20.4,7.3,20.6,normal
+#  Up
+line,8.1,21.1,8.9,21.1,normal
+line,8.1,21.3,8.9,21.3,normal
+line,8.1,21.5,8.9,21.5,normal
+line,8.1,21.7,8.9,21.7,normal
+#  Opposite corner
+line,6.0,23.0,5.0,23.0,dashed
+line,6.0,23.0,6.0,24.0,dashed
+
+# Text
+#  Church
+text,1.1,0.8,12,sans_serif,0.7
+text,1.1,1.7,11,sans_serif,0.7
+text,9.1,2.8,13,sans_serif,0.7
+text,1.65,4.7,a,sans_serif,0.5
+text,7.1,4.8,10,sans_serif,0.7
+text,13.33,0.84,26,sans_serif,0.4
+text,14.1,1.7,14,sans_serif,0.7
+text,16.6,2.3,15,sans_serif,0.7
+text,0.4,3.2,S,sans_serif,0.6
+text,18.1,1.2,16,sans_serif,0.7
+text,18.84,0.8,S,sans_serif,0.6
+text,19.2,0.8,17,sans_serif,0.7
+#  Churchyard
+text,21.2,4.8,18,sans_serif,0.7
+text,20.3,4.5,t,sans_serif,0.5
+text,21.4,2.3,t,sans_serif,0.5
+text,22.6,1.4,t,sans_serif,0.5
+text,23.3,3.6,t,sans_serif,0.5
+#  Edgar's
+text,25.48,0.82,26,sans_serif,0.4
+text,28.3,0.9,14,sans_serif,0.7
+text,29.2,1.8,19,sans_serif,0.7
+text,25.7,2.9,20,sans_serif,0.7
+text,25.7,4.3,21,sans_serif,0.7
+text,28.6,4.3,15,sans_serif,0.7
+#  Spiral Stairs
+text,27.4,1.5,dn,sans_serif,0.4
+text,26.4,13.5,dn,sans_serif,0.4
+text,20.4,16.5,up,sans_serif,0.4
+text,3.4,4.5,dn,sans_serif,0.4
+#  Wights
+text,29.3,6.8,a,sans_serif,0.5
+text,29.3,7.8,b,sans_serif,0.5
+text,29.3,8.8,c,sans_serif,0.5
+text,29.3,9.8,d,sans_serif,0.5
+text,29.3,10.8,e,sans_serif,0.5
+text,27.4,8.8,6,sans_serif,0.7
+#  Knight
+text,19.1,8.9,5,sans_serif,0.7
+#  Ghouls
+text,1.4,7.6,a,sans_serif,0.5
+text,0.4,9.6,b,sans_serif,0.5
+text,2.4,9.6,b,sans_serif,0.5
+text,0.4,11.6,b,sans_serif,0.5
+text,2.4,11.6,b,sans_serif,0.5
+text,0.4,13.6,b,sans_serif,0.5
+text,2.4,13.6,b,sans_serif,0.5
+text,1.2,10.8,22,sans_serif,0.7
+#  Quasqueton
+text,22.4,18.7,a,sans_serif,0.5
+text,24.4,18.7,b,sans_serif,0.5
+text,26.4,18.7,c,sans_serif,0.5
+text,23.4,20.2,d,sans_serif,0.5
+text,25.4,20.2,e,sans_serif,0.5
+text,20.4,21.7,f,sans_serif,0.5
+text,22.4,21.7,g,sans_serif,0.5
+text,24.4,21.7,h,sans_serif,0.5
+text,26.45,21.7,i,sans_serif,0.5
+text,28.45,21.7,j,sans_serif,0.5
+text,23.4,23.2,k,sans_serif,0.5
+text,25.45,23.2,l,sans_serif,0.5
+text,22.35,24.7,m,sans_serif,0.5
+text,24.4,24.7,n,sans_serif,0.5
+text,26.4,24.7,o,sans_serif,0.5
+text,27.3,20.8,8,sans_serif,0.7
+#  Shadow Maze
+text,4.3,12.2,a,sans_serif,0.5
+text,5.5,11.1,b,sans_serif,0.5
+text,4.9,10.4,c,sans_serif,0.5
+text,3.83,11.8,d,sans_serif,0.5
+text,3.4,9.3,e,sans_serif,0.5
+text,6.1,10.8,4,sans_serif,0.7
+#  Mummy Maze
+text,12.4,17.7,a,sans_serif,0.5
+text,11.2,18.9,b,sans_serif,0.5
+text,11.4,16.7,c,sans_serif,0.5
+text,12.4,14.7,d,sans_serif,0.5
+text,10.8,14.7,e,sans_serif,0.5
+text,10.4,16.7,f,sans_serif,0.5
+#  Spiral Passage
+text,27.4,14.8,7,sans_serif,0.7
+#  Mummy labels
+text,16.2,16.8,23,sans_serif,0.7
+text,11.2,15.8,24,sans_serif,0.7
+text,9.35,16.05,25,sans_serif,0.6
+#  Hall of Bone
+text,5.3,15.8,2,sans_serif,0.7
+text,13.3,21.8,2,sans_serif,0.7
+#  Stairway
+text,8.3,20.8,1,sans_serif,0.7
+#  Armory
+text,28.2,18.3,9,sans_serif,0.7
+text,29.4,23.2,S,sans_serif,0.6
+#  Zombocalypse
+text,2.88,22.12,a,sans_serif,0.5
+text,17.3,24.8,3,sans_serif,0.7
+text,3.9,25.5,b,sans_serif,0.5
+text,12.6,25.5,b,sans_serif,0.5
+text,13.4,29.8,b,sans_serif,0.5
+text,20.6,26.3,b,sans_serif,0.5
+#  Zombies!
+text,0.3,15.7,Z,sans_serif,0.6
+text,1.3,17.7,Z,sans_serif,0.6
+text,4.1,17.0,Z,sans_serif,0.6
+text,3.4,19.2,Z,sans_serif,0.6
+text,0.3,20.7,Z,sans_serif,0.6
+#  5
+text,0.5,24.7,Z,sans_serif,0.6
+text,0.3,27.2,Z,sans_serif,0.6
+text,0.3,29.7,Z,sans_serif,0.6
+text,2.3,28.2,Z,sans_serif,0.6
+text,3.2,29.7,Z,sans_serif,0.6
+#  10
+text,6.3,29.7,Z,sans_serif,0.6
+text,8.3,28.7,Z,sans_serif,0.6
+text,11.3,23.7,Z,sans_serif,0.6
+text,12.3,23.7,Z,sans_serif,0.6
+text,14.3,23.7,Z,sans_serif,0.6
+#  15
+text,13.3,26.7,Z,sans_serif,0.6
+text,14.3,28.7,Z,sans_serif,0.6
+text,17.3,29.7,Z,sans_serif,0.6
+text,18.8,28.7,Z,sans_serif,0.6
+text,19.3,24.7,Z,sans_serif,0.6
+#  20
+text,23.3,29.7,Z,sans_serif,0.6
+text,24.3,27.7,Z,sans_serif,0.6
+text,27.8,27.9,Z,sans_serif,0.6
+text,28.5,27.2,Z,sans_serif,0.6
+text,29.3,24.7,Z,sans_serif,0.6
+
+# Arrow and Scale
+line,4.0,1.0,4.0,2.2,normal
+block,4.0,1.0,3.8,1.5,solid
+continuation,3.8,1.5,4.0,1.5,solid
+continuation,4.0,1.5,4.0,1.0,polygon_end
+text,3.8,0.9,N,sans_serif,0.6
+text,4.2,1.5,1 sq.=,sans_serif,0.5
+text,4.2,2.0,10 ft.,sans_serif,0.5

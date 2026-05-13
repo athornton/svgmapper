@@ -23,14 +23,3 @@ for f in .github/workflows/*.yaml; do
         rm "${f}.n"
     fi
 done
-
-# Replace the version in any Dockerfiles.
-for f in Dockerfile*; do
-    sed "s/uv:[0-9][0-9.]*/uv:$uv_version/" "$f" >"${f}.n"
-    if ! cmp -s "$f" "${f}.n"; then
-        echo "Updating uv container version to $uv_version in $f"
-        mv "${f}.n" "$f"
-    else
-        rm "${f}.n"
-    fi
-done

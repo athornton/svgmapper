@@ -5,7 +5,7 @@ from pathlib import Path
 import click
 from safir.click import display_help
 
-from .services.svgmapper import SVGMapper
+from .services.converter import Converter
 
 __all__ = ["convert", "help"]
 
@@ -51,5 +51,5 @@ def help(ctx: click.Context, topic: str | None) -> None:
 @main.command()
 def convert(*, input: Path, output: Path, debug: bool) -> None:  # noqa: A002
     """Convert from old-style ``makemap.pl`` input to current format."""
-    svc = SVGMapper(inp=input, output=output, debug=debug)
+    svc = Converter(inp=input, output=output, debug=debug)
     svc.convert_input()
