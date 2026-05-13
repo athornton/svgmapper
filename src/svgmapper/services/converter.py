@@ -2,9 +2,6 @@
 
 from pathlib import Path
 
-import structlog
-from safir.logging import configure_logging
-
 from ..exceptions import SVGBadInputError, SVGBadNumericInputError
 from ..models.v1.input import (
     Block,
@@ -15,23 +12,20 @@ from ..models.v1.input import (
     Text,
     Toilet,
 )
+from ._base import BaseSVGMapper
+from ._logger import configure_logging
 
 
-class Converter:
+class Converter(BaseSVGMapper):
     """Convert from old-style numeric format to new-style."""
 
     def __init__(
         self, inp: Path, output: Path, *, debug: bool = False
     ) -> None:
-        self._input = inp
-        self._output = output
-        self._debug = debug
-        loglevel = "info"
-        if debug:
-            loglevel = "debug"
-        configure_logging(name="SVGMapper", log_level=loglevel)
-        self._logger = structlog.getLogger("SVGMapper")
-        self._logger.debug("Logging initialized")
+
+        super().__init__(inp=inp, output=output, debug=debug)
+        self._logger = configure_logging("svgmapper.converter", debug=debug)
+
         self._prev_kind: MapObjectKind | None = None
         self._prev_type: MapObject | float | None = None
 
@@ -134,7 +128,7 @@ class Converter:
             case MapObjectKind.BLOCK:
                 return Block.from_int(i_type)
             case MapObjectKind.ELLIPSE:
-                return None
+                return Block.from_int(i_type)
             case MapObjectKind.SPIRAL_STAIRS:
                 return None
             case MapObjectKind.TOILET:

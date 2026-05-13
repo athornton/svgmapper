@@ -6,6 +6,7 @@ import click
 from safir.click import display_help
 
 from .services.converter import Converter
+from .services.creator import Creator
 
 __all__ = ["convert", "help"]
 
@@ -25,11 +26,13 @@ def help(ctx: click.Context, topic: str | None) -> None:
 
 
 @click.option(
+    "--file",
     "--input",
+    "-f",
     "-i",
     envvar="SVGMAPPER_INPUT_PATH",
     type=click.Path(path_type=Path),
-    default=None,
+    required=True,
     help="Input map file.",
 )
 @click.option(
@@ -37,7 +40,7 @@ def help(ctx: click.Context, topic: str | None) -> None:
     "-o",
     envvar="SVGMAPPER_OUTPUT_PATH",
     type=click.Path(path_type=Path),
-    default=None,
+    required=True,
     help="Input map file.",
 )
 @click.option(
@@ -49,7 +52,47 @@ def help(ctx: click.Context, topic: str | None) -> None:
     help="Enable debug logging",
 )
 @main.command()
-def convert(*, input: Path, output: Path, debug: bool) -> None:  # noqa: A002
+def convert(*, file: Path, output: Path, debug: bool) -> None:
     """Convert from old-style ``makemap.pl`` input to current format."""
-    svc = Converter(inp=input, output=output, debug=debug)
+    svc = Converter(inp=file, output=output, debug=debug)
     svc.convert_input()
+
+
+@click.option(
+    "--file",
+    "--input",
+    "-f",
+    "-i",
+    envvar="SVGMAPPER_INPUT_PATH",
+    type=click.Path(path_type=Path),
+    required=True,
+    help="Input map file.",
+)
+@click.option(
+    "--output",
+    "-o",
+    envvar="SVGMAPPER_OUTPUT_PATH",
+    type=click.Path(path_type=Path),
+    required=True,
+    help="Input map file.",
+)
+@click.option(
+    "--debug",
+    "-d",
+    envvar="DEBUG",
+    is_flag=True,
+    default=False,
+    help="Enable debug logging",
+)
+@click.option(
+    "--settings",
+    "-s",
+    envvar="SVGMAPPER_SETTINGS",
+    type=click.Path(path_type=Path),
+    help="Global settings file",
+)
+@main.command()
+def create(*, file: Path, output: Path, settings: Path, debug: bool) -> None:
+    """Create SVG from description file."""
+    svc = Creator(inp=file, output=output, settings=settings, debug=debug)
+    svc.create()

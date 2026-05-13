@@ -23,14 +23,14 @@ class MapObject(StrEnum):
 class MapObjectKind(MapObject):
     """Different kinds of map objects."""
 
-    LINE = ("line",)
-    ARC = ("arc",)
-    DOOR = ("door",)
-    BLOCK = ("block",)
-    ELLIPSE = ("ellipse",)
-    SPIRAL_STAIRS = ("spiral_stairs",)
-    TOILET = ("toilet",)
-    TEXT = ("text",)
+    LINE = "line"
+    ARC = "arc"
+    DOOR = "door"
+    BLOCK = "block"
+    ELLIPSE = "ellipse"
+    SPIRAL_STAIRS = "spiral_stairs"
+    TOILET = "toilet"
+    TEXT = "text"
     CONTINUATION = "continuation"
 
     @override
@@ -63,10 +63,10 @@ class MapObjectKind(MapObject):
 class Line(MapObject):
     """Line, usually representing a wall."""
 
-    NORMAL = ("normal",)
-    THICK = ("thick",)
-    DASHED = ("dashed",)
-    DOTTED = ("dotted",)
+    NORMAL = "normal"
+    THICK = "thick"
+    DASHED = "dashed"
+    DOTTED = "dotted"
     THIN = "thin"
 
     @override
@@ -91,12 +91,12 @@ class Line(MapObject):
 class Block(MapObject):
     """Filled block."""
 
-    SOLID = ("solid",)
-    WHITE = ("white",)
-    HATCHED = ("hatched",)
-    SOLID_THIN = ("solid_thin",)
-    WHITE_THIN = ("white_thin",)
-    HATCHED_THIN = ("hatched_thin",)
+    SOLID = "solid"
+    WHITE = "white"
+    HATCHED = "hatched"
+    SOLID_THIN = "solid_thin"
+    WHITE_THIN = "white_thin"
+    HATCHED_THIN = "hatched_thin"
     POLYGON_END = "polygon_end"
 
     @override
@@ -127,8 +127,8 @@ class Door(MapObject):
 
     VERTICAL = "vertical"
     HORIZONTAL = "horizonal"
-    VERTICAL_DOUBLE = ("vertical_double",)
-    HORIZONTAL_DOUBLE = "horizontabl_double"
+    VERTICAL_DOUBLE = "vertical_double"
+    HORIZONTAL_DOUBLE = "horizontal_double"
 
     @override
     @classmethod

@@ -1,0 +1,13 @@
+{
+  "scale": 50,
+  "color": "red",
+  "width_inches": 6.2,
+  "height_inches": 6.2,
+  "grid_size_x": 20,
+  "grid_size_y": 20,
+  "grid_stroke": 0.02,
+  "wall_stroke": 0.1,
+  "thick_wall_stroke": 0.15,
+  "thin_stroke": 0.03
+}
+
