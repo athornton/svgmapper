@@ -41,7 +41,7 @@ def help(ctx: click.Context, topic: str | None) -> None:
     envvar="SVGMAPPER_OUTPUT_PATH",
     type=click.Path(path_type=Path),
     required=True,
-    help="Input map file.",
+    help="Output map file.",
 )
 @click.option(
     "--debug",
