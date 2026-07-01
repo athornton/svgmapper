@@ -44,6 +44,7 @@ class Converter(BaseSVGMapper):
                     output += line + "\n"
                     continue
                 new_line = self._convert_numeric(line)
+                output += "# ORIG: " + line + "\n"
                 output += new_line + "\n"
         self._output.write_text(output)
 

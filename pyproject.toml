@@ -48,9 +48,9 @@ dev = [
 ]
 
 lint = [
-    "pre-commit",
-    "pre-commit-uv",
+    "prek",
     "ruff>=0.12",
+    "uv"
 ]
 tox = [
     "tox>=4.24",
@@ -137,6 +137,13 @@ extend = "ruff-shared.toml"
 [tool.ruff.lint.extend-per-file-ignores]
 "tests/data/**/*.ipynb" = [
     "T201",     # test notebooks are allowed to use print
+]
+"src/svgmapper/services/creator.py" = [
+    "C901",     # yes, it's complex, all right
+    "PLR0912",  # yes, it's complex, all right
+    "PLR0915",  # yes, it's complex, all right
+    "S311",     # we're drawing D&D maps, not securing financial transactions
+    "S318",     # we trust this XML since we wrote it
 ]
 
 [tool.ruff.lint.isort]

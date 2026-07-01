@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eux
 
 # Update uv version references based on the frozen version from uv.lock.
 

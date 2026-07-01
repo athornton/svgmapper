@@ -27,10 +27,12 @@ class MapObjectKind(MapObject):
     ARC = "arc"
     DOOR = "door"
     BLOCK = "block"
+    CAVE = "cave"
     ELLIPSE = "ellipse"
     SPIRAL_STAIRS = "spiral_stairs"
     TOILET = "toilet"
     TEXT = "text"
+    SEED = "seed"
     CONTINUATION = "continuation"
 
     @override
@@ -68,6 +70,7 @@ class Line(MapObject):
     DASHED = "dashed"
     DOTTED = "dotted"
     THIN = "thin"
+    CRINKLED = "crinkled"
 
     @override
     @classmethod
@@ -86,6 +89,14 @@ class Line(MapObject):
                 return cls.THIN
             case _:
                 raise SVGBadNumericInputError(f"{cls.__name__}: {number}")
+
+
+class CrinkleType(MapObject):
+    """Different types of crinkles."""
+
+    LINEAR = "linear"
+    QUADRATIC = "quadratic"
+    CUBIC = "cubic"
 
 
 class Block(MapObject):
@@ -120,6 +131,18 @@ class Block(MapObject):
                 return cls.POLYGON_END
             case _:
                 raise SVGBadNumericInputError(f"{cls.__name__}: {number}")
+
+
+class Cave(MapObject):
+    """Filled cave, with crinkled lines between points."""
+
+    SOLID = "solid"
+    WHITE = "white"
+    HATCHED = "hatched"
+    SOLID_THIN = "solid_thin"
+    WHITE_THIN = "white_thin"
+    HATCHED_THIN = "hatched_thin"
+    CAVE_END = "cave_end"
 
 
 class Door(MapObject):
@@ -183,3 +206,7 @@ class Text(MapObject):
                 return cls.SERIF
             case _:
                 raise SVGBadNumericInputError(f"{cls.__name__}: {number}")
+
+
+class Seed(MapObject):
+    """Random Seed."""
