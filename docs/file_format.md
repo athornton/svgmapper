@@ -45,15 +45,15 @@ This specifies line style.
 
 #### Structure for `crinkled`
 
-There are four subfields for `crinkled`:
+There are four colon-separated subfields for `crinkled`:
 
-* `crinkled`
+* `crinkled` (literal)
 * number of interpolated points in the segment: default 50
 * "curviness" parameter: default 0.15; the larger, the higher the average deviation from a straight line
 * crinkle type (default: linear):
-  ** linear (made up of straight line segments)
-  ** quadratic (made up of quadratic splines)
-  ** cubic (made up of cubic splines)
+  * linear (made up of straight line segments)
+  * quadratic (made up of quadratic splines)
+  * cubic (made up of cubic splines)
 
 ### Type for door
 

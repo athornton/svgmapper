@@ -19,8 +19,9 @@ If a settings file is used, then all settings must be specified.
 
 ### Scale
 
-Scale is the global scale that translates from grid units into pixels, I guess?
-SVG is scalable, so the only place this matters is in displayed text; fractional font sizes do not seem to work well.
+Scale is the global scale that translates from grid units into something
+close to pixels.
+SVG is by definition scalable, so the only place this matters is in displayed text; fractional font sizes do not seem to work well.
 
 As the creator of a description file, you don't need to worry about it.
 All the coordinate specification you do will be in terms of multiples of grid units.
