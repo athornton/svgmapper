@@ -177,7 +177,7 @@ class Creator(BaseSVGMapper):
         y2: Number,
         obj_type: str,
     ) -> None:
-        match o_kind:
+        match o_kind.lower():
             case MapObjectKind.LINE:
                 self._process_svgline(x1, y1, x2, y2, obj_type)
             case MapObjectKind.ARC:
@@ -275,7 +275,7 @@ class Creator(BaseSVGMapper):
                         rrrest = rt[1]
                         self._curviness = float(curviness)
                         try:
-                            self._crinkle_type = CrinkleType(rrrest)
+                            self._crinkle_type = CrinkleType(rrrest.lower())
                         except ValueError, IndexError:
                             self._crinkle_type = CrinkleType.LINEAR
                     except ValueError, IndexError:

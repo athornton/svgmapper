@@ -56,7 +56,7 @@ Options:
   -h, --help                    Show this message and exit.
 ```
 
-### Examples
+## Examples
 
 These are from one of the levels of a dungeon I'm working on.
 
