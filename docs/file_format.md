@@ -132,7 +132,7 @@ quite a lot of thought given to sanitation and food preparation.
 Three of the fields have different meanings for a `Text` line:
 
 * endx specifies the text to use, which cannot contain commas.
-* endy specifies the font to use: "s" means use Soutane font (serif).
+* endy specifies the font to use: `sans_serif` or `serif`.
 * type specifies the text size in grid units.
 
 ### Seed
