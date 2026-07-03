@@ -23,6 +23,7 @@ The origin `(0,0)` is at the upper left.
 
 * line
 * door
+* arc
 * block
 * cave
 * ellipse
@@ -48,12 +49,14 @@ This specifies line style.
 There are four colon-separated subfields for `crinkled`:
 
 * `crinkled` (literal)
-* number of interpolated points in the segment: default 50
-* "curviness" parameter: default 0.15; the larger, the higher the average deviation from a straight line
+* number of interpolated points in the segment: default 10
+* "curviness" parameter: default 1.0; the larger, the higher the average deviation from a straight line.  1.0 means, roughly, that an interpolated point can be located anywhere (randomly, independently for both r and theta) in the circle spanning the previous and next interpolated points.  A value near 2 will make something that looks vaguely like a coastline.
 * crinkle type (default: linear):
   * linear (made up of straight line segments)
   * quadratic (made up of quadratic splines)
   * cubic (made up of cubic splines)
+
+If any of these is omitted, the previous value of that parameter will be retained, or the default if it has never been set.
 
 ### Type for door
 
@@ -62,7 +65,11 @@ There are four colon-separated subfields for `crinkled`:
 * vertical double
 * horizontal double
 
-This specifies door orientation
+This specifies door orientation.
+
+### Arc
+
+Arc is not yet implemented.
 
 ### Type for block
 
@@ -75,11 +82,12 @@ This specifies door orientation
 
 This specifies the fill; "thin" refers to the block outline stroke.
 
-The `polygon_end` marker finishes a continued block.
+The `block_end` marker finishes a continued block.
 
 ### Type for cave
 
 A `cave` is like a `block` but its edges are not straight lines.
+The fill markers are all identical.
 
 The `cave_end` marker finishes a continued cave.
 
@@ -88,14 +96,17 @@ The type field contains three colon-separated subfields:
 #### Fill
 
 Same as for `block`.
+This cannot be omitted.
 
 #### Interpolated points
 
 Number of interpolated points in the segment: default 50.
+If not specified, the last used value, or the default, will be used.
 
 #### Curviness
 
 Amount of average deviation from a straight line: default 0.15.
+If not specified, the last used value, or the default, will be used.
 
 ### Type for ellipse
 
@@ -129,7 +140,7 @@ Three of the fields have different meanings for a `Text` line:
 Only the `startx` field has meaning for a `Seed` line: it is used as the seed for Python's [random.seed()](https://docs.python.org/3/library/random.html#random.seed) function.
 The default is `default`.
 Leave the field empty (e.g. `seed,,...`) to generate non-repeatable pseudo-random values.
-It may be helpful to experiment with different values and then keep the one that produces the most pleasing outcome.
+The field is treated as a string, so "0" or "0.0" are *not* falsy values; they are non-empty strings and therefore `True`, and each will produce a different repeatable set of pseudo-random values.
 The seed can be reset at any time.
 
 ### Continuation

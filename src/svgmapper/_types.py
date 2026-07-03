@@ -1,4 +1,4 @@
 """Types for SVGMapper."""
 
-"""Number is not exported from svg.py."""
-Number = float | int
+type Number = float | int
+"""Number is not exported from svg.py, so we define it here."""

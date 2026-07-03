@@ -8,6 +8,7 @@
   "grid_stroke": 0.02,
   "wall_stroke": 0.1,
   "thick_wall_stroke": 0.15,
-  "thin_stroke": 0.03
+  "thin_stroke": 0.03,
+  "round_digits": 4
 }
 

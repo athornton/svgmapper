@@ -19,6 +19,7 @@ class Settings:
     wall_stroke: Number = 0.05
     thick_wall_stroke: Number = 0.15
     thin_stroke: Number = 0.02
+    round_digits: int = 2
     _scaled: bool = False
 
     def __post_init__(self) -> None:

@@ -16,6 +16,7 @@ If a settings file is used, then all settings must be specified.
 * `wall_stroke`
 * `thick_wall_stroke`
 * `thin_stroke`
+* `round_digits`
 
 ### Scale
 
@@ -50,3 +51,12 @@ The defaults are as follows:
 * `wall_stroke`: 0.05
 * `thick_wall_stroke`: 0.15
 * `thin_stroke`: 0.02
+
+### Round_digits
+
+This specifies how many decimal digits after the decimal point to retain for
+interpolated points.
+Interpolated points are only used in `crinkled` walls and in `cave` blocks.
+Direct user input is always retained as-is.
+The default is 2, which is plenty for 30 grid units and scale 100.
+

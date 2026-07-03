@@ -13,7 +13,6 @@ from ..models.v1.input import (
     Toilet,
 )
 from ._base import BaseSVGMapper
-from ._logger import configure_logging
 
 
 class Converter(BaseSVGMapper):
@@ -24,7 +23,6 @@ class Converter(BaseSVGMapper):
     ) -> None:
 
         super().__init__(inp=inp, output=output, debug=debug)
-        self._logger = configure_logging("svgmapper.converter", debug=debug)
 
         self._prev_kind: MapObjectKind | None = None
         self._prev_type: MapObject | float | None = None

@@ -1,4 +1,10 @@
-"""Create SVG image from description file."""
+"""Create SVG image from description file.
+
+This is the map generation engine.  It takes an input file described in
+docs/file_format.md and generates an SVG.  With the default settings, a map
+generated in this way will look like it belongs in a TSR D&D or AD&D module
+from the late 1970s.
+"""
 
 import json
 import math
@@ -28,8 +34,6 @@ from svg import (
     Polygon,
     Q,
     Rect,
-    S,
-    T,
     ViewBoxSpec,
 )
 from svg import Line as SVGLine
@@ -48,14 +52,12 @@ from ..models.v1.input import (
     CrinkleType,
     Door,
     Line,
-    MapObject,
     MapObjectKind,
     Text,
     Toilet,
 )
 from ..models.v1.settings import Settings
 from ._base import BaseSVGMapper
-from ._logger import configure_logging
 
 
 @dataclass
@@ -82,18 +84,15 @@ class Creator(BaseSVGMapper):
             self._settings = Settings(**obj)
         else:
             self._settings = Settings()
-        self._logger = configure_logging("svgmapper.converter", debug=debug)
         self._prev_kind: MapObjectKind | None = None
-        self._prev_type: MapObject | Number | None = None
         self._input_lines: list[str] = []
-        self._current_block: list[tuple[int]] | None = None
         self._current_polygon: Polygon | None = None
-        self._num_points: int = 0
-        self._curviness: Number = 0.0
-        self._elements: list[Element] = []
-        self._crinkle_type: CrinkleType | None = None
+        self._num_points: int = 10
+        self._curviness: Number = 1.0
+        self._crinkle_type: CrinkleType = CrinkleType.LINEAR
         self._seed: str | None = "default"
         random.seed(self._seed)  # For repeatability
+        self._elements: list[Element] = []
         self._logger.debug("initialized")
 
     def create(self) -> None:
@@ -110,7 +109,7 @@ class Creator(BaseSVGMapper):
             if not line:  # Skip blank lines
                 continue
             san_line = urllib.parse.quote(line, safe="=#/:, ")
-            self._elements.append(Desc(san_line))
+            self._elements.append(Desc(text=san_line))
             if san_line.startswith("#"):
                 continue  # Skip comments
             self._process_line(san_line)
@@ -133,6 +132,10 @@ class Creator(BaseSVGMapper):
         if o_kind == MapObjectKind.CONTINUATION:
             if self._prev_kind is None:
                 raise SVGBadInputError("Cannot continue unknown kind")
+        if o_kind == MapObjectKind.SEED:
+            self._seed = startx or None  # All falsy seeds are non-repeatable.
+            random.seed(self._seed)
+            return
         try:
             fstartx = float(startx)
             fstarty = float(starty)
@@ -150,15 +153,6 @@ class Creator(BaseSVGMapper):
                 raise SVGBadNumericInputError(str(exc)) from exc
             self._process_text(x1, y1, text, font, size)
             return
-        if o_kind == MapObjectKind.SEED:
-            if not startx:
-                self._seed = None
-            try:
-                if startx:
-                    self._seed = startx
-                    random.seed(self._seed)
-            except ValueError as exc:
-                raise SVGBadNumericInputError(str(exc)) from exc
         try:
             fendx = float(endx)
             fendy = float(endy)
@@ -177,7 +171,7 @@ class Creator(BaseSVGMapper):
         y2: Number,
         obj_type: str,
     ) -> None:
-        match o_kind.lower():
+        match o_kind:
             case MapObjectKind.LINE:
                 self._process_svgline(x1, y1, x2, y2, obj_type)
             case MapObjectKind.ARC:
@@ -223,11 +217,18 @@ class Creator(BaseSVGMapper):
         )
 
     def _makehatchgroup(self) -> G:
-        st = 25
+        st = 0.25 * self._settings.scale
         cl = self._settings.color
         return G(
             elements=[
-                SVGLine(x1=0, y1=0, x2=st, y2=st, stroke=cl, stroke_width=3)
+                SVGLine(
+                    x1=0,
+                    y1=0,
+                    x2=st,
+                    y2=st,
+                    stroke=cl,
+                    stroke_width=0.03 * self._settings.scale,
+                )
             ],
         )
 
@@ -253,43 +254,44 @@ class Creator(BaseSVGMapper):
                 )
 
     def _process_postamble(self) -> None:
+        # Currently there is no postamble added.
         pass
 
     def _process_svgline(
         self, x1: Number, y1: Number, x2: Number, y2: Number, sstyle: str
     ) -> None:
         if sstyle.startswith(Line.CRINKLED):
-            try:
-                pt = sstyle.split(":", 2)
-                sstyle = pt[0]
-                rest = pt[1]
-                style = Line(sstyle)
-                try:
-                    qt = rest.split(":", 2)
-                    num = qt[0]
-                    rrest = qt[1]
-                    self._num_points = int(num)
-                    try:
-                        rt = rrest.split(":", 2)
-                        curviness = rt[0]
-                        rrrest = rt[1]
-                        self._curviness = float(curviness)
-                        try:
-                            self._crinkle_type = CrinkleType(rrrest.lower())
-                        except ValueError, IndexError:
-                            self._crinkle_type = CrinkleType.LINEAR
-                    except ValueError, IndexError:
-                        self._crinkle_type = CrinkleType.LINEAR
-                        self._curviness = 0.15
-                except ValueError, IndexError:
-                    self._crinkle_type = CrinkleType.LINEAR
-                    self._curviness = 0.15
-                    self._num_points = 50
-            except ValueError, IndexError:
-                self._crinkle_type = CrinkleType.LINEAR
-                self._curviness = 0.15
-                self._num_points = 50
+            parts = sstyle.split(":")
             style = Line.CRINKLED
+            subfields = len(parts)
+            if subfields > 3:
+                try:
+                    self._crinkle_type = CrinkleType(parts[3].lower())
+                except ValueError as exc:
+                    raise SVGBadInputError(f"Bad crinkle type: {exc}") from exc
+            if subfields > 2:
+                try:
+                    self._curviness = float(parts[2])
+                    if self._curviness < 0:
+                        raise SVGBadNumericInputError(
+                            f"Bad curviness: {self._curviness}"
+                        )
+                except ValueError as exc:
+                    raise SVGBadNumericInputError(
+                        f"Bad curviness: {exc}"
+                    ) from exc
+            if subfields > 1:
+                try:
+                    self._num_points = int(parts[1])
+                    if self._num_points < 2:
+                        raise SVGBadNumericInputError(
+                            "Bad number of interpolated points:"
+                            f" {self._num_points}"
+                        )
+                except ValueError as exc:
+                    raise SVGBadNumericInputError(
+                        f"Bad number of interpolated points: {exc}"
+                    ) from exc
         else:
             style = Line(sstyle)
 
@@ -316,44 +318,50 @@ class Creator(BaseSVGMapper):
                 pass
 
         if style == Line.CRINKLED:
-            if self._num_points < 2:
-                raise SVGBadNumericInputError(str(self._num_points))
             ipoints = self._make_squiggle_points(x1, y1, x2, y2)
+            self._logger.debug(f"ipoints: len={len(ipoints)}, {ipoints}")
+
             path_elements: list[PathData] = [M(x1, y1)]
+
             for i in range(self._num_points):
                 match self._crinkle_type:
                     case CrinkleType.QUADRATIC:
                         control_point = self._make_quadratic_control_point(
-                            ipoints
+                            start=ipoints[i], end=ipoints[i + 1]
                         )
-                        if i == 0:
-                            path_elements.append(
-                                Q(x1, y1, control_point.x, control_point.y)
+                        path_elements.append(
+                            Q(
+                                control_point.x,
+                                control_point.y,
+                                ipoints[i + 1].x,
+                                ipoints[i + 1].y,
                             )
-                        else:
-                            path_elements.append(T(ipoints[i].x, ipoints[i].y))
+                        )
                     case CrinkleType.CUBIC:
-                        if i == 0:
-                            cc = self._make_cubic_control_points(ipoints)
-                            path_elements.append(
-                                C(x1, y1, cc.c1.x, cc.c1.y, cc.c2.x, cc.c2.y)
+                        cc = self._make_cubic_control_points(
+                            start=ipoints[i], end=ipoints[i + 1]
+                        )
+                        path_elements.append(
+                            C(
+                                cc.c1.x,
+                                cc.c1.y,
+                                cc.c2.x,
+                                cc.c2.y,
+                                ipoints[i + 1].x,
+                                ipoints[i + 1].y,
                             )
-                        else:
-                            cc = self._make_cubic_control_points(
-                                ipoints[(i - 1) :]
-                            )
-                            path_elements.append(
-                                S(ipoints[i].x, ipoints[i].y, cc.c2.x, cc.c2.y)
-                            )
+                        )
                     case _:  # linear
-                        path_elements.append(L(ipoints[i].x, ipoints[i].y))
+                        path_elements.append(
+                            L(ipoints[i + 1].x, ipoints[i + 1].y)
+                        )
             self._elements.append(
                 SVGPath(
                     d=path_elements,
                     stroke=self._settings.color,
                     stroke_width=sw,
                     stroke_dasharray=da,  # type:ignore [arg-type]
-                    fill="white",
+                    fill="none",
                 )
             )
         else:
@@ -372,8 +380,8 @@ class Creator(BaseSVGMapper):
     def _make_intermediate_points(
         self,
         x1: Number | Decimal,
-        x2: Number | Decimal,
         y1: Number | Decimal,
+        x2: Number | Decimal,
         y2: Number | Decimal,
     ) -> list[Point]:
         num_points = self._num_points
@@ -399,31 +407,32 @@ class Creator(BaseSVGMapper):
         x2: Number | Decimal,
         y2: Number | Decimal,
     ) -> list[Point]:
-        intermediates = self._make_intermediate_points(x1, x2, y1, y2)
-        # Leave the endpoints untouched, and perturb the intermediate points
-        # by up to (curviness * self._settings.scale).
+        intermediates = self._make_intermediate_points(x1, y1, x2, y2)
+        scale = (
+            self._distance(Point(x1, y1), Point(x2, y2))
+            * self._curviness
+            / (len(intermediates) - 1)
+        )
         squiggle_points = [intermediates[0]]
         squiggle_points.extend(
-            [self._make_perturbed_point(p) for p in intermediates[1:-1]]
+            [self._make_perturbed_point(p, scale) for p in intermediates[1:-1]]
         )
         squiggle_points.append(intermediates[-1])
-        self._logger.debug(
-            "SQUIGGLE:"
-            f" x1: {x1:.2f}, x2: {x2:.2f}, y1: {y1:.2f}, y2: {y2:.2f}"
-            f" {squiggle_points}"
-        )
         return squiggle_points
 
-    def _make_perturbed_point(self, p: Point) -> Point:
-        max_radius = self._settings.scale * self._curviness
+    def _make_perturbed_point(
+        self, p: Point, scale: Number | None = None
+    ) -> Point:
+        prec = self._settings.round_digits
+        max_radius = scale or self._settings.scale * self._curviness
         r = random.random() * max_radius
         theta = random.random() * 2 * math.pi
-        x = Decimal(p.x) + Decimal(r * math.cos(theta))
-        y = Decimal(p.y) + Decimal(r * math.sin(theta))
+        x = round(Decimal(p.x) + Decimal(r * math.cos(theta)), prec)
+        y = round(Decimal(p.y) + Decimal(r * math.sin(theta)), prec)
         q = Point(x, y)
         self._logger.debug(
             f"PERTURB: Input: x={p.x:.2f}, y={p.y:.2f},"
-            f" r={r:.2f}, theta={theta:.2f},"
+            f" scale={scale} -> r={r:.2f}, theta={theta:.2f},"
             f" Output: x={q.x:.2f}, y={q.y:.2f}"
         )
         return q
@@ -434,41 +443,43 @@ class Creator(BaseSVGMapper):
             + (Decimal(a.y) - Decimal(b.y)) * (Decimal(a.y) - Decimal(b.y))
         )
 
-    def _make_quadratic_control_point(self, endarray: list[Point]) -> Point:
-        x1 = endarray[0].x
-        y1 = endarray[0].y
-        x2 = endarray[1].x
-        y2 = endarray[1].y
+    def _make_quadratic_control_point(self, start: Point, end: Point) -> Point:
+        x1 = start.x
+        y1 = start.y
+        x2 = end.x
+        y2 = end.y
         midpoint = Point(
             (Decimal(x1) + Decimal(x2)) / 2, (Decimal(y1) + Decimal(y2)) / 2
         )
-        p = self._make_perturbed_point(midpoint)
+        scale = self._curviness * self._distance(start, end)
+        p = self._make_perturbed_point(midpoint, scale)
         self._logger.debug(
-            f"QUADRATIC CONTROL POINT: p1: {endarray[0]}, p2: {endarray[1]}"
+            f"QUADRATIC CONTROL POINT: p1: {start}, p2: {end}"
             f" midpoint: {midpoint},"
             f" control_point: {p}"
         )
         return p
 
     def _make_cubic_control_points(
-        self, endarray: list[Point]
+        self, start: Point, end: Point
     ) -> _CubicControlPoints:
-        x1 = endarray[0].x
-        y1 = endarray[0].y
-        x2 = endarray[1].x
-        y2 = endarray[1].y
-        ofpoint = Point(
-            (Decimal(x1) + Decimal(x2)) / 4, (Decimal(y1) + Decimal(y2)) / 4
+        x1 = start.x
+        y1 = start.y
+        dx = Decimal(end.x) - Decimal(start.x)
+        dy = Decimal(end.y) - Decimal(start.y)
+        scale = self._distance(start, end) * self._curviness / 6
+        otpoint = Point(
+            Decimal(x1) + Decimal(dx) / 3, Decimal(y1) + Decimal(dy) / 3
         )
-        tfpoint = Point(
-            (Decimal(x1) + Decimal(x2)) * 3 / 4,
-            (Decimal(y1) + Decimal(y2)) * 3 / 4,
+        ttpoint = Point(
+            Decimal(x1) + 2 * Decimal(dx) / 3,
+            Decimal(y1) + 2 * Decimal(dy) / 3,
         )
-        p = self._make_perturbed_point(ofpoint)
-        q = self._make_perturbed_point(tfpoint)
+        p = self._make_perturbed_point(otpoint, scale)
+        q = self._make_perturbed_point(ttpoint, scale)
         self._logger.debug(
-            f"CUBIC CONTROL POINTS: p1: {endarray[0]}, p2: {endarray[1]}"
-            f" first point start: {ofpoint}, second point start {tfpoint}"
+            f"CUBIC CONTROL POINTS: p1: {start}, p2: {end}"
+            f" 1/3: {otpoint}, 2/3 {ttpoint}"
             f" first control point: {p}, second control point: {q}"
         )
         return _CubicControlPoints(c1=p, c2=q)
@@ -499,7 +510,7 @@ class Creator(BaseSVGMapper):
                 ht = 0.2 * sc
                 wd = 0.3 * sc
                 xx = x1 + (0.2 * sc)
-                yy = y1 + (0.1 * sc)
+                yy = y1 - (0.1 * sc)
             case _:
                 raise SVGBadInputError(style)
         self._elements.append(
@@ -513,6 +524,22 @@ class Creator(BaseSVGMapper):
                 y=yy,
             )
         )
+        if style in (Door.VERTICAL_DOUBLE, Door.HORIZONTAL_DOUBLE):
+            if style == Door.VERTICAL_DOUBLE:
+                yy += 0.3 * sc
+            else:
+                xx += 0.3 * sc
+            self._elements.append(
+                Rect(
+                    height=ht,
+                    width=wd,
+                    stroke=cl,
+                    stroke_width=sw,
+                    fill="white",
+                    x=xx,
+                    y=yy,
+                )
+            )
 
     def _process_block(
         self, x1: Number, y1: Number, x2: Number, y2: Number, style: Block
@@ -535,7 +562,7 @@ class Creator(BaseSVGMapper):
             case Block.HATCHED_THIN:
                 fill = "url(#hatch00)"
                 sw = self._settings.thin_stroke
-            case Block.POLYGON_END:
+            case Block.BLOCK_END:
                 fill = cl  # Not used
             case _:
                 raise SVGBadInputError(style)
@@ -547,7 +574,7 @@ class Creator(BaseSVGMapper):
 
         self._block_add_points(x1, y1, x2, y2)
 
-        if style == Block.POLYGON_END:
+        if style == Block.BLOCK_END:
             self._close_block()
 
     def _block_add_points(
@@ -607,30 +634,32 @@ class Creator(BaseSVGMapper):
     ) -> None:
         sw = self._settings.wall_stroke
         cl = self._settings.color
-        try:
-            pt = tstyle.split(":", 2)
-            sstyle = pt[0]
-            rest = pt[1]
-            self._logger.debug(f"ts {tstyle} / ss {sstyle} / rest {rest}")
-            style = Cave(sstyle)
+        parts = tstyle.split(":")
+        style = Cave(parts[0].lower())
+        subfields = len(parts)
+        if subfields > 2:
             try:
-                qt = rest.split(":", 2)
-                num_points = qt[0]
-                rrest = qt[1]
-                self._num_points = int(num_points)
-                try:
-                    self._curviness = float(rrest)
-                except ValueError, IndexError:
-                    self._curviness = 0.15
-            except ValueError, IndexError:
-                self._curviness = 0.15
-                self._num_points = 50
-        except ValueError, IndexError:
-            self._curviness = 0.15
-            self._num_points = 50
-            style = Cave(tstyle)
+                self._curviness = float(parts[2])
+                if self._curviness < 0:
+                    raise SVGBadNumericInputError(
+                        f"Bad curviness: {self._curviness}"
+                    )
+            except ValueError as exc:
+                raise SVGBadNumericInputError(f"Bad curviness: {exc}") from exc
+        if subfields > 1:
+            try:
+                self._num_points = int(parts[1])
+                if self._num_points < 2:
+                    raise SVGBadNumericInputError(
+                        "Bad number of interpolated points:"
+                        f" {self._num_points}"
+                    )
+            except ValueError as exc:
+                raise SVGBadNumericInputError(
+                    f"Bad number of interpolated points: {exc}"
+                ) from exc
         self._logger.debug(
-            f"CAVE: {tstyle}, n={self._num_points}, c={self._curviness}"
+            f"CAVE: {style!s}, n={self._num_points}, c={self._curviness}"
         )
         match style:
             case Cave.SOLID:

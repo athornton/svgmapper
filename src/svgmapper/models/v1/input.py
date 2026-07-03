@@ -108,7 +108,7 @@ class Block(MapObject):
     SOLID_THIN = "solid_thin"
     WHITE_THIN = "white_thin"
     HATCHED_THIN = "hatched_thin"
-    POLYGON_END = "polygon_end"
+    BLOCK_END = "block_end"
 
     @override
     @classmethod
@@ -128,7 +128,7 @@ class Block(MapObject):
             case 7:
                 return cls.HATCHED_THIN
             case 99:
-                return cls.POLYGON_END
+                return cls.BLOCK_END
             case _:
                 raise SVGBadNumericInputError(f"{cls.__name__}: {number}")
 
@@ -144,12 +144,14 @@ class Cave(MapObject):
     HATCHED_THIN = "hatched_thin"
     CAVE_END = "cave_end"
 
+    # There was not a "Cave" type to convert from.
+
 
 class Door(MapObject):
     """Door."""
 
     VERTICAL = "vertical"
-    HORIZONTAL = "horizonal"
+    HORIZONTAL = "horizontal"
     VERTICAL_DOUBLE = "vertical_double"
     HORIZONTAL_DOUBLE = "horizontal_double"
 
@@ -210,3 +212,5 @@ class Text(MapObject):
 
 class Seed(MapObject):
     """Random Seed."""
+
+    # There was no prior seed kind to convert from.
