@@ -239,19 +239,21 @@ class Creator(BaseSVGMapper):
         gx = self._settings.grid_size_x
         gy = self._settings.grid_size_y
         gs = self._settings.grid_stroke
-        for yy in range(0, int(gy), int(sc)):
-            for xx in range(0, int(gx), int(sc)):
-                self._elements.append(
-                    Rect(
-                        height=sc,
-                        width=sc,
-                        stroke=cl,
-                        stroke_width=gs,
-                        x=xx,
-                        y=yy,
-                        fill="none",
-                    )
-                )
+        grid: list[PathData] = []
+        for yy in range(1 + int(gy)):
+            grid.append(M(0, yy * sc))
+            grid.append(L(gx * sc, yy * sc))
+        for xx in range(1 + int(gx)):
+            grid.append(M(xx * sc, 0))
+            grid.append(L(xx * sc, gy * sc))
+        self._elements.append(Desc(text="# Map grid"))
+        self._elements.append(
+            SVGPath(
+                d=grid,
+                stroke=cl,
+                stroke_width=gs,
+            )
+        )
 
     def _process_postamble(self) -> None:
         # Currently there is no postamble added.
