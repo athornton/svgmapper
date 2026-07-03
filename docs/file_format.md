@@ -78,7 +78,7 @@ Arc is not yet implemented.
 * hatched
 * solid_thin
 * white_thin
-* polygon_end
+* block_end
 
 This specifies the fill; "thin" refers to the block outline stroke.
 

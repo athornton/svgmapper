@@ -424,7 +424,11 @@ class Creator(BaseSVGMapper):
         self, p: Point, scale: Number | None = None
     ) -> Point:
         prec = self._settings.round_digits
-        max_radius = scale or self._settings.scale * self._curviness
+        max_radius = (
+            scale
+            if scale is not None
+            else self._settings.scale * self._curviness
+        )
         r = random.random() * max_radius
         theta = random.random() * 2 * math.pi
         x = round(Decimal(p.x) + Decimal(r * math.cos(theta)), prec)

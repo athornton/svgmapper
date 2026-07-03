@@ -33,7 +33,7 @@ def test_create_crinkle() -> None:
     assert output == ref_output
 
 
-def test_nonreprodicible_seed(tmp_path: Path) -> None:
+def test_nonreproducible_seed(tmp_path: Path) -> None:
     desc = dedent("""
     # Test that nonreproducible seeds do not generate the same output.
     seed,,,,,
