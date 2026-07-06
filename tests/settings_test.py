@@ -7,10 +7,11 @@ from pathlib import Path
 from svgmapper.services.creator import Creator
 
 
-def test_create() -> None:
+def test_settings() -> None:
     here = Path(__file__).parent
     data = here / "data"
     inp = data / "output" / "crypt.svgmap"
+    outp = data / "output" / "crypt-alt-settings.svg"
     settings = data / "settings.json"
     with tempfile.NamedTemporaryFile() as f:
         creator = Creator(inp=inp, output=Path(f.name), settings=settings)
@@ -40,3 +41,8 @@ def test_create() -> None:
         "thin_stroke",
     ):
         assert getattr(c_settings, k) == settings_obj[k]
+
+    with tempfile.NamedTemporaryFile() as f:
+        creator = Creator(inp=inp, output=Path(f.name), settings=settings)
+        creator.create()
+        assert Path(f.name).read_text() == outp.read_text()

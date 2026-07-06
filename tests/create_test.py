@@ -53,3 +53,16 @@ def test_nonreproducible_seed(tmp_path: Path) -> None:
     creator = Creator(inp=infile, output=o2)
     creator.create()
     assert o1.read_text() != o2.read_text()
+
+
+def test_create_elements() -> None:
+    here = Path(__file__).parent
+    data = here / "data"
+    inp = data / "elements.svgmap"
+    reference = data / "output" / "elements.svg"
+    with tempfile.NamedTemporaryFile() as f:
+        creator = Creator(inp=inp, output=Path(f.name))
+        creator.create()
+        output = Path(f.name).read_text()
+    ref_output = reference.read_text()
+    assert output == ref_output

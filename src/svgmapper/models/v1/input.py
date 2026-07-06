@@ -33,6 +33,7 @@ class MapObjectKind(MapObject):
     TOILET = "toilet"
     TEXT = "text"
     SEED = "seed"
+    COLOR = "color"
     CONTINUATION = "continuation"
 
     @override
@@ -99,6 +100,19 @@ class CrinkleType(MapObject):
     CUBIC = "cubic"
 
 
+class Arc(MapObject):
+    """Arc (a portion of an ellipse)."""
+
+    NORMAL = "normal"
+    THICK = "thick"
+    DASHED = "dashed"
+    DOTTED = "dotted"
+    THIN = "thin"
+
+    # There was never an old-style "Arc" kind to convert from; although
+    # defined, it was never used.
+
+
 class Block(MapObject):
     """Filled block."""
 
@@ -144,7 +158,38 @@ class Cave(MapObject):
     HATCHED_THIN = "hatched_thin"
     CAVE_END = "cave_end"
 
-    # There was not a "Cave" type to convert from.
+    # There was never an old-style "Cave" kind to convert from.
+
+
+class Ellipse(MapObject):
+    """Ellipse."""
+
+    SOLID = "solid"
+    WHITE = "white"
+    HATCHED = "hatched"
+    SOLID_THIN = "solid_thin"
+    WHITE_THIN = "white_thin"
+    HATCHED_THIN = "hatched_thin"
+
+    @override
+    @classmethod
+    def from_int(cls, number: int) -> Self:
+        """Convert from old numeric representation."""
+        match number:
+            case 1:
+                return cls.SOLID
+            case 2:
+                return cls.WHITE
+            case 3:
+                return cls.HATCHED
+            case 5:
+                return cls.SOLID_THIN
+            case 6:
+                return cls.WHITE_THIN
+            case 7:
+                return cls.HATCHED_THIN
+            case _:
+                raise SVGBadNumericInputError(f"{cls.__name__}: {number}")
 
 
 class Door(MapObject):
@@ -177,12 +222,14 @@ class Toilet(MapObject):
 
     VERTICAL = "vertical"
     HORIZONTAL = "horizontal"
+    VERTICAL_REVERSED = "vertical_reversed"
+    HORIZONTAL_REVERSED = "horizontal_reversed"
 
     @override
     @classmethod
     def from_int(cls, number: int) -> Self:
         """Convert from old numeric representation."""
-        match number:
+        match number:  # Only one orientation in old style
             case 1:
                 return cls.VERTICAL
             case 2:
@@ -214,3 +261,9 @@ class Seed(MapObject):
     """Random Seed."""
 
     # There was no prior seed kind to convert from.
+
+
+class Color(MapObject):
+    """Drawing color."""
+
+    # There was no prior color kind to convert from.

@@ -17,13 +17,13 @@ from decimal import Decimal
 from pathlib import Path
 
 import svg
+from svg import Arc as SVGArc
 from svg import (
     C,
     Circle,
     Defs,
     Desc,
     Element,
-    Ellipse,
     G,
     L,
     Length,
@@ -36,6 +36,7 @@ from svg import (
     Rect,
     ViewBoxSpec,
 )
+from svg import Ellipse as SVGEllipse
 from svg import Line as SVGLine
 from svg import Path as SVGPath
 from svg import Text as SVGText
@@ -47,6 +48,7 @@ from ..exceptions import (
     SVGMapperError,
 )
 from ..models.v1.input import (
+    Arc,
     Block,
     Cave,
     CrinkleType,
@@ -87,6 +89,7 @@ class Creator(BaseSVGMapper):
         self._prev_kind: MapObjectKind | None = None
         self._input_lines: list[str] = []
         self._current_polygon: Polygon | None = None
+        self._hatch_serial = 0
         self._num_points: int = 10
         self._curviness: Number = 1.0
         self._crinkle_type: CrinkleType = CrinkleType.LINEAR
@@ -133,8 +136,23 @@ class Creator(BaseSVGMapper):
             if self._prev_kind is None:
                 raise SVGBadInputError("Cannot continue unknown kind")
         if o_kind == MapObjectKind.SEED:
-            self._seed = startx or None  # All falsy seeds are non-repeatable.
+            seed_t: float | str = startx
+            # We use the string value for the seed, *except* that if it can
+            # be converted into a zero-equivalent float, that becomes
+            # falsy, therefore None, therefore nonreproducible.
+            try:
+                seed_t = float(startx)
+            except ValueError:
+                seed_t = startx
+            seed = startx if seed_t else None  # Back to the string version
+            self._seed = seed  # All falsy seeds are nonreproducible
             random.seed(self._seed)
+            return
+        if o_kind == MapObjectKind.COLOR:
+            # Don't convert to numeric values; the first parameter is a
+            # color specification (it cannot include a comma).
+            self._settings.color = startx
+            self._updatelib()  # Make a new hatch with the new color
             return
         try:
             fstartx = float(startx)
@@ -144,7 +162,7 @@ class Creator(BaseSVGMapper):
         x1 = fstartx * self._settings.scale
         y1 = fstarty * self._settings.scale
         if o_kind == MapObjectKind.TEXT:
-            # Text is handled differently than all other objects.
+            # Text is handled differently than most other objects.
             text = endx
             font = endy
             try:
@@ -175,7 +193,7 @@ class Creator(BaseSVGMapper):
             case MapObjectKind.LINE:
                 self._process_svgline(x1, y1, x2, y2, obj_type)
             case MapObjectKind.ARC:
-                raise NotImplementedError("Arc not implemented yet")
+                self._process_arc(x1, y1, x2, y2, obj_type)
             case MapObjectKind.DOOR:
                 self._process_door(x1, y1, x2, y2, Door(obj_type))
             case MapObjectKind.BLOCK:
@@ -203,10 +221,18 @@ class Creator(BaseSVGMapper):
         # Define reused symbols; just hatching for now.
         self._elements.append(Defs(elements=[self._makehatch()]))
 
+    def _updatelib(self) -> None:
+        # If we need to update reused symbols...
+        self._hatch_serial += 1
+        self._elements.append(Defs(elements=[self._makehatch()]))
+
+    def _hatch(self) -> str:
+        return f"url(#hatch{self._hatch_serial:02d})"
+
     def _makehatch(self) -> Pattern:
         st = 0.25 * self._settings.scale
         return Pattern(
-            id="hatch00",
+            id=f"hatch{self._hatch_serial:02d}",
             patternUnits="userSpaceOnUse",
             x=0,
             y=0,
@@ -547,6 +573,93 @@ class Creator(BaseSVGMapper):
                 )
             )
 
+    def _process_arc(
+        self, x1: Number, y1: Number, x2: Number, y2: Number, tstyle: str
+    ) -> None:
+        sw = self._settings.wall_stroke
+
+        parts = tstyle.split(":")
+        style = Arc(parts[0].lower())
+        subfields = len(parts)
+        sweep_flag = False
+        large_arc_flag = False
+        dx = (x2 - x1) / 2
+        dy = (y2 - y1) / 2
+        rotation = 0.0
+        if subfields > 5:
+            try:
+                sweep_flag_t: float | str = float(parts[5])
+            except ValueError:
+                sweep_flag_t = parts[5]
+            sweep_flag = bool(sweep_flag_t)
+            self._logger.debug(f"Sweep {sweep_flag}")
+        if subfields > 4:
+            try:
+                large_arc_flag_t: float | str = float(parts[4])
+            except ValueError:
+                large_arc_flag_t = parts[4]
+            large_arc_flag = bool(large_arc_flag_t)
+            self._logger.debug(f"Large Arc {large_arc_flag}")
+        if subfields > 3:
+            try:
+                rotation = float(parts[3])
+            except ValueError as exc:
+                raise SVGBadNumericInputError(f"Bad rotation: {exc}") from exc
+        if subfields > 2:
+            try:
+                dy = float(parts[2])
+            except ValueError as exc:
+                raise SVGBadNumericInputError(f"Bad y-radius: {exc}") from exc
+        if subfields > 1:
+            try:
+                dx = float(parts[1])
+            except ValueError as exc:
+                raise SVGBadNumericInputError(f"Bad x-radius: {exc}") from exc
+
+        da: list[Number] | None = None
+        match style:
+            case Line.THICK | Line.DOTTED:
+                sw = self._settings.thick_wall_stroke
+            case Line.THIN:
+                sw = self._settings.thin_stroke
+            case _:
+                sw = self._settings.wall_stroke
+        match style:
+            case Line.DASHED:
+                da = [
+                    0.2 * self._settings.scale,
+                    0.2 * self._settings.scale,
+                ]
+            case Line.DOTTED:
+                da = [
+                    0.1 * self._settings.scale,
+                    0.15 * self._settings.scale,
+                ]
+            case _:
+                pass
+
+        path_elements = [
+            M(x1, y1),
+            SVGArc(
+                rx=dx,
+                ry=dy,
+                angle=rotation,
+                large_arc=large_arc_flag,
+                sweep=sweep_flag,
+                x=x2,
+                y=y2,
+            ),
+        ]
+        self._elements.append(
+            SVGPath(
+                d=path_elements,
+                stroke=self._settings.color,
+                stroke_width=sw,
+                stroke_dasharray=da,  # type:ignore [arg-type]
+                fill="none",
+            )
+        )
+
     def _process_block(
         self, x1: Number, y1: Number, x2: Number, y2: Number, style: Block
     ) -> None:
@@ -558,7 +671,7 @@ class Creator(BaseSVGMapper):
             case Block.WHITE:
                 fill = "white"
             case Block.HATCHED:
-                fill = "url(#hatch00)"
+                fill = self._hatch()
             case Block.SOLID_THIN:
                 fill = cl
                 sw = self._settings.thin_stroke
@@ -566,7 +679,7 @@ class Creator(BaseSVGMapper):
                 fill = "white"
                 sw = self._settings.thin_stroke
             case Block.HATCHED_THIN:
-                fill = "url(#hatch00)"
+                fill = self._hatch()
                 sw = self._settings.thin_stroke
             case Block.BLOCK_END:
                 fill = cl  # Not used
@@ -673,7 +786,7 @@ class Creator(BaseSVGMapper):
             case Cave.WHITE:
                 fill = "white"
             case Cave.HATCHED:
-                fill = "url(#hatch00)"
+                fill = self._hatch()
             case Cave.SOLID_THIN:
                 fill = cl
                 sw = self._settings.thin_stroke
@@ -681,7 +794,7 @@ class Creator(BaseSVGMapper):
                 fill = "white"
                 sw = self._settings.thin_stroke
             case Cave.HATCHED_THIN:
-                fill = "url(#hatch00)"
+                fill = self._hatch()
                 sw = self._settings.thin_stroke
             case Cave.CAVE_END:
                 fill = cl  # Not used
@@ -738,7 +851,7 @@ class Creator(BaseSVGMapper):
             case Block.WHITE:
                 fill = "white"
             case Block.HATCHED:
-                fill = "url(#hatch00)"
+                fill = self._hatch()
             case Block.SOLID_THIN:
                 fill = cl
                 sw = self._settings.thin_stroke
@@ -746,12 +859,12 @@ class Creator(BaseSVGMapper):
                 fill = "white"
                 sw = self._settings.thin_stroke
             case Block.HATCHED_THIN:
-                fill = "url(#hatch00)"
+                fill = self._hatch()
                 sw = self._settings.thin_stroke
             case _:
                 raise SVGBadInputError(style)
         self._elements.append(
-            Ellipse(
+            SVGEllipse(
                 fill=fill,
                 stroke=cl,
                 stroke_width=sw,
@@ -839,10 +952,20 @@ class Creator(BaseSVGMapper):
                 ry = 0.15 * sc
                 cx2 = x1 - (0.05 * sc)
                 cy2 = y1
+            case Toilet.VERTICAL_REVERSED:
+                rx = 0.15 * sc
+                ry = 0.2 * sc
+                cx2 = x1
+                cy2 = y1 + (0.05 * sc)
+            case Toilet.HORIZONTAL_REVERSED:
+                rx = 0.2 * sc
+                ry = 0.15 * sc
+                cx2 = x1 + (0.05 * sc)
+                cy2 = y1
             case _:
                 raise SVGBadInputError(style)
         self._elements.append(
-            Ellipse(
+            SVGEllipse(
                 stroke=cl,
                 stroke_width=sw,
                 fill=fill,
