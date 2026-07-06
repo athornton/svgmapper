@@ -29,9 +29,11 @@ All the coordinate specification you do will be in terms of multiples of grid un
 
 ### Color
 
-These maps are monochrome.
-This specifies the color of all elements.
+These maps are generally monochrome.
+This specifies the color of all map elements.
 The default is "#1EAED0", which is quite close to the blue used by TSR in the classic AD&D modules whose style this mapper is trying to emulate.
+
+However, you can use the `color` directive to change the color of drawn elements at any point; at the start to draw the whole map in a different color, or in the middle to create multicolored maps.
 
 ### Sizes
 

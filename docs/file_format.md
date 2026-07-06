@@ -46,13 +46,14 @@ The origin `(0,0)` is at the upper left.
 
 This specifies line style.
 
-#### Structure for `crinkled`
+#### Structure for `crinkled` type field
 
-There are four colon-separated subfields for `crinkled`:
+There are four colon-separated subfields when `crinkled` is the base type:
 
 * `crinkled` (literal)
 * number of interpolated points in the segment: default 10
-* "curviness" parameter: default 1.0; the larger, the higher the average deviation from a straight line.  1.0 means, roughly, that an interpolated point can be located anywhere (randomly, independently for both `r` and `theta`) in the circle spanning the previous and next interpolated points.  A value near 2 will make something that looks vaguely like a coastline.
+* "curviness" parameter: default 1.0; the larger, the higher the average deviation from a straight line.  1.0 means, roughly, that an interpolated point can be located anywhere (randomly, independently for both `r` and `theta`) in the circle spanning the previous and next interpolated points.
+A value near 2 will yield something that looks vaguely like a coastline.
 * crinkle type (default: linear):
   * linear (made up of straight line segments)
   * quadratic (made up of quadratic splines)
@@ -62,6 +63,7 @@ If any of these is omitted, the previous value of that parameter will be retaine
 
 ### Door
 
+The center of the door is at (`startx`,`starty`).
 The `endx` and `endy` parameters for a door are ignored, and are conventionally set to `0`.
 
 #### Type for door
@@ -71,14 +73,11 @@ The `endx` and `endy` parameters for a door are ignored, and are conventionally 
 * vertical double
 * horizontal double
 
-This specifies door orientation.
+This specifies door orientation and whether it is a single or double door.
 
 ### Arc
 
-### Type for arc
-
-
-### Structure for `arc` type field
+### Structure for `Arc` type field
 
 There are six colon-separated fields for the `Arc` type field:
 
@@ -123,20 +122,22 @@ The fill markers are all identical.
 
 The `cave_end` marker finishes a continued cave.
 
+#### Structure for `Cave` type field.
+
 The type field contains three colon-separated subfields:
 
-#### Fill
+##### Fill
 
 Same as for `block`.
 This cannot be omitted.
 
-#### Interpolated points
+##### Interpolated points
 
 Number of interpolated points in the segment: default 10.
 If not specified, the last used value, or the default, will be used.
 This is the same as for a crinkled line.
 
-#### Curviness
+##### Curviness
 
 Amount of average deviation from a straight line: default 1.0.
 If not specified, the last used value, or the default, will be used.
@@ -165,9 +166,12 @@ There is no continuation for an ellipse.
 In the dungeon this project was designed to make the maps for, there is
 quite a lot of thought given to sanitation and food preparation.
 
+The center of the toilet bowl is at (`startx`,`starty`).
 The "reversed" versions have the drain towards the bottom and the right, respectively, of the center of the bowl.
 
 ### Text
+
+The text begins at (`startx`,`starty`).
 
 Three of the fields have different meanings for a `Text` line:
 
@@ -182,7 +186,7 @@ The default is `default`.
 Leave the field empty (e.g. `seed,,...`) to generate non-repeatable pseudo-random values.
 The field is treated as a string, and therefore Python's rules for seeding use the code path for strings, not numbers.
 However, before doing this, an attempt is made to test whether the seed, when interpreted as a number, would be equivalent to zero.
-That means that "0" or "0.0" would yield falsy values, and therefore be nonreproducible.
+That means that `0` or `0.0` would yield falsy values, and therefore be nonreproducible.
 The seed can be reset at any time.
 
 ### Color
@@ -197,4 +201,5 @@ Color can be reset at any time.
 
 Only the `block` and the `cave` kind may be continued.
 This is used to indicate that the polygon begun with the `cave` or `block` kind statement continues on the current line.
+It is necessary because `block` or `cave` may represent extremely complicated shapes.
 `block_end` or `cave_end`, respectively, as the `type` on the final line of the `block` or `cave` signals the end of the polygon.
