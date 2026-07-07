@@ -273,12 +273,7 @@ class Creator(BaseSVGMapper):
         return G(
             elements=[
                 SVGLine(
-                    x1=0,
-                    y1=0,
-                    x2=st,
-                    y2=st,
-                    stroke=cl,
-                    stroke_width=0.03 * self._settings.scale,
+                    x1=0, y1=0, x2=st, y2=st, stroke=cl, stroke_width=0.1 * st
                 )
             ],
         )
@@ -287,21 +282,21 @@ class Creator(BaseSVGMapper):
         st = 0.25 * self._settings.scale
         cl = self._settings.color
         elements: list[PathData] = []
-        for i in range(4):
+        for i in range(3):
             x = round(st * (i % 2) / 2, self._settings.round_digits)
-            y = round(i / 2 * st, self._settings.round_digits)
+            y = round((i - 1) / 2 * st, self._settings.round_digits)
             begin = M(x, y)
             arcs = [
                 SVGArc(
-                    rx=0.2 * self._settings.scale,
-                    ry=0.1 * self._settings.scale,
-                    angle=0,
+                    rx=0.8 * st,
+                    ry=0.4 * st,
+                    angle=75,
                     large_arc=False,
                     sweep=False,
-                    x=round(x + st * j, self._settings.round_digits),
+                    x=round(x + st * i, self._settings.round_digits),
                     y=round(y, self._settings.round_digits),
                 )
-                for j in range(3)
+                for j in range(1, 4)
             ]
             elements.append(begin)
             elements.extend(arcs)
@@ -311,8 +306,8 @@ class Creator(BaseSVGMapper):
                 SVGPath(
                     d=elements,
                     stroke=cl,
-                    stroke_width=0.03 * self._settings.scale,
-                    fill=None,
+                    stroke_width=0.1 * st,
+                    fill="none",
                 )
             ]
         )
@@ -333,7 +328,7 @@ class Creator(BaseSVGMapper):
             grid.append(L(gx * sc, yy * sc))
         for xx in range(1 + int(gx)):
             self._logger.debug(
-                f"Drawing {xx}/{1 + int(gx)} horizontal grid lines."
+                f"Drawing {xx}/{1 + int(gx)} vertical grid lines."
             )
             grid.append(M(xx * sc, 0))
             grid.append(L(xx * sc, gy * sc))
@@ -648,8 +643,8 @@ class Creator(BaseSVGMapper):
         subfields = len(parts)
         sweep_flag = False
         large_arc_flag = False
-        dx = sc * (x2 - x1) / 2
-        dy = sc * (y2 - y1) / 2
+        dx = (x2 - x1) / 2
+        dy = (y2 - y1) / 2
         rotation = 0.0
         if subfields > 5:
             try:
@@ -672,12 +667,12 @@ class Creator(BaseSVGMapper):
                 raise SVGBadNumericInputError(f"Bad rotation: {exc}") from exc
         if subfields > 2:
             try:
-                dy = float(parts[2])
+                dy = float(parts[2]) * sc
             except ValueError as exc:
                 raise SVGBadNumericInputError(f"Bad y-radius: {exc}") from exc
         if subfields > 1:
             try:
-                dx = float(parts[1])
+                dx = float(parts[1]) * sc
             except ValueError as exc:
                 raise SVGBadNumericInputError(f"Bad x-radius: {exc}") from exc
 

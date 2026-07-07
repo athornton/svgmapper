@@ -3,12 +3,12 @@
 	<defs>
 		<pattern id="hatch00" viewBox="0 0 25.0 25.0" patternUnits="userSpaceOnUse" x="0" y="0" width="25.0" height="25.0">
 			<g>
-				<line stroke="#1EAED0" stroke-width="3.0" x1="0" y1="0" x2="25.0" y2="25.0"/>
+				<line stroke="#1EAED0" stroke-width="2.5" x1="0" y1="0" x2="25.0" y2="25.0"/>
 			</g>
 		</pattern>
 		<pattern id="wave00" viewBox="0 0 25.0 25.0" patternUnits="userSpaceOnUse" x="0" y="0" width="25.0" height="25.0">
 			<g>
-				<path stroke="#1EAED0" stroke-width="3.0" d="M 0.0 0.0 A 20.0 10.0 0 0 0 0.0 0.0 A 20.0 10.0 0 0 0 25.0 0.0 A 20.0 10.0 0 0 0 50.0 0.0 M 12.5 12.5 A 20.0 10.0 0 0 0 12.5 12.5 A 20.0 10.0 0 0 0 37.5 12.5 A 20.0 10.0 0 0 0 62.5 12.5 M 0.0 25.0 A 20.0 10.0 0 0 0 0.0 25.0 A 20.0 10.0 0 0 0 25.0 25.0 A 20.0 10.0 0 0 0 50.0 25.0 M 12.5 37.5 A 20.0 10.0 0 0 0 12.5 37.5 A 20.0 10.0 0 0 0 37.5 37.5 A 20.0 10.0 0 0 0 62.5 37.5"/>
+				<path stroke="#1EAED0" stroke-width="2.5" d="M 0.0 -12.5 A 20.0 10.0 75 0 0 0.0 -12.5 A 20.0 10.0 75 0 0 0.0 -12.5 A 20.0 10.0 75 0 0 0.0 -12.5 M 12.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 M 0.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5" fill="none"/>
 			</g>
 		</pattern>
 	</defs>
@@ -39,42 +39,42 @@
 	<desc>line,8,1,8,4,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 800.0 100.0 L 800.0 400.0"/>
 	<desc>arc,5,1,8,4,normal</desc>
-	<path stroke="#1EAED0" stroke-width="5.0" d="M 500.0 100.0 A 15000.0 15000.0 0.0 0 0 800.0 400.0" fill="none"/>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 500.0 100.0 A 150.0 150.0 0.0 0 0 800.0 400.0" fill="none"/>
 	<desc>line,9,1,13,1,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 100.0 L 1300.0 100.0"/>
 	<desc>line,13,1,13,2,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 100.0 L 1300.0 200.0"/>
 	<desc>arc,9,1,13,2,thin:10:10</desc>
-	<path stroke="#1EAED0" stroke-width="2.0" d="M 900.0 100.0 A 10.0 10.0 0.0 0 0 1300.0 200.0" fill="none"/>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 900.0 100.0 A 1000.0 1000.0 0.0 0 0 1300.0 200.0" fill="none"/>
 	<desc>line,14,1,17,1,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1400.0 100.0 L 1700.0 100.0"/>
 	<desc>line,14,1,14,2,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1400.0 100.0 L 1400.0 200.0"/>
 	<desc>arc,14,2,17,1,thick:5:20:270</desc>
-	<path stroke="#1EAED0" stroke-width="15.0" d="M 1400.0 200.0 A 5.0 20.0 270.0 0 0 1700.0 100.0" fill="none"/>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 1400.0 200.0 A 500.0 2000.0 270.0 0 0 1700.0 100.0" fill="none"/>
 	<desc>line,22,1,25,1,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 2200.0 100.0 L 2500.0 100.0"/>
 	<desc>line,22,1,22,4,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 2200.0 100.0 L 2200.0 400.0"/>
 	<desc>arc,25,1,22,4,dashed:2:1:120:1:</desc>
-	<path stroke="#1EAED0" stroke-dasharray="20.0 20.0" stroke-width="5.0" d="M 2500.0 100.0 A 2.0 1.0 120.0 1 0 2200.0 400.0" fill="none"/>
+	<path stroke="#1EAED0" stroke-dasharray="20.0 20.0" stroke-width="5.0" d="M 2500.0 100.0 A 200.0 100.0 120.0 1 0 2200.0 400.0" fill="none"/>
 	<desc>line,18,1,21,1,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 100.0 L 2100.0 100.0"/>
 	<desc>line,21,1,21,4,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 2100.0 100.0 L 2100.0 400.0"/>
 	<desc>arc,18,1,21,4,dotted:3:5:60:0:1</desc>
-	<path stroke="#1EAED0" stroke-dasharray="10.0 15.0" stroke-width="15.0" d="M 1800.0 100.0 A 3.0 5.0 60.0 0 1 2100.0 400.0" fill="none"/>
+	<path stroke="#1EAED0" stroke-dasharray="10.0 15.0" stroke-width="15.0" d="M 1800.0 100.0 A 300.0 500.0 60.0 0 1 2100.0 400.0" fill="none"/>
 	<desc># Change the color</desc>
 	<desc>color,rebeccapurple,,,,</desc>
 	<defs>
 		<pattern id="hatch01" viewBox="0 0 25.0 25.0" patternUnits="userSpaceOnUse" x="0" y="0" width="25.0" height="25.0">
 			<g>
-				<line stroke="rebeccapurple" stroke-width="3.0" x1="0" y1="0" x2="25.0" y2="25.0"/>
+				<line stroke="rebeccapurple" stroke-width="2.5" x1="0" y1="0" x2="25.0" y2="25.0"/>
 			</g>
 		</pattern>
 		<pattern id="wave01" viewBox="0 0 25.0 25.0" patternUnits="userSpaceOnUse" x="0" y="0" width="25.0" height="25.0">
 			<g>
-				<path stroke="rebeccapurple" stroke-width="3.0" d="M 0.0 0.0 A 20.0 10.0 0 0 0 0.0 0.0 A 20.0 10.0 0 0 0 25.0 0.0 A 20.0 10.0 0 0 0 50.0 0.0 M 12.5 12.5 A 20.0 10.0 0 0 0 12.5 12.5 A 20.0 10.0 0 0 0 37.5 12.5 A 20.0 10.0 0 0 0 62.5 12.5 M 0.0 25.0 A 20.0 10.0 0 0 0 0.0 25.0 A 20.0 10.0 0 0 0 25.0 25.0 A 20.0 10.0 0 0 0 50.0 25.0 M 12.5 37.5 A 20.0 10.0 0 0 0 12.5 37.5 A 20.0 10.0 0 0 0 37.5 37.5 A 20.0 10.0 0 0 0 62.5 37.5"/>
+				<path stroke="rebeccapurple" stroke-width="2.5" d="M 0.0 -12.5 A 20.0 10.0 75 0 0 0.0 -12.5 A 20.0 10.0 75 0 0 0.0 -12.5 A 20.0 10.0 75 0 0 0.0 -12.5 M 12.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 M 0.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5" fill="none"/>
 			</g>
 		</pattern>
 	</defs>
@@ -94,12 +94,12 @@
 	<defs>
 		<pattern id="hatch02" viewBox="0 0 25.0 25.0" patternUnits="userSpaceOnUse" x="0" y="0" width="25.0" height="25.0">
 			<g>
-				<line stroke="#303030" stroke-width="3.0" x1="0" y1="0" x2="25.0" y2="25.0"/>
+				<line stroke="#303030" stroke-width="2.5" x1="0" y1="0" x2="25.0" y2="25.0"/>
 			</g>
 		</pattern>
 		<pattern id="wave02" viewBox="0 0 25.0 25.0" patternUnits="userSpaceOnUse" x="0" y="0" width="25.0" height="25.0">
 			<g>
-				<path stroke="#303030" stroke-width="3.0" d="M 0.0 0.0 A 20.0 10.0 0 0 0 0.0 0.0 A 20.0 10.0 0 0 0 25.0 0.0 A 20.0 10.0 0 0 0 50.0 0.0 M 12.5 12.5 A 20.0 10.0 0 0 0 12.5 12.5 A 20.0 10.0 0 0 0 37.5 12.5 A 20.0 10.0 0 0 0 62.5 12.5 M 0.0 25.0 A 20.0 10.0 0 0 0 0.0 25.0 A 20.0 10.0 0 0 0 25.0 25.0 A 20.0 10.0 0 0 0 50.0 25.0 M 12.5 37.5 A 20.0 10.0 0 0 0 12.5 37.5 A 20.0 10.0 0 0 0 37.5 37.5 A 20.0 10.0 0 0 0 62.5 37.5"/>
+				<path stroke="#303030" stroke-width="2.5" d="M 0.0 -12.5 A 20.0 10.0 75 0 0 0.0 -12.5 A 20.0 10.0 75 0 0 0.0 -12.5 A 20.0 10.0 75 0 0 0.0 -12.5 M 12.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 M 0.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5" fill="none"/>
 			</g>
 		</pattern>
 	</defs>
@@ -132,12 +132,12 @@
 	<defs>
 		<pattern id="hatch03" viewBox="0 0 25.0 25.0" patternUnits="userSpaceOnUse" x="0" y="0" width="25.0" height="25.0">
 			<g>
-				<line stroke="RoyalBlue" stroke-width="3.0" x1="0" y1="0" x2="25.0" y2="25.0"/>
+				<line stroke="RoyalBlue" stroke-width="2.5" x1="0" y1="0" x2="25.0" y2="25.0"/>
 			</g>
 		</pattern>
 		<pattern id="wave03" viewBox="0 0 25.0 25.0" patternUnits="userSpaceOnUse" x="0" y="0" width="25.0" height="25.0">
 			<g>
-				<path stroke="RoyalBlue" stroke-width="3.0" d="M 0.0 0.0 A 20.0 10.0 0 0 0 0.0 0.0 A 20.0 10.0 0 0 0 25.0 0.0 A 20.0 10.0 0 0 0 50.0 0.0 M 12.5 12.5 A 20.0 10.0 0 0 0 12.5 12.5 A 20.0 10.0 0 0 0 37.5 12.5 A 20.0 10.0 0 0 0 62.5 12.5 M 0.0 25.0 A 20.0 10.0 0 0 0 0.0 25.0 A 20.0 10.0 0 0 0 25.0 25.0 A 20.0 10.0 0 0 0 50.0 25.0 M 12.5 37.5 A 20.0 10.0 0 0 0 12.5 37.5 A 20.0 10.0 0 0 0 37.5 37.5 A 20.0 10.0 0 0 0 62.5 37.5"/>
+				<path stroke="RoyalBlue" stroke-width="2.5" d="M 0.0 -12.5 A 20.0 10.0 75 0 0 0.0 -12.5 A 20.0 10.0 75 0 0 0.0 -12.5 A 20.0 10.0 75 0 0 0.0 -12.5 M 12.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 M 0.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5" fill="none"/>
 			</g>
 		</pattern>
 	</defs>
