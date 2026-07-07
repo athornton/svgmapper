@@ -26,8 +26,6 @@ class Settings:
         if self._scaled:
             return
         scale = self.scale
-        self.grid_size_x *= scale
-        self.grid_size_y *= scale
         self.grid_stroke *= scale
         self.wall_stroke *= scale
         self.thick_wall_stroke *= scale

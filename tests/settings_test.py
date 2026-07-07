@@ -18,8 +18,6 @@ def test_settings() -> None:
     settings_obj = json.loads(settings.read_text())
 
     for k in (
-        "grid_size_x",
-        "grid_size_y",
         "grid_stroke",
         "wall_stroke",
         "thick_wall_stroke",

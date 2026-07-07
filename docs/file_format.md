@@ -75,8 +75,6 @@ The `endx` and `endy` parameters for a door are ignored, and are conventionally 
 
 This specifies door orientation and whether it is a single or double door.
 
-### Arc
-
 ### Structure for `Arc` type field
 
 There are six colon-separated fields for the `Arc` type field:
@@ -148,8 +146,10 @@ This is the same as for a crinkled line.
 * solid
 * white
 * hatched
+* wave
 * solid_thin
 * white_thin
+* wave_thin
 
 These mean the same thing they do for block.
 The center of the ellipse is at (`x1`,`y1`).

@@ -53,6 +53,7 @@ from ..models.v1.input import (
     Cave,
     CrinkleType,
     Door,
+    Ellipse,
     Line,
     MapObjectKind,
     Text,
@@ -204,7 +205,7 @@ class Creator(BaseSVGMapper):
             case MapObjectKind.CAVE:
                 self._process_cave(x1, y1, x2, y2, obj_type)
             case MapObjectKind.ELLIPSE:
-                self._process_ellipse(x1, y1, x2, y2, Block(obj_type))
+                self._process_ellipse(x1, y1, x2, y2, Ellipse(obj_type))
             case MapObjectKind.SPIRAL_STAIRS:
                 self._process_spiral_stairs(x1, y1, x2, y2)
             case MapObjectKind.TOILET:
@@ -325,9 +326,15 @@ class Creator(BaseSVGMapper):
         gs = self._settings.grid_stroke
         grid: list[PathData] = []
         for yy in range(1 + int(gy)):
+            self._logger.debug(
+                f"Drawing {yy}/{1 + int(gy)} horizontal grid lines."
+            )
             grid.append(M(0, yy * sc))
             grid.append(L(gx * sc, yy * sc))
         for xx in range(1 + int(gx)):
+            self._logger.debug(
+                f"Drawing {xx}/{1 + int(gx)} horizontal grid lines."
+            )
             grid.append(M(xx * sc, 0))
             grid.append(L(xx * sc, gy * sc))
         self._elements.append(Desc(text="# Map grid"))
@@ -635,14 +642,14 @@ class Creator(BaseSVGMapper):
         self, x1: Number, y1: Number, x2: Number, y2: Number, tstyle: str
     ) -> None:
         sw = self._settings.wall_stroke
-
+        sc = self._settings.scale
         parts = tstyle.split(":")
         style = Arc(parts[0].lower())
         subfields = len(parts)
         sweep_flag = False
         large_arc_flag = False
-        dx = (x2 - x1) / 2
-        dy = (y2 - y1) / 2
+        dx = sc * (x2 - x1) / 2
+        dy = sc * (y2 - y1) / 2
         rotation = 0.0
         if subfields > 5:
             try:
@@ -909,7 +916,7 @@ class Creator(BaseSVGMapper):
         )
 
     def _process_ellipse(
-        self, x1: Number, y1: Number, x2: Number, y2: Number, style: Block
+        self, x1: Number, y1: Number, x2: Number, y2: Number, style: Ellipse
     ) -> None:
         sw = self._settings.wall_stroke
         cl = self._settings.color
@@ -1113,8 +1120,8 @@ class Creator(BaseSVGMapper):
                 viewBox=ViewBoxSpec(
                     min_x=0,
                     min_y=0,
-                    width=self._settings.grid_size_x,
-                    height=self._settings.grid_size_y,
+                    width=self._settings.grid_size_x * self._settings.scale,
+                    height=self._settings.grid_size_y * self._settings.scale,
                 ),
                 elements=self._elements,
             )
