@@ -282,7 +282,7 @@ class Creator(BaseSVGMapper):
         st = 0.25 * self._settings.scale
         cl = self._settings.color
         elements: list[PathData] = []
-        for i in range(3):
+        for i in range(1, 3):
             x = round(st * (i % 2) / 2, self._settings.round_digits)
             y = round((i - 1) / 2 * st, self._settings.round_digits)
             begin = M(x, y)
@@ -293,7 +293,7 @@ class Creator(BaseSVGMapper):
                     angle=75,
                     large_arc=False,
                     sweep=False,
-                    x=round(x + st * i, self._settings.round_digits),
+                    x=round(x + st * j, self._settings.round_digits),
                     y=round(y, self._settings.round_digits),
                 )
                 for j in range(1, 4)

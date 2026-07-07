@@ -105,8 +105,10 @@ See the [SVG Documentation for Arcs](https://developer.mozilla.org/en-US/docs/We
 * solid
 * white
 * hatched
+* wave
 * solid_thin
 * white_thin
+* wave_thin
 * block_end
 
 This specifies the fill; "thin" refers to the block outline stroke.
@@ -149,6 +151,7 @@ This is the same as for a crinkled line.
 * wave
 * solid_thin
 * white_thin
+* hatched_thin
 * wave_thin
 
 These mean the same thing they do for block.
