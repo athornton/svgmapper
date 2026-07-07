@@ -119,16 +119,18 @@ class Block(MapObject):
     SOLID = "solid"
     WHITE = "white"
     HATCHED = "hatched"
+    WAVE = "wave"
     SOLID_THIN = "solid_thin"
     WHITE_THIN = "white_thin"
     HATCHED_THIN = "hatched_thin"
+    WAVE_THIN = "wave_thin"
     BLOCK_END = "block_end"
 
     @override
     @classmethod
     def from_int(cls, number: int) -> Self:
         """Convert from old numeric representation."""
-        match number:
+        match number:  # Wave did not exist in the old style
             case 1:
                 return cls.SOLID
             case 2:
@@ -153,9 +155,11 @@ class Cave(MapObject):
     SOLID = "solid"
     WHITE = "white"
     HATCHED = "hatched"
+    WAVE = "wave"
     SOLID_THIN = "solid_thin"
     WHITE_THIN = "white_thin"
     HATCHED_THIN = "hatched_thin"
+    WAVE_THIN = "wave_thin"
     CAVE_END = "cave_end"
 
     # There was never an old-style "Cave" kind to convert from.
@@ -167,15 +171,17 @@ class Ellipse(MapObject):
     SOLID = "solid"
     WHITE = "white"
     HATCHED = "hatched"
+    WAVE = "wave"
     SOLID_THIN = "solid_thin"
     WHITE_THIN = "white_thin"
     HATCHED_THIN = "hatched_thin"
+    WAVE_THIN = "wave_thin"
 
     @override
     @classmethod
     def from_int(cls, number: int) -> Self:
         """Convert from old numeric representation."""
-        match number:
+        match number:  # Wave did not exist in the old style.
             case 1:
                 return cls.SOLID
             case 2:

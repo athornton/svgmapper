@@ -89,7 +89,10 @@ class Creator(BaseSVGMapper):
         self._prev_kind: MapObjectKind | None = None
         self._input_lines: list[str] = []
         self._current_polygon: Polygon | None = None
-        self._hatch_serial = 0
+        self._pattern_serial = 0
+        self._colormap: dict[str, str] = {
+            self._settings.color: f"{self._pattern_serial:02d}"
+        }
         self._num_points: int = 10
         self._curviness: Number = 1.0
         self._crinkle_type: CrinkleType = CrinkleType.LINEAR
@@ -218,21 +221,29 @@ class Creator(BaseSVGMapper):
         self._makegrid()
 
     def _makelib(self) -> None:
-        # Define reused symbols; just hatching for now.
-        self._elements.append(Defs(elements=[self._makehatch()]))
+        # Define reused symbols
+        self._elements.append(
+            Defs(elements=[self._makehatch(), self._makewave()])
+        )
 
     def _updatelib(self) -> None:
         # If we need to update reused symbols...
-        self._hatch_serial += 1
-        self._elements.append(Defs(elements=[self._makehatch()]))
+        cl = self._settings.color
+        if cl not in self._colormap:
+            self._pattern_serial += 1
+            self._colormap[cl] = f"{self._pattern_serial:02d}"
+            self._makelib()
 
     def _hatch(self) -> str:
-        return f"url(#hatch{self._hatch_serial:02d})"
+        return f"url(#hatch{self._colormap[self._settings.color]})"
+
+    def _wave(self) -> str:
+        return f"url(#wave{self._colormap[self._settings.color]})"
 
     def _makehatch(self) -> Pattern:
         st = 0.25 * self._settings.scale
         return Pattern(
-            id=f"hatch{self._hatch_serial:02d}",
+            id=f"hatch{self._colormap[self._settings.color]}",
             patternUnits="userSpaceOnUse",
             x=0,
             y=0,
@@ -240,6 +251,19 @@ class Creator(BaseSVGMapper):
             height=st,
             viewBox=ViewBoxSpec(min_x=0, min_y=0, width=st, height=st),
             elements=[self._makehatchgroup()],
+        )
+
+    def _makewave(self) -> Pattern:
+        st = 0.25 * self._settings.scale
+        return Pattern(
+            id=f"wave{self._colormap[self._settings.color]}",
+            patternUnits="userSpaceOnUse",
+            x=0,
+            y=0,
+            width=st,
+            height=st,
+            viewBox=ViewBoxSpec(min_x=0, min_y=0, width=st, height=st),
+            elements=[self._makewavegroup()],
         )
 
     def _makehatchgroup(self) -> G:
@@ -256,6 +280,40 @@ class Creator(BaseSVGMapper):
                     stroke_width=0.03 * self._settings.scale,
                 )
             ],
+        )
+
+    def _makewavegroup(self) -> G:
+        st = 0.25 * self._settings.scale
+        cl = self._settings.color
+        elements: list[PathData] = []
+        for i in range(4):
+            x = round(st * (i % 2) / 2, self._settings.round_digits)
+            y = round(i / 2 * st, self._settings.round_digits)
+            begin = M(x, y)
+            arcs = [
+                SVGArc(
+                    rx=0.2 * self._settings.scale,
+                    ry=0.1 * self._settings.scale,
+                    angle=0,
+                    large_arc=False,
+                    sweep=False,
+                    x=round(x + st * j, self._settings.round_digits),
+                    y=round(y, self._settings.round_digits),
+                )
+                for j in range(3)
+            ]
+            elements.append(begin)
+            elements.extend(arcs)
+
+        return G(
+            elements=[
+                SVGPath(
+                    d=elements,
+                    stroke=cl,
+                    stroke_width=0.03 * self._settings.scale,
+                    fill=None,
+                )
+            ]
         )
 
     def _makegrid(self) -> None:
@@ -672,6 +730,8 @@ class Creator(BaseSVGMapper):
                 fill = "white"
             case Block.HATCHED:
                 fill = self._hatch()
+            case Block.WAVE:
+                fill = self._wave()
             case Block.SOLID_THIN:
                 fill = cl
                 sw = self._settings.thin_stroke
@@ -680,6 +740,9 @@ class Creator(BaseSVGMapper):
                 sw = self._settings.thin_stroke
             case Block.HATCHED_THIN:
                 fill = self._hatch()
+                sw = self._settings.thin_stroke
+            case Block.WAVE_THIN:
+                fill = self._wave()
                 sw = self._settings.thin_stroke
             case Block.BLOCK_END:
                 fill = cl  # Not used
@@ -787,6 +850,8 @@ class Creator(BaseSVGMapper):
                 fill = "white"
             case Cave.HATCHED:
                 fill = self._hatch()
+            case Cave.WAVE:
+                fill = self._wave()
             case Cave.SOLID_THIN:
                 fill = cl
                 sw = self._settings.thin_stroke
@@ -795,6 +860,9 @@ class Creator(BaseSVGMapper):
                 sw = self._settings.thin_stroke
             case Cave.HATCHED_THIN:
                 fill = self._hatch()
+                sw = self._settings.thin_stroke
+            case Cave.WAVE_THIN:
+                fill = self._wave()
                 sw = self._settings.thin_stroke
             case Cave.CAVE_END:
                 fill = cl  # Not used
@@ -852,6 +920,8 @@ class Creator(BaseSVGMapper):
                 fill = "white"
             case Block.HATCHED:
                 fill = self._hatch()
+            case Block.WAVE:
+                fill = self._wave()
             case Block.SOLID_THIN:
                 fill = cl
                 sw = self._settings.thin_stroke
@@ -860,6 +930,9 @@ class Creator(BaseSVGMapper):
                 sw = self._settings.thin_stroke
             case Block.HATCHED_THIN:
                 fill = self._hatch()
+                sw = self._settings.thin_stroke
+            case Block.WAVE_THIN:
+                fill = self._wave()
                 sw = self._settings.thin_stroke
             case _:
                 raise SVGBadInputError(style)

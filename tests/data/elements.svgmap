@@ -50,6 +50,25 @@ toilet,10,10,0,0,horizontal
 toilet,14,10,0,0,vertical_reversed
 toilet,18,10,0,0,horizontal_reversed
 
-# Finally some text
+# Some text
 text,2,14,Sans-serif,sans_serif,0.6
 text,10,14,Serif,serif,0.8
+
+# Color change
+color,RoyalBlue,,,,
+
+# Some waves
+
+block,1,15,10,15,wave
+continuation,10,15,10,19,wave
+continuation,10,19,1,19,wave
+continuation,1,19,1,15,block_end
+
+cave,23,15,26,15,wave_thin:60:1.9
+continuation,26,15,29,16,wave_thin:60:1.9
+continuation,29,16,29,18,wave_thin:60:1.9
+continuation,29,18,26,19,wave_thin:60:1.9
+continuation,26,19,23,19,wave_thin:60:1.9
+continuation,23,19,20,18,wave_thin:60:1.9
+continuation,20,18,20,16,wave_thin:60:1.9
+continuation,20,16,23,15,cave_end:60:1.9
