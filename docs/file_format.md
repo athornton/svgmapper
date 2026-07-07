@@ -108,6 +108,7 @@ See the [SVG Documentation for Arcs](https://developer.mozilla.org/en-US/docs/We
 * wave
 * solid_thin
 * white_thin
+* hatched_thin
 * wave_thin
 * block_end
 
