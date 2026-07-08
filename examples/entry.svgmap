@@ -1,0 +1,981 @@
+# Level description file:
+# Each line has six fields: kind, startx, starty, endx, endy, type
+# is a comment line
+
+# Edge
+line,0,0,0,30,thick
+line,0,30,30,30,thick
+line,30,30,30,0,thick
+line,30,0,0,0,thick
+
+# Walls
+
+## Bath
+line,3,3,7,3,normal
+line,7,3,7,4,normal
+line,7,4,5,4,normal
+line,5,4,5,7,normal
+line,5,7,3,7,normal
+line,3,7,3,3,normal
+
+## Harem
+line,7,2,9,2,normal
+line,9,2,9,5,normal
+line,9,5,7,5,normal
+line,7,5,7,2,normal
+
+## Hall
+line,8,5,8,10,normal
+line,7.5,10,7.5,5,normal
+
+## Hall
+line,9,4,10,4,normal
+line,10,4.5,9,4.5,normal
+
+## Vizier's
+line,10,2,12,2,normal
+line,12,2,12,4,normal
+line,12,4,10,4,normal
+line,10,4,10,2,normal
+
+## Hall
+line,12,4,12,3,normal
+line,12,3,13,3,normal
+line,13,3,13,5,normal
+line,13,5,10,5,normal
+line,10,5,10,4,normal
+
+## Lt.'s
+line,14,3,14,1,normal
+line,14,1,12,1,normal
+line,12,1,12,3,normal
+line,12,3,14,3,normal
+
+## Throne Room
+line,9,5,12,5,normal
+line,12,5,12,10,normal
+line,12,10,9,10,normal
+line,9,10,9,5,normal
+
+## Hall
+line,14,7,18,7,normal
+line,18,7,18,5,normal
+line,18,5,19,5,normal
+line,19,5,19,7,normal
+line,19,7,24,7,normal
+line,24,8,19,8,normal
+line,19,8,19,9,normal
+line,18,9,18,8,normal
+line,18,8,12,8,normal
+
+## Tripwire and spears
+line,19,5,17,5,normal
+line,17,5,17,3,normal
+line,17,3,19,3,normal
+line,19,3,19,5,normal
+
+## Hall
+line,18,3,18,1,normal
+line,18,1,21,1,normal
+line,21,1,21,3,normal
+line,20,3,20,2,normal
+line,20,2,19,2,normal
+line,19,2,19,3,normal
+
+## Pit Trap
+line,20,3,20,5,normal
+line,20,5,22,5,normal
+line,22,5,22,3,normal
+line,22,3,20,3,normal
+
+## Hall
+line,22,4,24,4,normal
+line,24,4,24,1.5,normal
+line,24,1.5,30,1.5,normal
+line,30,1.5,30,3,normal
+line,29.5,3,29.5,2,normal
+line,29.5,2,24.5,2,normal
+line,24.5,2,24.5,4,normal
+line,24.5,4,26,4,normal
+line,22,5,26,5,normal
+
+## Orc and Pie
+line,29,3,30,3,normal
+line,30,3,30,4,normal
+line,30,4,29,4,normal
+line,29,4,29,3,normal
+
+## Guard Post
+line,26,3,26,6,normal
+line,26,6,28,6,normal
+line,28,6,28,3,normal
+line,28,3,26,3,normal
+
+## Hall
+line,28,4,29,4,normal
+line,29,4,29,6,normal
+line,29,6,30,6,normal
+line,30,7,28,7,normal
+line,28,7,28,6,normal
+
+## Barracks
+line,26,6,24,6,normal
+line,24,6,24,7,normal
+line,26,6,26,17,normal
+line,26,17,24,17,normal
+line,24,17,24,16,normal
+line,24,15,24,8,normal
+
+## Toilet stalls
+line,26,10,27,10,normal
+line,27,10,27,9,normal
+line,27,9,28,9,normal
+line,28,9,28,12,normal
+line,28,12,27,12,normal
+line,27,12,27,11,normal
+line,27,11,26,11,normal
+
+## Feast Hall
+line,19,9,22,9,normal
+line,22,9,22,13,normal
+line,22,13,15,13,normal
+line,15,13,15,9,normal
+line,15,9,18,9,normal
+
+## Throne room
+line,24,15,23,15,normal
+line,24,16,23,16,normal
+line,23,15,23,13,normal
+line,23,13,20,13,normal
+line,20,13,20,17,normal
+line,20,17,23,17,normal
+line,23,17,23,16,normal
+
+## Ramp to surface
+line,12,9,14,9,normal
+line,14,9,14,14,normal
+line,13,14,13,13,normal
+line,13,13,12,13,normal
+line,12,13,12,9,normal
+line,13,9,13,12,normal
+
+## T-hall
+
+line,12,11,11,11,normal
+line,11,11,11,10,normal
+line,10,10,10,11,normal
+line,10,11,9,11,normal
+line,9,12,12,12,normal
+
+## Chief's quarters
+line,9,10,9,13,normal
+line,9,13,7,13,normal
+line,7,13,7,10,normal
+line,7,10,9,10,normal
+
+## Hall to treasure room
+line,7,13,7,16,normal
+line,8,13,8,16,normal
+
+## Treasure room
+line,8,16,8,19,normal
+line,8,19,5,19,normal
+line,5,19,5,16,normal
+line,5,16,8,16,normal
+
+## Store room
+line,14,14,17,14,normal
+line,17,14,17,16,normal
+line,17,16,20,16,normal
+line,20,17,10,17,normal
+line,10,17,10,14,normal
+line,10,14,13,14,normal
+
+## Guard hall
+line,25,17,25,19,normal
+line,24,17,24,19,normal
+
+## Guard post
+line,24,19,26,19,normal
+line,26,19,26,21,normal
+line,26,21,24,21,normal
+line,24,21,24,19,normal
+
+## Big hall
+
+line,24,21,17,21,normal
+line,17,21,17,25,normal
+line,16,25,16,21,normal
+line,16,21,12,21,normal
+line,12,21,12,22,normal
+line,11,22,11,21,normal
+line,11,21,9,21,normal
+line,9,20,20,20,normal
+line,20,20,20,19,normal
+line,20,19,18,19,normal
+line,18,18,21,18,normal
+line,21,18,21,20,normal
+line,21,20,24,20,normal
+
+## Corwyn's room
+
+line,18,18,18,20,normal
+line,18,20,16,20,normal
+line,16,20,16,18,normal
+line,16,18,18,18,normal
+
+## Jenna's room
+
+line,12,22,12,24,normal
+line,12,24,10,24,normal
+line,10,24,10,22,normal
+line,10,22,12,22,normal
+
+## Grand Staircase
+line,9,24,5,24,normal
+line,5,24,5,20,normal
+line,5,20,9,20,normal
+line,9,21,9,24,normal
+
+## Dojo
+line,17,25,18,25,normal
+line,18,25,18,26,normal
+line,17,27,13,27,normal
+line,13,26,15,26,normal
+line,15,26,15,25,normal
+line,15,25,17,25,normal
+
+## Mess Hall
+line,18,26,19,26,normal
+line,19,26,19,22,normal
+line,19,22,22,22,normal
+line,22,22,22,27,normal
+line,22,27,18,27,normal
+
+## Koan Hall
+line,18,27,18,28,normal
+line,18,28,20,28,normal
+line,20,28,20,30,normal
+line,20,30,17,30,normal
+line,17,30,17,27,normal
+
+## Toilet stalls
+line,15,27,15,29,normal
+line,15,29,16,29,normal
+line,16,29,16,30,normal
+line,13,30,13,29,normal
+line,13,29,14,29,normal
+line,14,29,14,27,normal
+
+## Monks' cells
+line,13,28,7,28,normal
+line,7,28,7,25,normal
+line,7,25,13,25,normal
+line,13,25,13,28,normal
+
+## Entry hall
+
+line,0,26,2,26,normal
+line,0,27,2,27,normal
+line,2,28,2,25,normal
+line,2,25,5,25,normal
+line,5,25,5,28,normal
+line,5,28,2,28,normal
+line,5,27,7,27,normal
+line,5,26,7,26,normal
+
+## Sluice
+line,3,28,3,29,normal
+line,3,29,1,29,normal
+line,1,29,1,30,normal
+line,6,30,6,29,normal
+line,6,29,4,29,normal
+line,4,29,4,28,normal
+
+## Kitchen
+line,22,22,25,22,normal
+line,25,22,25,24,normal
+line,25,24,22,24,normal
+
+## Monks' Storeroom
+line,24,24,24,28,normal
+line,24,28,22,28,normal
+line,22,28,22,30,normal
+line,25,30,25,24,normal
+
+## Archery range
+line,4,25,4,23,normal
+
+# Grand Staircase central pit
+block,8,23,6,23,hatched
+continuation,6,23,6,21,hatched
+continuation,6,21,8,21,hatched
+continuation,8,21,8,23,block_end
+
+# Bath
+block,3.5,4,3.5,6.25,wave
+continuation,3.5,6.5,4.5,6.5,wave
+continuation,4.5,6.5,4.5,4,wave
+continuation,4.5,4,3.5,4,block_end
+
+# Sluice
+block,1,29.3,6,29.3,wave
+block,6,29.3,6,29.7,wave
+block,6,29.7,1,29.7,wave
+block,1,29.7,1,29.3,block_end
+
+# Partitions
+
+## Toilets
+
+line,27.5,9,27.5,12,thin
+line,27.5,9.5,28,9.5,thin
+line,27.5,10,28,10,thin
+line,27.5,10.5,28,10.5,thin
+line,27.5,11,28,11,thin
+line,27.5,11.5,28,11.5,thin
+
+line,13,29.5,16,29.5,thin
+line,13.5,29.5,13.5,30,thin
+line,14,29.5,14,30,thin
+line,14.5,29.5,14.5,30,thin
+line,15,29.5,15,30,thin
+line,15.5,29.5,15.5,30,thin
+
+## Monks' cells
+
+line,8,25,8,26,normal
+line,9,25,9,26,normal
+line,10,25,10,26,normal
+line,11,25,11,26,normal
+line,12,25,12,26,normal
+line,8,27,8,28,normal
+line,9,27,9,28,normal
+line,10,27,10,28,normal
+line,11,27,11,28,normal
+line,12,27,12,28,normal
+line,7,27,13,27,normal
+line,7,26,13,26,normal
+
+## Pit Trap
+line,20.25,3.25,21.75,3.25,thin
+line,21.75,3.25,21.75,4.75,thin
+line,21.75,4.75,20.25,4.75,thin
+line,20.25,4.75,20.25,3.25,thin
+line,20.25,3.25,21.75,4.75,thin
+line,20.25,4.75,21.75,3.25,thin
+
+## Tripwire
+line,17,4,19,4,dashed
+
+# Stairs
+spiral_stairs,29.5,6.5,0,0,0
+spiral_stairs,12.5,15.5,0,0,0
+spiral_stairs,0.5,26.5,0,0,0
+
+## Grand staircase
+line,5,21,6,21,dashed
+line,7.25,20,7.25,21,thin
+line,7.5,20,7.5,21,thin
+line,7.75,20,7.75,21,thin
+line,8,20,8,21,thin
+line,8,21,10,21,thin
+line,8.1,21.25,8.9,21.25,thin
+line,8.2,21.5,8.8,21.5,thin
+line,8.3,21.75,8.7,21.75,thin
+line,8.4,22,8.6,22,thin
+
+## Ramp
+line,13.5,9.2,13.5,10,thin
+line,13.5,10,13.3,9.8,thin
+line,13.5,10,13.7,9.8,thin
+
+# Furnishings
+
+## Bath fireplace
+line,3.75,3,3.75,3.25,normal
+line,4.25,3,4.25,3.25,normal
+line,3.75,3.1,4.25,3.1,thick
+
+## Harem beds
+line,7.25,2,7.25,2.7,thin
+line,7.25,2.7,7.75,2.7,thin
+line,7.75,2.7,7.75,2,thin
+line,8.25,2,8.25,2.7,thin
+line,8.25,2.7,8.75,2.7,thin
+line,8.75,2.7,8.75,2,thin
+line,7,4.25,7.7,4.25,thin
+line,7.7,4.25,7.7,4.75,thin
+line,7.7,4.75,7,4.75,thin
+line,9,3.25,8.3,3.25,thin
+line,8.3,3.25,8.3,3.75,thin
+line,8.3,3.75,9,3.75,thin
+
+## Vizier's bed
+line,10,2.5,10.75,2.5,thin
+line,10.75,2.5,10.75,3.25,thin
+line,10.75,3.25,10,3.25,thin
+
+## Lieutenant's bed
+line,13.5,1,13.5,1.75,thin
+line,13.5,1.75,14,1.75,thin
+
+## Snouty's table
+ellipse,29.5,3.5,0.15,0.15,white_thin
+
+## Barracks bunks
+line,24,6.4,24.7,6.4,thin
+line,24.7,6.4,24.7,6.6,thin
+line,24.7,6.6,24,6.6,thin
+line,26,6.4,25.3,6.4,thin
+line,25.3,6.4,25.3,6.6,thin
+line,25.3,6.6,26,6.6,thin
+line,24,8.4,24.7,8.4,thin
+line,24.7,8.4,24.7,8.6,thin
+line,24.7,8.6,24,8.6,thin
+line,26,8.4,25.3,8.4,thin
+line,25.3,8.4,25.3,8.6,thin
+line,25.3,8.6,26,8.6,thin
+line,24,9.4,24.7,9.4,thin
+line,24.7,9.4,24.7,9.6,thin
+line,24.7,9.6,24,9.6,thin
+line,26,9.4,25.3,9.4,thin
+line,25.3,9.4,25.3,9.6,thin
+line,25.3,9.6,26,9.6,thin
+line,24,11.4,24.7,11.4,thin
+line,24.7,11.4,24.7,11.6,thin
+line,24.7,11.6,24,11.6,thin
+line,26,11.4,25.3,11.4,thin
+line,25.3,11.4,25.3,11.6,thin
+line,25.3,11.6,26,11.6,thin
+line,24,12.4,24.7,12.4,thin
+line,24.7,12.4,24.7,12.6,thin
+line,24.7,12.6,24,12.6,thin
+line,26,12.4,25.3,12.4,thin
+line,25.3,12.4,25.3,12.6,thin
+line,25.3,12.6,26,12.6,thin
+line,24,13.4,24.7,13.4,thin
+line,24.7,13.4,24.7,13.6,thin
+line,24.7,13.6,24,13.6,thin
+line,26,13.4,25.3,13.4,thin
+line,25.3,13.4,25.3,13.6,thin
+line,25.3,13.6,26,13.6,thin
+line,24,14.4,24.7,14.4,thin
+line,24.7,14.4,24.7,14.6,thin
+line,24.7,14.6,24,14.6,thin
+line,26,14.4,25.3,14.4,thin
+line,25.3,14.4,25.3,14.6,thin
+line,25.3,14.6,26,14.6,thin
+
+## Barracks fireplaces
+line,24,10.25,24.25,10.25,normal
+line,24,10.75,24.25,10.75,normal
+line,24.1,10.25,24.1,10.75,thick
+line,26,15.25,25.75,15.25,normal
+line,26,15.75,25.75,15.75,normal
+line,25.9,15.25,25.9,15.75,thick
+
+## Feast hall tables
+line,20.75,9.9,16.25,9.9,thin
+line,16.25,9.9,16.25,10.1,thin
+line,16.25,10.1,20.75,10.1,thin
+line,20.75,10.1,20.75,9.9,thin
+line,20.75,10.9,16.25,10.9,thin
+line,16.25,10.9,16.25,11.1,thin
+line,16.25,11.1,20.75,11.1,thin
+line,20.75,11.1,20.75,10.9,thin
+line,20.75,11.9,16.25,11.9,thin
+line,16.25,11.9,16.25,12.1,thin
+line,16.25,12.1,20.75,12.1,thin
+line,20.75,12.1,20.75,11.9,thin
+
+## Feast hall fireplace
+line,15,10,15.25,10,normal
+line,15,12,15.25,12,normal
+line,15.1,10,15.1,12,thick
+
+## Throne room
+line,9,6,11,6,thin
+line,11,6,11,9,thin
+line,11,9,9,9,thin
+line,9,7,10,7,thin
+line,10,7,10,8,thin
+line,10,8,9,8,thin
+line,9,7.2,9.5,7.2,normal
+line,9.5,7.2,9.5,7.3,normal
+line,9.5,7.3,9,7.3,normal
+line,8,7.7,9.5,7.7,normal
+line,9.5,7.7,9.5,7.8,normal
+line,9.5,7.8,9,7.8,normal
+line,9.3,7.3,9.3,7.7,normal
+
+## Goblins' Kitchen
+line,20,14,20.5,14,thin
+line,20.5,14,20.5,14.2,thin
+line,20.5,14.2,20,14.2,thin
+line,20,15,20.5,15,thin
+line,20.5,15,20.5,14.8,thin
+line,20.5,14.8,20,14.8,thin
+line,20.1,14.2,20.1,14.8,thick
+line,20.2,14.2,20.2,14.8,thick
+line,20.3,15,20.3,16,thin
+line,20.3,16,20,16,thin
+arc,23,14,23,15,thin:0.5:0.5:0:0:0
+ellipse,23,14.5,0.15,0.15,solid
+ellipse,21.5,15,0.25,1,white_thin
+
+## Well
+ellipse,15.5,14.5,0.25,0.25,hatched
+
+## Monks' kitchen
+line,25,22,24.5,22,thin
+line,24.5,22,24.5,22.2,thin
+line,24.5,22.2,25,22.2,thin
+line,25,23,24.5,23,thin
+line,24.5,23,24.5,22.8,thin
+line,24.5,22.8,25,22.8,thin
+line,24.9,22.2,24.9,22.8,thick
+line,24.8,22.2,24.8,22.8,thick
+arc,23,22,24,22,thin:0.5:0.5:0:0:0
+ellipse,23.5,22,0.15,0.15,solid
+
+## Monks' Mess Hall
+line,20.9,22.75,21.1,22.75,thin
+line,21.1,22.75,21.1,26.25,thin
+line,21.1,26.25,20.9,26.25,thin
+line,20.9,26.25,20.9,22.75,thin
+line,19.9,22.75,20.1,22.75,thin
+line,20.1,22.75,20.1,26.25,thin
+line,20.1,26.25,19.9,26.25,thin
+line,19.9,26.25,19.9,22.75,thin
+
+## Corwyn's bed
+line,16.5,18,16.5,18.75,thin
+line,16.5,18.75,16,18.75,thin
+
+## Jenna's bed
+line,10.5,24,10.5,23.25,thin
+line,10.5,23.25,10,23.25,thin
+
+# Text
+## Room numbers
+### Guard post
+text,27.3,5.7,1,sans_serif,0.6
+### Orc and pie
+text,29.6,3.8,2,sans_serif,0.6
+### Pit trap
+text,21.5,4.8,3,sans_serif,0.6
+### Tripwire
+text,18.4,4.7,4,sans_serif,0.6
+### Barracks
+text,25.3,7.9,5,sans_serif,0.6
+### Feast Hall
+text,21.3,9.9,6,sans_serif,0.6
+### Goblins' Kitchen
+text,22.3,13.9,7,sans_serif,0.6
+### Goblins' Storeroom
+text,16.3,14.9,8,sans_serif,0.6
+### Throne Room
+text,11.3,9.9,9,sans_serif,0.6
+### Chief's Quarters
+text,8.2,10.9,10,sans_serif,0.6
+### Harem
+text,8.2,4.9,11,sans_serif,0.6
+### Vizier's Quarters
+text,10.2,3.9,12,sans_serif,0.6
+### Lieutenant's Quarters
+text,12.2,2.9,13,sans_serif,0.6
+### Treasure Room
+text,5.2,18.9,14,sans_serif,0.6
+### Bath
+text,4.2,3.9,15,sans_serif,0.6
+### Ramp to Surface
+text,13.2,11.9,16,sans_serif,0.6
+### Guard Post
+text,25.2,19.9,17,sans_serif,0.6
+### Corwyn's Room
+text,17.2,19.9,18,sans_serif,0.6
+### Grand Stairway
+text,6.2,20.9,19,sans_serif,0.6
+### Jenna's Room
+text,10.2,22.9,20,sans_serif,0.6
+### Dojo
+text,16.2,25.9,21,sans_serif,0.6
+### Mess Hall
+text,20.2,22.9,22,sans_serif,0.6
+### Monks' Kitchen
+text,22.2,22.9,23,sans_serif,0.6
+### Monks' Cells
+text,9.2,26.7,24,sans_serif,0.6
+### Toilets
+text,14.2,28.7,25,sans_serif,0.6
+text,26.2,10.9,25,sans_serif,0.6
+### Entry Hall
+text,4.2,27.7,26,sans_serif,0.6
+### Monks' Storeroom
+text,22.2,29.9,27,sans_serif,0.6
+### Koan Hall
+text,19.2,29.9,28,sans_serif,0.6
+### Archery Range
+text,1.2,9.7,29,sans_serif,0.6
+### Sluice
+text,3.2,28.7,30,sans_serif,0.6
+
+## Stairway directions
+text,1.2,26.7,up,sans_serif,0.6
+text,28.2,6.7,up,sans_serif,0.6
+text,11.2,15.7,dn,sans_serif,0.6
+
+# Doors
+door,7,3,0,0,vertical
+door,7.25,5,0,0,horizontal
+door,9,3.75,0,0,vertical
+door,10,3.75,0,0,vertical
+door,12,3,0,0,horizontal
+door,11,4,0,0,horizontal
+door,10,5,0,0,horizontal
+door,18,3,0,0,horizontal
+door,18,5,0,0,horizontal
+door,20,3,0,0,horizontal
+door,22,4,0,0,vertical
+door,26,4,0,0,vertical
+door,28,4,0,0,vertical
+door,29.25,3,0,0,horizontal
+door,7.25,10,0,0,horizontal
+door,12,7,0,0,vertical_double
+door,10,10,0,0,horizontal
+door,9,11,0,0,vertical
+door,12,11,0,0,vertical
+door,26,10,0,0,vertical
+door,7,16,0,0,horizontal
+door,20,16,0,0,vertical
+door,24,17,0,0,horizontal
+door,24,19,0,0,horizontal
+door,24,20,0,0,vertical
+door,18,18,0,0,vertical
+door,11,22,0,0,horizontal
+door,7,27,0,0,horizontal
+door,8,27,0,0,horizontal
+door,9,27,0,0,horizontal
+door,10,27,0,0,horizontal
+door,11,27,0,0,horizontal
+door,12,27,0,0,horizontal
+door,7,26,0,0,horizontal
+door,8,26,0,0,horizontal
+door,9,26,0,0,horizontal
+door,10,26,0,0,horizontal
+door,11,26,0,0,horizontal
+door,12,26,0,0,horizontal
+door,24,24,0,0,horizontal
+door,22,23,0,0,vertical
+door,16,25,0,0,horizontal
+door,14,27,0,0,horizontal
+door,13,26,0,0,vertical
+door,7,26,0,0,vertical
+door,5,26,0,0,vertical
+door,2,26,0,0,vertical
+door,3,25,0,0,horizontal
+door,3,28,0,0,horizontal
+
+## Toilets
+door,27.5,8.75,0,0,vertical
+door,27.5,9.25,0,0,vertical
+door,27.5,9.75,0,0,vertical
+door,27.5,10.25,0,0,vertical
+door,27.5,10.75,0,0,vertical
+door,27.5,11.25,0,0,vertical
+door,20,13,0,0,horizontal
+door,12.75,29.5,0,0,horizontal
+door,13.25,29.5,0,0,horizontal
+door,13.75,29.5,0,0,horizontal
+door,14.25,29.5,0,0,horizontal
+door,14.75,29.5,0,0,horizontal
+door,15.25,29.5,0,0,horizontal
+
+## Concealed
+text,7.3,13.3,c,sans_serif,0.8
+
+# Toilets
+toilet,27.75,9.25,0,0,horizontal_reversed
+toilet,27.75,9.75,0,0,horizontal_reversed
+toilet,27.75,10.25,0,0,horizontal_reversed
+toilet,27.75,10.75,0,0,horizontal_reversed
+toilet,27.75,11.25,0,0,horizontal_reversed
+toilet,27.75,11.75,0,0,horizontal_reversed
+toilet,13.25,29.75,0,0,vertical_reversed
+toilet,13.75,29.75,0,0,vertical_reversed
+toilet,14.25,29.75,0,0,vertical_reversed
+toilet,14.75,29.75,0,0,vertical_reversed
+toilet,15.25,29.75,0,0,vertical_reversed
+toilet,15.75,29.75,0,0,vertical_reversed
+
+# Negative space
+block,0,0,0,9,solid
+continuation,0,9,3,9,solid
+continuation,3,9,3,3,solid
+continuation,3,3,7,3,solid
+continuation,7,3,7,2,solid
+continuation,7,2,9,2,solid
+continuation,9,2,9,4,solid
+continuation,9,4,10,4,solid
+continuation,10,4,10,2,solid
+continuation,10,2,12,2,solid
+continuation,12,2,12,1,solid
+continuation,12,1,14,1,solid
+continuation,14,1,14,3,solid
+continuation,14,3,13,3,solid
+continuation,13,3,13,5,solid
+continuation,13,5,12,5,solid
+continuation,12,5,12,7,solid
+continuation,12,7,18,7,solid
+continuation,18,7,18,5,solid
+continuation,18,5,17,5,solid
+continuation,17,5,17,3,solid
+continuation,17,3,18,3,solid
+continuation,18,3,18,1,solid
+continuation,18,1,21,1,solid
+continuation,21,1,21,3,solid
+continuation,21,3,22,3,solid
+continuation,22,3,22,4,solid
+continuation,22,4,24,4,solid
+continuation,24,4,24,1.5,solid
+continuation,24,1.5,30,1.5,solid
+continuation,30,1.5,30,0,solid
+continuation,30,0,0,0,block_end
+
+block,9,5,10,5,solid
+continuation,10,5,10,4.5,solid
+continuation,10,4.5,9,4.5,solid
+continuation,9,4.5,9,5,block_end
+
+block,24.5,2,29.5,2,solid
+continuation,29.5,2,29.5,3,solid
+continuation,29.5,3,29,3,solid
+continuation,29,3,29,4,solid
+continuation,29,4,28,4,solid
+continuation,28,4,28,3,solid
+continuation,28,3,26,3,solid
+continuation,26,3,26,4,solid
+continuation,26,4,24.5,4,solid
+continuation,24.5,4,24.5,2,block_end
+
+block,30,4,30,6,solid
+continuation,30,6,29,6,solid
+continuation,29,6,29,4,solid
+continuation,29,4,30,4,block_end
+
+block,8,5,9,5,solid
+continuation,9,5,9,10,solid
+continuation,9,10,8,10,solid
+continuation,8,10,8,5,block_end
+
+block,26,6,24,6,solid
+continuation,24,6,24,7,solid
+continuation,24,7,19,7,solid
+continuation,19,7,19,2,solid
+continuation,19,2,20,2,solid
+continuation,20,2,20,5,solid
+continuation,20,5,26,5,solid
+continuation,26,5,26,6,block_end
+
+block,2,10,2,7,solid
+continuation,2,7,5,7,solid
+continuation,5,7,5,4,solid
+continuation,5,4,7,4,solid
+continuation,7,4,7,5,solid
+continuation,7,5,7.5,5,solid
+continuation,7.5,5,7.5,10,solid
+continuation,7.5,10,2,10,block_end
+
+block,12,9,12,8,solid
+continuation,12,8,18,8,solid
+continuation,18,8,18,9,solid
+continuation,18,9,12,9,block_end
+
+block,19,8,24,8,solid
+continuation,24,8,24,15,solid
+continuation,24,15,23,15,solid
+continuation,23,15,23,13,solid
+continuation,23,13,22,13,solid
+continuation,22,13,22,9,solid
+continuation,22,9,19,9,solid
+continuation,19,9,19,8,block_end
+
+block,26,6,28,6,solid
+continuation,28,6,28,7,solid
+continuation,28,7,30,7,solid
+continuation,30,7,30,17,solid
+continuation,30,17,26,17,solid
+continuation,26,17,26,11,solid
+continuation,26,11,27,11,solid
+continuation,27,11,27,12,solid
+continuation,27,12,28,12,solid
+continuation,28,12,28,9,solid
+continuation,28,9,27,9,solid
+continuation,27,9,27,10,solid
+continuation,27,10,26,10,solid
+continuation,26,10,26,6,block_end
+
+block,9,10,10,10,solid
+continuation,10,10,10,11,solid
+continuation,10,11,9,11,solid
+continuation,9,11,9,10,block_end
+
+block,11,10,12,10,solid
+continuation,12,10,12,11,solid
+continuation,12,11,11,11,solid
+continuation,11,11,11,10,block_end
+
+block,0,9,0,26,solid
+continuation,0,26,1,26,solid
+continuation,1,26,1,9,solid
+continuation,1,9,0,9,block_end
+
+block,1,26,1,24,solid
+continuation,1,24,3,24,solid
+continuation,3,24,3,25,solid
+continuation,3,25,2,25,solid
+continuation,2,25,2,26,solid
+continuation,2,26,1,26,block_end
+
+block,2,10,2,23,solid
+continuation,2,23,5,23,solid
+continuation,5,23,5,10,solid
+continuation,5,10,2,10,block_end
+
+block,5,10,7,10,solid
+continuation,7,10,7,16,solid
+continuation,7,16,5,16,solid
+continuation,5,16,5,10,block_end
+
+block,14,9,15,9,solid
+continuation,15,9,15,13,solid
+continuation,15,13,20,13,solid
+continuation,20,13,20,16,solid
+continuation,20,16,17,16,solid
+continuation,17,16,17,14,solid
+continuation,17,14,14,14,solid
+continuation,14,14,14,9,block_end
+
+block,13,14,10,14,solid
+continuation,10,14,10,17,solid
+continuation,10,17,8,17,solid
+continuation,8,17,8,13,solid
+continuation,8,13,9,13,solid
+continuation,9,13,9,12,solid
+continuation,9,12,12,12,solid
+continuation,12,12,12,13,solid
+continuation,13,13,13,14,block_end
+
+block,8,17,23,17,solid
+continuation,23,17,23,16,solid
+continuation,23,16,24,16,solid
+continuation,24,16,24,20,solid
+continuation,24,20,21,20,solid
+continuation,21,20,21,18,solid
+continuation,21,18,16,18,solid
+continuation,16,18,16,20,solid
+continuation,16,20,2,20,solid
+continuation,2,20,2,19,solid
+continuation,2,19,8,19,solid
+continuation,8,19,8,17,block_end
+
+block,26,17,30,17,solid
+continuation,30,17,30,30,solid
+continuation,30,30,26,30,solid
+continuation,26,30,26,17,block_end
+
+block,26,19,25,19,solid
+continuation,25,19,25,17,solid
+continuation,25,17,26,17,solid
+continuation,26,17,26,19,block_end
+
+block,4,23,5,23,solid
+continuation,5,23,5,24,solid
+continuation,5,24,9,24,solid
+continuation,9,24,9,21,solid
+continuation,9,21,11,21,solid
+continuation,11,21,11,22,solid
+continuation,11,22,10,22,solid
+continuation,10,22,10,24,solid
+continuation,10,24,12,24,solid
+continuation,12,24,12,21,solid
+continuation,12,21,16,21,solid
+continuation,16,21,16,25,solid
+continuation,16,25,15,25,solid
+continuation,15,25,15,26,solid
+continuation,15,26,13,26,solid
+continuation,13,26,13,25,solid
+continuation,13,25,8,25,solid
+continuation,7,25,7,26,solid
+continuation,7,26,5,26,solid
+continuation,5,25,4,25,solid
+continuation,4,25,4,23,block_end
+
+block,18,19,20,19,solid
+continuation,20,19,20,20,solid
+continuation,20,20,18,20,solid
+continuation,18,20,18,19,block_end
+
+block,6,30,6,29,solid
+continuation,6,29,4,29,solid
+continuation,4,29,4,28,solid
+continuation,4,28,5,28,solid
+continuation,5,28,5,27,solid
+continuation,5,27,7,27,solid
+continuation,7,27,7,28,solid
+continuation,7,28,13,28,solid
+continuation,13,28,13,27,solid
+continuation,13,27,14,27,solid
+continuation,14,27,14,29,solid
+continuation,14,29,13,29,solid
+continuation,13,29,13,30,solid
+continuation,13,30,6,30,block_end
+
+block,16,30,16,29,solid
+continuation,16,29,15,29,solid
+continuation,15,29,15,27,solid
+continuation,15,27,17,27,solid
+continuation,17,27,17,30,solid
+continuation,17,30,16,30,block_end
+
+block,25,30,26,30,solid
+continuation,26,30,26,21,solid
+continuation,26,21,17,21,solid
+continuation,17,21,17,25,solid
+continuation,17,25,18,25,solid
+continuation,18,25,18,26,solid
+continuation,18,26,19,26,solid
+continuation,19,26,19,22,solid
+continuation,19,22,25,22,solid
+continuation,25,22,25,30,block_end
+
+block,22,30,20,30,solid
+continuation,20,30,20,28,solid
+continuation,20,28,18,28,solid
+continuation,18,28,18,27,solid
+continuation,18,27,22,27,solid
+continuation,22,27,22,24,solid
+continuation,22,24,24,24,solid
+continuation,24,24,24,28,solid
+continuation,24,28,22,28,solid
+continuation,22,28,22,30,block_end
+
+block,0,30,0,27,solid
+continuation,0,27,2,27,solid
+continuation,2,27,2,28,solid
+continuation,2,28,3,28,solid
+continuation,3,28,3,29,solid
+continuation,3,29,1,29,solid
+continuation,1,29,1,30,solid
+continuation,1,30,0,30,block_end
+
+# Arrow and scale
+line,3.2,27,3.2,26,normal
+block,3.2,26,2.8,26.4,solid
+block,2.8,26.4,3.2,26.4,solid
+block,3.2,26.4,3.2,26,block_end
+text,3.4,26.6,N,sans_serif,0.6
+text,6.2,17.3,1 sq.=,sans_serif,0.5
+text,6.5,17.8,10 ft.,sans_serif,0.5
+

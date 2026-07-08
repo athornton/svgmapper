@@ -8,7 +8,7 @@ Create maps in an OSR style from a silly little DSL.
 
 I'll put it on pypi when I'm happy with it, but for now, clone the repository, cd into it, and `pip install .`.
 If you're comfortable doing that you probably would rather `pip install
--e . --group dev` so you get an editable copy to mess around with
+-e . --group dev` so you get an editable copy to mess around with.
 
 ## Documentation
 
