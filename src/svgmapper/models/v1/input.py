@@ -34,6 +34,7 @@ class MapObjectKind(MapObject):
     TEXT = "text"
     SEED = "seed"
     COLOR = "color"
+    REGRID = "regrid"
     CONTINUATION = "continuation"
 
     @override
@@ -273,3 +274,9 @@ class Color(MapObject):
     """Drawing color."""
 
     # There was no prior color kind to convert from.
+
+
+class Regrid(MapObject):
+    """Redraw the grid in a specified rectangle."""
+
+    # There was no prior regrid kind to convert from.

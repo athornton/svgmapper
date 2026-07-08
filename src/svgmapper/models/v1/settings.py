@@ -13,8 +13,8 @@ class Settings:
     color: str = "#1EAED0"  # Close to TSR Blue
     width_inches: Number = 7.5
     height_inches: Number = 7.5
-    grid_size_x: Number = 30
-    grid_size_y: Number = 30
+    grid_size_x: int = 30
+    grid_size_y: int = 30
     grid_stroke: Number = 0.008
     wall_stroke: Number = 0.05
     thick_wall_stroke: Number = 0.15

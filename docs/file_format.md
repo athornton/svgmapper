@@ -33,6 +33,7 @@ The origin `(0,0)` is at the upper left.
 * text
 * seed
 * color
+* regrid
 * continuation
 
 ### Type for line
@@ -156,8 +157,8 @@ This is the same as for a crinkled line.
 * wave_thin
 
 These mean the same thing they do for block.
-The center of the ellipse is at (`x1`,`y1`).
-The `x2` and `y2` coordinates are the x-radius and y-radius of the ellipse, respectively.
+The center of the ellipse is at (`startx`,`starty`).
+The `endx` and `endy` coordinates are the x-radius and y-radius of the ellipse, respectively.
 There is no continuation for an ellipse.
 
 ### Type for toilet
@@ -200,6 +201,15 @@ It changes the color of drawn objects to the value of the field.
 Any legal CSS color can be used; named colors and RGB hexadecimal are probably the most common.
 The exception to this is that the field cannot contain a comma, so the `light-dark` colors will not work.
 Color can be reset at any time.
+
+### Regrid
+
+It is sometimes useful to redraw the map grid.
+One common example is when you're drawing an irregular cave on a solid background.
+The easiest way to do that is to draw a solid rectangle, then draw the cave with white fill on top of it.
+As soon as you drew the solid rectangle, though, you obliterated the grid.
+Thus, after you draw the cave, you will want to use `regrid` to redraw the grid in the rectangle whose corners are at (`startx`,`starty`) and (`endx`,`endy`).
+The grid will include the entire bounding box (that is, both coordinate ranges are closed, rather than the more usual half-open), which means that a regrid that is m*n in size will draw m+1 vertical lines and n+1 horizontal lines.
 
 ### Continuation
 

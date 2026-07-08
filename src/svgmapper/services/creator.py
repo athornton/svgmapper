@@ -139,50 +139,82 @@ class Creator(BaseSVGMapper):
         if o_kind == MapObjectKind.CONTINUATION:
             if self._prev_kind is None:
                 raise SVGBadInputError("Cannot continue unknown kind")
-        if o_kind == MapObjectKind.SEED:
-            seed_t: float | str = startx
-            # We use the string value for the seed, *except* that if it can
-            # be converted into a zero-equivalent float, that becomes
-            # falsy, therefore None, therefore nonreproducible.
-            try:
-                seed_t = float(startx)
-            except ValueError:
-                seed_t = startx
-            seed = startx if seed_t else None  # Back to the string version
-            self._seed = seed  # All falsy seeds are nonreproducible
-            random.seed(self._seed)
+        # Check for directives and cease line processing afterwards if found
+        if o_kind in (
+            MapObjectKind.SEED,
+            MapObjectKind.COLOR,
+            MapObjectKind.TEXT,
+            MapObjectKind.REGRID,
+        ):
+            self._process_directive(
+                o_kind, startx, starty, endx, endy, obj_type
+            )
             return
-        if o_kind == MapObjectKind.COLOR:
-            # Don't convert to numeric values; the first parameter is a
-            # color specification (it cannot include a comma).
-            self._settings.color = startx
-            self._updatelib()  # Make a new hatch with the new color
-            return
+        sc = self._settings.scale
+        # Convert to user coordinates
+        x1 = self._to_float(startx) * sc
+        y1 = self._to_float(starty) * sc
+        x2 = self._to_float(endx) * sc
+        y2 = self._to_float(endy) * sc
+        self._process_svg_obj(o_kind, x1, y1, x2, y2, obj_type)
+
+    def _to_float(self, n: str) -> float:
         try:
-            fstartx = float(startx)
-            fstarty = float(starty)
+            return float(n)
         except ValueError as exc:
             raise SVGBadNumericInputError(str(exc)) from exc
-        x1 = fstartx * self._settings.scale
-        y1 = fstarty * self._settings.scale
+
+    def _process_directive(
+        self,
+        o_kind: MapObjectKind,
+        startx: str,
+        starty: str,
+        endx: str,
+        endy: str,
+        obj_type: str,
+    ) -> None:
+        if o_kind in (MapObjectKind.SEED, MapObjectKind.COLOR):
+            # We only use the first argument, and we may not want to
+            # convert it to a number.
+            match o_kind:
+                case MapObjectKind.COLOR:
+                    # The first parameter is a color specification; any legal
+                    # CSS color form *that does not include a comma* is
+                    # acceptable.
+                    self._settings.color = startx
+                    self._updatelib()  # Rebuild patterns with new color.
+                case MapObjectKind.SEED:
+                    seed_t: float | str = startx
+                    # We use the string value for the seed, *except* that if
+                    # it can be converted into a zero-equivalent float, that
+                    # becomes falsy, therefore None, therefore nonreproducible.
+                    try:
+                        seed_t = float(startx)
+                    except ValueError:
+                        seed_t = startx
+                    seed = startx if seed_t else None  # Back to string.
+                    self._seed = seed  # All falsy seeds are nonreproducible.
+                    random.seed(self._seed)
+                case _:
+                    raise SVGBadInputError(o_kind)  # Should not happen
+            return
         if o_kind == MapObjectKind.TEXT:
-            # Text is handled differently than most other objects.
+            fstartx = self._to_float(startx)
+            fstarty = self._to_float(starty)
             text = endx
             font = endy
-            try:
-                size = float(obj_type)
-            except ValueError as exc:
-                raise SVGBadNumericInputError(str(exc)) from exc
-            self._process_text(x1, y1, text, font, size)
+            size = self._to_float(obj_type)
+            self._process_text(fstartx, fstarty, text, font, size)
             return
+        # It must be a regrid directive
         try:
-            fendx = float(endx)
-            fendy = float(endy)
+            istartx = int(startx)
+            istarty = int(starty)
+            iendx = int(endx)
+            iendy = int(endy)
         except ValueError as exc:
             raise SVGBadNumericInputError(str(exc)) from exc
-        x2 = fendx * self._settings.scale
-        y2 = fendy * self._settings.scale
-        self._process_svg_obj(o_kind, x1, y1, x2, y2, obj_type)
+        self._makegrid(istartx, istarty, iendx, iendy)
 
     def _process_svg_obj(
         self,
@@ -219,7 +251,9 @@ class Creator(BaseSVGMapper):
 
     def _process_preamble(self) -> None:
         self._makelib()
-        self._makegrid()
+        self._makegrid(
+            0, 0, self._settings.grid_size_x, self._settings.grid_size_y
+        )
 
     def _makelib(self) -> None:
         # Define reused symbols
@@ -312,27 +346,33 @@ class Creator(BaseSVGMapper):
             ]
         )
 
-    def _makegrid(self) -> None:
+    def _makegrid(
+        self, startx: int, starty: int, endx: int, endy: int
+    ) -> None:
         # Draw the map grid.
         sc = self._settings.scale
         cl = self._settings.color
-        gx = self._settings.grid_size_x
-        gy = self._settings.grid_size_y
         gs = self._settings.grid_stroke
+        # Put coordinates in canonical order.  Since it is a rectangle,
+        # this doesn't affect the geometry
+        startx, endx = sorted((startx, endx))
+        starty, endy = sorted((starty, endy))
+        gridtext = f"({startx},{starty}) - ({endx},{endy})"
+        self._logger.debug(f"Grid: {gridtext}")
+        ctx = endx - startx + 1  # Add 1 for outer boundary
+        cty = endy - starty + 1
         grid: list[PathData] = []
-        for yy in range(1 + int(gy)):
-            self._logger.debug(
-                f"Drawing {yy}/{1 + int(gy)} horizontal grid lines."
-            )
-            grid.append(M(0, yy * sc))
-            grid.append(L(gx * sc, yy * sc))
-        for xx in range(1 + int(gx)):
-            self._logger.debug(
-                f"Drawing {xx}/{1 + int(gx)} vertical grid lines."
-            )
-            grid.append(M(xx * sc, 0))
-            grid.append(L(xx * sc, gy * sc))
-        self._elements.append(Desc(text="# Map grid"))
+        for yy in range(cty):
+            sign = int(endy > starty)
+            self._logger.debug(f"Drawing {yy}/{cty} horizontal grid lines.")
+            grid.append(M((startx * sc), (starty + sign * yy) * sc))
+            grid.append(L((endx * sc), (endy + sign * yy) * sc))
+        for xx in range(ctx):
+            sign = int(endy > starty)
+            self._logger.debug(f"Drawing {xx}/{ctx} vertical grid lines.")
+            grid.append(M(((sign * startx + xx) * sc), starty * sc))
+            grid.append(L(((sign * startx + xx) * sc), endy * sc))
+        self._elements.append(Desc(text=f"# Map grid {gridtext}"))
         self._elements.append(
             SVGPath(
                 d=grid,
@@ -1067,6 +1107,10 @@ class Creator(BaseSVGMapper):
         cl = self._settings.color
         sw = self._settings.thin_stroke
         sc = self._settings.scale
+        x1 *= sc  # Put coordinates into user units
+        y1 *= sc
+        # This is the only place that user units and pixels are explicitly
+        # equated.
         fsize = Length(value=int(sc * size), unit="px")
         match font:
             case Text.SANS_SERIF:

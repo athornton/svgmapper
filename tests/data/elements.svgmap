@@ -22,13 +22,17 @@ line,14,1,17,1,normal
 line,14,1,14,2,normal
 arc,14,2,17,1,thick:5:20:270
 
+line,18,1,21,1,normal
+line,21,1,21,4,normal
+arc,18,1,21,4,dotted:3:5:60:0:1
+
 line,22,1,25,1,normal
 line,22,1,22,4,normal
 arc,25,1,22,4,dashed:2:1:120:1:
 
-line,18,1,21,1,normal
-line,21,1,21,4,normal
-arc,18,1,21,4,dotted:3:5:60:0:1
+line,26,1,29,1,normal
+line,26,1,26,4,normal
+arc,29,1,26,4,normal:3:6:45:1:1
 
 # Change the color
 color,rebeccapurple,,,,
@@ -72,3 +76,11 @@ continuation,26,19,23,19,wave_thin:60:1.9
 continuation,23,19,20,18,wave_thin:60:1.9
 continuation,20,18,20,16,wave_thin:60:1.9
 continuation,20,16,23,15,cave_end:60:1.9
+
+# Block which will then be regridded
+block,1,20,5,20,white
+continuation,5,20,5,24,white
+continuation,5,24,1,24,white
+continuation,1,24,1,20,block_end
+color,maroon,,,,
+regrid,2,21,4,23,
