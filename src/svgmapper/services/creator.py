@@ -363,15 +363,13 @@ class Creator(BaseSVGMapper):
         cty = endy - starty + 1
         grid: list[PathData] = []
         for yy in range(cty):
-            sign = int(endy > starty)
             self._logger.debug(f"Drawing {yy}/{cty} horizontal grid lines.")
-            grid.append(M((startx * sc), (starty + sign * yy) * sc))
-            grid.append(L((endx * sc), (endy + sign * yy) * sc))
+            grid.append(M((startx * sc), (starty + yy) * sc))
+            grid.append(L((endx * sc), (starty + yy) * sc))
         for xx in range(ctx):
-            sign = int(endy > starty)
             self._logger.debug(f"Drawing {xx}/{ctx} vertical grid lines.")
-            grid.append(M(((sign * startx + xx) * sc), starty * sc))
-            grid.append(L(((sign * startx + xx) * sc), endy * sc))
+            grid.append(M(((startx + xx) * sc), starty * sc))
+            grid.append(L(((startx + xx) * sc), endy * sc))
         self._elements.append(Desc(text=f"# Map grid {gridtext}"))
         self._elements.append(
             SVGPath(
