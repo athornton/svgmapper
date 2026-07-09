@@ -13,9 +13,9 @@ def _dedesc(inp: Path) -> list[str]:
     # Strip `<desc>` entries from SVG
     r: list[str] = []
     with inp.open() as f:
-        ln = f.readline()
-        if ln.find("<desc>") == -1:
-            r.append(ln)
+        while ln := f.readline():
+            if ln.find("<desc>") == -1:
+                r.append(ln)
     return r
 
 
