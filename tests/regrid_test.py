@@ -52,6 +52,11 @@ def test_regrid(tmp_path: Path) -> None:
         actual = _dedesc(tmp_path / f"output{n}.svg")
         assert actual == expected
 
+    # Verify that the lines are indeed horizontal and vertical
+    # and thus the grid is not askew.
+    assert "\n".join(actual).find("M 200 400 L 2800 400") != -1
+    assert "\n".join(actual).find("M 400 200 L 400 2800") != -1
+
     (tmp_path / "bad.svgmap").write_text(
         blockdesc + "\n" + "regrid,2,2,28,28.3,\n"
     )
