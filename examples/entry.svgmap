@@ -971,11 +971,11 @@ continuation,1,29,1,30,solid
 continuation,1,30,0,30,block_end
 
 # Arrow and scale
-line,3.2,27,3.2,26,normal
-block,3.2,26,2.8,26.4,solid
-block,2.8,26.4,3.2,26.4,solid
-block,3.2,26.4,3.2,26,block_end
-text,3.4,26.6,N,sans_serif,0.6
-text,6.2,17.3,1 sq.=,sans_serif,0.5
-text,6.5,17.8,10 ft.,sans_serif,0.5
+line,3.2,26,3.2,27.2,normal
+block,3.2,26,3,26.5,solid
+continuation,3,26.5,3.2,26.5,solid
+continuation,3.2,26.5,3.2,26,block_end
+text,3,25.9,N,sans_serif,0.6
+text,3.4,26.5,1 sq.=,sans_serif,0.5
+text,3.4,27,10 ft.,sans_serif,0.5
 
