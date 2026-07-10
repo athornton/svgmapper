@@ -7,11 +7,7 @@ from svgmapper.services.converter import Converter
 from svgmapper.services.creator import Creator
 
 
-def main() -> None:
-    """Rebuild the test outputs."""
-    here = Path(__file__).parent
-    data = here.parent / "tests" / "data"
-    output = data / "output"
+def _build_tests(data: Path, output: Path) -> None:
     # Recreate crypt.svg from crypt.desc
 
     converter = Converter(
@@ -41,6 +37,27 @@ def main() -> None:
             inp=data / f"{fn}.svgmap", output=output / f"{fn}.svg"
         )
         creator.create()
+
+
+def _build_examples(here: Path) -> None:
+    examples = here.parent / "examples"
+    svg = examples / "svg"
+    svg.mkdir(exist_ok=True)
+    for fn in ("entry", "caves", "crypt"):
+        creator = Creator(
+            inp=examples / f"{fn}.svgmap", output=svg / f"{fn}.svg"
+        )
+        creator.create()
+
+
+def main() -> None:
+    """Rebuild the test outputs."""
+    here = Path(__file__).parent
+    data = here.parent / "tests" / "data"
+    output = data / "output"
+
+    _build_tests(data, output)
+    _build_examples(here)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,1443 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 3000" width="7.5in" height="7.5in">
+	<defs>
+		<pattern id="hatch00" viewBox="0 0 25.0 25.0" patternUnits="userSpaceOnUse" x="0" y="0" width="25.0" height="25.0">
+			<g>
+				<line stroke="#1EAED0" stroke-width="2.5" x1="0" y1="0" x2="25.0" y2="25.0"/>
+			</g>
+		</pattern>
+		<pattern id="wave00" viewBox="0 0 25.0 25.0" patternUnits="userSpaceOnUse" x="0" y="0" width="25.0" height="25.0">
+			<g>
+				<path stroke="#1EAED0" stroke-width="2.5" d="M 12.5 0.0 A 20.0 10.0 75 0 0 37.5 0.0 A 20.0 10.0 75 0 0 62.5 0.0 A 20.0 10.0 75 0 0 87.5 0.0 M 0.0 12.5 A 20.0 10.0 75 0 0 25.0 12.5 A 20.0 10.0 75 0 0 50.0 12.5 A 20.0 10.0 75 0 0 75.0 12.5" fill="none"/>
+			</g>
+		</pattern>
+	</defs>
+	<desc># Map grid (0,0) - (30,30)</desc>
+	<path stroke="#1EAED0" stroke-width="0.8" d="M 0 0 L 3000 0 M 0 100 L 3000 100 M 0 200 L 3000 200 M 0 300 L 3000 300 M 0 400 L 3000 400 M 0 500 L 3000 500 M 0 600 L 3000 600 M 0 700 L 3000 700 M 0 800 L 3000 800 M 0 900 L 3000 900 M 0 1000 L 3000 1000 M 0 1100 L 3000 1100 M 0 1200 L 3000 1200 M 0 1300 L 3000 1300 M 0 1400 L 3000 1400 M 0 1500 L 3000 1500 M 0 1600 L 3000 1600 M 0 1700 L 3000 1700 M 0 1800 L 3000 1800 M 0 1900 L 3000 1900 M 0 2000 L 3000 2000 M 0 2100 L 3000 2100 M 0 2200 L 3000 2200 M 0 2300 L 3000 2300 M 0 2400 L 3000 2400 M 0 2500 L 3000 2500 M 0 2600 L 3000 2600 M 0 2700 L 3000 2700 M 0 2800 L 3000 2800 M 0 2900 L 3000 2900 M 0 3000 L 3000 3000 M 0 0 L 0 3000 M 100 0 L 100 3000 M 200 0 L 200 3000 M 300 0 L 300 3000 M 400 0 L 400 3000 M 500 0 L 500 3000 M 600 0 L 600 3000 M 700 0 L 700 3000 M 800 0 L 800 3000 M 900 0 L 900 3000 M 1000 0 L 1000 3000 M 1100 0 L 1100 3000 M 1200 0 L 1200 3000 M 1300 0 L 1300 3000 M 1400 0 L 1400 3000 M 1500 0 L 1500 3000 M 1600 0 L 1600 3000 M 1700 0 L 1700 3000 M 1800 0 L 1800 3000 M 1900 0 L 1900 3000 M 2000 0 L 2000 3000 M 2100 0 L 2100 3000 M 2200 0 L 2200 3000 M 2300 0 L 2300 3000 M 2400 0 L 2400 3000 M 2500 0 L 2500 3000 M 2600 0 L 2600 3000 M 2700 0 L 2700 3000 M 2800 0 L 2800 3000 M 2900 0 L 2900 3000 M 3000 0 L 3000 3000"/>
+	<desc># Level description file:</desc>
+	<desc># Each line has six fields: kind, startx, starty, endx, endy, type</desc>
+	<desc># is a comment line</desc>
+	<desc># Edge</desc>
+	<desc>line,0,0,0,30,thick</desc>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 0.0 0.0 L 0.0 3000.0"/>
+	<desc>line,0,30,30,30,thick</desc>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 0.0 3000.0 L 3000.0 3000.0"/>
+	<desc>line,30,30,30,0,thick</desc>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 3000.0 3000.0 L 3000.0 0.0"/>
+	<desc>line,30,0,0,0,thick</desc>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 3000.0 0.0 L 0.0 0.0"/>
+	<desc># Walls</desc>
+	<desc>## Bath</desc>
+	<desc>line,3,3,7,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 300.0 300.0 L 700.0 300.0"/>
+	<desc>line,7,3,7,4,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 700.0 300.0 L 700.0 400.0"/>
+	<desc>line,7,4,5,4,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 700.0 400.0 L 500.0 400.0"/>
+	<desc>line,5,4,5,7,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 500.0 400.0 L 500.0 700.0"/>
+	<desc>line,5,7,3,7,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 500.0 700.0 L 300.0 700.0"/>
+	<desc>line,3,7,3,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 300.0 700.0 L 300.0 300.0"/>
+	<desc>## Harem</desc>
+	<desc>line,7,2,9,2,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 700.0 200.0 L 900.0 200.0"/>
+	<desc>line,9,2,9,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 200.0 L 900.0 500.0"/>
+	<desc>line,9,5,7,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 500.0 L 700.0 500.0"/>
+	<desc>line,7,5,7,2,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 700.0 500.0 L 700.0 200.0"/>
+	<desc>## Hall</desc>
+	<desc>line,8,5,8,10,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 800.0 500.0 L 800.0 1000.0"/>
+	<desc>line,7.5,10,7.5,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 750.0 1000.0 L 750.0 500.0"/>
+	<desc>## Hall</desc>
+	<desc>line,9,4,10,4,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 400.0 L 1000.0 400.0"/>
+	<desc>line,10,4.5,9,4.5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 450.0 L 900.0 450.0"/>
+	<desc>## Vizier%27s</desc>
+	<desc>line,10,2,12,2,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 200.0 L 1200.0 200.0"/>
+	<desc>line,12,2,12,4,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 200.0 L 1200.0 400.0"/>
+	<desc>line,12,4,10,4,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 400.0 L 1000.0 400.0"/>
+	<desc>line,10,4,10,2,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 400.0 L 1000.0 200.0"/>
+	<desc>## Hall</desc>
+	<desc>line,12,4,12,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 400.0 L 1200.0 300.0"/>
+	<desc>line,12,3,13,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 300.0 L 1300.0 300.0"/>
+	<desc>line,13,3,13,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 300.0 L 1300.0 500.0"/>
+	<desc>line,13,5,10,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 500.0 L 1000.0 500.0"/>
+	<desc>line,10,5,10,4,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 500.0 L 1000.0 400.0"/>
+	<desc>## Lt.%27s</desc>
+	<desc>line,14,3,14,1,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1400.0 300.0 L 1400.0 100.0"/>
+	<desc>line,14,1,12,1,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1400.0 100.0 L 1200.0 100.0"/>
+	<desc>line,12,1,12,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 100.0 L 1200.0 300.0"/>
+	<desc>line,12,3,14,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 300.0 L 1400.0 300.0"/>
+	<desc>## Throne Room</desc>
+	<desc>line,9,5,12,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 500.0 L 1200.0 500.0"/>
+	<desc>line,12,5,12,10,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 500.0 L 1200.0 1000.0"/>
+	<desc>line,12,10,9,10,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 1000.0 L 900.0 1000.0"/>
+	<desc>line,9,10,9,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 1000.0 L 900.0 500.0"/>
+	<desc>## Hall</desc>
+	<desc>line,14,7,18,7,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1400.0 700.0 L 1800.0 700.0"/>
+	<desc>line,18,7,18,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 700.0 L 1800.0 500.0"/>
+	<desc>line,18,5,19,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 500.0 L 1900.0 500.0"/>
+	<desc>line,19,5,19,7,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1900.0 500.0 L 1900.0 700.0"/>
+	<desc>line,19,7,24,7,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1900.0 700.0 L 2400.0 700.0"/>
+	<desc>line,24,8,19,8,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 800.0 L 1900.0 800.0"/>
+	<desc>line,19,8,19,9,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1900.0 800.0 L 1900.0 900.0"/>
+	<desc>line,18,9,18,8,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 900.0 L 1800.0 800.0"/>
+	<desc>line,18,8,12,8,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 800.0 L 1200.0 800.0"/>
+	<desc>## Tripwire and spears</desc>
+	<desc>line,19,5,17,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1900.0 500.0 L 1700.0 500.0"/>
+	<desc>line,17,5,17,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1700.0 500.0 L 1700.0 300.0"/>
+	<desc>line,17,3,19,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1700.0 300.0 L 1900.0 300.0"/>
+	<desc>line,19,3,19,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1900.0 300.0 L 1900.0 500.0"/>
+	<desc>## Hall</desc>
+	<desc>line,18,3,18,1,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 300.0 L 1800.0 100.0"/>
+	<desc>line,18,1,21,1,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 100.0 L 2100.0 100.0"/>
+	<desc>line,21,1,21,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2100.0 100.0 L 2100.0 300.0"/>
+	<desc>line,20,3,20,2,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2000.0 300.0 L 2000.0 200.0"/>
+	<desc>line,20,2,19,2,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2000.0 200.0 L 1900.0 200.0"/>
+	<desc>line,19,2,19,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1900.0 200.0 L 1900.0 300.0"/>
+	<desc>## Pit Trap</desc>
+	<desc>line,20,3,20,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2000.0 300.0 L 2000.0 500.0"/>
+	<desc>line,20,5,22,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2000.0 500.0 L 2200.0 500.0"/>
+	<desc>line,22,5,22,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2200.0 500.0 L 2200.0 300.0"/>
+	<desc>line,22,3,20,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2200.0 300.0 L 2000.0 300.0"/>
+	<desc>## Hall</desc>
+	<desc>line,22,4,24,4,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2200.0 400.0 L 2400.0 400.0"/>
+	<desc>line,24,4,24,1.5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 400.0 L 2400.0 150.0"/>
+	<desc>line,24,1.5,30,1.5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 150.0 L 3000.0 150.0"/>
+	<desc>line,30,1.5,30,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 3000.0 150.0 L 3000.0 300.0"/>
+	<desc>line,29.5,3,29.5,2,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2950.0 300.0 L 2950.0 200.0"/>
+	<desc>line,29.5,2,24.5,2,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2950.0 200.0 L 2450.0 200.0"/>
+	<desc>line,24.5,2,24.5,4,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2450.0 200.0 L 2450.0 400.0"/>
+	<desc>line,24.5,4,26,4,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2450.0 400.0 L 2600.0 400.0"/>
+	<desc>line,22,5,26,5,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2200.0 500.0 L 2600.0 500.0"/>
+	<desc>## Orc and Pie</desc>
+	<desc>line,29,3,30,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2900.0 300.0 L 3000.0 300.0"/>
+	<desc>line,30,3,30,4,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 3000.0 300.0 L 3000.0 400.0"/>
+	<desc>line,30,4,29,4,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 3000.0 400.0 L 2900.0 400.0"/>
+	<desc>line,29,4,29,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2900.0 400.0 L 2900.0 300.0"/>
+	<desc>## Guard Post</desc>
+	<desc>line,26,3,26,6,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2600.0 300.0 L 2600.0 600.0"/>
+	<desc>line,26,6,28,6,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2600.0 600.0 L 2800.0 600.0"/>
+	<desc>line,28,6,28,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2800.0 600.0 L 2800.0 300.0"/>
+	<desc>line,28,3,26,3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2800.0 300.0 L 2600.0 300.0"/>
+	<desc>## Hall</desc>
+	<desc>line,28,4,29,4,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2800.0 400.0 L 2900.0 400.0"/>
+	<desc>line,29,4,29,6,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2900.0 400.0 L 2900.0 600.0"/>
+	<desc>line,29,6,30,6,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2900.0 600.0 L 3000.0 600.0"/>
+	<desc>line,30,7,28,7,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 3000.0 700.0 L 2800.0 700.0"/>
+	<desc>line,28,7,28,6,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2800.0 700.0 L 2800.0 600.0"/>
+	<desc>## Barracks</desc>
+	<desc>line,26,6,24,6,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2600.0 600.0 L 2400.0 600.0"/>
+	<desc>line,24,6,24,7,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 600.0 L 2400.0 700.0"/>
+	<desc>line,26,6,26,17,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2600.0 600.0 L 2600.0 1700.0"/>
+	<desc>line,26,17,24,17,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2600.0 1700.0 L 2400.0 1700.0"/>
+	<desc>line,24,17,24,16,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 1700.0 L 2400.0 1600.0"/>
+	<desc>line,24,15,24,8,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 1500.0 L 2400.0 800.0"/>
+	<desc>## Toilet stalls</desc>
+	<desc>line,26,10,27,10,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2600.0 1000.0 L 2700.0 1000.0"/>
+	<desc>line,27,10,27,9,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2700.0 1000.0 L 2700.0 900.0"/>
+	<desc>line,27,9,28,9,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2700.0 900.0 L 2800.0 900.0"/>
+	<desc>line,28,9,28,12,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2800.0 900.0 L 2800.0 1200.0"/>
+	<desc>line,28,12,27,12,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2800.0 1200.0 L 2700.0 1200.0"/>
+	<desc>line,27,12,27,11,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2700.0 1200.0 L 2700.0 1100.0"/>
+	<desc>line,27,11,26,11,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2700.0 1100.0 L 2600.0 1100.0"/>
+	<desc>## Feast Hall</desc>
+	<desc>line,19,9,22,9,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1900.0 900.0 L 2200.0 900.0"/>
+	<desc>line,22,9,22,13,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2200.0 900.0 L 2200.0 1300.0"/>
+	<desc>line,22,13,15,13,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2200.0 1300.0 L 1500.0 1300.0"/>
+	<desc>line,15,13,15,9,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1500.0 1300.0 L 1500.0 900.0"/>
+	<desc>line,15,9,18,9,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1500.0 900.0 L 1800.0 900.0"/>
+	<desc>## Throne room</desc>
+	<desc>line,24,15,23,15,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 1500.0 L 2300.0 1500.0"/>
+	<desc>line,24,16,23,16,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 1600.0 L 2300.0 1600.0"/>
+	<desc>line,23,15,23,13,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2300.0 1500.0 L 2300.0 1300.0"/>
+	<desc>line,23,13,20,13,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2300.0 1300.0 L 2000.0 1300.0"/>
+	<desc>line,20,13,20,17,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2000.0 1300.0 L 2000.0 1700.0"/>
+	<desc>line,20,17,23,17,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2000.0 1700.0 L 2300.0 1700.0"/>
+	<desc>line,23,17,23,16,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2300.0 1700.0 L 2300.0 1600.0"/>
+	<desc>## Ramp to surface</desc>
+	<desc>line,12,9,14,9,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 900.0 L 1400.0 900.0"/>
+	<desc>line,14,9,14,14,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1400.0 900.0 L 1400.0 1400.0"/>
+	<desc>line,13,14,13,13,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 1400.0 L 1300.0 1300.0"/>
+	<desc>line,13,13,12,13,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 1300.0 L 1200.0 1300.0"/>
+	<desc>line,12,13,12,9,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 1300.0 L 1200.0 900.0"/>
+	<desc>line,13,9,13,12,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 900.0 L 1300.0 1200.0"/>
+	<desc>## T-hall</desc>
+	<desc>line,12,11,11,11,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 1100.0 L 1100.0 1100.0"/>
+	<desc>line,11,11,11,10,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1100.0 1100.0 L 1100.0 1000.0"/>
+	<desc>line,10,10,10,11,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 1000.0 L 1000.0 1100.0"/>
+	<desc>line,10,11,9,11,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 1100.0 L 900.0 1100.0"/>
+	<desc>line,9,12,12,12,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 1200.0 L 1200.0 1200.0"/>
+	<desc>## Chief%27s quarters</desc>
+	<desc>line,9,10,9,13,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 1000.0 L 900.0 1300.0"/>
+	<desc>line,9,13,7,13,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 1300.0 L 700.0 1300.0"/>
+	<desc>line,7,13,7,10,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 700.0 1300.0 L 700.0 1000.0"/>
+	<desc>line,7,10,9,10,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 700.0 1000.0 L 900.0 1000.0"/>
+	<desc>## Hall to treasure room</desc>
+	<desc>line,7,13,7,16,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 700.0 1300.0 L 700.0 1600.0"/>
+	<desc>line,8,13,8,16,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 800.0 1300.0 L 800.0 1600.0"/>
+	<desc>## Treasure room</desc>
+	<desc>line,8,16,8,19,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 800.0 1600.0 L 800.0 1900.0"/>
+	<desc>line,8,19,5,19,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 800.0 1900.0 L 500.0 1900.0"/>
+	<desc>line,5,19,5,16,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 500.0 1900.0 L 500.0 1600.0"/>
+	<desc>line,5,16,8,16,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 500.0 1600.0 L 800.0 1600.0"/>
+	<desc>## Store room</desc>
+	<desc>line,14,14,17,14,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1400.0 1400.0 L 1700.0 1400.0"/>
+	<desc>line,17,14,17,16,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1700.0 1400.0 L 1700.0 1600.0"/>
+	<desc>line,17,16,20,16,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1700.0 1600.0 L 2000.0 1600.0"/>
+	<desc>line,20,17,10,17,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2000.0 1700.0 L 1000.0 1700.0"/>
+	<desc>line,10,17,10,14,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 1700.0 L 1000.0 1400.0"/>
+	<desc>line,10,14,13,14,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 1400.0 L 1300.0 1400.0"/>
+	<desc>## Guard hall</desc>
+	<desc>line,25,17,25,19,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2500.0 1700.0 L 2500.0 1900.0"/>
+	<desc>line,24,17,24,19,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 1700.0 L 2400.0 1900.0"/>
+	<desc>## Guard post</desc>
+	<desc>line,24,19,26,19,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 1900.0 L 2600.0 1900.0"/>
+	<desc>line,26,19,26,21,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2600.0 1900.0 L 2600.0 2100.0"/>
+	<desc>line,26,21,24,21,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2600.0 2100.0 L 2400.0 2100.0"/>
+	<desc>line,24,21,24,19,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 2100.0 L 2400.0 1900.0"/>
+	<desc>## Big hall</desc>
+	<desc>line,24,21,17,21,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 2100.0 L 1700.0 2100.0"/>
+	<desc>line,17,21,17,25,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1700.0 2100.0 L 1700.0 2500.0"/>
+	<desc>line,16,25,16,21,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1600.0 2500.0 L 1600.0 2100.0"/>
+	<desc>line,16,21,12,21,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1600.0 2100.0 L 1200.0 2100.0"/>
+	<desc>line,12,21,12,22,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 2100.0 L 1200.0 2200.0"/>
+	<desc>line,11,22,11,21,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1100.0 2200.0 L 1100.0 2100.0"/>
+	<desc>line,11,21,9,21,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1100.0 2100.0 L 900.0 2100.0"/>
+	<desc>line,9,20,20,20,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 2000.0 L 2000.0 2000.0"/>
+	<desc>line,20,20,20,19,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2000.0 2000.0 L 2000.0 1900.0"/>
+	<desc>line,20,19,18,19,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2000.0 1900.0 L 1800.0 1900.0"/>
+	<desc>line,18,18,21,18,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 1800.0 L 2100.0 1800.0"/>
+	<desc>line,21,18,21,20,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2100.0 1800.0 L 2100.0 2000.0"/>
+	<desc>line,21,20,24,20,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2100.0 2000.0 L 2400.0 2000.0"/>
+	<desc>## Corwyn%27s room</desc>
+	<desc>line,18,18,18,20,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 1800.0 L 1800.0 2000.0"/>
+	<desc>line,18,20,16,20,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 2000.0 L 1600.0 2000.0"/>
+	<desc>line,16,20,16,18,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1600.0 2000.0 L 1600.0 1800.0"/>
+	<desc>line,16,18,18,18,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1600.0 1800.0 L 1800.0 1800.0"/>
+	<desc>## Jenna%27s room</desc>
+	<desc>line,12,22,12,24,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 2200.0 L 1200.0 2400.0"/>
+	<desc>line,12,24,10,24,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 2400.0 L 1000.0 2400.0"/>
+	<desc>line,10,24,10,22,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 2400.0 L 1000.0 2200.0"/>
+	<desc>line,10,22,12,22,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 2200.0 L 1200.0 2200.0"/>
+	<desc>## Grand Staircase</desc>
+	<desc>line,9,24,5,24,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 2400.0 L 500.0 2400.0"/>
+	<desc>line,5,24,5,20,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 500.0 2400.0 L 500.0 2000.0"/>
+	<desc>line,5,20,9,20,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 500.0 2000.0 L 900.0 2000.0"/>
+	<desc>line,9,21,9,24,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 2100.0 L 900.0 2400.0"/>
+	<desc>## Dojo</desc>
+	<desc>line,17,25,18,25,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1700.0 2500.0 L 1800.0 2500.0"/>
+	<desc>line,18,25,18,26,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 2500.0 L 1800.0 2600.0"/>
+	<desc>line,17,27,13,27,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1700.0 2700.0 L 1300.0 2700.0"/>
+	<desc>line,13,26,15,26,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 2600.0 L 1500.0 2600.0"/>
+	<desc>line,15,26,15,25,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1500.0 2600.0 L 1500.0 2500.0"/>
+	<desc>line,15,25,17,25,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1500.0 2500.0 L 1700.0 2500.0"/>
+	<desc>## Mess Hall</desc>
+	<desc>line,18,26,19,26,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 2600.0 L 1900.0 2600.0"/>
+	<desc>line,19,26,19,22,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1900.0 2600.0 L 1900.0 2200.0"/>
+	<desc>line,19,22,22,22,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1900.0 2200.0 L 2200.0 2200.0"/>
+	<desc>line,22,22,22,27,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2200.0 2200.0 L 2200.0 2700.0"/>
+	<desc>line,22,27,18,27,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2200.0 2700.0 L 1800.0 2700.0"/>
+	<desc>## Koan Hall</desc>
+	<desc>line,18,27,18,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 2700.0 L 1800.0 2800.0"/>
+	<desc>line,18,28,20,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 2800.0 L 2000.0 2800.0"/>
+	<desc>line,20,28,20,30,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2000.0 2800.0 L 2000.0 3000.0"/>
+	<desc>line,20,30,17,30,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2000.0 3000.0 L 1700.0 3000.0"/>
+	<desc>line,17,30,17,27,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1700.0 3000.0 L 1700.0 2700.0"/>
+	<desc>## Toilet stalls</desc>
+	<desc>line,15,27,15,29,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1500.0 2700.0 L 1500.0 2900.0"/>
+	<desc>line,15,29,16,29,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1500.0 2900.0 L 1600.0 2900.0"/>
+	<desc>line,16,29,16,30,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1600.0 2900.0 L 1600.0 3000.0"/>
+	<desc>line,13,30,13,29,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 3000.0 L 1300.0 2900.0"/>
+	<desc>line,13,29,14,29,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 2900.0 L 1400.0 2900.0"/>
+	<desc>line,14,29,14,27,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1400.0 2900.0 L 1400.0 2700.0"/>
+	<desc>## Monks%27 cells</desc>
+	<desc>line,13,28,7,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 2800.0 L 700.0 2800.0"/>
+	<desc>line,7,28,7,25,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 700.0 2800.0 L 700.0 2500.0"/>
+	<desc>line,7,25,13,25,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 700.0 2500.0 L 1300.0 2500.0"/>
+	<desc>line,13,25,13,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 2500.0 L 1300.0 2800.0"/>
+	<desc>## Entry hall</desc>
+	<desc>line,0,26,2,26,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 0.0 2600.0 L 200.0 2600.0"/>
+	<desc>line,0,27,2,27,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 0.0 2700.0 L 200.0 2700.0"/>
+	<desc>line,2,28,2,25,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 200.0 2800.0 L 200.0 2500.0"/>
+	<desc>line,2,25,5,25,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 200.0 2500.0 L 500.0 2500.0"/>
+	<desc>line,5,25,5,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 500.0 2500.0 L 500.0 2800.0"/>
+	<desc>line,5,28,2,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 500.0 2800.0 L 200.0 2800.0"/>
+	<desc>line,5,27,7,27,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 500.0 2700.0 L 700.0 2700.0"/>
+	<desc>line,5,26,7,26,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 500.0 2600.0 L 700.0 2600.0"/>
+	<desc>## Sluice</desc>
+	<desc>line,3,28,3,29,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 300.0 2800.0 L 300.0 2900.0"/>
+	<desc>line,3,29,1,29,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 300.0 2900.0 L 100.0 2900.0"/>
+	<desc>line,1,29,1,30,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 100.0 2900.0 L 100.0 3000.0"/>
+	<desc>line,6,30,6,29,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 600.0 3000.0 L 600.0 2900.0"/>
+	<desc>line,6,29,4,29,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 600.0 2900.0 L 400.0 2900.0"/>
+	<desc>line,4,29,4,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 400.0 2900.0 L 400.0 2800.0"/>
+	<desc>## Kitchen</desc>
+	<desc>line,22,22,25,22,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2200.0 2200.0 L 2500.0 2200.0"/>
+	<desc>line,25,22,25,24,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2500.0 2200.0 L 2500.0 2400.0"/>
+	<desc>line,25,24,22,24,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2500.0 2400.0 L 2200.0 2400.0"/>
+	<desc>## Monks%27 Storeroom</desc>
+	<desc>line,24,24,24,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 2400.0 L 2400.0 2800.0"/>
+	<desc>line,24,28,22,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 2800.0 L 2200.0 2800.0"/>
+	<desc>line,22,28,22,30,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2200.0 2800.0 L 2200.0 3000.0"/>
+	<desc>line,25,30,25,24,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2500.0 3000.0 L 2500.0 2400.0"/>
+	<desc>## Archery range</desc>
+	<desc>line,4,25,4,23,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 400.0 2500.0 L 400.0 2300.0"/>
+	<desc># Grand Staircase central pit</desc>
+	<desc>block,8,23,6,23,hatched</desc>
+	<desc>continuation,6,23,6,21,hatched</desc>
+	<desc>continuation,6,21,8,21,hatched</desc>
+	<desc>continuation,8,21,8,23,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="800.0,2300.0 600.0,2300.0 600.0,2100.0 800.0,2100.0 800.0,2300.0" fill="url(#hatch00)"/>
+	<desc># Bath</desc>
+	<desc>block,3.5,4,3.5,6.25,wave</desc>
+	<desc>continuation,3.5,6.5,4.5,6.5,wave</desc>
+	<desc>continuation,4.5,6.5,4.5,4,wave</desc>
+	<desc>continuation,4.5,4,3.5,4,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="350.0,400.0 350.0,625.0 350.0,650.0 450.0,650.0 450.0,400.0 350.0,400.0" fill="url(#wave00)"/>
+	<desc># Sluice</desc>
+	<desc>block,1,29.3,6,29.3,wave</desc>
+	<desc>block,6,29.3,6,29.7,wave</desc>
+	<desc>block,6,29.7,1,29.7,wave</desc>
+	<desc>block,1,29.7,1,29.3,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="100.0,2930.0 600.0,2930.0 600.0,2970.0 100.0,2970.0 100.0,2930.0" fill="url(#wave00)"/>
+	<desc># Partitions</desc>
+	<desc>## Toilets</desc>
+	<desc>line,27.5,9,27.5,12,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2750.0 900.0 L 2750.0 1200.0"/>
+	<desc>line,27.5,9.5,28,9.5,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2750.0 950.0 L 2800.0 950.0"/>
+	<desc>line,27.5,10,28,10,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2750.0 1000.0 L 2800.0 1000.0"/>
+	<desc>line,27.5,10.5,28,10.5,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2750.0 1050.0 L 2800.0 1050.0"/>
+	<desc>line,27.5,11,28,11,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2750.0 1100.0 L 2800.0 1100.0"/>
+	<desc>line,27.5,11.5,28,11.5,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2750.0 1150.0 L 2800.0 1150.0"/>
+	<desc>line,13,29.5,16,29.5,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1300.0 2950.0 L 1600.0 2950.0"/>
+	<desc>line,13.5,29.5,13.5,30,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1350.0 2950.0 L 1350.0 3000.0"/>
+	<desc>line,14,29.5,14,30,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1400.0 2950.0 L 1400.0 3000.0"/>
+	<desc>line,14.5,29.5,14.5,30,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1450.0 2950.0 L 1450.0 3000.0"/>
+	<desc>line,15,29.5,15,30,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1500.0 2950.0 L 1500.0 3000.0"/>
+	<desc>line,15.5,29.5,15.5,30,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1550.0 2950.0 L 1550.0 3000.0"/>
+	<desc>## Monks%27 cells</desc>
+	<desc>line,8,25,8,26,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 800.0 2500.0 L 800.0 2600.0"/>
+	<desc>line,9,25,9,26,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 2500.0 L 900.0 2600.0"/>
+	<desc>line,10,25,10,26,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 2500.0 L 1000.0 2600.0"/>
+	<desc>line,11,25,11,26,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1100.0 2500.0 L 1100.0 2600.0"/>
+	<desc>line,12,25,12,26,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 2500.0 L 1200.0 2600.0"/>
+	<desc>line,8,27,8,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 800.0 2700.0 L 800.0 2800.0"/>
+	<desc>line,9,27,9,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 2700.0 L 900.0 2800.0"/>
+	<desc>line,10,27,10,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 2700.0 L 1000.0 2800.0"/>
+	<desc>line,11,27,11,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1100.0 2700.0 L 1100.0 2800.0"/>
+	<desc>line,12,27,12,28,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 2700.0 L 1200.0 2800.0"/>
+	<desc>line,7,27,13,27,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 700.0 2700.0 L 1300.0 2700.0"/>
+	<desc>line,7,26,13,26,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 700.0 2600.0 L 1300.0 2600.0"/>
+	<desc>## Pit Trap</desc>
+	<desc>line,20.25,3.25,21.75,3.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2025.0 325.0 L 2175.0 325.0"/>
+	<desc>line,21.75,3.25,21.75,4.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2175.0 325.0 L 2175.0 475.0"/>
+	<desc>line,21.75,4.75,20.25,4.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2175.0 475.0 L 2025.0 475.0"/>
+	<desc>line,20.25,4.75,20.25,3.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2025.0 475.0 L 2025.0 325.0"/>
+	<desc>line,20.25,3.25,21.75,4.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2025.0 325.0 L 2175.0 475.0"/>
+	<desc>line,20.25,4.75,21.75,3.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2025.0 475.0 L 2175.0 325.0"/>
+	<desc>## Tripwire</desc>
+	<desc>line,17,4,19,4,dashed</desc>
+	<path stroke="#1EAED0" stroke-dasharray="20.0 20.0" stroke-width="5.0" d="M 1700.0 400.0 L 1900.0 400.0"/>
+	<desc># Stairs</desc>
+	<desc>spiral_stairs,29.5,6.5,0,0,0</desc>
+	<circle stroke="#1EAED0" stroke-width="3.5" cx="2950.0" cy="650.0" r="50.0" fill="white"/>
+	<line stroke="#1EAED0" stroke-width="3.5" x1="2950.0" y1="700.0" x2="2950.0" y2="600.0"/>
+	<line stroke="#1EAED0" stroke-width="3.5" x1="3000.0" y1="650.0" x2="2900.0" y2="650.0"/>
+	<line stroke="#1EAED0" stroke-width="3.5" x1="2985.3553390593274" y1="614.6446609406726" x2="2914.6446609406726" y2="685.3553390593274"/>
+	<line stroke="#1EAED0" stroke-width="3.5" x1="2985.3553390593274" y1="685.3553390593274" x2="2914.6446609406726" y2="614.6446609406726"/>
+	<desc>spiral_stairs,12.5,15.5,0,0,0</desc>
+	<circle stroke="#1EAED0" stroke-width="3.5" cx="1250.0" cy="1550.0" r="50.0" fill="white"/>
+	<line stroke="#1EAED0" stroke-width="3.5" x1="1250.0" y1="1600.0" x2="1250.0" y2="1500.0"/>
+	<line stroke="#1EAED0" stroke-width="3.5" x1="1300.0" y1="1550.0" x2="1200.0" y2="1550.0"/>
+	<line stroke="#1EAED0" stroke-width="3.5" x1="1285.3553390593274" y1="1514.6446609406726" x2="1214.6446609406726" y2="1585.3553390593274"/>
+	<line stroke="#1EAED0" stroke-width="3.5" x1="1285.3553390593274" y1="1585.3553390593274" x2="1214.6446609406726" y2="1514.6446609406726"/>
+	<desc>spiral_stairs,0.5,26.5,0,0,0</desc>
+	<circle stroke="#1EAED0" stroke-width="3.5" cx="50.0" cy="2650.0" r="50.0" fill="white"/>
+	<line stroke="#1EAED0" stroke-width="3.5" x1="50.0" y1="2700.0" x2="50.0" y2="2600.0"/>
+	<line stroke="#1EAED0" stroke-width="3.5" x1="100.0" y1="2650.0" x2="0.0" y2="2650.0"/>
+	<line stroke="#1EAED0" stroke-width="3.5" x1="85.35533905932738" y1="2614.6446609406726" x2="14.644660940672622" y2="2685.3553390593274"/>
+	<line stroke="#1EAED0" stroke-width="3.5" x1="85.35533905932738" y1="2685.3553390593274" x2="14.644660940672622" y2="2614.6446609406726"/>
+	<desc>## Grand staircase</desc>
+	<desc>line,5,21,6,21,dashed</desc>
+	<path stroke="#1EAED0" stroke-dasharray="20.0 20.0" stroke-width="5.0" d="M 500.0 2100.0 L 600.0 2100.0"/>
+	<desc>line,7.25,20,7.25,21,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 725.0 2000.0 L 725.0 2100.0"/>
+	<desc>line,7.5,20,7.5,21,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 750.0 2000.0 L 750.0 2100.0"/>
+	<desc>line,7.75,20,7.75,21,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 775.0 2000.0 L 775.0 2100.0"/>
+	<desc>line,8,20,8,21,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 800.0 2000.0 L 800.0 2100.0"/>
+	<desc>line,8,21,10,21,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 800.0 2100.0 L 1000.0 2100.0"/>
+	<desc>line,8.1,21.25,8.9,21.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 810.0 2125.0 L 890.0 2125.0"/>
+	<desc>line,8.2,21.5,8.8,21.5,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 819.9999999999999 2150.0 L 880.0000000000001 2150.0"/>
+	<desc>line,8.3,21.75,8.7,21.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 830.0000000000001 2175.0 L 869.9999999999999 2175.0"/>
+	<desc>line,8.4,22,8.6,22,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 840.0 2200.0 L 860.0 2200.0"/>
+	<desc>## Ramp</desc>
+	<desc>line,13.5,9.2,13.5,10,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1350.0 919.9999999999999 L 1350.0 1000.0"/>
+	<desc>line,13.5,10,13.3,9.8,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1350.0 1000.0 L 1330.0 980.0000000000001"/>
+	<desc>line,13.5,10,13.7,9.8,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1350.0 1000.0 L 1370.0 980.0000000000001"/>
+	<desc># Furnishings</desc>
+	<desc>## Bath fireplace</desc>
+	<desc>line,3.75,3,3.75,3.25,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 375.0 300.0 L 375.0 325.0"/>
+	<desc>line,4.25,3,4.25,3.25,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 425.0 300.0 L 425.0 325.0"/>
+	<desc>line,3.75,3.1,4.25,3.1,thick</desc>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 375.0 310.0 L 425.0 310.0"/>
+	<desc>## Harem beds</desc>
+	<desc>line,7.25,2,7.25,2.7,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 725.0 200.0 L 725.0 270.0"/>
+	<desc>line,7.25,2.7,7.75,2.7,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 725.0 270.0 L 775.0 270.0"/>
+	<desc>line,7.75,2.7,7.75,2,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 775.0 270.0 L 775.0 200.0"/>
+	<desc>line,8.25,2,8.25,2.7,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 825.0 200.0 L 825.0 270.0"/>
+	<desc>line,8.25,2.7,8.75,2.7,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 825.0 270.0 L 875.0 270.0"/>
+	<desc>line,8.75,2.7,8.75,2,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 875.0 270.0 L 875.0 200.0"/>
+	<desc>line,7,4.25,7.7,4.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 700.0 425.0 L 770.0 425.0"/>
+	<desc>line,7.7,4.25,7.7,4.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 770.0 425.0 L 770.0 475.0"/>
+	<desc>line,7.7,4.75,7,4.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 770.0 475.0 L 700.0 475.0"/>
+	<desc>line,9,3.25,8.3,3.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 900.0 325.0 L 830.0000000000001 325.0"/>
+	<desc>line,8.3,3.25,8.3,3.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 830.0000000000001 325.0 L 830.0000000000001 375.0"/>
+	<desc>line,8.3,3.75,9,3.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 830.0000000000001 375.0 L 900.0 375.0"/>
+	<desc>## Vizier%27s bed</desc>
+	<desc>line,10,2.5,10.75,2.5,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1000.0 250.0 L 1075.0 250.0"/>
+	<desc>line,10.75,2.5,10.75,3.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1075.0 250.0 L 1075.0 325.0"/>
+	<desc>line,10.75,3.25,10,3.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1075.0 325.0 L 1000.0 325.0"/>
+	<desc>## Lieutenant%27s bed</desc>
+	<desc>line,13.5,1,13.5,1.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1350.0 100.0 L 1350.0 175.0"/>
+	<desc>line,13.5,1.75,14,1.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1350.0 175.0 L 1400.0 175.0"/>
+	<desc>## Snouty%27s table</desc>
+	<desc>ellipse,29.5,3.5,0.15,0.15,white_thin</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="2950.0" cy="350.0" rx="15.0" ry="15.0" fill="white"/>
+	<desc>## Barracks bunks</desc>
+	<desc>line,24,6.4,24.7,6.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2400.0 640.0 L 2470.0 640.0"/>
+	<desc>line,24.7,6.4,24.7,6.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 640.0 L 2470.0 660.0"/>
+	<desc>line,24.7,6.6,24,6.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 660.0 L 2400.0 660.0"/>
+	<desc>line,26,6.4,25.3,6.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2600.0 640.0 L 2530.0 640.0"/>
+	<desc>line,25.3,6.4,25.3,6.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 640.0 L 2530.0 660.0"/>
+	<desc>line,25.3,6.6,26,6.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 660.0 L 2600.0 660.0"/>
+	<desc>line,24,8.4,24.7,8.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2400.0 840.0 L 2470.0 840.0"/>
+	<desc>line,24.7,8.4,24.7,8.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 840.0 L 2470.0 860.0"/>
+	<desc>line,24.7,8.6,24,8.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 860.0 L 2400.0 860.0"/>
+	<desc>line,26,8.4,25.3,8.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2600.0 840.0 L 2530.0 840.0"/>
+	<desc>line,25.3,8.4,25.3,8.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 840.0 L 2530.0 860.0"/>
+	<desc>line,25.3,8.6,26,8.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 860.0 L 2600.0 860.0"/>
+	<desc>line,24,9.4,24.7,9.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2400.0 940.0 L 2470.0 940.0"/>
+	<desc>line,24.7,9.4,24.7,9.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 940.0 L 2470.0 960.0"/>
+	<desc>line,24.7,9.6,24,9.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 960.0 L 2400.0 960.0"/>
+	<desc>line,26,9.4,25.3,9.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2600.0 940.0 L 2530.0 940.0"/>
+	<desc>line,25.3,9.4,25.3,9.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 940.0 L 2530.0 960.0"/>
+	<desc>line,25.3,9.6,26,9.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 960.0 L 2600.0 960.0"/>
+	<desc>line,24,11.4,24.7,11.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2400.0 1140.0 L 2470.0 1140.0"/>
+	<desc>line,24.7,11.4,24.7,11.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 1140.0 L 2470.0 1160.0"/>
+	<desc>line,24.7,11.6,24,11.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 1160.0 L 2400.0 1160.0"/>
+	<desc>line,26,11.4,25.3,11.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2600.0 1140.0 L 2530.0 1140.0"/>
+	<desc>line,25.3,11.4,25.3,11.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 1140.0 L 2530.0 1160.0"/>
+	<desc>line,25.3,11.6,26,11.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 1160.0 L 2600.0 1160.0"/>
+	<desc>line,24,12.4,24.7,12.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2400.0 1240.0 L 2470.0 1240.0"/>
+	<desc>line,24.7,12.4,24.7,12.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 1240.0 L 2470.0 1260.0"/>
+	<desc>line,24.7,12.6,24,12.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 1260.0 L 2400.0 1260.0"/>
+	<desc>line,26,12.4,25.3,12.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2600.0 1240.0 L 2530.0 1240.0"/>
+	<desc>line,25.3,12.4,25.3,12.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 1240.0 L 2530.0 1260.0"/>
+	<desc>line,25.3,12.6,26,12.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 1260.0 L 2600.0 1260.0"/>
+	<desc>line,24,13.4,24.7,13.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2400.0 1340.0 L 2470.0 1340.0"/>
+	<desc>line,24.7,13.4,24.7,13.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 1340.0 L 2470.0 1360.0"/>
+	<desc>line,24.7,13.6,24,13.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 1360.0 L 2400.0 1360.0"/>
+	<desc>line,26,13.4,25.3,13.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2600.0 1340.0 L 2530.0 1340.0"/>
+	<desc>line,25.3,13.4,25.3,13.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 1340.0 L 2530.0 1360.0"/>
+	<desc>line,25.3,13.6,26,13.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 1360.0 L 2600.0 1360.0"/>
+	<desc>line,24,14.4,24.7,14.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2400.0 1440.0 L 2470.0 1440.0"/>
+	<desc>line,24.7,14.4,24.7,14.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 1440.0 L 2470.0 1460.0"/>
+	<desc>line,24.7,14.6,24,14.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2470.0 1460.0 L 2400.0 1460.0"/>
+	<desc>line,26,14.4,25.3,14.4,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2600.0 1440.0 L 2530.0 1440.0"/>
+	<desc>line,25.3,14.4,25.3,14.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 1440.0 L 2530.0 1460.0"/>
+	<desc>line,25.3,14.6,26,14.6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2530.0 1460.0 L 2600.0 1460.0"/>
+	<desc>## Barracks fireplaces</desc>
+	<desc>line,24,10.25,24.25,10.25,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 1025.0 L 2425.0 1025.0"/>
+	<desc>line,24,10.75,24.25,10.75,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 1075.0 L 2425.0 1075.0"/>
+	<desc>line,24.1,10.25,24.1,10.75,thick</desc>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 2410.0 1025.0 L 2410.0 1075.0"/>
+	<desc>line,26,15.25,25.75,15.25,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2600.0 1525.0 L 2575.0 1525.0"/>
+	<desc>line,26,15.75,25.75,15.75,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 2600.0 1575.0 L 2575.0 1575.0"/>
+	<desc>line,25.9,15.25,25.9,15.75,thick</desc>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 2590.0 1525.0 L 2590.0 1575.0"/>
+	<desc>## Feast hall tables</desc>
+	<desc>line,20.75,9.9,16.25,9.9,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2075.0 990.0 L 1625.0 990.0"/>
+	<desc>line,16.25,9.9,16.25,10.1,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1625.0 990.0 L 1625.0 1010.0"/>
+	<desc>line,16.25,10.1,20.75,10.1,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1625.0 1010.0 L 2075.0 1010.0"/>
+	<desc>line,20.75,10.1,20.75,9.9,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2075.0 1010.0 L 2075.0 990.0"/>
+	<desc>line,20.75,10.9,16.25,10.9,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2075.0 1090.0 L 1625.0 1090.0"/>
+	<desc>line,16.25,10.9,16.25,11.1,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1625.0 1090.0 L 1625.0 1110.0"/>
+	<desc>line,16.25,11.1,20.75,11.1,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1625.0 1110.0 L 2075.0 1110.0"/>
+	<desc>line,20.75,11.1,20.75,10.9,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2075.0 1110.0 L 2075.0 1090.0"/>
+	<desc>line,20.75,11.9,16.25,11.9,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2075.0 1190.0 L 1625.0 1190.0"/>
+	<desc>line,16.25,11.9,16.25,12.1,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1625.0 1190.0 L 1625.0 1210.0"/>
+	<desc>line,16.25,12.1,20.75,12.1,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1625.0 1210.0 L 2075.0 1210.0"/>
+	<desc>line,20.75,12.1,20.75,11.9,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2075.0 1210.0 L 2075.0 1190.0"/>
+	<desc>## Feast hall fireplace</desc>
+	<desc>line,15,10,15.25,10,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1500.0 1000.0 L 1525.0 1000.0"/>
+	<desc>line,15,12,15.25,12,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 1500.0 1200.0 L 1525.0 1200.0"/>
+	<desc>line,15.1,10,15.1,12,thick</desc>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 1510.0 1000.0 L 1510.0 1200.0"/>
+	<desc>## Throne room</desc>
+	<desc>line,9,6,11,6,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 900.0 600.0 L 1100.0 600.0"/>
+	<desc>line,11,6,11,9,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1100.0 600.0 L 1100.0 900.0"/>
+	<desc>line,11,9,9,9,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1100.0 900.0 L 900.0 900.0"/>
+	<desc>line,9,7,10,7,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 900.0 700.0 L 1000.0 700.0"/>
+	<desc>line,10,7,10,8,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1000.0 700.0 L 1000.0 800.0"/>
+	<desc>line,10,8,9,8,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1000.0 800.0 L 900.0 800.0"/>
+	<desc>line,9,7.2,9.5,7.2,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 720.0 L 950.0 720.0"/>
+	<desc>line,9.5,7.2,9.5,7.3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 950.0 720.0 L 950.0 730.0"/>
+	<desc>line,9.5,7.3,9,7.3,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 950.0 730.0 L 900.0 730.0"/>
+	<desc>line,8,7.7,9.5,7.7,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 800.0 770.0 L 950.0 770.0"/>
+	<desc>line,9.5,7.7,9.5,7.8,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 950.0 770.0 L 950.0 780.0"/>
+	<desc>line,9.5,7.8,9,7.8,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 950.0 780.0 L 900.0 780.0"/>
+	<desc>line,9.3,7.3,9.3,7.7,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 930.0000000000001 730.0 L 930.0000000000001 770.0"/>
+	<desc>## Goblins%27 Kitchen</desc>
+	<desc>line,20,14,20.5,14,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2000.0 1400.0 L 2050.0 1400.0"/>
+	<desc>line,20.5,14,20.5,14.2,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2050.0 1400.0 L 2050.0 1420.0"/>
+	<desc>line,20.5,14.2,20,14.2,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2050.0 1420.0 L 2000.0 1420.0"/>
+	<desc>line,20,15,20.5,15,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2000.0 1500.0 L 2050.0 1500.0"/>
+	<desc>line,20.5,15,20.5,14.8,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2050.0 1500.0 L 2050.0 1480.0"/>
+	<desc>line,20.5,14.8,20,14.8,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2050.0 1480.0 L 2000.0 1480.0"/>
+	<desc>line,20.1,14.2,20.1,14.8,thick</desc>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 2010.0000000000002 1420.0 L 2010.0000000000002 1480.0"/>
+	<desc>line,20.2,14.2,20.2,14.8,thick</desc>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 2020.0 1420.0 L 2020.0 1480.0"/>
+	<desc>line,20.3,15,20.3,16,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2030.0 1500.0 L 2030.0 1600.0"/>
+	<desc>line,20.3,16,20,16,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2030.0 1600.0 L 2000.0 1600.0"/>
+	<desc>arc,23,14,23,15,thin:0.5:0.5:0:0:0</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2300.0 1400.0 A 50.0 50.0 0.0 0 0 2300.0 1500.0" fill="none"/>
+	<desc>ellipse,23,14.5,0.15,0.15,solid</desc>
+	<ellipse stroke="#1EAED0" stroke-width="5.0" cx="2300.0" cy="1450.0" rx="15.0" ry="15.0" fill="#1EAED0"/>
+	<desc>ellipse,21.5,15,0.25,1,white_thin</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="2150.0" cy="1500.0" rx="25.0" ry="100.0" fill="white"/>
+	<desc>## Well</desc>
+	<desc>ellipse,15.5,14.5,0.25,0.25,hatched</desc>
+	<ellipse stroke="#1EAED0" stroke-width="5.0" cx="1550.0" cy="1450.0" rx="25.0" ry="25.0" fill="url(#hatch00)"/>
+	<desc>## Monks%27 kitchen</desc>
+	<desc>line,25,22,24.5,22,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2500.0 2200.0 L 2450.0 2200.0"/>
+	<desc>line,24.5,22,24.5,22.2,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2450.0 2200.0 L 2450.0 2220.0"/>
+	<desc>line,24.5,22.2,25,22.2,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2450.0 2220.0 L 2500.0 2220.0"/>
+	<desc>line,25,23,24.5,23,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2500.0 2300.0 L 2450.0 2300.0"/>
+	<desc>line,24.5,23,24.5,22.8,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2450.0 2300.0 L 2450.0 2280.0"/>
+	<desc>line,24.5,22.8,25,22.8,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2450.0 2280.0 L 2500.0 2280.0"/>
+	<desc>line,24.9,22.2,24.9,22.8,thick</desc>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 2490.0 2220.0 L 2490.0 2280.0"/>
+	<desc>line,24.8,22.2,24.8,22.8,thick</desc>
+	<path stroke="#1EAED0" stroke-width="15.0" d="M 2480.0 2220.0 L 2480.0 2280.0"/>
+	<desc>arc,23,22,24,22,thin:0.5:0.5:0:0:0</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2300.0 2200.0 A 50.0 50.0 0.0 0 0 2400.0 2200.0" fill="none"/>
+	<desc>ellipse,23.5,22,0.15,0.15,solid</desc>
+	<ellipse stroke="#1EAED0" stroke-width="5.0" cx="2350.0" cy="2200.0" rx="15.0" ry="15.0" fill="#1EAED0"/>
+	<desc>## Monks%27 Mess Hall</desc>
+	<desc>line,20.9,22.75,21.1,22.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2090.0 2275.0 L 2110.0 2275.0"/>
+	<desc>line,21.1,22.75,21.1,26.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2110.0 2275.0 L 2110.0 2625.0"/>
+	<desc>line,21.1,26.25,20.9,26.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2110.0 2625.0 L 2090.0 2625.0"/>
+	<desc>line,20.9,26.25,20.9,22.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2090.0 2625.0 L 2090.0 2275.0"/>
+	<desc>line,19.9,22.75,20.1,22.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1989.9999999999998 2275.0 L 2010.0000000000002 2275.0"/>
+	<desc>line,20.1,22.75,20.1,26.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2010.0000000000002 2275.0 L 2010.0000000000002 2625.0"/>
+	<desc>line,20.1,26.25,19.9,26.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 2010.0000000000002 2625.0 L 1989.9999999999998 2625.0"/>
+	<desc>line,19.9,26.25,19.9,22.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1989.9999999999998 2625.0 L 1989.9999999999998 2275.0"/>
+	<desc>## Corwyn%27s bed</desc>
+	<desc>line,16.5,18,16.5,18.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1650.0 1800.0 L 1650.0 1875.0"/>
+	<desc>line,16.5,18.75,16,18.75,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1650.0 1875.0 L 1600.0 1875.0"/>
+	<desc>## Jenna%27s bed</desc>
+	<desc>line,10.5,24,10.5,23.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1050.0 2400.0 L 1050.0 2325.0"/>
+	<desc>line,10.5,23.25,10,23.25,thin</desc>
+	<path stroke="#1EAED0" stroke-width="2.0" d="M 1050.0 2325.0 L 1000.0 2325.0"/>
+	<desc># Text</desc>
+	<desc>## Room numbers</desc>
+	<desc>### Guard post</desc>
+	<desc>text,27.3,5.7,1,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2730.0" y="570.0">1</text>
+	<desc>### Orc and pie</desc>
+	<desc>text,29.6,3.8,2,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2960.0" y="380.0">2</text>
+	<desc>### Pit trap</desc>
+	<desc>text,21.5,4.8,3,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2150.0" y="480.0">3</text>
+	<desc>### Tripwire</desc>
+	<desc>text,18.4,4.7,4,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1839.9999999999998" y="470.0">4</text>
+	<desc>### Barracks</desc>
+	<desc>text,25.3,7.9,5,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2530.0" y="790.0">5</text>
+	<desc>### Feast Hall</desc>
+	<desc>text,21.3,9.9,6,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2130.0" y="990.0">6</text>
+	<desc>### Goblins%27 Kitchen</desc>
+	<desc>text,22.3,13.9,7,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2230.0" y="1390.0">7</text>
+	<desc>### Goblins%27 Storeroom</desc>
+	<desc>text,16.3,14.9,8,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1630.0" y="1490.0">8</text>
+	<desc>### Throne Room</desc>
+	<desc>text,11.3,9.9,9,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1130.0" y="990.0">9</text>
+	<desc>### Chief%27s Quarters</desc>
+	<desc>text,8.2,10.9,10,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="819.9999999999999" y="1090.0">10</text>
+	<desc>### Harem</desc>
+	<desc>text,8.2,4.9,11,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="819.9999999999999" y="490.00000000000006">11</text>
+	<desc>### Vizier%27s Quarters</desc>
+	<desc>text,10.2,3.9,12,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1019.9999999999999" y="390.0">12</text>
+	<desc>### Lieutenant%27s Quarters</desc>
+	<desc>text,12.2,2.9,13,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1220.0" y="290.0">13</text>
+	<desc>### Treasure Room</desc>
+	<desc>text,5.2,18.9,14,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="520.0" y="1889.9999999999998">14</text>
+	<desc>### Bath</desc>
+	<desc>text,4.2,3.9,15,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="420.0" y="390.0">15</text>
+	<desc>### Ramp to Surface</desc>
+	<desc>text,13.2,11.9,16,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1320.0" y="1190.0">16</text>
+	<desc>### Guard Post</desc>
+	<desc>text,25.2,19.9,17,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2520.0" y="1989.9999999999998">17</text>
+	<desc>### Corwyn%27s Room</desc>
+	<desc>text,17.2,19.9,18,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1720.0" y="1989.9999999999998">18</text>
+	<desc>### Grand Stairway</desc>
+	<desc>text,6.2,20.9,19,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="620.0" y="2090.0">19</text>
+	<desc>### Jenna%27s Room</desc>
+	<desc>text,10.2,22.9,20,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1019.9999999999999" y="2290.0">20</text>
+	<desc>### Dojo</desc>
+	<desc>text,16.2,25.9,21,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1620.0" y="2590.0">21</text>
+	<desc>### Mess Hall</desc>
+	<desc>text,20.2,22.9,22,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2020.0" y="2290.0">22</text>
+	<desc>### Monks%27 Kitchen</desc>
+	<desc>text,22.2,22.9,23,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2220.0" y="2290.0">23</text>
+	<desc>### Monks%27 Cells</desc>
+	<desc>text,9.2,26.7,24,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="919.9999999999999" y="2670.0">24</text>
+	<desc>### Toilets</desc>
+	<desc>text,14.2,28.7,25,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1420.0" y="2870.0">25</text>
+	<desc>text,26.2,10.9,25,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2620.0" y="1090.0">25</text>
+	<desc>### Entry Hall</desc>
+	<desc>text,4.2,27.7,26,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="420.0" y="2770.0">26</text>
+	<desc>### Monks%27 Storeroom</desc>
+	<desc>text,22.2,29.9,27,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2220.0" y="2990.0">27</text>
+	<desc>### Koan Hall</desc>
+	<desc>text,19.2,29.9,28,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1920.0" y="2990.0">28</text>
+	<desc>### Archery Range</desc>
+	<desc>text,1.2,9.7,29,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="120.0" y="969.9999999999999">29</text>
+	<desc>### Sluice</desc>
+	<desc>text,3.2,28.7,30,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="320.0" y="2870.0">30</text>
+	<desc>## Stairway directions</desc>
+	<desc>text,1.2,26.7,up,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="120.0" y="2670.0">up</text>
+	<desc>text,28.2,6.7,up,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2820.0" y="670.0">up</text>
+	<desc>text,11.2,15.7,dn,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1120.0" y="1570.0">dn</text>
+	<desc># Doors</desc>
+	<desc>door,7,3,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="690.0" y="330.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,7.25,5,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="755.0" y="490.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,9,3.75,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="890.0" y="405.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,10,3.75,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="990.0" y="405.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,12,3,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1230.0" y="290.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,11,4,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1130.0" y="390.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,10,5,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1030.0" y="490.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,18,3,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1830.0" y="290.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,18,5,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1830.0" y="490.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,20,3,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2030.0" y="290.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,22,4,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2190.0" y="430.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,26,4,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2590.0" y="430.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,28,4,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2790.0" y="430.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,29.25,3,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2955.0" y="290.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,7.25,10,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="755.0" y="990.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,12,7,0,0,vertical_double</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1190.0" y="720.0" width="20.0" height="30.0" fill="white"/>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1190.0" y="750.0" width="20.0" height="30.0" fill="white"/>
+	<desc>door,10,10,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1030.0" y="990.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,9,11,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="890.0" y="1130.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,12,11,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1190.0" y="1130.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,26,10,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2590.0" y="1030.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,7,16,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="730.0" y="1590.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,20,16,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1990.0" y="1630.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,24,17,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2430.0" y="1690.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,24,19,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2430.0" y="1890.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,24,20,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2390.0" y="2030.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,18,18,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1790.0" y="1830.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,11,22,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1130.0" y="2190.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,7,27,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="730.0" y="2690.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,8,27,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="830.0" y="2690.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,9,27,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="930.0" y="2690.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,10,27,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1030.0" y="2690.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,11,27,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1130.0" y="2690.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,12,27,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1230.0" y="2690.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,7,26,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="730.0" y="2590.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,8,26,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="830.0" y="2590.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,9,26,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="930.0" y="2590.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,10,26,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1030.0" y="2590.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,11,26,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1130.0" y="2590.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,12,26,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1230.0" y="2590.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,24,24,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2430.0" y="2390.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,22,23,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2190.0" y="2330.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,16,25,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1630.0" y="2490.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,14,27,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1430.0" y="2690.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,13,26,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1290.0" y="2630.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,7,26,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="690.0" y="2630.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,5,26,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="490.0" y="2630.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,2,26,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="190.0" y="2630.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,3,25,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="330.0" y="2490.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,3,28,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="330.0" y="2790.0" width="40.0" height="20.0" fill="white"/>
+	<desc>## Toilets</desc>
+	<desc>door,27.5,8.75,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2740.0" y="905.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,27.5,9.25,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2740.0" y="955.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,27.5,9.75,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2740.0" y="1005.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,27.5,10.25,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2740.0" y="1055.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,27.5,10.75,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2740.0" y="1105.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,27.5,11.25,0,0,vertical</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2740.0" y="1155.0" width="20.0" height="40.0" fill="white"/>
+	<desc>door,20,13,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="2030.0" y="1290.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,12.75,29.5,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1305.0" y="2940.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,13.25,29.5,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1355.0" y="2940.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,13.75,29.5,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1405.0" y="2940.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,14.25,29.5,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1455.0" y="2940.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,14.75,29.5,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1505.0" y="2940.0" width="40.0" height="20.0" fill="white"/>
+	<desc>door,15.25,29.5,0,0,horizontal</desc>
+	<rect stroke="#1EAED0" stroke-width="5.0" x="1555.0" y="2940.0" width="40.0" height="20.0" fill="white"/>
+	<desc>## Concealed</desc>
+	<desc>text,7.3,13.3,c,sans_serif,0.8</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="80px" fill="#1EAED0" x="730.0" y="1330.0">c</text>
+	<desc># Toilets</desc>
+	<desc>toilet,27.75,9.25,0,0,horizontal_reversed</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="2775.0" cy="925.0" rx="20.0" ry="15.0" fill="white"/>
+	<circle stroke="#1EAED0" stroke-width="2.0" cx="2780.0" cy="925.0" r="3.0" fill="#1EAED0"/>
+	<desc>toilet,27.75,9.75,0,0,horizontal_reversed</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="2775.0" cy="975.0" rx="20.0" ry="15.0" fill="white"/>
+	<circle stroke="#1EAED0" stroke-width="2.0" cx="2780.0" cy="975.0" r="3.0" fill="#1EAED0"/>
+	<desc>toilet,27.75,10.25,0,0,horizontal_reversed</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="2775.0" cy="1025.0" rx="20.0" ry="15.0" fill="white"/>
+	<circle stroke="#1EAED0" stroke-width="2.0" cx="2780.0" cy="1025.0" r="3.0" fill="#1EAED0"/>
+	<desc>toilet,27.75,10.75,0,0,horizontal_reversed</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="2775.0" cy="1075.0" rx="20.0" ry="15.0" fill="white"/>
+	<circle stroke="#1EAED0" stroke-width="2.0" cx="2780.0" cy="1075.0" r="3.0" fill="#1EAED0"/>
+	<desc>toilet,27.75,11.25,0,0,horizontal_reversed</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="2775.0" cy="1125.0" rx="20.0" ry="15.0" fill="white"/>
+	<circle stroke="#1EAED0" stroke-width="2.0" cx="2780.0" cy="1125.0" r="3.0" fill="#1EAED0"/>
+	<desc>toilet,27.75,11.75,0,0,horizontal_reversed</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="2775.0" cy="1175.0" rx="20.0" ry="15.0" fill="white"/>
+	<circle stroke="#1EAED0" stroke-width="2.0" cx="2780.0" cy="1175.0" r="3.0" fill="#1EAED0"/>
+	<desc>toilet,13.25,29.75,0,0,vertical_reversed</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="1325.0" cy="2975.0" rx="15.0" ry="20.0" fill="white"/>
+	<circle stroke="#1EAED0" stroke-width="2.0" cx="1325.0" cy="2980.0" r="3.0" fill="#1EAED0"/>
+	<desc>toilet,13.75,29.75,0,0,vertical_reversed</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="1375.0" cy="2975.0" rx="15.0" ry="20.0" fill="white"/>
+	<circle stroke="#1EAED0" stroke-width="2.0" cx="1375.0" cy="2980.0" r="3.0" fill="#1EAED0"/>
+	<desc>toilet,14.25,29.75,0,0,vertical_reversed</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="1425.0" cy="2975.0" rx="15.0" ry="20.0" fill="white"/>
+	<circle stroke="#1EAED0" stroke-width="2.0" cx="1425.0" cy="2980.0" r="3.0" fill="#1EAED0"/>
+	<desc>toilet,14.75,29.75,0,0,vertical_reversed</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="1475.0" cy="2975.0" rx="15.0" ry="20.0" fill="white"/>
+	<circle stroke="#1EAED0" stroke-width="2.0" cx="1475.0" cy="2980.0" r="3.0" fill="#1EAED0"/>
+	<desc>toilet,15.25,29.75,0,0,vertical_reversed</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="1525.0" cy="2975.0" rx="15.0" ry="20.0" fill="white"/>
+	<circle stroke="#1EAED0" stroke-width="2.0" cx="1525.0" cy="2980.0" r="3.0" fill="#1EAED0"/>
+	<desc>toilet,15.75,29.75,0,0,vertical_reversed</desc>
+	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="1575.0" cy="2975.0" rx="15.0" ry="20.0" fill="white"/>
+	<circle stroke="#1EAED0" stroke-width="2.0" cx="1575.0" cy="2980.0" r="3.0" fill="#1EAED0"/>
+	<desc># Negative space</desc>
+	<desc>block,0,0,0,9,solid</desc>
+	<desc>continuation,0,9,3,9,solid</desc>
+	<desc>continuation,3,9,3,3,solid</desc>
+	<desc>continuation,3,3,7,3,solid</desc>
+	<desc>continuation,7,3,7,2,solid</desc>
+	<desc>continuation,7,2,9,2,solid</desc>
+	<desc>continuation,9,2,9,4,solid</desc>
+	<desc>continuation,9,4,10,4,solid</desc>
+	<desc>continuation,10,4,10,2,solid</desc>
+	<desc>continuation,10,2,12,2,solid</desc>
+	<desc>continuation,12,2,12,1,solid</desc>
+	<desc>continuation,12,1,14,1,solid</desc>
+	<desc>continuation,14,1,14,3,solid</desc>
+	<desc>continuation,14,3,13,3,solid</desc>
+	<desc>continuation,13,3,13,5,solid</desc>
+	<desc>continuation,13,5,12,5,solid</desc>
+	<desc>continuation,12,5,12,7,solid</desc>
+	<desc>continuation,12,7,18,7,solid</desc>
+	<desc>continuation,18,7,18,5,solid</desc>
+	<desc>continuation,18,5,17,5,solid</desc>
+	<desc>continuation,17,5,17,3,solid</desc>
+	<desc>continuation,17,3,18,3,solid</desc>
+	<desc>continuation,18,3,18,1,solid</desc>
+	<desc>continuation,18,1,21,1,solid</desc>
+	<desc>continuation,21,1,21,3,solid</desc>
+	<desc>continuation,21,3,22,3,solid</desc>
+	<desc>continuation,22,3,22,4,solid</desc>
+	<desc>continuation,22,4,24,4,solid</desc>
+	<desc>continuation,24,4,24,1.5,solid</desc>
+	<desc>continuation,24,1.5,30,1.5,solid</desc>
+	<desc>continuation,30,1.5,30,0,solid</desc>
+	<desc>continuation,30,0,0,0,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="0.0,0.0 0.0,900.0 300.0,900.0 300.0,300.0 700.0,300.0 700.0,200.0 900.0,200.0 900.0,400.0 1000.0,400.0 1000.0,200.0 1200.0,200.0 1200.0,100.0 1400.0,100.0 1400.0,300.0 1300.0,300.0 1300.0,500.0 1200.0,500.0 1200.0,700.0 1800.0,700.0 1800.0,500.0 1700.0,500.0 1700.0,300.0 1800.0,300.0 1800.0,100.0 2100.0,100.0 2100.0,300.0 2200.0,300.0 2200.0,400.0 2400.0,400.0 2400.0,150.0 3000.0,150.0 3000.0,0.0 0.0,0.0" fill="#1EAED0"/>
+	<desc>block,9,5,10,5,solid</desc>
+	<desc>continuation,10,5,10,4.5,solid</desc>
+	<desc>continuation,10,4.5,9,4.5,solid</desc>
+	<desc>continuation,9,4.5,9,5,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="900.0,500.0 1000.0,500.0 1000.0,450.0 900.0,450.0 900.0,500.0" fill="#1EAED0"/>
+	<desc>block,24.5,2,29.5,2,solid</desc>
+	<desc>continuation,29.5,2,29.5,3,solid</desc>
+	<desc>continuation,29.5,3,29,3,solid</desc>
+	<desc>continuation,29,3,29,4,solid</desc>
+	<desc>continuation,29,4,28,4,solid</desc>
+	<desc>continuation,28,4,28,3,solid</desc>
+	<desc>continuation,28,3,26,3,solid</desc>
+	<desc>continuation,26,3,26,4,solid</desc>
+	<desc>continuation,26,4,24.5,4,solid</desc>
+	<desc>continuation,24.5,4,24.5,2,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="2450.0,200.0 2950.0,200.0 2950.0,300.0 2900.0,300.0 2900.0,400.0 2800.0,400.0 2800.0,300.0 2600.0,300.0 2600.0,400.0 2450.0,400.0 2450.0,200.0" fill="#1EAED0"/>
+	<desc>block,30,4,30,6,solid</desc>
+	<desc>continuation,30,6,29,6,solid</desc>
+	<desc>continuation,29,6,29,4,solid</desc>
+	<desc>continuation,29,4,30,4,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="3000.0,400.0 3000.0,600.0 2900.0,600.0 2900.0,400.0 3000.0,400.0" fill="#1EAED0"/>
+	<desc>block,8,5,9,5,solid</desc>
+	<desc>continuation,9,5,9,10,solid</desc>
+	<desc>continuation,9,10,8,10,solid</desc>
+	<desc>continuation,8,10,8,5,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="800.0,500.0 900.0,500.0 900.0,1000.0 800.0,1000.0 800.0,500.0" fill="#1EAED0"/>
+	<desc>block,26,6,24,6,solid</desc>
+	<desc>continuation,24,6,24,7,solid</desc>
+	<desc>continuation,24,7,19,7,solid</desc>
+	<desc>continuation,19,7,19,2,solid</desc>
+	<desc>continuation,19,2,20,2,solid</desc>
+	<desc>continuation,20,2,20,5,solid</desc>
+	<desc>continuation,20,5,26,5,solid</desc>
+	<desc>continuation,26,5,26,6,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="2600.0,600.0 2400.0,600.0 2400.0,700.0 1900.0,700.0 1900.0,200.0 2000.0,200.0 2000.0,500.0 2600.0,500.0 2600.0,600.0" fill="#1EAED0"/>
+	<desc>block,2,10,2,7,solid</desc>
+	<desc>continuation,2,7,5,7,solid</desc>
+	<desc>continuation,5,7,5,4,solid</desc>
+	<desc>continuation,5,4,7,4,solid</desc>
+	<desc>continuation,7,4,7,5,solid</desc>
+	<desc>continuation,7,5,7.5,5,solid</desc>
+	<desc>continuation,7.5,5,7.5,10,solid</desc>
+	<desc>continuation,7.5,10,2,10,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="200.0,1000.0 200.0,700.0 500.0,700.0 500.0,400.0 700.0,400.0 700.0,500.0 750.0,500.0 750.0,1000.0 200.0,1000.0" fill="#1EAED0"/>
+	<desc>block,12,9,12,8,solid</desc>
+	<desc>continuation,12,8,18,8,solid</desc>
+	<desc>continuation,18,8,18,9,solid</desc>
+	<desc>continuation,18,9,12,9,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="1200.0,900.0 1200.0,800.0 1800.0,800.0 1800.0,900.0 1200.0,900.0" fill="#1EAED0"/>
+	<desc>block,19,8,24,8,solid</desc>
+	<desc>continuation,24,8,24,15,solid</desc>
+	<desc>continuation,24,15,23,15,solid</desc>
+	<desc>continuation,23,15,23,13,solid</desc>
+	<desc>continuation,23,13,22,13,solid</desc>
+	<desc>continuation,22,13,22,9,solid</desc>
+	<desc>continuation,22,9,19,9,solid</desc>
+	<desc>continuation,19,9,19,8,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="1900.0,800.0 2400.0,800.0 2400.0,1500.0 2300.0,1500.0 2300.0,1300.0 2200.0,1300.0 2200.0,900.0 1900.0,900.0 1900.0,800.0" fill="#1EAED0"/>
+	<desc>block,26,6,28,6,solid</desc>
+	<desc>continuation,28,6,28,7,solid</desc>
+	<desc>continuation,28,7,30,7,solid</desc>
+	<desc>continuation,30,7,30,17,solid</desc>
+	<desc>continuation,30,17,26,17,solid</desc>
+	<desc>continuation,26,17,26,11,solid</desc>
+	<desc>continuation,26,11,27,11,solid</desc>
+	<desc>continuation,27,11,27,12,solid</desc>
+	<desc>continuation,27,12,28,12,solid</desc>
+	<desc>continuation,28,12,28,9,solid</desc>
+	<desc>continuation,28,9,27,9,solid</desc>
+	<desc>continuation,27,9,27,10,solid</desc>
+	<desc>continuation,27,10,26,10,solid</desc>
+	<desc>continuation,26,10,26,6,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="2600.0,600.0 2800.0,600.0 2800.0,700.0 3000.0,700.0 3000.0,1700.0 2600.0,1700.0 2600.0,1100.0 2700.0,1100.0 2700.0,1200.0 2800.0,1200.0 2800.0,900.0 2700.0,900.0 2700.0,1000.0 2600.0,1000.0 2600.0,600.0" fill="#1EAED0"/>
+	<desc>block,9,10,10,10,solid</desc>
+	<desc>continuation,10,10,10,11,solid</desc>
+	<desc>continuation,10,11,9,11,solid</desc>
+	<desc>continuation,9,11,9,10,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="900.0,1000.0 1000.0,1000.0 1000.0,1100.0 900.0,1100.0 900.0,1000.0" fill="#1EAED0"/>
+	<desc>block,11,10,12,10,solid</desc>
+	<desc>continuation,12,10,12,11,solid</desc>
+	<desc>continuation,12,11,11,11,solid</desc>
+	<desc>continuation,11,11,11,10,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="1100.0,1000.0 1200.0,1000.0 1200.0,1100.0 1100.0,1100.0 1100.0,1000.0" fill="#1EAED0"/>
+	<desc>block,0,9,0,26,solid</desc>
+	<desc>continuation,0,26,1,26,solid</desc>
+	<desc>continuation,1,26,1,9,solid</desc>
+	<desc>continuation,1,9,0,9,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="0.0,900.0 0.0,2600.0 100.0,2600.0 100.0,900.0 0.0,900.0" fill="#1EAED0"/>
+	<desc>block,1,26,1,24,solid</desc>
+	<desc>continuation,1,24,3,24,solid</desc>
+	<desc>continuation,3,24,3,25,solid</desc>
+	<desc>continuation,3,25,2,25,solid</desc>
+	<desc>continuation,2,25,2,26,solid</desc>
+	<desc>continuation,2,26,1,26,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="100.0,2600.0 100.0,2400.0 300.0,2400.0 300.0,2500.0 200.0,2500.0 200.0,2600.0 100.0,2600.0" fill="#1EAED0"/>
+	<desc>block,2,10,2,23,solid</desc>
+	<desc>continuation,2,23,5,23,solid</desc>
+	<desc>continuation,5,23,5,10,solid</desc>
+	<desc>continuation,5,10,2,10,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="200.0,1000.0 200.0,2300.0 500.0,2300.0 500.0,1000.0 200.0,1000.0" fill="#1EAED0"/>
+	<desc>block,5,10,7,10,solid</desc>
+	<desc>continuation,7,10,7,16,solid</desc>
+	<desc>continuation,7,16,5,16,solid</desc>
+	<desc>continuation,5,16,5,10,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="500.0,1000.0 700.0,1000.0 700.0,1600.0 500.0,1600.0 500.0,1000.0" fill="#1EAED0"/>
+	<desc>block,14,9,15,9,solid</desc>
+	<desc>continuation,15,9,15,13,solid</desc>
+	<desc>continuation,15,13,20,13,solid</desc>
+	<desc>continuation,20,13,20,16,solid</desc>
+	<desc>continuation,20,16,17,16,solid</desc>
+	<desc>continuation,17,16,17,14,solid</desc>
+	<desc>continuation,17,14,14,14,solid</desc>
+	<desc>continuation,14,14,14,9,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="1400.0,900.0 1500.0,900.0 1500.0,1300.0 2000.0,1300.0 2000.0,1600.0 1700.0,1600.0 1700.0,1400.0 1400.0,1400.0 1400.0,900.0" fill="#1EAED0"/>
+	<desc>block,13,14,10,14,solid</desc>
+	<desc>continuation,10,14,10,17,solid</desc>
+	<desc>continuation,10,17,8,17,solid</desc>
+	<desc>continuation,8,17,8,13,solid</desc>
+	<desc>continuation,8,13,9,13,solid</desc>
+	<desc>continuation,9,13,9,12,solid</desc>
+	<desc>continuation,9,12,12,12,solid</desc>
+	<desc>continuation,12,12,12,13,solid</desc>
+	<desc>continuation,13,13,13,14,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="1300.0,1400.0 1000.0,1400.0 1000.0,1700.0 800.0,1700.0 800.0,1300.0 900.0,1300.0 900.0,1200.0 1200.0,1200.0 1200.0,1300.0 1300.0,1300.0 1300.0,1400.0" fill="#1EAED0"/>
+	<desc>block,8,17,23,17,solid</desc>
+	<desc>continuation,23,17,23,16,solid</desc>
+	<desc>continuation,23,16,24,16,solid</desc>
+	<desc>continuation,24,16,24,20,solid</desc>
+	<desc>continuation,24,20,21,20,solid</desc>
+	<desc>continuation,21,20,21,18,solid</desc>
+	<desc>continuation,21,18,16,18,solid</desc>
+	<desc>continuation,16,18,16,20,solid</desc>
+	<desc>continuation,16,20,2,20,solid</desc>
+	<desc>continuation,2,20,2,19,solid</desc>
+	<desc>continuation,2,19,8,19,solid</desc>
+	<desc>continuation,8,19,8,17,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="800.0,1700.0 2300.0,1700.0 2300.0,1600.0 2400.0,1600.0 2400.0,2000.0 2100.0,2000.0 2100.0,1800.0 1600.0,1800.0 1600.0,2000.0 200.0,2000.0 200.0,1900.0 800.0,1900.0 800.0,1700.0" fill="#1EAED0"/>
+	<desc>block,26,17,30,17,solid</desc>
+	<desc>continuation,30,17,30,30,solid</desc>
+	<desc>continuation,30,30,26,30,solid</desc>
+	<desc>continuation,26,30,26,17,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="2600.0,1700.0 3000.0,1700.0 3000.0,3000.0 2600.0,3000.0 2600.0,1700.0" fill="#1EAED0"/>
+	<desc>block,26,19,25,19,solid</desc>
+	<desc>continuation,25,19,25,17,solid</desc>
+	<desc>continuation,25,17,26,17,solid</desc>
+	<desc>continuation,26,17,26,19,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="2600.0,1900.0 2500.0,1900.0 2500.0,1700.0 2600.0,1700.0 2600.0,1900.0" fill="#1EAED0"/>
+	<desc>block,4,23,5,23,solid</desc>
+	<desc>continuation,5,23,5,24,solid</desc>
+	<desc>continuation,5,24,9,24,solid</desc>
+	<desc>continuation,9,24,9,21,solid</desc>
+	<desc>continuation,9,21,11,21,solid</desc>
+	<desc>continuation,11,21,11,22,solid</desc>
+	<desc>continuation,11,22,10,22,solid</desc>
+	<desc>continuation,10,22,10,24,solid</desc>
+	<desc>continuation,10,24,12,24,solid</desc>
+	<desc>continuation,12,24,12,21,solid</desc>
+	<desc>continuation,12,21,16,21,solid</desc>
+	<desc>continuation,16,21,16,25,solid</desc>
+	<desc>continuation,16,25,15,25,solid</desc>
+	<desc>continuation,15,25,15,26,solid</desc>
+	<desc>continuation,15,26,13,26,solid</desc>
+	<desc>continuation,13,26,13,25,solid</desc>
+	<desc>continuation,13,25,8,25,solid</desc>
+	<desc>continuation,7,25,7,26,solid</desc>
+	<desc>continuation,7,26,5,26,solid</desc>
+	<desc>continuation,5,25,4,25,solid</desc>
+	<desc>continuation,4,25,4,23,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="400.0,2300.0 500.0,2300.0 500.0,2400.0 900.0,2400.0 900.0,2100.0 1100.0,2100.0 1100.0,2200.0 1000.0,2200.0 1000.0,2400.0 1200.0,2400.0 1200.0,2100.0 1600.0,2100.0 1600.0,2500.0 1500.0,2500.0 1500.0,2600.0 1300.0,2600.0 1300.0,2500.0 800.0,2500.0 700.0,2500.0 700.0,2600.0 500.0,2600.0 500.0,2500.0 400.0,2500.0 400.0,2300.0" fill="#1EAED0"/>
+	<desc>block,18,19,20,19,solid</desc>
+	<desc>continuation,20,19,20,20,solid</desc>
+	<desc>continuation,20,20,18,20,solid</desc>
+	<desc>continuation,18,20,18,19,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="1800.0,1900.0 2000.0,1900.0 2000.0,2000.0 1800.0,2000.0 1800.0,1900.0" fill="#1EAED0"/>
+	<desc>block,6,30,6,29,solid</desc>
+	<desc>continuation,6,29,4,29,solid</desc>
+	<desc>continuation,4,29,4,28,solid</desc>
+	<desc>continuation,4,28,5,28,solid</desc>
+	<desc>continuation,5,28,5,27,solid</desc>
+	<desc>continuation,5,27,7,27,solid</desc>
+	<desc>continuation,7,27,7,28,solid</desc>
+	<desc>continuation,7,28,13,28,solid</desc>
+	<desc>continuation,13,28,13,27,solid</desc>
+	<desc>continuation,13,27,14,27,solid</desc>
+	<desc>continuation,14,27,14,29,solid</desc>
+	<desc>continuation,14,29,13,29,solid</desc>
+	<desc>continuation,13,29,13,30,solid</desc>
+	<desc>continuation,13,30,6,30,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="600.0,3000.0 600.0,2900.0 400.0,2900.0 400.0,2800.0 500.0,2800.0 500.0,2700.0 700.0,2700.0 700.0,2800.0 1300.0,2800.0 1300.0,2700.0 1400.0,2700.0 1400.0,2900.0 1300.0,2900.0 1300.0,3000.0 600.0,3000.0" fill="#1EAED0"/>
+	<desc>block,16,30,16,29,solid</desc>
+	<desc>continuation,16,29,15,29,solid</desc>
+	<desc>continuation,15,29,15,27,solid</desc>
+	<desc>continuation,15,27,17,27,solid</desc>
+	<desc>continuation,17,27,17,30,solid</desc>
+	<desc>continuation,17,30,16,30,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="1600.0,3000.0 1600.0,2900.0 1500.0,2900.0 1500.0,2700.0 1700.0,2700.0 1700.0,3000.0 1600.0,3000.0" fill="#1EAED0"/>
+	<desc>block,25,30,26,30,solid</desc>
+	<desc>continuation,26,30,26,21,solid</desc>
+	<desc>continuation,26,21,17,21,solid</desc>
+	<desc>continuation,17,21,17,25,solid</desc>
+	<desc>continuation,17,25,18,25,solid</desc>
+	<desc>continuation,18,25,18,26,solid</desc>
+	<desc>continuation,18,26,19,26,solid</desc>
+	<desc>continuation,19,26,19,22,solid</desc>
+	<desc>continuation,19,22,25,22,solid</desc>
+	<desc>continuation,25,22,25,30,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="2500.0,3000.0 2600.0,3000.0 2600.0,2100.0 1700.0,2100.0 1700.0,2500.0 1800.0,2500.0 1800.0,2600.0 1900.0,2600.0 1900.0,2200.0 2500.0,2200.0 2500.0,3000.0" fill="#1EAED0"/>
+	<desc>block,22,30,20,30,solid</desc>
+	<desc>continuation,20,30,20,28,solid</desc>
+	<desc>continuation,20,28,18,28,solid</desc>
+	<desc>continuation,18,28,18,27,solid</desc>
+	<desc>continuation,18,27,22,27,solid</desc>
+	<desc>continuation,22,27,22,24,solid</desc>
+	<desc>continuation,22,24,24,24,solid</desc>
+	<desc>continuation,24,24,24,28,solid</desc>
+	<desc>continuation,24,28,22,28,solid</desc>
+	<desc>continuation,22,28,22,30,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="2200.0,3000.0 2000.0,3000.0 2000.0,2800.0 1800.0,2800.0 1800.0,2700.0 2200.0,2700.0 2200.0,2400.0 2400.0,2400.0 2400.0,2800.0 2200.0,2800.0 2200.0,3000.0" fill="#1EAED0"/>
+	<desc>block,0,30,0,27,solid</desc>
+	<desc>continuation,0,27,2,27,solid</desc>
+	<desc>continuation,2,27,2,28,solid</desc>
+	<desc>continuation,2,28,3,28,solid</desc>
+	<desc>continuation,3,28,3,29,solid</desc>
+	<desc>continuation,3,29,1,29,solid</desc>
+	<desc>continuation,1,29,1,30,solid</desc>
+	<desc>continuation,1,30,0,30,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="0.0,3000.0 0.0,2700.0 200.0,2700.0 200.0,2800.0 300.0,2800.0 300.0,2900.0 100.0,2900.0 100.0,3000.0 0.0,3000.0" fill="#1EAED0"/>
+	<desc># Arrow and scale</desc>
+	<desc>line,3.2,26,3.2,27.2,normal</desc>
+	<path stroke="#1EAED0" stroke-width="5.0" d="M 320.0 2600.0 L 320.0 2720.0"/>
+	<desc>block,3.2,26,3,26.5,solid</desc>
+	<desc>continuation,3,26.5,3.2,26.5,solid</desc>
+	<desc>continuation,3.2,26.5,3.2,26,block_end</desc>
+	<polygon stroke="#1EAED0" stroke-width="5.0" points="320.0,2600.0 300.0,2650.0 320.0,2650.0 320.0,2600.0" fill="#1EAED0"/>
+	<desc>text,3,25.9,N,sans_serif,0.6</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="300.0" y="2590.0">N</text>
+	<desc>text,3.4,26.5,1 sq.=,sans_serif,0.5</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="50px" fill="#1EAED0" x="340.0" y="2650.0">1 sq.=</text>
+	<desc>text,3.4,27,10 ft.,sans_serif,0.5</desc>
+	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="50px" fill="#1EAED0" x="340.0" y="2700.0">10 ft.</text>
+</svg>
