@@ -55,7 +55,7 @@ def help(ctx: click.Context, topic: str | None) -> None:
 def convert(*, file: Path, output: Path, debug: bool) -> None:
     """Convert from old-style ``makemap.pl`` input to current format."""
     svc = Converter(inp=file, output=output, debug=debug)
-    svc.convert_input()
+    svc.convert()
 
 
 @click.option(

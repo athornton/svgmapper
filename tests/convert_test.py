@@ -13,7 +13,7 @@ def test_convert() -> None:
     reference = data / "output" / "crypt.svgmap"
     with tempfile.NamedTemporaryFile() as f:
         conv = Converter(inp=inp, output=Path(f.name))
-        conv.convert_input()
+        conv.convert()
         output = Path(f.name).read_text()
     ref_output = reference.read_text()
     assert output == ref_output

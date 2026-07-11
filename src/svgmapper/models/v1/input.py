@@ -224,6 +224,10 @@ class Door(MapObject):
                 raise SVGBadNumericInputError(f"{cls.__name__}: {number}")
 
 
+class SpiralStairs(MapObject):
+    """Spiral Staircase."""
+
+
 class Toilet(MapObject):
     """Toilet. Seriously, there are a lot of these in the dungeon."""
 

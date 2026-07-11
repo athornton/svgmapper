@@ -13,7 +13,7 @@ def _build_tests(data: Path, output: Path) -> None:
     converter = Converter(
         inp=(data / "crypt.desc"), output=(output / "crypt.svgmap")
     )
-    converter.convert_input()
+    converter.convert()
 
     # Crypt from svgmap
 

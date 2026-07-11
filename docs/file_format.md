@@ -161,6 +161,11 @@ The center of the ellipse is at (`startx`,`starty`).
 The `endx` and `endy` coordinates are the x-radius and y-radius of the ellipse, respectively.
 There is no continuation for an ellipse.
 
+### Spiral stairs
+
+The center of the spiral staircase is at (`startx`,`starty`) and its radius is half a grid unit, so if you want the staircase to sit neatly in a grid cell, make those half-integers.
+The `endx` and `endy` coordinates must be present but are ignored; `0` is the conventional value to use.
+
 ### Type for toilet
 
 * vertical

@@ -50,976 +50,976 @@
 	<desc>#  endx: Text to use %28Can%27t contain commas%29</desc>
 	<desc>#  endy: %22s%22 means use Soutane font %28serif%29</desc>
 	<desc># Map Edge</desc>
-	<desc># ORIG: 1,0,0,0,30,2</desc>
+	<desc># ORIG [0044]: 1,0,0,0,30,2</desc>
 	<desc>line,0.0,0.0,0.0,30.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 0.0 0.0 L 0.0 1500.0"/>
-	<desc># ORIG: 1,0,30,30,30,2</desc>
+	<desc># ORIG [0045]: 1,0,30,30,30,2</desc>
 	<desc>line,0.0,30.0,30.0,30.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 0.0 1500.0 L 1500.0 1500.0"/>
-	<desc># ORIG: 1,30,30,30,0,2</desc>
+	<desc># ORIG [0046]: 1,30,30,30,0,2</desc>
 	<desc>line,30.0,30.0,30.0,0.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 1500.0 1500.0 L 1500.0 0.0"/>
-	<desc># ORIG: 1,30,0,0,0,2</desc>
+	<desc># ORIG [0047]: 1,30,0,0,0,2</desc>
 	<desc>line,30.0,0.0,0.0,0.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 1500.0 0.0 L 0.0 0.0"/>
 	<desc># Carlotta%27s apartments</desc>
-	<desc># ORIG: 1,2,0,2,3,1</desc>
+	<desc># ORIG [0050]: 1,2,0,2,3,1</desc>
 	<desc>line,2.0,0.0,2.0,3.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 100.0 0.0 L 100.0 150.0"/>
-	<desc># ORIG: 1,3,0,3,3,1</desc>
+	<desc># ORIG [0051]: 1,3,0,3,3,1</desc>
 	<desc>line,3.0,0.0,3.0,3.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 150.0 0.0 L 150.0 150.0"/>
-	<desc># ORIG: 1,0,1,2,1,1</desc>
+	<desc># ORIG [0052]: 1,0,1,2,1,1</desc>
 	<desc>line,0.0,1.0,2.0,1.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 0.0 50.0 L 100.0 50.0"/>
-	<desc># ORIG: 1,0,3,3,3,1</desc>
+	<desc># ORIG [0053]: 1,0,3,3,3,1</desc>
 	<desc>line,0.0,3.0,3.0,3.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 0.0 150.0 L 150.0 150.0"/>
 	<desc># Yorick%27s apartments</desc>
-	<desc># ORIG: 1,6,0,6,3,1</desc>
+	<desc># ORIG [0056]: 1,6,0,6,3,1</desc>
 	<desc>line,6.0,0.0,6.0,3.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 300.0 0.0 L 300.0 150.0"/>
-	<desc># ORIG: 1,6,3,18,3,1</desc>
+	<desc># ORIG [0057]: 1,6,3,18,3,1</desc>
 	<desc>line,6.0,3.0,18.0,3.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 300.0 150.0 L 900.0 150.0"/>
-	<desc># ORIG: 1,18,3,21,0,1</desc>
+	<desc># ORIG [0058]: 1,18,3,21,0,1</desc>
 	<desc>line,18.0,3.0,21.0,0.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 900.0 150.0 L 1050.0 0.0"/>
-	<desc># ORIG: 1,19,0,19,2,1</desc>
+	<desc># ORIG [0059]: 1,19,0,19,2,1</desc>
 	<desc>line,19.0,0.0,19.0,2.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 950.0 0.0 L 950.0 100.0"/>
-	<desc># ORIG: 1,18,0,18,3,1</desc>
+	<desc># ORIG [0060]: 1,18,0,18,3,1</desc>
 	<desc>line,18.0,0.0,18.0,3.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 900.0 0.0 L 900.0 150.0"/>
-	<desc># ORIG: 1,16,1,16,3,1</desc>
+	<desc># ORIG [0061]: 1,16,1,16,3,1</desc>
 	<desc>line,16.0,1.0,16.0,3.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 800.0 50.0 L 800.0 150.0"/>
-	<desc># ORIG: 1,16,1,18,1,1</desc>
+	<desc># ORIG [0062]: 1,16,1,18,1,1</desc>
 	<desc>line,16.0,1.0,18.0,1.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 800.0 50.0 L 900.0 50.0"/>
-	<desc># ORIG: 1,13,0,13,3,1</desc>
+	<desc># ORIG [0063]: 1,13,0,13,3,1</desc>
 	<desc>line,13.0,0.0,13.0,3.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 650.0 0.0 L 650.0 150.0"/>
-	<desc># ORIG: 1,14,0,14,1,1</desc>
+	<desc># ORIG [0064]: 1,14,0,14,1,1</desc>
 	<desc>line,14.0,0.0,14.0,1.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 700.0 0.0 L 700.0 50.0"/>
-	<desc># ORIG: 1,13,1,14,1,1</desc>
+	<desc># ORIG [0065]: 1,13,1,14,1,1</desc>
 	<desc>line,13.0,1.0,14.0,1.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 650.0 50.0 L 700.0 50.0"/>
-	<desc># ORIG: 1,18,3,18,2,1</desc>
+	<desc># ORIG [0066]: 1,18,3,18,2,1</desc>
 	<desc>line,18.0,3.0,18.0,2.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 900.0 150.0 L 900.0 100.0"/>
-	<desc># ORIG: 1,18,2,19,2,1</desc>
+	<desc># ORIG [0067]: 1,18,2,19,2,1</desc>
 	<desc>line,18.0,2.0,19.0,2.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 900.0 100.0 L 950.0 100.0"/>
 	<desc># Rest of Church outline</desc>
-	<desc># ORIG: 1,0,6,3,6,1</desc>
+	<desc># ORIG [0070]: 1,0,6,3,6,1</desc>
 	<desc>line,0.0,6.0,3.0,6.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 0.0 300.0 L 150.0 300.0"/>
-	<desc># ORIG: 1,3,6,3,9,1</desc>
+	<desc># ORIG [0071]: 1,3,6,3,9,1</desc>
 	<desc>line,3.0,6.0,3.0,9.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 150.0 300.0 L 150.0 450.0"/>
-	<desc># ORIG: 1,3,9,6,9,1</desc>
+	<desc># ORIG [0072]: 1,3,9,6,9,1</desc>
 	<desc>line,3.0,9.0,6.0,9.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 150.0 450.0 L 300.0 450.0"/>
-	<desc># ORIG: 1,6,9,6,6,1</desc>
+	<desc># ORIG [0073]: 1,6,9,6,6,1</desc>
 	<desc>line,6.0,9.0,6.0,6.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 300.0 450.0 L 300.0 300.0"/>
-	<desc># ORIG: 1,6,6,18,6,1</desc>
+	<desc># ORIG [0074]: 1,6,6,18,6,1</desc>
 	<desc>line,6.0,6.0,18.0,6.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 300.0 300.0 L 900.0 300.0"/>
-	<desc># ORIG: 1,18,6,18,3,1</desc>
+	<desc># ORIG [0075]: 1,18,6,18,3,1</desc>
 	<desc>line,18.0,6.0,18.0,3.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 900.0 300.0 L 900.0 150.0"/>
 	<desc># Edgar%27s apartments</desc>
 	<desc>#  Interior walls</desc>
-	<desc># ORIG: 1,26,0,26,1,1</desc>
+	<desc># ORIG [0079]: 1,26,0,26,1,1</desc>
 	<desc>line,26.0,0.0,26.0,1.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1300.0 0.0 L 1300.0 50.0"/>
-	<desc># ORIG: 1,28,0,28,2,1</desc>
+	<desc># ORIG [0080]: 1,28,0,28,2,1</desc>
 	<desc>line,28.0,0.0,28.0,2.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1400.0 0.0 L 1400.0 100.0"/>
-	<desc># ORIG: 1,28,1,30,1,1</desc>
+	<desc># ORIG [0081]: 1,28,1,30,1,1</desc>
 	<desc>line,28.0,1.0,30.0,1.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1400.0 50.0 L 1500.0 50.0"/>
-	<desc># ORIG: 1,28,2,30,2,1</desc>
+	<desc># ORIG [0082]: 1,28,2,30,2,1</desc>
 	<desc>line,28.0,2.0,30.0,2.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1400.0 100.0 L 1500.0 100.0"/>
-	<desc># ORIG: 1,28,3,30,3,1</desc>
+	<desc># ORIG [0083]: 1,28,3,30,3,1</desc>
 	<desc>line,28.0,3.0,30.0,3.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1400.0 150.0 L 1500.0 150.0"/>
-	<desc># ORIG: 1,28,3,30,3,1</desc>
+	<desc># ORIG [0084]: 1,28,3,30,3,1</desc>
 	<desc>line,28.0,3.0,30.0,3.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1400.0 150.0 L 1500.0 150.0"/>
-	<desc># ORIG: 1,28,3,28,5,1</desc>
+	<desc># ORIG [0085]: 1,28,3,28,5,1</desc>
 	<desc>line,28.0,3.0,28.0,5.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1400.0 150.0 L 1400.0 250.0"/>
-	<desc># ORIG: 1,25,1,27,1,1</desc>
+	<desc># ORIG [0086]: 1,25,1,27,1,1</desc>
 	<desc>line,25.0,1.0,27.0,1.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1250.0 50.0 L 1350.0 50.0"/>
-	<desc># ORIG: 1,27,1,27,5,1</desc>
+	<desc># ORIG [0087]: 1,27,1,27,5,1</desc>
 	<desc>line,27.0,1.0,27.0,5.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1350.0 50.0 L 1350.0 250.0"/>
-	<desc># ORIG: 1,25,3,27,3,1</desc>
+	<desc># ORIG [0088]: 1,25,3,27,3,1</desc>
 	<desc>line,25.0,3.0,27.0,3.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1250.0 150.0 L 1350.0 150.0"/>
 	<desc>#  Exterior Wall: fill polygon</desc>
-	<desc># ORIG: 5,24,0,24,6,1</desc>
+	<desc># ORIG [0090]: 5,24,0,24,6,1</desc>
 	<desc>block,24.0,0.0,24.0,6.0,solid</desc>
-	<desc># ORIG: 99,24,6,30,6,1</desc>
+	<desc># ORIG [0091]: 99,24,6,30,6,1</desc>
 	<desc>continuation,24.0,6.0,30.0,6.0,solid</desc>
-	<desc># ORIG: 99,30,6,30,5,1</desc>
+	<desc># ORIG [0092]: 99,30,6,30,5,1</desc>
 	<desc>continuation,30.0,6.0,30.0,5.0,solid</desc>
-	<desc># ORIG: 99,30,5,25,5,1</desc>
+	<desc># ORIG [0093]: 99,30,5,25,5,1</desc>
 	<desc>continuation,30.0,5.0,25.0,5.0,solid</desc>
-	<desc># ORIG: 99,25,5,25,0,1</desc>
+	<desc># ORIG [0094]: 99,25,5,25,0,1</desc>
 	<desc>continuation,25.0,5.0,25.0,0.0,solid</desc>
-	<desc># ORIG: 99,25,0,24,0,99</desc>
+	<desc># ORIG [0095]: 99,25,0,24,0,99</desc>
 	<desc>continuation,25.0,0.0,24.0,0.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="1200.0,0.0 1200.0,300.0 1500.0,300.0 1500.0,250.0 1250.0,250.0 1250.0,0.0 1200.0,0.0" fill="red"/>
 	<desc># Corner of church and Knight Bridge</desc>
-	<desc># ORIG: 5,6,6,6,9,1</desc>
+	<desc># ORIG [0098]: 5,6,6,6,9,1</desc>
 	<desc>block,6.0,6.0,6.0,9.0,solid</desc>
-	<desc># ORIG: 99,6,9,9,6,1</desc>
+	<desc># ORIG [0099]: 99,6,9,9,6,1</desc>
 	<desc>continuation,6.0,9.0,9.0,6.0,solid</desc>
-	<desc># ORIG: 99,9,6,6,6,99</desc>
+	<desc># ORIG [0100]: 99,9,6,6,6,99</desc>
 	<desc>continuation,9.0,6.0,6.0,6.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="300.0,300.0 300.0,450.0 450.0,300.0 300.0,300.0" fill="red"/>
 	<desc># Knight Bridge Pits</desc>
-	<desc># ORIG: 5,11,6,19,6,6</desc>
+	<desc># ORIG [0103]: 5,11,6,19,6,6</desc>
 	<desc>block,11.0,6.0,19.0,6.0,white_thin</desc>
-	<desc># ORIG: 99,19,6,19,8.5,6</desc>
+	<desc># ORIG [0104]: 99,19,6,19,8.5,6</desc>
 	<desc>continuation,19.0,6.0,19.0,8.5,white_thin</desc>
-	<desc># ORIG: 99,19,8.5,11,8.5,6</desc>
+	<desc># ORIG [0105]: 99,19,8.5,11,8.5,6</desc>
 	<desc>continuation,19.0,8.5,11.0,8.5,white_thin</desc>
-	<desc># ORIG: 99,11,8.5,11,6,99</desc>
+	<desc># ORIG [0106]: 99,11,8.5,11,6,99</desc>
 	<desc>continuation,11.0,8.5,11.0,6.0,block_end</desc>
 	<polygon stroke="red" stroke-width="1.5" points="550.0,300.0 950.0,300.0 950.0,425.0 550.0,425.0 550.0,300.0" fill="white"/>
-	<desc># ORIG: 5,11,6,19,6,3</desc>
+	<desc># ORIG [0107]: 5,11,6,19,6,3</desc>
 	<desc>block,11.0,6.0,19.0,6.0,hatched</desc>
-	<desc># ORIG: 99,19,6,19,8.5,3</desc>
+	<desc># ORIG [0108]: 99,19,6,19,8.5,3</desc>
 	<desc>continuation,19.0,6.0,19.0,8.5,hatched</desc>
-	<desc># ORIG: 99,19,8.5,11,8.5,3</desc>
+	<desc># ORIG [0109]: 99,19,8.5,11,8.5,3</desc>
 	<desc>continuation,19.0,8.5,11.0,8.5,hatched</desc>
-	<desc># ORIG: 99,11,8.5,11,6,99</desc>
+	<desc># ORIG [0110]: 99,11,8.5,11,6,99</desc>
 	<desc>continuation,11.0,8.5,11.0,6.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="550.0,300.0 950.0,300.0 950.0,425.0 550.0,425.0 550.0,300.0" fill="url(#hatch00)"/>
-	<desc># ORIG: 5,11,9,19,9,6</desc>
+	<desc># ORIG [0112]: 5,11,9,19,9,6</desc>
 	<desc>block,11.0,9.0,19.0,9.0,white_thin</desc>
-	<desc># ORIG: 99,19,9,19,12,6</desc>
+	<desc># ORIG [0113]: 99,19,9,19,12,6</desc>
 	<desc>continuation,19.0,9.0,19.0,12.0,white_thin</desc>
-	<desc># ORIG: 99,19,12,11,12,6</desc>
+	<desc># ORIG [0114]: 99,19,12,11,12,6</desc>
 	<desc>continuation,19.0,12.0,11.0,12.0,white_thin</desc>
-	<desc># ORIG: 99,11,12,11,9,99</desc>
+	<desc># ORIG [0115]: 99,11,12,11,9,99</desc>
 	<desc>continuation,11.0,12.0,11.0,9.0,block_end</desc>
 	<polygon stroke="red" stroke-width="1.5" points="550.0,450.0 950.0,450.0 950.0,600.0 550.0,600.0 550.0,450.0" fill="white"/>
-	<desc># ORIG: 5,11,9,19,9,3</desc>
+	<desc># ORIG [0116]: 5,11,9,19,9,3</desc>
 	<desc>block,11.0,9.0,19.0,9.0,hatched</desc>
-	<desc># ORIG: 99,19,9,19,12,3</desc>
+	<desc># ORIG [0117]: 99,19,9,19,12,3</desc>
 	<desc>continuation,19.0,9.0,19.0,12.0,hatched</desc>
-	<desc># ORIG: 99,19,12,11,12,3</desc>
+	<desc># ORIG [0118]: 99,19,12,11,12,3</desc>
 	<desc>continuation,19.0,12.0,11.0,12.0,hatched</desc>
-	<desc># ORIG: 99,11,12,11,9,99</desc>
+	<desc># ORIG [0119]: 99,11,12,11,9,99</desc>
 	<desc>continuation,11.0,12.0,11.0,9.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="550.0,450.0 950.0,450.0 950.0,600.0 550.0,600.0 550.0,450.0" fill="url(#hatch00)"/>
-	<desc># ORIG: 5,19.5,6,23,6,6</desc>
+	<desc># ORIG [0121]: 5,19.5,6,23,6,6</desc>
 	<desc>block,19.5,6.0,23.0,6.0,white_thin</desc>
-	<desc># ORIG: 99,23,6,23,8.5,6</desc>
+	<desc># ORIG [0122]: 99,23,6,23,8.5,6</desc>
 	<desc>continuation,23.0,6.0,23.0,8.5,white_thin</desc>
-	<desc># ORIG: 99,23,8.5,19.5,8.5,6</desc>
+	<desc># ORIG [0123]: 99,23,8.5,19.5,8.5,6</desc>
 	<desc>continuation,23.0,8.5,19.5,8.5,white_thin</desc>
-	<desc># ORIG: 99,19.5,8.5,19.5,6,99</desc>
+	<desc># ORIG [0124]: 99,19.5,8.5,19.5,6,99</desc>
 	<desc>continuation,19.5,8.5,19.5,6.0,block_end</desc>
 	<polygon stroke="red" stroke-width="1.5" points="975.0,300.0 1150.0,300.0 1150.0,425.0 975.0,425.0 975.0,300.0" fill="white"/>
-	<desc># ORIG: 5,19.5,6,23,6,3</desc>
+	<desc># ORIG [0125]: 5,19.5,6,23,6,3</desc>
 	<desc>block,19.5,6.0,23.0,6.0,hatched</desc>
-	<desc># ORIG: 99,23,6,23,8.5,3</desc>
+	<desc># ORIG [0126]: 99,23,6,23,8.5,3</desc>
 	<desc>continuation,23.0,6.0,23.0,8.5,hatched</desc>
-	<desc># ORIG: 99,23,8.5,19.5,8.5,3</desc>
+	<desc># ORIG [0127]: 99,23,8.5,19.5,8.5,3</desc>
 	<desc>continuation,23.0,8.5,19.5,8.5,hatched</desc>
-	<desc># ORIG: 99,19.5,8.5,19.5,6,99</desc>
+	<desc># ORIG [0128]: 99,19.5,8.5,19.5,6,99</desc>
 	<desc>continuation,19.5,8.5,19.5,6.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="975.0,300.0 1150.0,300.0 1150.0,425.0 975.0,425.0 975.0,300.0" fill="url(#hatch00)"/>
-	<desc># ORIG: 5,19.5,9,23,9,6</desc>
+	<desc># ORIG [0130]: 5,19.5,9,23,9,6</desc>
 	<desc>block,19.5,9.0,23.0,9.0,white_thin</desc>
-	<desc># ORIG: 99,23,9,23,12,6</desc>
+	<desc># ORIG [0131]: 99,23,9,23,12,6</desc>
 	<desc>continuation,23.0,9.0,23.0,12.0,white_thin</desc>
-	<desc># ORIG: 99,23,12,19.5,12,6</desc>
+	<desc># ORIG [0132]: 99,23,12,19.5,12,6</desc>
 	<desc>continuation,23.0,12.0,19.5,12.0,white_thin</desc>
-	<desc># ORIG: 99,19.5,12,19.5,9,99</desc>
+	<desc># ORIG [0133]: 99,19.5,12,19.5,9,99</desc>
 	<desc>continuation,19.5,12.0,19.5,9.0,block_end</desc>
 	<polygon stroke="red" stroke-width="1.5" points="975.0,450.0 1150.0,450.0 1150.0,600.0 975.0,600.0 975.0,450.0" fill="white"/>
-	<desc># ORIG: 5,19.5,9,23,9,3</desc>
+	<desc># ORIG [0134]: 5,19.5,9,23,9,3</desc>
 	<desc>block,19.5,9.0,23.0,9.0,hatched</desc>
-	<desc># ORIG: 99,23,9,23,12,3</desc>
+	<desc># ORIG [0135]: 99,23,9,23,12,3</desc>
 	<desc>continuation,23.0,9.0,23.0,12.0,hatched</desc>
-	<desc># ORIG: 99,23,12,19.5,12,3</desc>
+	<desc># ORIG [0136]: 99,23,12,19.5,12,3</desc>
 	<desc>continuation,23.0,12.0,19.5,12.0,hatched</desc>
-	<desc># ORIG: 99,19.5,12,19.5,9,99</desc>
+	<desc># ORIG [0137]: 99,19.5,12,19.5,9,99</desc>
 	<desc>continuation,19.5,12.0,19.5,9.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="975.0,450.0 1150.0,450.0 1150.0,600.0 975.0,600.0 975.0,450.0" fill="url(#hatch00)"/>
 	<desc>#Knight Bridge Walls</desc>
-	<desc># ORIG: 1,6,6,18,6,1</desc>
+	<desc># ORIG [0140]: 1,6,6,18,6,1</desc>
 	<desc>line,6.0,6.0,18.0,6.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 300.0 300.0 L 900.0 300.0"/>
-	<desc># ORIG: 1,6,9,8,11,1</desc>
+	<desc># ORIG [0141]: 1,6,9,8,11,1</desc>
 	<desc>line,6.0,9.0,8.0,11.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 300.0 450.0 L 400.0 550.0"/>
-	<desc># ORIG: 1,8,11,8,13,1</desc>
+	<desc># ORIG [0142]: 1,8,11,8,13,1</desc>
 	<desc>line,8.0,11.0,8.0,13.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 400.0 550.0 L 400.0 650.0"/>
-	<desc># ORIG: 1,8,13,9.5,13,1</desc>
+	<desc># ORIG [0143]: 1,8,13,9.5,13,1</desc>
 	<desc>line,8.0,13.0,9.5,13.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 400.0 650.0 L 475.0 650.0"/>
-	<desc># ORIG: 1,11.5,13,20,13,1</desc>
+	<desc># ORIG [0144]: 1,11.5,13,20,13,1</desc>
 	<desc>line,11.5,13.0,20.0,13.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 575.0 650.0 L 1000.0 650.0"/>
-	<desc># ORIG: 1,20,13,23,16,2</desc>
+	<desc># ORIG [0145]: 1,20,13,23,16,2</desc>
 	<desc>line,20.0,13.0,23.0,16.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 1000.0 650.0 L 1150.0 800.0"/>
-	<desc># ORIG: 1,23,16,23,17,2</desc>
+	<desc># ORIG [0146]: 1,23,16,23,17,2</desc>
 	<desc>line,23.0,16.0,23.0,17.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 1150.0 800.0 L 1150.0 850.0"/>
-	<desc># ORIG: 1,23,17,26,17,2</desc>
+	<desc># ORIG [0147]: 1,23,17,26,17,2</desc>
 	<desc>line,23.0,17.0,26.0,17.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 1150.0 850.0 L 1300.0 850.0"/>
-	<desc># ORIG: 1,25,17,25,12,1</desc>
+	<desc># ORIG [0148]: 1,25,17,25,12,1</desc>
 	<desc>line,25.0,17.0,25.0,12.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1250.0 850.0 L 1250.0 600.0"/>
-	<desc># ORIG: 1,24,12,23,12,1</desc>
+	<desc># ORIG [0149]: 1,24,12,23,12,1</desc>
 	<desc>line,24.0,12.0,23.0,12.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1200.0 600.0 L 1150.0 600.0"/>
-	<desc># ORIG: 5,21,13,24,13,1</desc>
+	<desc># ORIG [0151]: 5,21,13,24,13,1</desc>
 	<desc>block,21.0,13.0,24.0,13.0,solid</desc>
-	<desc># ORIG: 99,24,13,24,16,1</desc>
+	<desc># ORIG [0152]: 99,24,13,24,16,1</desc>
 	<desc>continuation,24.0,13.0,24.0,16.0,solid</desc>
-	<desc># ORIG: 99,24,16,21,13,99</desc>
+	<desc># ORIG [0153]: 99,24,16,21,13,99</desc>
 	<desc>continuation,24.0,16.0,21.0,13.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="1050.0,650.0 1200.0,650.0 1200.0,800.0 1050.0,650.0" fill="red"/>
-	<desc># ORIG: 5,23,16,24,17,1</desc>
+	<desc># ORIG [0155]: 5,23,16,24,17,1</desc>
 	<desc>block,23.0,16.0,24.0,17.0,solid</desc>
-	<desc># ORIG: 99,24,17,23,17,5</desc>
+	<desc># ORIG [0156]: 99,24,17,23,17,5</desc>
 	<desc>continuation,24.0,17.0,23.0,17.0,solid_thin</desc>
-	<desc># ORIG: 99,23,17,23,16,99</desc>
+	<desc># ORIG [0157]: 99,23,17,23,16,99</desc>
 	<desc>continuation,23.0,17.0,23.0,16.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="1150.0,800.0 1200.0,850.0 1150.0,850.0 1150.0,800.0" fill="red"/>
 	<desc># Sewer Drain</desc>
-	<desc># ORIG: 6,10.5,12.5,1.5,1.5,1</desc>
+	<desc># ORIG [0160]: 6,10.5,12.5,1.5,1.5,1</desc>
 	<desc>ellipse,10.5,12.5,1.5,1.5,solid</desc>
 	<ellipse stroke="red" stroke-width="5.0" cx="525.0" cy="625.0" rx="75.0" ry="75.0" fill="red"/>
-	<desc># ORIG: 6,10.5,12.5,0.8,0.8,2</desc>
+	<desc># ORIG [0161]: 6,10.5,12.5,0.8,0.8,2</desc>
 	<desc>ellipse,10.5,12.5,0.8,0.8,white</desc>
 	<ellipse stroke="red" stroke-width="5.0" cx="525.0" cy="625.0" rx="40.0" ry="40.0" fill="white"/>
-	<desc># ORIG: 6,10.5,12.5,0.8,0.8,3</desc>
+	<desc># ORIG [0162]: 6,10.5,12.5,0.8,0.8,3</desc>
 	<desc>ellipse,10.5,12.5,0.8,0.8,hatched</desc>
 	<ellipse stroke="red" stroke-width="5.0" cx="525.0" cy="625.0" rx="40.0" ry="40.0" fill="url(#hatch00)"/>
 	<desc># Wight Lairs</desc>
 	<desc>#  Columns</desc>
-	<desc># ORIG: 5,24,7,25,7,1</desc>
+	<desc># ORIG [0166]: 5,24,7,25,7,1</desc>
 	<desc>block,24.0,7.0,25.0,7.0,solid</desc>
-	<desc># ORIG: 99,25,7,25,8,1</desc>
+	<desc># ORIG [0167]: 99,25,7,25,8,1</desc>
 	<desc>continuation,25.0,7.0,25.0,8.0,solid</desc>
-	<desc># ORIG: 99,25,8,24,8,1</desc>
+	<desc># ORIG [0168]: 99,25,8,24,8,1</desc>
 	<desc>continuation,25.0,8.0,24.0,8.0,solid</desc>
-	<desc># ORIG: 99,24,8,24,7,99</desc>
+	<desc># ORIG [0169]: 99,24,8,24,7,99</desc>
 	<desc>continuation,24.0,8.0,24.0,7.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="1200.0,350.0 1250.0,350.0 1250.0,400.0 1200.0,400.0 1200.0,350.0" fill="red"/>
-	<desc># ORIG: 5,24,9,25,9,1</desc>
+	<desc># ORIG [0171]: 5,24,9,25,9,1</desc>
 	<desc>block,24.0,9.0,25.0,9.0,solid</desc>
-	<desc># ORIG: 99,25,9,25,10,1</desc>
+	<desc># ORIG [0172]: 99,25,9,25,10,1</desc>
 	<desc>continuation,25.0,9.0,25.0,10.0,solid</desc>
-	<desc># ORIG: 99,25,10,24,10,1</desc>
+	<desc># ORIG [0173]: 99,25,10,24,10,1</desc>
 	<desc>continuation,25.0,10.0,24.0,10.0,solid</desc>
-	<desc># ORIG: 99,24,10,24,9,99</desc>
+	<desc># ORIG [0174]: 99,24,10,24,9,99</desc>
 	<desc>continuation,24.0,10.0,24.0,9.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="1200.0,450.0 1250.0,450.0 1250.0,500.0 1200.0,500.0 1200.0,450.0" fill="red"/>
 	<desc>#  Shaft</desc>
-	<desc># ORIG: 6,24.5,9.5,.4,.4,2</desc>
+	<desc># ORIG [0176]: 6,24.5,9.5,.4,.4,2</desc>
 	<desc>ellipse,24.5,9.5,0.4,0.4,white</desc>
 	<ellipse stroke="red" stroke-width="5.0" cx="1225.0" cy="475.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,24.5,9.5,.4,.4,3</desc>
+	<desc># ORIG [0177]: 6,24.5,9.5,.4,.4,3</desc>
 	<desc>ellipse,24.5,9.5,0.4,0.4,hatched</desc>
 	<ellipse stroke="red" stroke-width="5.0" cx="1225.0" cy="475.0" rx="20.0" ry="20.0" fill="url(#hatch00)"/>
-	<desc># ORIG: 5,23,11,25,11,1</desc>
+	<desc># ORIG [0179]: 5,23,11,25,11,1</desc>
 	<desc>block,23.0,11.0,25.0,11.0,solid</desc>
-	<desc># ORIG: 99,25,11,25,12,1</desc>
+	<desc># ORIG [0180]: 99,25,11,25,12,1</desc>
 	<desc>continuation,25.0,11.0,25.0,12.0,solid</desc>
-	<desc># ORIG: 99,25,12,23,12,1</desc>
+	<desc># ORIG [0181]: 99,25,12,23,12,1</desc>
 	<desc>continuation,25.0,12.0,23.0,12.0,solid</desc>
-	<desc># ORIG: 99,23,12,23,11,99</desc>
+	<desc># ORIG [0182]: 99,23,12,23,11,99</desc>
 	<desc>continuation,23.0,12.0,23.0,11.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="1150.0,550.0 1250.0,550.0 1250.0,600.0 1150.0,600.0 1150.0,550.0" fill="red"/>
 	<desc># Walls</desc>
-	<desc># ORIG: 1,24.5,6,24.5,7,1</desc>
+	<desc># ORIG [0185]: 1,24.5,6,24.5,7,1</desc>
 	<desc>line,24.5,6.0,24.5,7.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1225.0 300.0 L 1225.0 350.0"/>
-	<desc># ORIG: 1,24.5,8,24.5,9,1</desc>
+	<desc># ORIG [0186]: 1,24.5,8,24.5,9,1</desc>
 	<desc>line,24.5,8.0,24.5,9.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1225.0 400.0 L 1225.0 450.0"/>
-	<desc># ORIG: 1,24.5,10,24.5,11,1</desc>
+	<desc># ORIG [0187]: 1,24.5,10,24.5,11,1</desc>
 	<desc>line,24.5,10.0,24.5,11.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1225.0 500.0 L 1225.0 550.0"/>
-	<desc># ORIG: 1,25,7,30,7,1</desc>
+	<desc># ORIG [0188]: 1,25,7,30,7,1</desc>
 	<desc>line,25.0,7.0,30.0,7.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1250.0 350.0 L 1500.0 350.0"/>
-	<desc># ORIG: 1,25,8,30,8,1</desc>
+	<desc># ORIG [0189]: 1,25,8,30,8,1</desc>
 	<desc>line,25.0,8.0,30.0,8.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1250.0 400.0 L 1500.0 400.0"/>
-	<desc># ORIG: 1,25,9,30,9,1</desc>
+	<desc># ORIG [0190]: 1,25,9,30,9,1</desc>
 	<desc>line,25.0,9.0,30.0,9.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1250.0 450.0 L 1500.0 450.0"/>
-	<desc># ORIG: 1,25,10,30,10,1</desc>
+	<desc># ORIG [0191]: 1,25,10,30,10,1</desc>
 	<desc>line,25.0,10.0,30.0,10.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1250.0 500.0 L 1500.0 500.0"/>
-	<desc># ORIG: 1,25,11,30,11,1</desc>
+	<desc># ORIG [0192]: 1,25,11,30,11,1</desc>
 	<desc>line,25.0,11.0,30.0,11.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1250.0 550.0 L 1500.0 550.0"/>
 	<desc># Churchyard</desc>
-	<desc># ORIG: 1,1,7,2,7,1</desc>
+	<desc># ORIG [0195]: 1,1,7,2,7,1</desc>
 	<desc>line,1.0,7.0,2.0,7.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 50.0 350.0 L 100.0 350.0"/>
-	<desc># ORIG: 1,2,7,2,8,1</desc>
+	<desc># ORIG [0196]: 1,2,7,2,8,1</desc>
 	<desc>line,2.0,7.0,2.0,8.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 100.0 350.0 L 100.0 400.0"/>
-	<desc># ORIG: 1,2,8,1,8,1</desc>
+	<desc># ORIG [0197]: 1,2,8,1,8,1</desc>
 	<desc>line,2.0,8.0,1.0,8.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 100.0 400.0 L 50.0 400.0"/>
-	<desc># ORIG: 1,1,8,1,7,1</desc>
+	<desc># ORIG [0198]: 1,1,8,1,7,1</desc>
 	<desc>line,1.0,8.0,1.0,7.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 50.0 400.0 L 50.0 350.0"/>
-	<desc># ORIG: 1,0,9,1,9,1</desc>
+	<desc># ORIG [0200]: 1,0,9,1,9,1</desc>
 	<desc>line,0.0,9.0,1.0,9.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 0.0 450.0 L 50.0 450.0"/>
-	<desc># ORIG: 1,1,9,1,10,1</desc>
+	<desc># ORIG [0201]: 1,1,9,1,10,1</desc>
 	<desc>line,1.0,9.0,1.0,10.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 50.0 450.0 L 50.0 500.0"/>
-	<desc># ORIG: 1,1,10,0,10,1</desc>
+	<desc># ORIG [0202]: 1,1,10,0,10,1</desc>
 	<desc>line,1.0,10.0,0.0,10.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 50.0 500.0 L 0.0 500.0"/>
-	<desc># ORIG: 1,1,10,0,10,1</desc>
+	<desc># ORIG [0203]: 1,1,10,0,10,1</desc>
 	<desc>line,1.0,10.0,0.0,10.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 50.0 500.0 L 0.0 500.0"/>
-	<desc># ORIG: 1,2,9,3,9,1</desc>
+	<desc># ORIG [0205]: 1,2,9,3,9,1</desc>
 	<desc>line,2.0,9.0,3.0,9.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 100.0 450.0 L 150.0 450.0"/>
-	<desc># ORIG: 1,3,9,3,10,1</desc>
+	<desc># ORIG [0206]: 1,3,9,3,10,1</desc>
 	<desc>line,3.0,9.0,3.0,10.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 150.0 450.0 L 150.0 500.0"/>
-	<desc># ORIG: 1,3,10,2,10,1</desc>
+	<desc># ORIG [0207]: 1,3,10,2,10,1</desc>
 	<desc>line,3.0,10.0,2.0,10.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 150.0 500.0 L 100.0 500.0"/>
-	<desc># ORIG: 1,2,10,2,9,1</desc>
+	<desc># ORIG [0208]: 1,2,10,2,9,1</desc>
 	<desc>line,2.0,10.0,2.0,9.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 100.0 500.0 L 100.0 450.0"/>
-	<desc># ORIG: 1,0,11,1,11,1</desc>
+	<desc># ORIG [0210]: 1,0,11,1,11,1</desc>
 	<desc>line,0.0,11.0,1.0,11.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 0.0 550.0 L 50.0 550.0"/>
-	<desc># ORIG: 1,1,11,1,12,1</desc>
+	<desc># ORIG [0211]: 1,1,11,1,12,1</desc>
 	<desc>line,1.0,11.0,1.0,12.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 50.0 550.0 L 50.0 600.0"/>
-	<desc># ORIG: 1,1,12,0,12,1</desc>
+	<desc># ORIG [0212]: 1,1,12,0,12,1</desc>
 	<desc>line,1.0,12.0,0.0,12.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 50.0 600.0 L 0.0 600.0"/>
-	<desc># ORIG: 1,0,12,0,11,1</desc>
+	<desc># ORIG [0213]: 1,0,12,0,11,1</desc>
 	<desc>line,0.0,12.0,0.0,11.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 0.0 600.0 L 0.0 550.0"/>
-	<desc># ORIG: 1,2,11,3,11,1</desc>
+	<desc># ORIG [0215]: 1,2,11,3,11,1</desc>
 	<desc>line,2.0,11.0,3.0,11.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 100.0 550.0 L 150.0 550.0"/>
-	<desc># ORIG: 1,3,11,3,12,1</desc>
+	<desc># ORIG [0216]: 1,3,11,3,12,1</desc>
 	<desc>line,3.0,11.0,3.0,12.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 150.0 550.0 L 150.0 600.0"/>
-	<desc># ORIG: 1,3,12,2,12,1</desc>
+	<desc># ORIG [0217]: 1,3,12,2,12,1</desc>
 	<desc>line,3.0,12.0,2.0,12.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 150.0 600.0 L 100.0 600.0"/>
-	<desc># ORIG: 1,2,12,2,11,1</desc>
+	<desc># ORIG [0218]: 1,2,12,2,11,1</desc>
 	<desc>line,2.0,12.0,2.0,11.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 100.0 600.0 L 100.0 550.0"/>
-	<desc># ORIG: 1,0,13,1,13,1</desc>
+	<desc># ORIG [0220]: 1,0,13,1,13,1</desc>
 	<desc>line,0.0,13.0,1.0,13.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 0.0 650.0 L 50.0 650.0"/>
-	<desc># ORIG: 1,1,13,1,14,1</desc>
+	<desc># ORIG [0221]: 1,1,13,1,14,1</desc>
 	<desc>line,1.0,13.0,1.0,14.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 50.0 650.0 L 50.0 700.0"/>
-	<desc># ORIG: 1,1,14,0,14,1</desc>
+	<desc># ORIG [0222]: 1,1,14,0,14,1</desc>
 	<desc>line,1.0,14.0,0.0,14.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 50.0 700.0 L 0.0 700.0"/>
-	<desc># ORIG: 1,0,14,0,13,1</desc>
+	<desc># ORIG [0223]: 1,0,14,0,13,1</desc>
 	<desc>line,0.0,14.0,0.0,13.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 0.0 700.0 L 0.0 650.0"/>
-	<desc># ORIG: 1,2,13,3,13,1</desc>
+	<desc># ORIG [0225]: 1,2,13,3,13,1</desc>
 	<desc>line,2.0,13.0,3.0,13.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 100.0 650.0 L 150.0 650.0"/>
-	<desc># ORIG: 1,3,13,3,14,1</desc>
+	<desc># ORIG [0226]: 1,3,13,3,14,1</desc>
 	<desc>line,3.0,13.0,3.0,14.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 150.0 650.0 L 150.0 700.0"/>
-	<desc># ORIG: 1,3,14,2,14,1</desc>
+	<desc># ORIG [0227]: 1,3,14,2,14,1</desc>
 	<desc>line,3.0,14.0,2.0,14.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 150.0 700.0 L 100.0 700.0"/>
-	<desc># ORIG: 1,2,14,2,13,1</desc>
+	<desc># ORIG [0228]: 1,2,14,2,13,1</desc>
 	<desc>line,2.0,14.0,2.0,13.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 100.0 700.0 L 100.0 650.0"/>
-	<desc># ORIG: 1,3,10,3,11,4</desc>
+	<desc># ORIG [0230]: 1,3,10,3,11,4</desc>
 	<desc>line,3.0,10.0,3.0,11.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 150.0 500.0 L 150.0 550.0"/>
-	<desc># ORIG: 1,3,12,3,13,4</desc>
+	<desc># ORIG [0231]: 1,3,12,3,13,4</desc>
 	<desc>line,3.0,12.0,3.0,13.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 150.0 600.0 L 150.0 650.0"/>
-	<desc># ORIG: 1,0,15,3,15,4</desc>
+	<desc># ORIG [0232]: 1,0,15,3,15,4</desc>
 	<desc>line,0.0,15.0,3.0,15.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 0.0 750.0 L 150.0 750.0"/>
-	<desc># ORIG: 1,3,15,3,14,1</desc>
+	<desc># ORIG [0233]: 1,3,15,3,14,1</desc>
 	<desc>line,3.0,15.0,3.0,14.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 150.0 750.0 L 150.0 700.0"/>
 	<desc># Shadow Maze</desc>
-	<desc># ORIG: 5,7,13,9.5,13,1</desc>
+	<desc># ORIG [0236]: 5,7,13,9.5,13,1</desc>
 	<desc>block,7.0,13.0,9.5,13.0,solid</desc>
-	<desc># ORIG: 99,9.5,13,10.5,13.5,1</desc>
+	<desc># ORIG [0237]: 99,9.5,13,10.5,13.5,1</desc>
 	<desc>continuation,9.5,13.0,10.5,13.5,solid</desc>
-	<desc># ORIG: 99,10.5,13.5,11.5,13.5,1</desc>
+	<desc># ORIG [0238]: 99,10.5,13.5,11.5,13.5,1</desc>
 	<desc>continuation,10.5,13.5,11.5,13.5,solid</desc>
-	<desc># ORIG: 99,11.5,13.5,11,14,1</desc>
+	<desc># ORIG [0239]: 99,11.5,13.5,11,14,1</desc>
 	<desc>continuation,11.5,13.5,11.0,14.0,solid</desc>
-	<desc># ORIG: 99,11,14,9,16,1</desc>
+	<desc># ORIG [0240]: 99,11,14,9,16,1</desc>
 	<desc>continuation,11.0,14.0,9.0,16.0,solid</desc>
-	<desc># ORIG: 99,9,16,9,17,1</desc>
+	<desc># ORIG [0241]: 99,9,16,9,17,1</desc>
 	<desc>continuation,9.0,16.0,9.0,17.0,solid</desc>
-	<desc># ORIG: 99,9,17,7,15,1</desc>
+	<desc># ORIG [0242]: 99,9,17,7,15,1</desc>
 	<desc>continuation,9.0,17.0,7.0,15.0,solid</desc>
-	<desc># ORIG: 99,7,15,7,13,99</desc>
+	<desc># ORIG [0243]: 99,7,15,7,13,99</desc>
 	<desc>continuation,7.0,15.0,7.0,13.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="350.0,650.0 475.0,650.0 525.0,675.0 575.0,675.0 550.0,700.0 450.0,800.0 450.0,850.0 350.0,750.0 350.0,650.0" fill="red"/>
 	<desc>#  Walls</desc>
-	<desc># ORIG: 1,6,14,3,11,1</desc>
+	<desc># ORIG [0245]: 1,6,14,3,11,1</desc>
 	<desc>line,6.0,14.0,3.0,11.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 300.0 700.0 L 150.0 550.0"/>
-	<desc># ORIG: 1,4,12,5,11,1</desc>
+	<desc># ORIG [0246]: 1,4,12,5,11,1</desc>
 	<desc>line,4.0,12.0,5.0,11.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 200.0 600.0 L 250.0 550.0"/>
-	<desc># ORIG: 1,4,11,5,10,1</desc>
+	<desc># ORIG [0247]: 1,4,11,5,10,1</desc>
 	<desc>line,4.0,11.0,5.0,10.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 200.0 550.0 L 250.0 500.0"/>
-	<desc># ORIG: 1,5,10,6,11,1</desc>
+	<desc># ORIG [0248]: 1,5,10,6,11,1</desc>
 	<desc>line,5.0,10.0,6.0,11.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 250.0 500.0 L 300.0 550.0"/>
-	<desc># ORIG: 5,3,9,4,10,1</desc>
+	<desc># ORIG [0249]: 5,3,9,4,10,1</desc>
 	<desc>block,3.0,9.0,4.0,10.0,solid</desc>
-	<desc># ORIG: 99,4,10,3,10,1</desc>
+	<desc># ORIG [0250]: 99,4,10,3,10,1</desc>
 	<desc>continuation,4.0,10.0,3.0,10.0,solid</desc>
-	<desc># ORIG: 99,3,10,3,9,99</desc>
+	<desc># ORIG [0251]: 99,3,10,3,9,99</desc>
 	<desc>continuation,3.0,10.0,3.0,9.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="150.0,450.0 200.0,500.0 150.0,500.0 150.0,450.0" fill="red"/>
 	<desc>#  Rectangle</desc>
-	<desc># ORIG: 5,5,12,6,11,1</desc>
+	<desc># ORIG [0253]: 5,5,12,6,11,1</desc>
 	<desc>block,5.0,12.0,6.0,11.0,solid</desc>
-	<desc># ORIG: 99,6,11,6.4,11.4,1</desc>
+	<desc># ORIG [0254]: 99,6,11,6.4,11.4,1</desc>
 	<desc>continuation,6.0,11.0,6.4,11.4,solid</desc>
-	<desc># ORIG: 99,6.4,11.4,5.4,12.4,1</desc>
+	<desc># ORIG [0255]: 99,6.4,11.4,5.4,12.4,1</desc>
 	<desc>continuation,6.4,11.4,5.4,12.4,solid</desc>
-	<desc># ORIG: 99,5.4,12.4,5,12,99</desc>
+	<desc># ORIG [0256]: 99,5.4,12.4,5,12,99</desc>
 	<desc>continuation,5.4,12.4,5.0,12.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="250.0,600.0 300.0,550.0 320.0,570.0 270.0,620.0 250.0,600.0" fill="red"/>
 	<desc>#  Triangle</desc>
-	<desc># ORIG: 5,6,13,7,12,1</desc>
+	<desc># ORIG [0258]: 5,6,13,7,12,1</desc>
 	<desc>block,6.0,13.0,7.0,12.0,solid</desc>
-	<desc># ORIG: 99,7,12,7,13,1</desc>
+	<desc># ORIG [0259]: 99,7,12,7,13,1</desc>
 	<desc>continuation,7.0,12.0,7.0,13.0,solid</desc>
-	<desc># ORIG: 99,7,13,6,13,99</desc>
+	<desc># ORIG [0260]: 99,7,13,6,13,99</desc>
 	<desc>continuation,7.0,13.0,6.0,13.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="300.0,650.0 350.0,600.0 350.0,650.0 300.0,650.0" fill="red"/>
-	<desc># ORIG: 1,6,13,5,12,1</desc>
+	<desc># ORIG [0261]: 1,6,13,5,12,1</desc>
 	<desc>line,6.0,13.0,5.0,12.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 300.0 650.0 L 250.0 600.0"/>
 	<desc># Hall of Bone</desc>
-	<desc># ORIG: 1,3,15,8,20,2</desc>
+	<desc># ORIG [0264]: 1,3,15,8,20,2</desc>
 	<desc>line,3.0,15.0,8.0,20.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 150.0 750.0 L 400.0 1000.0"/>
-	<desc># ORIG: 1,8,20,9,20,1</desc>
+	<desc># ORIG [0265]: 1,8,20,9,20,1</desc>
 	<desc>line,8.0,20.0,9.0,20.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 400.0 1000.0 L 450.0 1000.0"/>
-	<desc># ORIG: 1,9,21,9,22,1</desc>
+	<desc># ORIG [0266]: 1,9,21,9,22,1</desc>
 	<desc>line,9.0,21.0,9.0,22.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 450.0 1050.0 L 450.0 1100.0"/>
-	<desc># ORIG: 1,10,20,10,21,1</desc>
+	<desc># ORIG [0267]: 1,10,20,10,21,1</desc>
 	<desc>line,10.0,20.0,10.0,21.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 500.0 1000.0 L 500.0 1050.0"/>
-	<desc># ORIG: 1,12,20,9,17,1</desc>
+	<desc># ORIG [0268]: 1,12,20,9,17,1</desc>
 	<desc>line,12.0,20.0,9.0,17.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 600.0 1000.0 L 450.0 850.0"/>
-	<desc># ORIG: 1,11,20,7.7,16.7,4</desc>
+	<desc># ORIG [0269]: 1,11,20,7.7,16.7,4</desc>
 	<desc>line,11.0,20.0,7.7,16.7,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 550.0 1000.0 L 385.0 835.0"/>
-	<desc># ORIG: 1,3,14,5,16,4</desc>
+	<desc># ORIG [0270]: 1,3,14,5,16,4</desc>
 	<desc>line,3.0,14.0,5.0,16.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 150.0 700.0 L 250.0 800.0"/>
-	<desc># ORIG: 1,6,17,9,20,4</desc>
+	<desc># ORIG [0271]: 1,6,17,9,20,4</desc>
 	<desc>line,6.0,17.0,9.0,20.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 300.0 850.0 L 450.0 1000.0"/>
-	<desc># ORIG: 1,3,12,4,13,4</desc>
+	<desc># ORIG [0272]: 1,3,12,4,13,4</desc>
 	<desc>line,3.0,12.0,4.0,13.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 150.0 600.0 L 200.0 650.0"/>
-	<desc># ORIG: 1,4.7,13.7,7,16,4</desc>
+	<desc># ORIG [0273]: 1,4.7,13.7,7,16,4</desc>
 	<desc>line,4.7,13.7,7.0,16.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 235.0 685.0 L 350.0 800.0"/>
-	<desc># ORIG: 1,10,20,20,20,1</desc>
+	<desc># ORIG [0274]: 1,10,20,20,20,1</desc>
 	<desc>line,10.0,20.0,20.0,20.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 500.0 1000.0 L 1000.0 1000.0"/>
-	<desc># ORIG: 1,20,20,20,23,2</desc>
+	<desc># ORIG [0275]: 1,20,20,20,23,2</desc>
 	<desc>line,20.0,20.0,20.0,23.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 1000.0 1000.0 L 1000.0 1150.0"/>
-	<desc># ORIG: 1,20,23,9,23,1</desc>
+	<desc># ORIG [0276]: 1,20,23,9,23,1</desc>
 	<desc>line,20.0,23.0,9.0,23.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1000.0 1150.0 L 450.0 1150.0"/>
-	<desc># ORIG: 1,9,22,13,22,4</desc>
+	<desc># ORIG [0277]: 1,9,22,13,22,4</desc>
 	<desc>line,9.0,22.0,13.0,22.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 450.0 1100.0 L 650.0 1100.0"/>
-	<desc># ORIG: 1,14,22,17,22,4</desc>
+	<desc># ORIG [0278]: 1,14,22,17,22,4</desc>
 	<desc>line,14.0,22.0,17.0,22.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 700.0 1100.0 L 850.0 1100.0"/>
-	<desc># ORIG: 1,17,22,19,22,4</desc>
+	<desc># ORIG [0279]: 1,17,22,19,22,4</desc>
 	<desc>line,17.0,22.0,19.0,22.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 850.0 1100.0 L 950.0 1100.0"/>
-	<desc># ORIG: 1,19,22,19,21,4</desc>
+	<desc># ORIG [0280]: 1,19,22,19,21,4</desc>
 	<desc>line,19.0,22.0,19.0,21.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 950.0 1100.0 L 950.0 1050.0"/>
-	<desc># ORIG: 1,19,21,15,21,4</desc>
+	<desc># ORIG [0281]: 1,19,21,15,21,4</desc>
 	<desc>line,19.0,21.0,15.0,21.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 950.0 1050.0 L 750.0 1050.0"/>
-	<desc># ORIG: 1,14,21,10,21,4</desc>
+	<desc># ORIG [0282]: 1,14,21,10,21,4</desc>
 	<desc>line,14.0,21.0,10.0,21.0,dotted</desc>
 	<path stroke="red" stroke-dasharray="5.0 7.5" stroke-width="7.5" d="M 700.0 1050.0 L 500.0 1050.0"/>
 	<desc># Staircase</desc>
-	<desc># ORIG: 1,5,20,9,20,1</desc>
+	<desc># ORIG [0285]: 1,5,20,9,20,1</desc>
 	<desc>line,5.0,20.0,9.0,20.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 250.0 1000.0 L 450.0 1000.0"/>
-	<desc># ORIG: 1,9,20,9,24,1</desc>
+	<desc># ORIG [0286]: 1,9,20,9,24,1</desc>
 	<desc>line,9.0,20.0,9.0,24.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 450.0 1000.0 L 450.0 1200.0"/>
-	<desc># ORIG: 1,9,24,5,24,1</desc>
+	<desc># ORIG [0287]: 1,9,24,5,24,1</desc>
 	<desc>line,9.0,24.0,5.0,24.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 450.0 1200.0 L 250.0 1200.0"/>
-	<desc># ORIG: 1,5,24,5,20,1</desc>
+	<desc># ORIG [0288]: 1,5,24,5,20,1</desc>
 	<desc>line,5.0,24.0,5.0,20.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 250.0 1200.0 L 250.0 1000.0"/>
-	<desc># ORIG: 5,6,21,8,21,6</desc>
+	<desc># ORIG [0289]: 5,6,21,8,21,6</desc>
 	<desc>block,6.0,21.0,8.0,21.0,white_thin</desc>
-	<desc># ORIG: 99,8,21,8,23,6</desc>
+	<desc># ORIG [0290]: 99,8,21,8,23,6</desc>
 	<desc>continuation,8.0,21.0,8.0,23.0,white_thin</desc>
-	<desc># ORIG: 99,8,23,6,23,6</desc>
+	<desc># ORIG [0291]: 99,8,23,6,23,6</desc>
 	<desc>continuation,8.0,23.0,6.0,23.0,white_thin</desc>
-	<desc># ORIG: 99,6,23,6,21,99</desc>
+	<desc># ORIG [0292]: 99,6,23,6,21,99</desc>
 	<desc>continuation,6.0,23.0,6.0,21.0,block_end</desc>
 	<polygon stroke="red" stroke-width="1.5" points="300.0,1050.0 400.0,1050.0 400.0,1150.0 300.0,1150.0 300.0,1050.0" fill="white"/>
-	<desc># ORIG: 5,6,21,8,21,3</desc>
+	<desc># ORIG [0293]: 5,6,21,8,21,3</desc>
 	<desc>block,6.0,21.0,8.0,21.0,hatched</desc>
-	<desc># ORIG: 99,8,21,8,23,3</desc>
+	<desc># ORIG [0294]: 99,8,21,8,23,3</desc>
 	<desc>continuation,8.0,21.0,8.0,23.0,hatched</desc>
-	<desc># ORIG: 99,8,23,6,23,3</desc>
+	<desc># ORIG [0295]: 99,8,23,6,23,3</desc>
 	<desc>continuation,8.0,23.0,6.0,23.0,hatched</desc>
-	<desc># ORIG: 99,6,23,6,21,99</desc>
+	<desc># ORIG [0296]: 99,6,23,6,21,99</desc>
 	<desc>continuation,6.0,23.0,6.0,21.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="300.0,1050.0 400.0,1050.0 400.0,1150.0 300.0,1150.0 300.0,1050.0" fill="url(#hatch00)"/>
 	<desc># Spiral Passage</desc>
-	<desc># ORIG: 1,25,17,25,12,1</desc>
+	<desc># ORIG [0299]: 1,25,17,25,12,1</desc>
 	<desc>line,25.0,17.0,25.0,12.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1250.0 850.0 L 1250.0 600.0"/>
-	<desc># ORIG: 1,30,17,26,17,1</desc>
+	<desc># ORIG [0300]: 1,30,17,26,17,1</desc>
 	<desc>line,30.0,17.0,26.0,17.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1500.0 850.0 L 1300.0 850.0"/>
-	<desc># ORIG: 1,26,17,26,12,1</desc>
+	<desc># ORIG [0301]: 1,26,17,26,12,1</desc>
 	<desc>line,26.0,17.0,26.0,12.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1300.0 850.0 L 1300.0 600.0"/>
-	<desc># ORIG: 1,26,12,29,12,1</desc>
+	<desc># ORIG [0302]: 1,26,12,29,12,1</desc>
 	<desc>line,26.0,12.0,29.0,12.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1300.0 600.0 L 1450.0 600.0"/>
-	<desc># ORIG: 1,29,12,29,16,1</desc>
+	<desc># ORIG [0303]: 1,29,12,29,16,1</desc>
 	<desc>line,29.0,12.0,29.0,16.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1450.0 600.0 L 1450.0 800.0"/>
-	<desc># ORIG: 1,29,16,27,16,1</desc>
+	<desc># ORIG [0304]: 1,29,16,27,16,1</desc>
 	<desc>line,29.0,16.0,27.0,16.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1450.0 800.0 L 1350.0 800.0"/>
-	<desc># ORIG: 1,27,16,27,13,1</desc>
+	<desc># ORIG [0305]: 1,27,16,27,13,1</desc>
 	<desc>line,27.0,16.0,27.0,13.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1350.0 800.0 L 1350.0 650.0"/>
-	<desc># ORIG: 1,27,13,28,13,1</desc>
+	<desc># ORIG [0306]: 1,27,13,28,13,1</desc>
 	<desc>line,27.0,13.0,28.0,13.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1350.0 650.0 L 1400.0 650.0"/>
-	<desc># ORIG: 1,28,13,28,15,1</desc>
+	<desc># ORIG [0307]: 1,28,13,28,15,1</desc>
 	<desc>line,28.0,13.0,28.0,15.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1400.0 650.0 L 1400.0 750.0"/>
-	<desc># ORIG: 5,26,17,27,17,1</desc>
+	<desc># ORIG [0308]: 5,26,17,27,17,1</desc>
 	<desc>block,26.0,17.0,27.0,17.0,solid</desc>
-	<desc># ORIG: 99,27,17,27,18,1</desc>
+	<desc># ORIG [0309]: 99,27,17,27,18,1</desc>
 	<desc>continuation,27.0,17.0,27.0,18.0,solid</desc>
-	<desc># ORIG: 99,27,18,26,17,99</desc>
+	<desc># ORIG [0310]: 99,27,18,26,17,99</desc>
 	<desc>continuation,27.0,18.0,26.0,17.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="1300.0,850.0 1350.0,850.0 1350.0,900.0 1300.0,850.0" fill="red"/>
 	<desc># Mummy%27s Tomb</desc>
-	<desc># ORIG: 1,20,20,23,17,2</desc>
+	<desc># ORIG [0313]: 1,20,20,23,17,2</desc>
 	<desc>line,20.0,20.0,23.0,17.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 1000.0 1000.0 L 1150.0 850.0"/>
-	<desc># ORIG: 5,18,14,19,14,1</desc>
+	<desc># ORIG [0314]: 5,18,14,19,14,1</desc>
 	<desc>block,18.0,14.0,19.0,14.0,solid</desc>
-	<desc># ORIG: 99,19,14,19,15,1</desc>
+	<desc># ORIG [0315]: 99,19,14,19,15,1</desc>
 	<desc>continuation,19.0,14.0,19.0,15.0,solid</desc>
-	<desc># ORIG: 99,19,15,18,15,1</desc>
+	<desc># ORIG [0316]: 99,19,15,18,15,1</desc>
 	<desc>continuation,19.0,15.0,18.0,15.0,solid</desc>
-	<desc># ORIG: 99,18,15,18,14,99</desc>
+	<desc># ORIG [0317]: 99,18,15,18,14,99</desc>
 	<desc>continuation,18.0,15.0,18.0,14.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="900.0,700.0 950.0,700.0 950.0,750.0 900.0,750.0 900.0,700.0" fill="red"/>
-	<desc># ORIG: 5,18,16,19,16,1</desc>
+	<desc># ORIG [0318]: 5,18,16,19,16,1</desc>
 	<desc>block,18.0,16.0,19.0,16.0,solid</desc>
-	<desc># ORIG: 99,19,16,19,17,1</desc>
+	<desc># ORIG [0319]: 99,19,16,19,17,1</desc>
 	<desc>continuation,19.0,16.0,19.0,17.0,solid</desc>
-	<desc># ORIG: 99,19,17,18,17,1</desc>
+	<desc># ORIG [0320]: 99,19,17,18,17,1</desc>
 	<desc>continuation,19.0,17.0,18.0,17.0,solid</desc>
-	<desc># ORIG: 99,18,17,18,16,99</desc>
+	<desc># ORIG [0321]: 99,18,17,18,16,99</desc>
 	<desc>continuation,18.0,17.0,18.0,16.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="900.0,800.0 950.0,800.0 950.0,850.0 900.0,850.0 900.0,800.0" fill="red"/>
-	<desc># ORIG: 5,18,18,19,18,1</desc>
+	<desc># ORIG [0322]: 5,18,18,19,18,1</desc>
 	<desc>block,18.0,18.0,19.0,18.0,solid</desc>
-	<desc># ORIG: 99,19,18,19,19,1</desc>
+	<desc># ORIG [0323]: 99,19,18,19,19,1</desc>
 	<desc>continuation,19.0,18.0,19.0,19.0,solid</desc>
-	<desc># ORIG: 99,19,19,18,19,1</desc>
+	<desc># ORIG [0324]: 99,19,19,18,19,1</desc>
 	<desc>continuation,19.0,19.0,18.0,19.0,solid</desc>
-	<desc># ORIG: 99,18,19,18,18,99</desc>
+	<desc># ORIG [0325]: 99,18,19,18,18,99</desc>
 	<desc>continuation,18.0,19.0,18.0,18.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="900.0,900.0 950.0,900.0 950.0,950.0 900.0,950.0 900.0,900.0" fill="red"/>
-	<desc># ORIG: 5,16,15,17,15,1</desc>
+	<desc># ORIG [0326]: 5,16,15,17,15,1</desc>
 	<desc>block,16.0,15.0,17.0,15.0,solid</desc>
-	<desc># ORIG: 99,17,15,17,16,1</desc>
+	<desc># ORIG [0327]: 99,17,15,17,16,1</desc>
 	<desc>continuation,17.0,15.0,17.0,16.0,solid</desc>
-	<desc># ORIG: 99,17,16,16,16,1</desc>
+	<desc># ORIG [0328]: 99,17,16,16,16,1</desc>
 	<desc>continuation,17.0,16.0,16.0,16.0,solid</desc>
-	<desc># ORIG: 99,16,16,16,15,99</desc>
+	<desc># ORIG [0329]: 99,16,16,16,15,99</desc>
 	<desc>continuation,16.0,16.0,16.0,15.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="800.0,750.0 850.0,750.0 850.0,800.0 800.0,800.0 800.0,750.0" fill="red"/>
-	<desc># ORIG: 5,14,18,15,18,1</desc>
+	<desc># ORIG [0330]: 5,14,18,15,18,1</desc>
 	<desc>block,14.0,18.0,15.0,18.0,solid</desc>
-	<desc># ORIG: 99,15,18,15,19,1</desc>
+	<desc># ORIG [0331]: 99,15,18,15,19,1</desc>
 	<desc>continuation,15.0,18.0,15.0,19.0,solid</desc>
-	<desc># ORIG: 99,15,19,14,19,1</desc>
+	<desc># ORIG [0332]: 99,15,19,14,19,1</desc>
 	<desc>continuation,15.0,19.0,14.0,19.0,solid</desc>
-	<desc># ORIG: 99,14,19,14,18,99</desc>
+	<desc># ORIG [0333]: 99,14,19,14,18,99</desc>
 	<desc>continuation,14.0,19.0,14.0,18.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="700.0,900.0 750.0,900.0 750.0,950.0 700.0,950.0 700.0,900.0" fill="red"/>
-	<desc># ORIG: 5,14,16,15,16,1</desc>
+	<desc># ORIG [0334]: 5,14,16,15,16,1</desc>
 	<desc>block,14.0,16.0,15.0,16.0,solid</desc>
-	<desc># ORIG: 99,15,16,15,17,1</desc>
+	<desc># ORIG [0335]: 99,15,16,15,17,1</desc>
 	<desc>continuation,15.0,16.0,15.0,17.0,solid</desc>
-	<desc># ORIG: 99,14,17,14,17,1</desc>
+	<desc># ORIG [0336]: 99,14,17,14,17,1</desc>
 	<desc>continuation,14.0,17.0,14.0,17.0,solid</desc>
-	<desc># ORIG: 99,14,17,14,16,99</desc>
+	<desc># ORIG [0337]: 99,14,17,14,16,99</desc>
 	<desc>continuation,14.0,17.0,14.0,16.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="700.0,800.0 750.0,800.0 750.0,850.0 700.0,850.0 700.0,800.0" fill="red"/>
-	<desc># ORIG: 6,14.5,14.5,.5,.5,1</desc>
+	<desc># ORIG [0338]: 6,14.5,14.5,.5,.5,1</desc>
 	<desc>ellipse,14.5,14.5,0.5,0.5,solid</desc>
 	<ellipse stroke="red" stroke-width="5.0" cx="725.0" cy="725.0" rx="25.0" ry="25.0" fill="red"/>
-	<desc># ORIG: 6,14.5,14.5,.2,.2,2</desc>
+	<desc># ORIG [0339]: 6,14.5,14.5,.2,.2,2</desc>
 	<desc>ellipse,14.5,14.5,0.2,0.2,white</desc>
 	<ellipse stroke="red" stroke-width="5.0" cx="725.0" cy="725.0" rx="10.0" ry="10.0" fill="white"/>
-	<desc># ORIG: 6,14.5,14.5,.2,.2,3</desc>
+	<desc># ORIG [0340]: 6,14.5,14.5,.2,.2,3</desc>
 	<desc>ellipse,14.5,14.5,0.2,0.2,hatched</desc>
 	<ellipse stroke="red" stroke-width="5.0" cx="725.0" cy="725.0" rx="10.0" ry="10.0" fill="url(#hatch00)"/>
-	<desc># ORIG: 6,14.5,18.5,.4,.4,2</desc>
+	<desc># ORIG [0341]: 6,14.5,18.5,.4,.4,2</desc>
 	<desc>ellipse,14.5,18.5,0.4,0.4,white</desc>
 	<ellipse stroke="red" stroke-width="5.0" cx="725.0" cy="925.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,14.5,18.5,.4,.4,3</desc>
+	<desc># ORIG [0342]: 6,14.5,18.5,.4,.4,3</desc>
 	<desc>ellipse,14.5,18.5,0.4,0.4,hatched</desc>
 	<ellipse stroke="red" stroke-width="5.0" cx="725.0" cy="925.0" rx="20.0" ry="20.0" fill="url(#hatch00)"/>
-	<desc># ORIG: 6,16.5,17.5,.5,.5,1</desc>
+	<desc># ORIG [0343]: 6,16.5,17.5,.5,.5,1</desc>
 	<desc>ellipse,16.5,17.5,0.5,0.5,solid</desc>
 	<ellipse stroke="red" stroke-width="5.0" cx="825.0" cy="875.0" rx="25.0" ry="25.0" fill="red"/>
-	<desc># ORIG: 1,13,13,13,20,1</desc>
+	<desc># ORIG [0344]: 1,13,13,13,20,1</desc>
 	<desc>line,13.0,13.0,13.0,20.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 650.0 650.0 L 650.0 1000.0"/>
 	<desc>#  Mummy Maze</desc>
-	<desc># ORIG: 1,12,16,12,18,1</desc>
+	<desc># ORIG [0346]: 1,12,16,12,18,1</desc>
 	<desc>line,12.0,16.0,12.0,18.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 600.0 800.0 L 600.0 900.0"/>
-	<desc># ORIG: 1,11,15,11,17,1</desc>
+	<desc># ORIG [0347]: 1,11,15,11,17,1</desc>
 	<desc>line,11.0,15.0,11.0,17.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 550.0 750.0 L 550.0 850.0"/>
-	<desc># ORIG: 1,11,17,10,17,1</desc>
+	<desc># ORIG [0348]: 1,11,17,10,17,1</desc>
 	<desc>line,11.0,17.0,10.0,17.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 550.0 850.0 L 500.0 850.0"/>
-	<desc># ORIG: 1,10,15,10,18,1</desc>
+	<desc># ORIG [0349]: 1,10,15,10,18,1</desc>
 	<desc>line,10.0,15.0,10.0,18.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 500.0 750.0 L 500.0 900.0"/>
-	<desc># ORIG: 5,12,14,12,15,3</desc>
+	<desc># ORIG [0350]: 5,12,14,12,15,3</desc>
 	<desc>block,12.0,14.0,12.0,15.0,hatched</desc>
-	<desc># ORIG: 99,12,15,11,15,3</desc>
+	<desc># ORIG [0351]: 99,12,15,11,15,3</desc>
 	<desc>continuation,12.0,15.0,11.0,15.0,hatched</desc>
-	<desc># ORIG: 99,11,15,12,14,99</desc>
+	<desc># ORIG [0352]: 99,11,15,12,14,99</desc>
 	<desc>continuation,11.0,15.0,12.0,14.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="600.0,700.0 600.0,750.0 550.0,750.0 600.0,700.0" fill="url(#hatch00)"/>
-	<desc># ORIG: 5,12,19,12,18,3</desc>
+	<desc># ORIG [0353]: 5,12,19,12,18,3</desc>
 	<desc>block,12.0,19.0,12.0,18.0,hatched</desc>
-	<desc># ORIG: 99,12,18,11,18,3</desc>
+	<desc># ORIG [0354]: 99,12,18,11,18,3</desc>
 	<desc>continuation,12.0,18.0,11.0,18.0,hatched</desc>
-	<desc># ORIG: 99,11,18,12,19,99</desc>
+	<desc># ORIG [0355]: 99,11,18,12,19,99</desc>
 	<desc>continuation,11.0,18.0,12.0,19.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="600.0,950.0 600.0,900.0 550.0,900.0 600.0,950.0" fill="url(#hatch00)"/>
 	<desc># Quasqueton Room</desc>
-	<desc># ORIG: 1,26,17,29,20,2</desc>
+	<desc># ORIG [0358]: 1,26,17,29,20,2</desc>
 	<desc>line,26.0,17.0,29.0,20.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 1300.0 850.0 L 1450.0 1000.0"/>
-	<desc># ORIG: 1,29,20,29,23,2</desc>
+	<desc># ORIG [0359]: 1,29,20,29,23,2</desc>
 	<desc>line,29.0,20.0,29.0,23.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 1450.0 1000.0 L 1450.0 1150.0"/>
-	<desc># ORIG: 1,29,23,26,26,2</desc>
+	<desc># ORIG [0360]: 1,29,23,26,26,2</desc>
 	<desc>line,29.0,23.0,26.0,26.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 1450.0 1150.0 L 1300.0 1300.0"/>
-	<desc># ORIG: 1,26,26,23,26,2</desc>
+	<desc># ORIG [0361]: 1,26,26,23,26,2</desc>
 	<desc>line,26.0,26.0,23.0,26.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 1300.0 1300.0 L 1150.0 1300.0"/>
-	<desc># ORIG: 1,23,26,20,23,2</desc>
+	<desc># ORIG [0362]: 1,23,26,20,23,2</desc>
 	<desc>line,23.0,26.0,20.0,23.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 1150.0 1300.0 L 1000.0 1150.0"/>
 	<desc># Armory</desc>
-	<desc># ORIG: 1,27,17,30,17,1</desc>
+	<desc># ORIG [0365]: 1,27,17,30,17,1</desc>
 	<desc>line,27.0,17.0,30.0,17.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1350.0 850.0 L 1500.0 850.0"/>
-	<desc># ORIG: 1,29,20,30,20,1</desc>
+	<desc># ORIG [0366]: 1,29,20,30,20,1</desc>
 	<desc>line,29.0,20.0,30.0,20.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1450.0 1000.0 L 1500.0 1000.0"/>
-	<desc># ORIG: 1,29,23,30,23,1</desc>
+	<desc># ORIG [0367]: 1,29,23,30,23,1</desc>
 	<desc>line,29.0,23.0,30.0,23.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1450.0 1150.0 L 1500.0 1150.0"/>
 	<desc>#Zombocalypse</desc>
-	<desc># ORIG: 1,29,26,27,28,1</desc>
+	<desc># ORIG [0370]: 1,29,26,27,28,1</desc>
 	<desc>line,29.0,26.0,27.0,28.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1450.0 1300.0 L 1350.0 1400.0"/>
-	<desc># ORIG: 1,28,27,30,29,1</desc>
+	<desc># ORIG [0371]: 1,28,27,30,29,1</desc>
 	<desc>line,28.0,27.0,30.0,29.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1400.0 1350.0 L 1500.0 1450.0"/>
-	<desc># ORIG: 1,25,29,23,29,1</desc>
+	<desc># ORIG [0372]: 1,25,29,23,29,1</desc>
 	<desc>line,25.0,29.0,23.0,29.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1250.0 1450.0 L 1150.0 1450.0"/>
-	<desc># ORIG: 1,23,29,23,30,1</desc>
+	<desc># ORIG [0373]: 1,23,29,23,30,1</desc>
 	<desc>line,23.0,29.0,23.0,30.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 1150.0 1450.0 L 1150.0 1500.0"/>
-	<desc># ORIG: 1,19.5,29,19.5,28,1</desc>
+	<desc># ORIG [0374]: 1,19.5,29,19.5,28,1</desc>
 	<desc>line,19.5,29.0,19.5,28.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 975.0 1450.0 L 975.0 1400.0"/>
-	<desc># ORIG: 1,19.5,28,18,28,1</desc>
+	<desc># ORIG [0375]: 1,19.5,28,18,28,1</desc>
 	<desc>line,19.5,28.0,18.0,28.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 975.0 1400.0 L 900.0 1400.0"/>
-	<desc># ORIG: 1,15,23,15,24,1</desc>
+	<desc># ORIG [0376]: 1,15,23,15,24,1</desc>
 	<desc>line,15.0,23.0,15.0,24.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 750.0 1150.0 L 750.0 1200.0"/>
-	<desc># ORIG: 1,15,26,13,26,1</desc>
+	<desc># ORIG [0377]: 1,15,26,13,26,1</desc>
 	<desc>line,15.0,26.0,13.0,26.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 750.0 1300.0 L 650.0 1300.0"/>
-	<desc># ORIG: 1,13,26,13,27,1</desc>
+	<desc># ORIG [0378]: 1,13,26,13,27,1</desc>
 	<desc>line,13.0,26.0,13.0,27.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 650.0 1300.0 L 650.0 1350.0"/>
-	<desc># ORIG: 1,13,27,15,27,1</desc>
+	<desc># ORIG [0379]: 1,13,27,15,27,1</desc>
 	<desc>line,13.0,27.0,15.0,27.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 650.0 1350.0 L 750.0 1350.0"/>
-	<desc># ORIG: 1,15,27,15,29,1</desc>
+	<desc># ORIG [0380]: 1,15,27,15,29,1</desc>
 	<desc>line,15.0,27.0,15.0,29.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 750.0 1350.0 L 750.0 1450.0"/>
-	<desc># ORIG: 1,15,29,13.5,29,1</desc>
+	<desc># ORIG [0381]: 1,15,29,13.5,29,1</desc>
 	<desc>line,15.0,29.0,13.5,29.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 750.0 1450.0 L 675.0 1450.0"/>
-	<desc># ORIG: 1,12,23,12,24,1</desc>
+	<desc># ORIG [0382]: 1,12,23,12,24,1</desc>
 	<desc>line,12.0,23.0,12.0,24.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 600.0 1150.0 L 600.0 1200.0"/>
-	<desc># ORIG: 1,12,24,14,24,1</desc>
+	<desc># ORIG [0383]: 1,12,24,14,24,1</desc>
 	<desc>line,12.0,24.0,14.0,24.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 600.0 1200.0 L 700.0 1200.0"/>
-	<desc># ORIG: 1,10,28,10,29,1</desc>
+	<desc># ORIG [0384]: 1,10,28,10,29,1</desc>
 	<desc>line,10.0,28.0,10.0,29.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 500.0 1400.0 L 500.0 1450.0"/>
-	<desc># ORIG: 1,7,28,9,28,1</desc>
+	<desc># ORIG [0385]: 1,7,28,9,28,1</desc>
 	<desc>line,7.0,28.0,9.0,28.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 350.0 1400.0 L 450.0 1400.0"/>
-	<desc># ORIG: 1,6,28,6,30,1</desc>
+	<desc># ORIG [0386]: 1,6,28,6,30,1</desc>
 	<desc>line,6.0,28.0,6.0,30.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 300.0 1400.0 L 300.0 1500.0"/>
-	<desc># ORIG: 1,5,17,3,19,2</desc>
+	<desc># ORIG [0387]: 1,5,17,3,19,2</desc>
 	<desc>line,5.0,17.0,3.0,19.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 250.0 850.0 L 150.0 950.0"/>
-	<desc># ORIG: 1,3,19,4,20,2</desc>
+	<desc># ORIG [0388]: 1,3,19,4,20,2</desc>
 	<desc>line,3.0,19.0,4.0,20.0,thick</desc>
 	<path stroke="red" stroke-width="7.5" d="M 150.0 950.0 L 200.0 1000.0"/>
-	<desc># ORIG: 5,5,20,6.5,18.5,1</desc>
+	<desc># ORIG [0389]: 5,5,20,6.5,18.5,1</desc>
 	<desc>block,5.0,20.0,6.5,18.5,solid</desc>
-	<desc># ORIG: 99,6.5,18.5,8,20,1</desc>
+	<desc># ORIG [0390]: 99,6.5,18.5,8,20,1</desc>
 	<desc>continuation,6.5,18.5,8.0,20.0,solid</desc>
-	<desc># ORIG: 99,8,20,5,20,99</desc>
+	<desc># ORIG [0391]: 99,8,20,5,20,99</desc>
 	<desc>continuation,8.0,20.0,5.0,20.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="250.0,1000.0 325.0,925.0 400.0,1000.0 250.0,1000.0" fill="red"/>
-	<desc># ORIG: 5,9,24,10,23,1</desc>
+	<desc># ORIG [0392]: 5,9,24,10,23,1</desc>
 	<desc>block,9.0,24.0,10.0,23.0,solid</desc>
-	<desc># ORIG: 99,10,23,9,23,1</desc>
+	<desc># ORIG [0393]: 99,10,23,9,23,1</desc>
 	<desc>continuation,10.0,23.0,9.0,23.0,solid</desc>
-	<desc># ORIG: 99,9,23,9,24,99</desc>
+	<desc># ORIG [0394]: 99,9,23,9,24,99</desc>
 	<desc>continuation,9.0,23.0,9.0,24.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="450.0,1200.0 500.0,1150.0 450.0,1150.0 450.0,1200.0" fill="red"/>
-	<desc># ORIG: 1,0,26,1,26.5,1</desc>
+	<desc># ORIG [0395]: 1,0,26,1,26.5,1</desc>
 	<desc>line,0.0,26.0,1.0,26.5,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 0.0 1300.0 L 50.0 1325.0"/>
-	<desc># ORIG: 1,2,27,3,28,1</desc>
+	<desc># ORIG [0396]: 1,2,27,3,28,1</desc>
 	<desc>line,2.0,27.0,3.0,28.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 100.0 1350.0 L 150.0 1400.0"/>
-	<desc># ORIG: 1,3.5,29,4,30,1</desc>
+	<desc># ORIG [0397]: 1,3.5,29,4,30,1</desc>
 	<desc>line,3.5,29.0,4.0,30.0,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 175.0 1450.0 L 200.0 1500.0"/>
-	<desc># ORIG: 1,2.5,27.5,5,24,3</desc>
+	<desc># ORIG [0398]: 1,2.5,27.5,5,24,3</desc>
 	<desc>line,2.5,27.5,5.0,24.0,dashed</desc>
 	<path stroke="red" stroke-dasharray="10.0 10.0" stroke-width="5.0" d="M 125.0 1375.0 L 250.0 1200.0"/>
-	<desc># ORIG: 1,12,24,13,26,3</desc>
+	<desc># ORIG [0399]: 1,12,24,13,26,3</desc>
 	<desc>line,12.0,24.0,13.0,26.0,dashed</desc>
 	<path stroke="red" stroke-dasharray="10.0 10.0" stroke-width="5.0" d="M 600.0 1200.0 L 650.0 1300.0"/>
-	<desc># ORIG: 1,13.5,30,13.5,29,3</desc>
+	<desc># ORIG [0400]: 1,13.5,30,13.5,29,3</desc>
 	<desc>line,13.5,30.0,13.5,29.0,dashed</desc>
 	<path stroke="red" stroke-dasharray="10.0 10.0" stroke-width="5.0" d="M 675.0 1500.0 L 675.0 1450.0"/>
-	<desc># ORIG: 1,19,28,22,25,3</desc>
+	<desc># ORIG [0401]: 1,19,28,22,25,3</desc>
 	<desc>line,19.0,28.0,22.0,25.0,dashed</desc>
 	<path stroke="red" stroke-dasharray="10.0 10.0" stroke-width="5.0" d="M 950.0 1400.0 L 1100.0 1250.0"/>
 	<desc># Doors</desc>
 	<desc>#  Carlotta</desc>
-	<desc># ORIG: 3,2,0,2,1,1</desc>
+	<desc># ORIG [0405]: 3,2,0,2,1,1</desc>
 	<desc>door,2.0,0.0,2.0,1.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="95.0" y="15.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,2,2,2,3,1</desc>
+	<desc># ORIG [0406]: 3,2,2,2,3,1</desc>
 	<desc>door,2.0,2.0,2.0,3.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="95.0" y="115.0" width="10.0" height="20.0" fill="white"/>
 	<desc>#  Abbey</desc>
-	<desc># ORIG: 3,6,1,6,2,1</desc>
+	<desc># ORIG [0408]: 3,6,1,6,2,1</desc>
 	<desc>door,6.0,1.0,6.0,2.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="295.0" y="65.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,13,1,12,2,1</desc>
+	<desc># ORIG [0409]: 3,13,1,12,2,1</desc>
 	<desc>door,13.0,1.0,12.0,2.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="645.0" y="65.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,13,1,14,1,2</desc>
+	<desc># ORIG [0410]: 3,13,1,14,1,2</desc>
 	<desc>door,13.0,1.0,14.0,1.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="665.0" y="45.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,16,1,16,1,2</desc>
+	<desc># ORIG [0411]: 3,16,1,16,1,2</desc>
 	<desc>door,16.0,1.0,16.0,1.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="815.0" y="45.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,18,0,17,1,1</desc>
+	<desc># ORIG [0412]: 3,18,0,17,1,1</desc>
 	<desc>door,18.0,0.0,17.0,1.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="895.0" y="15.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,18,2,19,2,2</desc>
+	<desc># ORIG [0413]: 3,18,2,19,2,2</desc>
 	<desc>door,18.0,2.0,19.0,2.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="915.0" y="95.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,18,4,18,5,3</desc>
+	<desc># ORIG [0414]: 3,18,4,18,5,3</desc>
 	<desc>door,18.0,4.0,18.0,5.0,vertical_double</desc>
 	<rect stroke="red" stroke-width="5.0" x="895.0" y="210.0" width="10.0" height="15.0" fill="white"/>
 	<rect stroke="red" stroke-width="5.0" x="895.0" y="225.0" width="10.0" height="15.0" fill="white"/>
 	<desc>#  Edgar</desc>
-	<desc># ORIG: 3,26,0,26,1,1</desc>
+	<desc># ORIG [0416]: 3,26,0,26,1,1</desc>
 	<desc>door,26.0,0.0,26.0,1.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="1295.0" y="15.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,28,0,28,1,1</desc>
+	<desc># ORIG [0417]: 3,28,0,28,1,1</desc>
 	<desc>door,28.0,0.0,28.0,1.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="1395.0" y="15.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,27,2,27,3,1</desc>
+	<desc># ORIG [0418]: 3,27,2,27,3,1</desc>
 	<desc>door,27.0,2.0,27.0,3.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="1345.0" y="115.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,29,2,30,2,2</desc>
+	<desc># ORIG [0419]: 3,29,2,30,2,2</desc>
 	<desc>door,29.0,2.0,30.0,2.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="1465.0" y="95.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,28,3,29,3,2</desc>
+	<desc># ORIG [0420]: 3,28,3,29,3,2</desc>
 	<desc>door,28.0,3.0,29.0,3.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="1415.0" y="145.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,27,4,27,5,1</desc>
+	<desc># ORIG [0421]: 3,27,4,27,5,1</desc>
 	<desc>door,27.0,4.0,27.0,5.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="1345.0" y="215.0" width="10.0" height="20.0" fill="white"/>
 	<desc>#  Ghoulyard</desc>
-	<desc># ORIG: 3,1,8,2,8,2</desc>
+	<desc># ORIG [0423]: 3,1,8,2,8,2</desc>
 	<desc>door,1.0,8.0,2.0,8.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="65.0" y="395.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,1,9,1,10,1</desc>
+	<desc># ORIG [0424]: 3,1,9,1,10,1</desc>
 	<desc>door,1.0,9.0,1.0,10.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="45.0" y="465.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,2,9,2,10,1</desc>
+	<desc># ORIG [0425]: 3,2,9,2,10,1</desc>
 	<desc>door,2.0,9.0,2.0,10.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="95.0" y="465.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,1,11,1,12,1</desc>
+	<desc># ORIG [0426]: 3,1,11,1,12,1</desc>
 	<desc>door,1.0,11.0,1.0,12.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="45.0" y="565.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,2,11,2,12,1</desc>
+	<desc># ORIG [0427]: 3,2,11,2,12,1</desc>
 	<desc>door,2.0,11.0,2.0,12.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="95.0" y="565.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,1,13,1,14,1</desc>
+	<desc># ORIG [0428]: 3,1,13,1,14,1</desc>
 	<desc>door,1.0,13.0,1.0,14.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="45.0" y="665.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,2,13,2,14,1</desc>
+	<desc># ORIG [0429]: 3,2,13,2,14,1</desc>
 	<desc>door,2.0,13.0,2.0,14.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="95.0" y="665.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,3,14,3,15,3</desc>
+	<desc># ORIG [0430]: 3,3,14,3,15,3</desc>
 	<desc>door,3.0,14.0,3.0,15.0,vertical_double</desc>
 	<rect stroke="red" stroke-width="5.0" x="145.0" y="710.0" width="10.0" height="15.0" fill="white"/>
 	<rect stroke="red" stroke-width="5.0" x="145.0" y="725.0" width="10.0" height="15.0" fill="white"/>
 	<desc>#  Knight Bridge</desc>
-	<desc># ORIG: 3,8,11,8,12,1</desc>
+	<desc># ORIG [0432]: 3,8,11,8,12,1</desc>
 	<desc>door,8.0,11.0,8.0,12.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="395.0" y="565.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,17,13,18,13,2</desc>
+	<desc># ORIG [0433]: 3,17,13,18,13,2</desc>
 	<desc>door,17.0,13.0,18.0,13.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="865.0" y="645.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,24,17,25,17,2</desc>
+	<desc># ORIG [0434]: 3,24,17,25,17,2</desc>
 	<desc>door,24.0,17.0,25.0,17.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="1215.0" y="845.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,25,16,25,16,1</desc>
+	<desc># ORIG [0435]: 3,25,16,25,16,1</desc>
 	<desc>door,25.0,16.0,25.0,16.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="1245.0" y="815.0" width="10.0" height="20.0" fill="white"/>
 	<desc>#  Wights</desc>
-	<desc># ORIG: 3,24.5,6,24.5,7,1</desc>
+	<desc># ORIG [0437]: 3,24.5,6,24.5,7,1</desc>
 	<desc>door,24.5,6.0,24.5,7.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="1220.0" y="315.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,24.5,8,24.5,9,1</desc>
+	<desc># ORIG [0438]: 3,24.5,8,24.5,9,1</desc>
 	<desc>door,24.5,8.0,24.5,9.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="1220.0" y="415.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,24.5,10,24.5,11,1</desc>
+	<desc># ORIG [0439]: 3,24.5,10,24.5,11,1</desc>
 	<desc>door,24.5,10.0,24.5,11.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="1220.0" y="515.0" width="10.0" height="20.0" fill="white"/>
-	<desc># ORIG: 3,26,7,27,7,2</desc>
+	<desc># ORIG [0440]: 3,26,7,27,7,2</desc>
 	<desc>door,26.0,7.0,27.0,7.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="1315.0" y="345.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,26,8,27,8,2</desc>
+	<desc># ORIG [0441]: 3,26,8,27,8,2</desc>
 	<desc>door,26.0,8.0,27.0,8.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="1315.0" y="395.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,26,9,27,9,2</desc>
+	<desc># ORIG [0442]: 3,26,9,27,9,2</desc>
 	<desc>door,26.0,9.0,27.0,9.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="1315.0" y="445.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,26,10,27,10,2</desc>
+	<desc># ORIG [0443]: 3,26,10,27,10,2</desc>
 	<desc>door,26.0,10.0,27.0,10.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="1315.0" y="495.0" width="20.0" height="10.0" fill="white"/>
 	<desc>#  Mummy</desc>
-	<desc># ORIG: 3,17,20,18,20,2</desc>
+	<desc># ORIG [0445]: 3,17,20,18,20,2</desc>
 	<desc>door,17.0,20.0,18.0,20.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="865.0" y="995.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,13,16,13,17,3</desc>
+	<desc># ORIG [0446]: 3,13,16,13,17,3</desc>
 	<desc>door,13.0,16.0,13.0,17.0,vertical_double</desc>
 	<rect stroke="red" stroke-width="5.0" x="645.0" y="810.0" width="10.0" height="15.0" fill="white"/>
 	<rect stroke="red" stroke-width="5.0" x="645.0" y="825.0" width="10.0" height="15.0" fill="white"/>
-	<desc># ORIG: 3,10,16,10,17,3</desc>
+	<desc># ORIG [0447]: 3,10,16,10,17,3</desc>
 	<desc>door,10.0,16.0,10.0,17.0,vertical_double</desc>
 	<rect stroke="red" stroke-width="5.0" x="495.0" y="810.0" width="10.0" height="15.0" fill="white"/>
 	<rect stroke="red" stroke-width="5.0" x="495.0" y="825.0" width="10.0" height="15.0" fill="white"/>
 	<desc>#  Armory</desc>
-	<desc># ORIG: 3,29,20,30,20,2</desc>
+	<desc># ORIG [0449]: 3,29,20,30,20,2</desc>
 	<desc>door,29.0,20.0,30.0,20.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="1465.0" y="995.0" width="20.0" height="10.0" fill="white"/>
 	<desc>#  Stairway</desc>
-	<desc># ORIG: 3,9,20,9,21,1</desc>
+	<desc># ORIG [0451]: 3,9,20,9,21,1</desc>
 	<desc>door,9.0,20.0,9.0,21.0,vertical</desc>
 	<rect stroke="red" stroke-width="5.0" x="445.0" y="1015.0" width="10.0" height="20.0" fill="white"/>
 	<desc>#  Zombocalypse</desc>
-	<desc># ORIG: 3,17,23,18,23,2</desc>
+	<desc># ORIG [0453]: 3,17,23,18,23,2</desc>
 	<desc>door,17.0,23.0,18.0,23.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="865.0" y="1145.0" width="20.0" height="10.0" fill="white"/>
-	<desc># ORIG: 3,24,26,25,26,2</desc>
+	<desc># ORIG [0454]: 3,24,26,25,26,2</desc>
 	<desc>door,24.0,26.0,25.0,26.0,horizontal</desc>
 	<rect stroke="red" stroke-width="5.0" x="1215.0" y="1295.0" width="20.0" height="10.0" fill="white"/>
 	<desc># Spiral Stairs</desc>
 	<desc>#  Church</desc>
-	<desc># ORIG: 7,4.5,4.5,1,1,1</desc>
+	<desc># ORIG [0457]: 7,4.5,4.5,1,1,1</desc>
 	<desc>spiral_stairs,4.5,4.5,1.0,1.0,None</desc>
 	<circle stroke="red" stroke-width="3.25" cx="225.0" cy="225.0" r="25.0" fill="white"/>
 	<line stroke="red" stroke-width="3.25" x1="225.0" y1="250.0" x2="225.0" y2="200.0"/>
@@ -1027,7 +1027,7 @@
 	<line stroke="red" stroke-width="3.25" x1="242.6776695296637" y1="207.3223304703363" x2="207.3223304703363" y2="242.6776695296637"/>
 	<line stroke="red" stroke-width="3.25" x1="242.6776695296637" y1="242.6776695296637" x2="207.3223304703363" y2="207.3223304703363"/>
 	<desc>#  Edgar</desc>
-	<desc># ORIG: 7,28.5,1.5,1,1,1</desc>
+	<desc># ORIG [0459]: 7,28.5,1.5,1,1,1</desc>
 	<desc>spiral_stairs,28.5,1.5,1.0,1.0,None</desc>
 	<circle stroke="red" stroke-width="3.25" cx="1425.0" cy="75.0" r="25.0" fill="white"/>
 	<line stroke="red" stroke-width="3.25" x1="1425.0" y1="100.0" x2="1425.0" y2="50.0"/>
@@ -1035,7 +1035,7 @@
 	<line stroke="red" stroke-width="3.25" x1="1442.6776695296637" y1="57.32233047033631" x2="1407.3223304703363" y2="92.67766952966369"/>
 	<line stroke="red" stroke-width="3.25" x1="1442.6776695296637" y1="92.67766952966369" x2="1407.3223304703363" y2="57.32233047033631"/>
 	<desc>#  Spiral Passage</desc>
-	<desc># ORIG: 7,27.5,13.5,1,1,1</desc>
+	<desc># ORIG [0461]: 7,27.5,13.5,1,1,1</desc>
 	<desc>spiral_stairs,27.5,13.5,1.0,1.0,None</desc>
 	<circle stroke="red" stroke-width="3.25" cx="1375.0" cy="675.0" r="25.0" fill="white"/>
 	<line stroke="red" stroke-width="3.25" x1="1375.0" y1="700.0" x2="1375.0" y2="650.0"/>
@@ -1043,7 +1043,7 @@
 	<line stroke="red" stroke-width="3.25" x1="1392.6776695296637" y1="657.3223304703363" x2="1357.3223304703363" y2="692.6776695296637"/>
 	<line stroke="red" stroke-width="3.25" x1="1392.6776695296637" y1="692.6776695296637" x2="1357.3223304703363" y2="657.3223304703363"/>
 	<desc>#  Mummy</desc>
-	<desc># ORIG: 7,21.5,16.5,1,1,1</desc>
+	<desc># ORIG [0463]: 7,21.5,16.5,1,1,1</desc>
 	<desc>spiral_stairs,21.5,16.5,1.0,1.0,None</desc>
 	<circle stroke="red" stroke-width="3.25" cx="1075.0" cy="825.0" r="25.0" fill="white"/>
 	<line stroke="red" stroke-width="3.25" x1="1075.0" y1="850.0" x2="1075.0" y2="800.0"/>
@@ -1052,731 +1052,731 @@
 	<line stroke="red" stroke-width="3.25" x1="1092.6776695296637" y1="842.6776695296637" x2="1057.3223304703363" y2="807.3223304703363"/>
 	<desc># Toilets</desc>
 	<desc>#  Abbey</desc>
-	<desc># ORIG: 8,13.5,0.4,0,0,1</desc>
+	<desc># ORIG [0467]: 8,13.5,0.4,0,0,1</desc>
 	<desc>toilet,13.5,0.4,0.0,0.0,vertical</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="675.0" cy="20.0" rx="7.5" ry="10.0" fill="white"/>
 	<circle stroke="red" stroke-width="1.5" cx="675.0" cy="17.5" r="1.5" fill="red"/>
 	<desc>#  Yorick%27s</desc>
-	<desc># ORIG: 8,18.2,2.4,0,0,2</desc>
+	<desc># ORIG [0469]: 8,18.2,2.4,0,0,2</desc>
 	<desc>toilet,18.2,2.4,0.0,0.0,horizontal</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="910.0" cy="120.0" rx="10.0" ry="7.5" fill="white"/>
 	<circle stroke="red" stroke-width="1.5" cx="907.5" cy="120.0" r="1.5" fill="red"/>
 	<desc>#  Edgar%27s</desc>
-	<desc># ORIG: 8,25.3,0.5,0,0,2</desc>
+	<desc># ORIG [0471]: 8,25.3,0.5,0,0,2</desc>
 	<desc>toilet,25.3,0.5,0.0,0.0,horizontal</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1265.0" cy="25.0" rx="10.0" ry="7.5" fill="white"/>
 	<circle stroke="red" stroke-width="1.5" cx="1262.5" cy="25.0" r="1.5" fill="red"/>
 	<desc># Quasqueton pools</desc>
-	<desc># ORIG: 6,22.5,18.5,0.4,0.4,6</desc>
+	<desc># ORIG [0474]: 6,22.5,18.5,0.4,0.4,6</desc>
 	<desc>ellipse,22.5,18.5,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1125.0" cy="925.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,24.5,18.5,0.4,0.4,6</desc>
+	<desc># ORIG [0475]: 6,24.5,18.5,0.4,0.4,6</desc>
 	<desc>ellipse,24.5,18.5,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1225.0" cy="925.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,26.5,18.5,0.4,0.4,6</desc>
+	<desc># ORIG [0476]: 6,26.5,18.5,0.4,0.4,6</desc>
 	<desc>ellipse,26.5,18.5,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1325.0" cy="925.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,23.5,20,0.4,0.4,6</desc>
+	<desc># ORIG [0477]: 6,23.5,20,0.4,0.4,6</desc>
 	<desc>ellipse,23.5,20.0,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1175.0" cy="1000.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,25.5,20,0.4,0.4,6</desc>
+	<desc># ORIG [0478]: 6,25.5,20,0.4,0.4,6</desc>
 	<desc>ellipse,25.5,20.0,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1275.0" cy="1000.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,20.5,21.5,0.4,0.4,6</desc>
+	<desc># ORIG [0479]: 6,20.5,21.5,0.4,0.4,6</desc>
 	<desc>ellipse,20.5,21.5,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1025.0" cy="1075.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,22.5,21.5,0.4,0.4,6</desc>
+	<desc># ORIG [0480]: 6,22.5,21.5,0.4,0.4,6</desc>
 	<desc>ellipse,22.5,21.5,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1125.0" cy="1075.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,24.5,21.5,0.4,0.4,6</desc>
+	<desc># ORIG [0481]: 6,24.5,21.5,0.4,0.4,6</desc>
 	<desc>ellipse,24.5,21.5,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1225.0" cy="1075.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,26.5,21.5,0.4,0.4,6</desc>
+	<desc># ORIG [0482]: 6,26.5,21.5,0.4,0.4,6</desc>
 	<desc>ellipse,26.5,21.5,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1325.0" cy="1075.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,28.5,21.5,0.4,0.4,6</desc>
+	<desc># ORIG [0483]: 6,28.5,21.5,0.4,0.4,6</desc>
 	<desc>ellipse,28.5,21.5,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1425.0" cy="1075.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,23.5,23,0.4,0.4,6</desc>
+	<desc># ORIG [0484]: 6,23.5,23,0.4,0.4,6</desc>
 	<desc>ellipse,23.5,23.0,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1175.0" cy="1150.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,25.5,23,0.4,0.4,6</desc>
+	<desc># ORIG [0485]: 6,25.5,23,0.4,0.4,6</desc>
 	<desc>ellipse,25.5,23.0,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1275.0" cy="1150.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,22.5,24.5,0.4,0.4,6</desc>
+	<desc># ORIG [0486]: 6,22.5,24.5,0.4,0.4,6</desc>
 	<desc>ellipse,22.5,24.5,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1125.0" cy="1225.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,24.5,24.5,0.4,0.4,6</desc>
+	<desc># ORIG [0487]: 6,24.5,24.5,0.4,0.4,6</desc>
 	<desc>ellipse,24.5,24.5,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1225.0" cy="1225.0" rx="20.0" ry="20.0" fill="white"/>
-	<desc># ORIG: 6,26.5,24.5,0.4,0.4,6</desc>
+	<desc># ORIG [0488]: 6,26.5,24.5,0.4,0.4,6</desc>
 	<desc>ellipse,26.5,24.5,0.4,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1325.0" cy="1225.0" rx="20.0" ry="20.0" fill="white"/>
 	<desc># Zombocalypse Fountain</desc>
-	<desc># ORIG: 6,3,22,0.6,0.6,6</desc>
+	<desc># ORIG [0491]: 6,3,22,0.6,0.6,6</desc>
 	<desc>ellipse,3.0,22.0,0.6,0.6,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="150.0" cy="1100.0" rx="30.0" ry="30.0" fill="white"/>
-	<desc># ORIG: 6,3,22,0.3,0.3,6</desc>
+	<desc># ORIG [0492]: 6,3,22,0.3,0.3,6</desc>
 	<desc>ellipse,3.0,22.0,0.3,0.3,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="150.0" cy="1100.0" rx="15.0" ry="15.0" fill="white"/>
 	<desc># Altar</desc>
-	<desc># ORIG: 5,1.5,4,2,4,6</desc>
+	<desc># ORIG [0495]: 5,1.5,4,2,4,6</desc>
 	<desc>block,1.5,4.0,2.0,4.0,white_thin</desc>
-	<desc># ORIG: 99,2,4,2,5,6</desc>
+	<desc># ORIG [0496]: 99,2,4,2,5,6</desc>
 	<desc>continuation,2.0,4.0,2.0,5.0,white_thin</desc>
-	<desc># ORIG: 99,2,5,1.5,5,6</desc>
+	<desc># ORIG [0497]: 99,2,5,1.5,5,6</desc>
 	<desc>continuation,2.0,5.0,1.5,5.0,white_thin</desc>
-	<desc># ORIG: 99,1.5,5,1.5,4,99</desc>
+	<desc># ORIG [0498]: 99,1.5,5,1.5,4,99</desc>
 	<desc>continuation,1.5,5.0,1.5,4.0,block_end</desc>
 	<polygon stroke="red" stroke-width="1.5" points="75.0,200.0 100.0,200.0 100.0,250.0 75.0,250.0 75.0,200.0" fill="white"/>
 	<desc># Carlotta%27s Furniture</desc>
-	<desc># ORIG: 1,0,2,0.3,2,5</desc>
+	<desc># ORIG [0501]: 1,0,2,0.3,2,5</desc>
 	<desc>line,0.0,2.0,0.3,2.0,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 0.0 100.0 L 15.0 100.0"/>
-	<desc># ORIG: 1,0.3,2,0.3,1.3,5</desc>
+	<desc># ORIG [0502]: 1,0.3,2,0.3,1.3,5</desc>
 	<desc>line,0.3,2.0,0.3,1.3,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 15.0 100.0 L 15.0 65.0"/>
-	<desc># ORIG: 1,0.3,1.3,1,1.3,5</desc>
+	<desc># ORIG [0503]: 1,0.3,1.3,1,1.3,5</desc>
 	<desc>line,0.3,1.3,1.0,1.3,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 15.0 65.0 L 50.0 65.0"/>
-	<desc># ORIG: 1,1,1.3,1,1,5</desc>
+	<desc># ORIG [0504]: 1,1,1.3,1,1,5</desc>
 	<desc>line,1.0,1.3,1.0,1.0,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 50.0 65.0 L 50.0 50.0"/>
-	<desc># ORIG: 5,0.8,1.8,1.7,1.8,6</desc>
+	<desc># ORIG [0506]: 5,0.8,1.8,1.7,1.8,6</desc>
 	<desc>block,0.8,1.8,1.7,1.8,white_thin</desc>
-	<desc># ORIG: 99,1.7,1.8,1.7,2.3,6</desc>
+	<desc># ORIG [0507]: 99,1.7,1.8,1.7,2.3,6</desc>
 	<desc>continuation,1.7,1.8,1.7,2.3,white_thin</desc>
-	<desc># ORIG: 99,1.7,2.3,0.8,2.3,6</desc>
+	<desc># ORIG [0508]: 99,1.7,2.3,0.8,2.3,6</desc>
 	<desc>continuation,1.7,2.3,0.8,2.3,white_thin</desc>
-	<desc># ORIG: 99,0.8,2.3,0.8,1.8,99</desc>
+	<desc># ORIG [0509]: 99,0.8,2.3,0.8,1.8,99</desc>
 	<desc>continuation,0.8,2.3,0.8,1.8,block_end</desc>
 	<polygon stroke="red" stroke-width="1.5" points="40.0,90.0 85.0,90.0 85.0,114.99999999999999 40.0,114.99999999999999 40.0,90.0" fill="white"/>
 	<desc># Carlotta%27s Coffin</desc>
-	<desc># ORIG: 5,0.2,0.4,0.4,0.3,6</desc>
+	<desc># ORIG [0512]: 5,0.2,0.4,0.4,0.3,6</desc>
 	<desc>block,0.2,0.4,0.4,0.3,white_thin</desc>
-	<desc># ORIG: 99,0.4,0.3,0.9,0.4,6</desc>
+	<desc># ORIG [0513]: 99,0.4,0.3,0.9,0.4,6</desc>
 	<desc>continuation,0.4,0.3,0.9,0.4,white_thin</desc>
-	<desc># ORIG: 99,0.9,0.4,0.9,0.6,6</desc>
+	<desc># ORIG [0514]: 99,0.9,0.4,0.9,0.6,6</desc>
 	<desc>continuation,0.9,0.4,0.9,0.6,white_thin</desc>
-	<desc># ORIG: 99,0.9,0.6,0.4,0.7,6</desc>
+	<desc># ORIG [0515]: 99,0.9,0.6,0.4,0.7,6</desc>
 	<desc>continuation,0.9,0.6,0.4,0.7,white_thin</desc>
-	<desc># ORIG: 99,0.4,0.7,0.2,0.6,6</desc>
+	<desc># ORIG [0516]: 99,0.4,0.7,0.2,0.6,6</desc>
 	<desc>continuation,0.4,0.7,0.2,0.6,white_thin</desc>
-	<desc># ORIG: 99,0.2,0.6,0.2,0.4,99</desc>
+	<desc># ORIG [0517]: 99,0.2,0.6,0.2,0.4,99</desc>
 	<desc>continuation,0.2,0.6,0.2,0.4,block_end</desc>
 	<polygon stroke="red" stroke-width="1.5" points="10.0,20.0 20.0,15.0 45.0,20.0 45.0,30.0 20.0,35.0 10.0,30.0 10.0,20.0" fill="white"/>
 	<desc># Pillars in Refectory</desc>
-	<desc># ORIG: 6,7,1,0.2,0.2,5</desc>
+	<desc># ORIG [0520]: 6,7,1,0.2,0.2,5</desc>
 	<desc>ellipse,7.0,1.0,0.2,0.2,solid_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="350.0" cy="50.0" rx="10.0" ry="10.0" fill="red"/>
-	<desc># ORIG: 6,8,1,0.2,0.2,5</desc>
+	<desc># ORIG [0521]: 6,8,1,0.2,0.2,5</desc>
 	<desc>ellipse,8.0,1.0,0.2,0.2,solid_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="400.0" cy="50.0" rx="10.0" ry="10.0" fill="red"/>
-	<desc># ORIG: 6,11,1,0.2,0.2,5</desc>
+	<desc># ORIG [0522]: 6,11,1,0.2,0.2,5</desc>
 	<desc>ellipse,11.0,1.0,0.2,0.2,solid_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="550.0" cy="50.0" rx="10.0" ry="10.0" fill="red"/>
-	<desc># ORIG: 6,12,1,0.2,0.2,5</desc>
+	<desc># ORIG [0523]: 6,12,1,0.2,0.2,5</desc>
 	<desc>ellipse,12.0,1.0,0.2,0.2,solid_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="600.0" cy="50.0" rx="10.0" ry="10.0" fill="red"/>
-	<desc># ORIG: 6,7,2,0.2,0.2,5</desc>
+	<desc># ORIG [0524]: 6,7,2,0.2,0.2,5</desc>
 	<desc>ellipse,7.0,2.0,0.2,0.2,solid_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="350.0" cy="100.0" rx="10.0" ry="10.0" fill="red"/>
-	<desc># ORIG: 6,8,2,0.2,0.2,5</desc>
+	<desc># ORIG [0525]: 6,8,2,0.2,0.2,5</desc>
 	<desc>ellipse,8.0,2.0,0.2,0.2,solid_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="400.0" cy="100.0" rx="10.0" ry="10.0" fill="red"/>
-	<desc># ORIG: 6,11,2,0.2,0.2,5</desc>
+	<desc># ORIG [0526]: 6,11,2,0.2,0.2,5</desc>
 	<desc>ellipse,11.0,2.0,0.2,0.2,solid_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="550.0" cy="100.0" rx="10.0" ry="10.0" fill="red"/>
-	<desc># ORIG: 6,12,2,0.2,0.2,5</desc>
+	<desc># ORIG [0527]: 6,12,2,0.2,0.2,5</desc>
 	<desc>ellipse,12.0,2.0,0.2,0.2,solid_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="600.0" cy="100.0" rx="10.0" ry="10.0" fill="red"/>
 	<desc># Table in Refectory</desc>
-	<desc># ORIG: 6,9.5,1.5,0.7,0.3,6</desc>
+	<desc># ORIG [0530]: 6,9.5,1.5,0.7,0.3,6</desc>
 	<desc>ellipse,9.5,1.5,0.7,0.3,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="475.0" cy="75.0" rx="35.0" ry="15.0" fill="white"/>
 	<desc># Hearth</desc>
-	<desc># ORIG: 1,14,0.6,14.2,0.6,5</desc>
+	<desc># ORIG [0533]: 1,14,0.6,14.2,0.6,5</desc>
 	<desc>line,14.0,0.6,14.2,0.6,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 700.0 30.0 L 710.0 30.0"/>
-	<desc># ORIG: 1,14.2,0.6,14.2,0.4,5</desc>
+	<desc># ORIG [0534]: 1,14.2,0.6,14.2,0.4,5</desc>
 	<desc>line,14.2,0.6,14.2,0.4,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 710.0 30.0 L 710.0 20.0"/>
-	<desc># ORIG: 1,14.2,0.4,14.8,0.4,5</desc>
+	<desc># ORIG [0535]: 1,14.2,0.4,14.8,0.4,5</desc>
 	<desc>line,14.2,0.4,14.8,0.4,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 710.0 20.0 L 740.0 20.0"/>
-	<desc># ORIG: 1,14.8,0.4,14.8,0.6,5</desc>
+	<desc># ORIG [0536]: 1,14.8,0.4,14.8,0.6,5</desc>
 	<desc>line,14.8,0.4,14.8,0.6,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 740.0 20.0 L 740.0 30.0"/>
-	<desc># ORIG: 1,14.8,0.6,15,0.6,5</desc>
+	<desc># ORIG [0537]: 1,14.8,0.6,15,0.6,5</desc>
 	<desc>line,14.8,0.6,15.0,0.6,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 740.0 30.0 L 750.0 30.0"/>
-	<desc># ORIG: 1,15,0.6,15,0,5</desc>
+	<desc># ORIG [0538]: 1,15,0.6,15,0,5</desc>
 	<desc>line,15.0,0.6,15.0,0.0,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 750.0 30.0 L 750.0 0.0"/>
-	<desc># ORIG: 5,14.2,0.1,14.8,0.1,5</desc>
+	<desc># ORIG [0539]: 5,14.2,0.1,14.8,0.1,5</desc>
 	<desc>block,14.2,0.1,14.8,0.1,solid_thin</desc>
-	<desc># ORIG: 99,14.8,0.1,14.8,0.3,5</desc>
+	<desc># ORIG [0540]: 99,14.8,0.1,14.8,0.3,5</desc>
 	<desc>continuation,14.8,0.1,14.8,0.3,solid_thin</desc>
-	<desc># ORIG: 99,14.8,0.3,14.2,0.3,5</desc>
+	<desc># ORIG [0541]: 99,14.8,0.3,14.2,0.3,5</desc>
 	<desc>continuation,14.8,0.3,14.2,0.3,solid_thin</desc>
-	<desc># ORIG: 99,14.2,0.3,14.2,0.1,99</desc>
+	<desc># ORIG [0542]: 99,14.2,0.3,14.2,0.1,99</desc>
 	<desc>continuation,14.2,0.3,14.2,0.1,block_end</desc>
 	<polygon stroke="red" stroke-width="1.5" points="710.0,5.0 740.0,5.0 740.0,15.0 710.0,15.0 710.0,5.0" fill="red"/>
 	<desc># Sink</desc>
-	<desc># ORIG: 1,13,2.4,14.5,2.4,5</desc>
+	<desc># ORIG [0545]: 1,13,2.4,14.5,2.4,5</desc>
 	<desc>line,13.0,2.4,14.5,2.4,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 650.0 120.0 L 725.0 120.0"/>
-	<desc># ORIG: 1,14.5,2.4,14.5,3,5</desc>
+	<desc># ORIG [0546]: 1,14.5,2.4,14.5,3,5</desc>
 	<desc>line,14.5,2.4,14.5,3.0,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 725.0 120.0 L 725.0 150.0"/>
-	<desc># ORIG: 6,13.7,2.6,0.2,0.1,6</desc>
+	<desc># ORIG [0547]: 6,13.7,2.6,0.2,0.1,6</desc>
 	<desc>ellipse,13.7,2.6,0.2,0.1,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="685.0" cy="130.0" rx="10.0" ry="5.0" fill="white"/>
 	<desc># Beds</desc>
-	<desc># ORIG: 1,16,1.4,16.7,1.4,5</desc>
+	<desc># ORIG [0550]: 1,16,1.4,16.7,1.4,5</desc>
 	<desc>line,16.0,1.4,16.7,1.4,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 800.0 70.0 L 835.0 70.0"/>
-	<desc># ORIG: 1,16.7,1.4,16.7,1.7,5</desc>
+	<desc># ORIG [0551]: 1,16.7,1.4,16.7,1.7,5</desc>
 	<desc>line,16.7,1.4,16.7,1.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 835.0 70.0 L 835.0 85.0"/>
-	<desc># ORIG: 1,16.7,1.7,16,1.7,5</desc>
+	<desc># ORIG [0552]: 1,16.7,1.7,16,1.7,5</desc>
 	<desc>line,16.7,1.7,16.0,1.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 835.0 85.0 L 800.0 85.0"/>
-	<desc># ORIG: 1,16,2.4,16.7,2.4,5</desc>
+	<desc># ORIG [0554]: 1,16,2.4,16.7,2.4,5</desc>
 	<desc>line,16.0,2.4,16.7,2.4,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 800.0 120.0 L 835.0 120.0"/>
-	<desc># ORIG: 1,16.7,2.4,16.7,2.7,5</desc>
+	<desc># ORIG [0555]: 1,16.7,2.4,16.7,2.7,5</desc>
 	<desc>line,16.7,2.4,16.7,2.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 835.0 120.0 L 835.0 135.0"/>
-	<desc># ORIG: 1,16.7,2.7,16,2.7,5</desc>
+	<desc># ORIG [0556]: 1,16.7,2.7,16,2.7,5</desc>
 	<desc>line,16.7,2.7,16.0,2.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 835.0 135.0 L 800.0 135.0"/>
-	<desc># ORIG: 1,18,1.4,17.3,1.4,5</desc>
+	<desc># ORIG [0558]: 1,18,1.4,17.3,1.4,5</desc>
 	<desc>line,18.0,1.4,17.3,1.4,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 900.0 70.0 L 865.0 70.0"/>
-	<desc># ORIG: 1,17.3,1.4,17.3,1.7,5</desc>
+	<desc># ORIG [0559]: 1,17.3,1.4,17.3,1.7,5</desc>
 	<desc>line,17.3,1.4,17.3,1.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 865.0 70.0 L 865.0 85.0"/>
-	<desc># ORIG: 1,17.3,1.7,18,1.7,5</desc>
+	<desc># ORIG [0560]: 1,17.3,1.7,18,1.7,5</desc>
 	<desc>line,17.3,1.7,18.0,1.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 865.0 85.0 L 900.0 85.0"/>
-	<desc># ORIG: 1,18,2.4,17.3,2.4,5</desc>
+	<desc># ORIG [0562]: 1,18,2.4,17.3,2.4,5</desc>
 	<desc>line,18.0,2.4,17.3,2.4,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 900.0 120.0 L 865.0 120.0"/>
-	<desc># ORIG: 1,17.3,2.4,17.3,2.7,5</desc>
+	<desc># ORIG [0563]: 1,17.3,2.4,17.3,2.7,5</desc>
 	<desc>line,17.3,2.4,17.3,2.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 865.0 120.0 L 865.0 135.0"/>
-	<desc># ORIG: 1,17.3,2.7,18,2.7,5</desc>
+	<desc># ORIG [0564]: 1,17.3,2.7,18,2.7,5</desc>
 	<desc>line,17.3,2.7,18.0,2.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 865.0 135.0 L 900.0 135.0"/>
 	<desc># Abbot</desc>
-	<desc># ORIG: 1,19,1.1,18.7,1.1,5</desc>
+	<desc># ORIG [0567]: 1,19,1.1,18.7,1.1,5</desc>
 	<desc>line,19.0,1.1,18.7,1.1,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 950.0 55.00000000000001 L 935.0 55.00000000000001"/>
-	<desc># ORIG: 1,18.7,1.1,18.7,1.8,5</desc>
+	<desc># ORIG [0568]: 1,18.7,1.1,18.7,1.8,5</desc>
 	<desc>line,18.7,1.1,18.7,1.8,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 935.0 55.00000000000001 L 935.0 90.0"/>
-	<desc># ORIG: 1,18.7,1.8,19,1.8,5</desc>
+	<desc># ORIG [0569]: 1,18.7,1.8,19,1.8,5</desc>
 	<desc>line,18.7,1.8,19.0,1.8,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 935.0 90.0 L 950.0 90.0"/>
 	<desc># Edgar</desc>
 	<desc>#  Hearth</desc>
-	<desc># ORIG: 1,28,0,28,0.3,5</desc>
+	<desc># ORIG [0573]: 1,28,0,28,0.3,5</desc>
 	<desc>line,28.0,0.0,28.0,0.3,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1400.0 0.0 L 1400.0 15.0"/>
-	<desc># ORIG: 1,28,0.3,29.4,0.3,5</desc>
+	<desc># ORIG [0574]: 1,28,0.3,29.4,0.3,5</desc>
 	<desc>line,28.0,0.3,29.4,0.3,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1400.0 15.0 L 1470.0 15.0"/>
-	<desc># ORIG: 1,29.4,0.3,29.4,0.8,5</desc>
+	<desc># ORIG [0575]: 1,29.4,0.3,29.4,0.8,5</desc>
 	<desc>line,29.4,0.3,29.4,0.8,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1470.0 15.0 L 1470.0 40.0"/>
-	<desc># ORIG: 1,29.4,0.8,29,0.8,5</desc>
+	<desc># ORIG [0576]: 1,29.4,0.8,29,0.8,5</desc>
 	<desc>line,29.4,0.8,29.0,0.8,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1470.0 40.0 L 1450.0 40.0"/>
-	<desc># ORIG: 1,29,0.8,29,1,5</desc>
+	<desc># ORIG [0577]: 1,29,0.8,29,1,5</desc>
 	<desc>line,29.0,0.8,29.0,1.0,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1450.0 40.0 L 1450.0 50.0"/>
-	<desc># ORIG: 6,28.5,0.15,0.2,0.1,6</desc>
+	<desc># ORIG [0578]: 6,28.5,0.15,0.2,0.1,6</desc>
 	<desc>ellipse,28.5,0.15,0.2,0.1,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1425.0" cy="7.5" rx="10.0" ry="5.0" fill="white"/>
-	<desc># ORIG: 5,29.6,0.4,29.8,0.4,5</desc>
+	<desc># ORIG [0579]: 5,29.6,0.4,29.8,0.4,5</desc>
 	<desc>block,29.6,0.4,29.8,0.4,solid_thin</desc>
-	<desc># ORIG: 99,29.8,0.4,29.8,0.6,5</desc>
+	<desc># ORIG [0580]: 99,29.8,0.4,29.8,0.6,5</desc>
 	<desc>continuation,29.8,0.4,29.8,0.6,solid_thin</desc>
-	<desc># ORIG: 99,29.8,0.6,29.6,0.6,5</desc>
+	<desc># ORIG [0581]: 99,29.8,0.6,29.6,0.6,5</desc>
 	<desc>continuation,29.8,0.6,29.6,0.6,solid_thin</desc>
-	<desc># ORIG: 99,29.6,0.6,29.6,0.4,99</desc>
+	<desc># ORIG [0582]: 99,29.6,0.6,29.6,0.4,99</desc>
 	<desc>continuation,29.6,0.6,29.6,0.4,block_end</desc>
 	<polygon stroke="red" stroke-width="1.5" points="1480.0,20.0 1490.0,20.0 1490.0,30.0 1480.0,30.0 1480.0,20.0" fill="red"/>
 	<desc>#  Bedroom</desc>
-	<desc># ORIG: 1,25,4.5,25.9,4.5,5</desc>
+	<desc># ORIG [0584]: 1,25,4.5,25.9,4.5,5</desc>
 	<desc>line,25.0,4.5,25.9,4.5,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1250.0 225.0 L 1295.0 225.0"/>
-	<desc># ORIG: 1,25.9,4.5,25.9,5,5</desc>
+	<desc># ORIG [0585]: 1,25.9,4.5,25.9,5,5</desc>
 	<desc>line,25.9,4.5,25.9,5.0,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1295.0 225.0 L 1295.0 250.0"/>
-	<desc># ORIG: 5,25,3.2,26.8,3.2,6</desc>
+	<desc># ORIG [0586]: 5,25,3.2,26.8,3.2,6</desc>
 	<desc>block,25.0,3.2,26.8,3.2,white_thin</desc>
-	<desc># ORIG: 99,26.8,3.2,26.8,3.8,6</desc>
+	<desc># ORIG [0587]: 99,26.8,3.2,26.8,3.8,6</desc>
 	<desc>continuation,26.8,3.2,26.8,3.8,white_thin</desc>
-	<desc># ORIG: 99,26.8,3.8,27,3.8,6</desc>
+	<desc># ORIG [0588]: 99,26.8,3.8,27,3.8,6</desc>
 	<desc>continuation,26.8,3.8,27.0,3.8,white_thin</desc>
-	<desc># ORIG: 99,27,3.8,27,3,6</desc>
+	<desc># ORIG [0589]: 99,27,3.8,27,3,6</desc>
 	<desc>continuation,27.0,3.8,27.0,3.0,white_thin</desc>
-	<desc># ORIG: 99,27,3,25,3,6</desc>
+	<desc># ORIG [0590]: 99,27,3,25,3,6</desc>
 	<desc>continuation,27.0,3.0,25.0,3.0,white_thin</desc>
-	<desc># ORIG: 99,25,3,25,3.2,99</desc>
+	<desc># ORIG [0591]: 99,25,3,25,3.2,99</desc>
 	<desc>continuation,25.0,3.0,25.0,3.2,block_end</desc>
 	<polygon stroke="red" stroke-width="1.5" points="1250.0,160.0 1340.0,160.0 1340.0,190.0 1350.0,190.0 1350.0,150.0 1250.0,150.0 1250.0,160.0" fill="white"/>
 	<desc>#  Table</desc>
-	<desc># ORIG: 6,26,2,.7,.3,6</desc>
+	<desc># ORIG [0593]: 6,26,2,.7,.3,6</desc>
 	<desc>ellipse,26.0,2.0,0.7,0.3,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="1300.0" cy="100.0" rx="35.0" ry="15.0" fill="white"/>
 	<desc>#  Beds</desc>
-	<desc># ORIG: 1,28,3.4,28.7,3.4,5</desc>
+	<desc># ORIG [0595]: 1,28,3.4,28.7,3.4,5</desc>
 	<desc>line,28.0,3.4,28.7,3.4,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1400.0 170.0 L 1435.0 170.0"/>
-	<desc># ORIG: 1,28.7,3.4,28.7,3.7,5</desc>
+	<desc># ORIG [0596]: 1,28.7,3.4,28.7,3.7,5</desc>
 	<desc>line,28.7,3.4,28.7,3.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1435.0 170.0 L 1435.0 185.0"/>
-	<desc># ORIG: 1,28.7,3.7,28,3.7,5</desc>
+	<desc># ORIG [0597]: 1,28.7,3.7,28,3.7,5</desc>
 	<desc>line,28.7,3.7,28.0,3.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1435.0 185.0 L 1400.0 185.0"/>
-	<desc># ORIG: 1,28,4.4,28.7,4.4,5</desc>
+	<desc># ORIG [0599]: 1,28,4.4,28.7,4.4,5</desc>
 	<desc>line,28.0,4.4,28.7,4.4,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1400.0 220.00000000000003 L 1435.0 220.00000000000003"/>
-	<desc># ORIG: 1,28.7,4.4,28.7,4.7,5</desc>
+	<desc># ORIG [0600]: 1,28.7,4.4,28.7,4.7,5</desc>
 	<desc>line,28.7,4.4,28.7,4.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1435.0 220.00000000000003 L 1435.0 235.0"/>
-	<desc># ORIG: 1,28.7,4.7,28,4.7,5</desc>
+	<desc># ORIG [0601]: 1,28.7,4.7,28,4.7,5</desc>
 	<desc>line,28.7,4.7,28.0,4.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1435.0 235.0 L 1400.0 235.0"/>
-	<desc># ORIG: 1,30,3.4,29.3,3.4,5</desc>
+	<desc># ORIG [0603]: 1,30,3.4,29.3,3.4,5</desc>
 	<desc>line,30.0,3.4,29.3,3.4,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1500.0 170.0 L 1465.0 170.0"/>
-	<desc># ORIG: 1,29.3,3.4,29.3,3.7,5</desc>
+	<desc># ORIG [0604]: 1,29.3,3.4,29.3,3.7,5</desc>
 	<desc>line,29.3,3.4,29.3,3.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1465.0 170.0 L 1465.0 185.0"/>
-	<desc># ORIG: 1,29.3,3.7,30,3.7,5</desc>
+	<desc># ORIG [0605]: 1,29.3,3.7,30,3.7,5</desc>
 	<desc>line,29.3,3.7,30.0,3.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1465.0 185.0 L 1500.0 185.0"/>
-	<desc># ORIG: 1,30,4.4,29.3,4.4,5</desc>
+	<desc># ORIG [0607]: 1,30,4.4,29.3,4.4,5</desc>
 	<desc>line,30.0,4.4,29.3,4.4,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1500.0 220.00000000000003 L 1465.0 220.00000000000003"/>
-	<desc># ORIG: 1,29.3,4.4,29.3,4.7,5</desc>
+	<desc># ORIG [0608]: 1,29.3,4.4,29.3,4.7,5</desc>
 	<desc>line,29.3,4.4,29.3,4.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1465.0 220.00000000000003 L 1465.0 235.0"/>
-	<desc># ORIG: 1,29.3,4.7,30,4.7,5</desc>
+	<desc># ORIG [0609]: 1,29.3,4.7,30,4.7,5</desc>
 	<desc>line,29.3,4.7,30.0,4.7,thin</desc>
 	<path stroke="red" stroke-width="1.5" d="M 1465.0 235.0 L 1500.0 235.0"/>
 	<desc># Sarcophagus</desc>
-	<desc># ORIG: 6,9.2,16.5,0.15,0.4,6</desc>
+	<desc># ORIG [0612]: 6,9.2,16.5,0.15,0.4,6</desc>
 	<desc>ellipse,9.2,16.5,0.15,0.4,white_thin</desc>
 	<ellipse stroke="red" stroke-width="1.5" cx="459.99999999999994" cy="825.0" rx="7.5" ry="20.0" fill="white"/>
 	<desc># Stairway decorations</desc>
 	<desc>#  Down</desc>
-	<desc># ORIG: 1,7.9,20.1,7.9,20.9,1</desc>
+	<desc># ORIG [0616]: 1,7.9,20.1,7.9,20.9,1</desc>
 	<desc>line,7.9,20.1,7.9,20.9,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 395.0 1005.0000000000001 L 395.0 1045.0"/>
-	<desc># ORIG: 1,7.7,20.2,7.7,20.8,1</desc>
+	<desc># ORIG [0617]: 1,7.7,20.2,7.7,20.8,1</desc>
 	<desc>line,7.7,20.2,7.7,20.8,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 385.0 1010.0 L 385.0 1040.0"/>
-	<desc># ORIG: 1,7.5,20.3,7.5,20.7,1</desc>
+	<desc># ORIG [0618]: 1,7.5,20.3,7.5,20.7,1</desc>
 	<desc>line,7.5,20.3,7.5,20.7,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 375.0 1015.0 L 375.0 1035.0"/>
-	<desc># ORIG: 1,7.3,20.4,7.3,20.6,1</desc>
+	<desc># ORIG [0619]: 1,7.3,20.4,7.3,20.6,1</desc>
 	<desc>line,7.3,20.4,7.3,20.6,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 365.0 1019.9999999999999 L 365.0 1030.0"/>
 	<desc>#  Up</desc>
-	<desc># ORIG: 1,8.1,21.1,8.9,21.1,1</desc>
+	<desc># ORIG [0621]: 1,8.1,21.1,8.9,21.1,1</desc>
 	<desc>line,8.1,21.1,8.9,21.1,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 405.0 1055.0 L 445.0 1055.0"/>
-	<desc># ORIG: 1,8.1,21.3,8.9,21.3,1</desc>
+	<desc># ORIG [0622]: 1,8.1,21.3,8.9,21.3,1</desc>
 	<desc>line,8.1,21.3,8.9,21.3,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 405.0 1065.0 L 445.0 1065.0"/>
-	<desc># ORIG: 1,8.1,21.5,8.9,21.5,1</desc>
+	<desc># ORIG [0623]: 1,8.1,21.5,8.9,21.5,1</desc>
 	<desc>line,8.1,21.5,8.9,21.5,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 405.0 1075.0 L 445.0 1075.0"/>
-	<desc># ORIG: 1,8.1,21.7,8.9,21.7,1</desc>
+	<desc># ORIG [0624]: 1,8.1,21.7,8.9,21.7,1</desc>
 	<desc>line,8.1,21.7,8.9,21.7,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 405.0 1085.0 L 445.0 1085.0"/>
 	<desc>#  Opposite corner</desc>
-	<desc># ORIG: 1,6,23,5,23,3</desc>
+	<desc># ORIG [0626]: 1,6,23,5,23,3</desc>
 	<desc>line,6.0,23.0,5.0,23.0,dashed</desc>
 	<path stroke="red" stroke-dasharray="10.0 10.0" stroke-width="5.0" d="M 300.0 1150.0 L 250.0 1150.0"/>
-	<desc># ORIG: 1,6,23,6,24,3</desc>
+	<desc># ORIG [0627]: 1,6,23,6,24,3</desc>
 	<desc>line,6.0,23.0,6.0,24.0,dashed</desc>
 	<path stroke="red" stroke-dasharray="10.0 10.0" stroke-width="5.0" d="M 300.0 1150.0 L 300.0 1200.0"/>
 	<desc># Text</desc>
 	<desc>#  Church</desc>
-	<desc># ORIG: 9,1.1,0.8,12,0,.7</desc>
+	<desc># ORIG [0631]: 9,1.1,0.8,12,0,.7</desc>
 	<desc>text,1.1,0.8,12,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="55.00000000000001" y="40.0">12</text>
-	<desc># ORIG: 9,1.1,1.7,11,0,.7</desc>
+	<desc># ORIG [0632]: 9,1.1,1.7,11,0,.7</desc>
 	<desc>text,1.1,1.7,11,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="55.00000000000001" y="85.0">11</text>
-	<desc># ORIG: 9,9.1,2.8,13,0,.7</desc>
+	<desc># ORIG [0633]: 9,9.1,2.8,13,0,.7</desc>
 	<desc>text,9.1,2.8,13,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="455.0" y="140.0">13</text>
-	<desc># ORIG: 9,1.65,4.7,a,0,.5</desc>
+	<desc># ORIG [0634]: 9,1.65,4.7,a,0,.5</desc>
 	<desc>text,1.65,4.7,a,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="82.5" y="235.0">a</text>
-	<desc># ORIG: 9,7.1,4.8,10,0,.7</desc>
+	<desc># ORIG [0635]: 9,7.1,4.8,10,0,.7</desc>
 	<desc>text,7.1,4.8,10,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="355.0" y="240.0">10</text>
-	<desc># ORIG: 9,13.33,0.84,26,0,.4</desc>
+	<desc># ORIG [0636]: 9,13.33,0.84,26,0,.4</desc>
 	<desc>text,13.33,0.84,26,sans_serif,0.4</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="20px" fill="red" x="666.5" y="42.0">26</text>
-	<desc># ORIG: 9,14.1,1.7,14,0,.7</desc>
+	<desc># ORIG [0637]: 9,14.1,1.7,14,0,.7</desc>
 	<desc>text,14.1,1.7,14,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="705.0" y="85.0">14</text>
-	<desc># ORIG: 9,16.6,2.3,15,0,.7</desc>
+	<desc># ORIG [0638]: 9,16.6,2.3,15,0,.7</desc>
 	<desc>text,16.6,2.3,15,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="830.0000000000001" y="114.99999999999999">15</text>
-	<desc># ORIG: 9,0.4,3.2,S,0,.6</desc>
+	<desc># ORIG [0639]: 9,0.4,3.2,S,0,.6</desc>
 	<desc>text,0.4,3.2,S,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="20.0" y="160.0">S</text>
-	<desc># ORIG: 9,18.1,1.2,16,0,.7</desc>
+	<desc># ORIG [0640]: 9,18.1,1.2,16,0,.7</desc>
 	<desc>text,18.1,1.2,16,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="905.0000000000001" y="60.0">16</text>
-	<desc># ORIG: 9,18.84,0.8,S,0,.6</desc>
+	<desc># ORIG [0641]: 9,18.84,0.8,S,0,.6</desc>
 	<desc>text,18.84,0.8,S,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="942.0" y="40.0">S</text>
-	<desc># ORIG: 9,19.2,0.8,17,0,.7</desc>
+	<desc># ORIG [0642]: 9,19.2,0.8,17,0,.7</desc>
 	<desc>text,19.2,0.8,17,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="960.0" y="40.0">17</text>
 	<desc>#  Churchyard</desc>
-	<desc># ORIG: 9,21.2,4.8,18,0,.7</desc>
+	<desc># ORIG [0644]: 9,21.2,4.8,18,0,.7</desc>
 	<desc>text,21.2,4.8,18,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="1060.0" y="240.0">18</text>
-	<desc># ORIG: 9,20.3,4.5,t,0,.5</desc>
+	<desc># ORIG [0645]: 9,20.3,4.5,t,0,.5</desc>
 	<desc>text,20.3,4.5,t,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1015.0" y="225.0">t</text>
-	<desc># ORIG: 9,21.4,2.3,t,0,.5</desc>
+	<desc># ORIG [0646]: 9,21.4,2.3,t,0,.5</desc>
 	<desc>text,21.4,2.3,t,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1070.0" y="114.99999999999999">t</text>
-	<desc># ORIG: 9,22.6,1.4,t,0,.5</desc>
+	<desc># ORIG [0647]: 9,22.6,1.4,t,0,.5</desc>
 	<desc>text,22.6,1.4,t,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1130.0" y="70.0">t</text>
-	<desc># ORIG: 9,23.3,3.6,t,0,.5</desc>
+	<desc># ORIG [0648]: 9,23.3,3.6,t,0,.5</desc>
 	<desc>text,23.3,3.6,t,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1165.0" y="180.0">t</text>
 	<desc>#  Edgar%27s</desc>
-	<desc># ORIG: 9,25.48,0.82,26,0,.4</desc>
+	<desc># ORIG [0650]: 9,25.48,0.82,26,0,.4</desc>
 	<desc>text,25.48,0.82,26,sans_serif,0.4</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="20px" fill="red" x="1274.0" y="41.0">26</text>
-	<desc># ORIG: 9,28.3,0.9,14,0,.7</desc>
+	<desc># ORIG [0651]: 9,28.3,0.9,14,0,.7</desc>
 	<desc>text,28.3,0.9,14,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="1415.0" y="45.0">14</text>
-	<desc># ORIG: 9,29.2,1.8,19,0,.7</desc>
+	<desc># ORIG [0652]: 9,29.2,1.8,19,0,.7</desc>
 	<desc>text,29.2,1.8,19,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="1460.0" y="90.0">19</text>
-	<desc># ORIG: 9,25.7,2.9,20,0,.7</desc>
+	<desc># ORIG [0653]: 9,25.7,2.9,20,0,.7</desc>
 	<desc>text,25.7,2.9,20,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="1285.0" y="145.0">20</text>
-	<desc># ORIG: 9,25.7,4.3,21,0,.7</desc>
+	<desc># ORIG [0654]: 9,25.7,4.3,21,0,.7</desc>
 	<desc>text,25.7,4.3,21,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="1285.0" y="215.0">21</text>
-	<desc># ORIG: 9,28.6,4.3,15,0,.7</desc>
+	<desc># ORIG [0655]: 9,28.6,4.3,15,0,.7</desc>
 	<desc>text,28.6,4.3,15,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="1430.0" y="215.0">15</text>
 	<desc>#  Spiral Stairs</desc>
-	<desc># ORIG: 9,27.4,1.5,dn,0,.4</desc>
+	<desc># ORIG [0657]: 9,27.4,1.5,dn,0,.4</desc>
 	<desc>text,27.4,1.5,dn,sans_serif,0.4</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="20px" fill="red" x="1370.0" y="75.0">dn</text>
-	<desc># ORIG: 9,26.4,13.5,dn,0,.4</desc>
+	<desc># ORIG [0658]: 9,26.4,13.5,dn,0,.4</desc>
 	<desc>text,26.4,13.5,dn,sans_serif,0.4</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="20px" fill="red" x="1320.0" y="675.0">dn</text>
-	<desc># ORIG: 9,20.4,16.5,up,0,.4</desc>
+	<desc># ORIG [0659]: 9,20.4,16.5,up,0,.4</desc>
 	<desc>text,20.4,16.5,up,sans_serif,0.4</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="20px" fill="red" x="1019.9999999999999" y="825.0">up</text>
-	<desc># ORIG: 9,3.4,4.5,dn,0,.4</desc>
+	<desc># ORIG [0660]: 9,3.4,4.5,dn,0,.4</desc>
 	<desc>text,3.4,4.5,dn,sans_serif,0.4</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="20px" fill="red" x="170.0" y="225.0">dn</text>
 	<desc>#  Wights</desc>
-	<desc># ORIG: 9,29.3,6.8,a,0,.5</desc>
+	<desc># ORIG [0662]: 9,29.3,6.8,a,0,.5</desc>
 	<desc>text,29.3,6.8,a,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1465.0" y="340.0">a</text>
-	<desc># ORIG: 9,29.3,7.8,b,0,.5</desc>
+	<desc># ORIG [0663]: 9,29.3,7.8,b,0,.5</desc>
 	<desc>text,29.3,7.8,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1465.0" y="390.0">b</text>
-	<desc># ORIG: 9,29.3,8.8,c,0,.5</desc>
+	<desc># ORIG [0664]: 9,29.3,8.8,c,0,.5</desc>
 	<desc>text,29.3,8.8,c,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1465.0" y="440.00000000000006">c</text>
-	<desc># ORIG: 9,29.3,9.8,d,0,.5</desc>
+	<desc># ORIG [0665]: 9,29.3,9.8,d,0,.5</desc>
 	<desc>text,29.3,9.8,d,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1465.0" y="490.00000000000006">d</text>
-	<desc># ORIG: 9,29.3,10.8,e,0,.5</desc>
+	<desc># ORIG [0666]: 9,29.3,10.8,e,0,.5</desc>
 	<desc>text,29.3,10.8,e,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1465.0" y="540.0">e</text>
-	<desc># ORIG: 9,27.4,8.8,6,0,.7</desc>
+	<desc># ORIG [0667]: 9,27.4,8.8,6,0,.7</desc>
 	<desc>text,27.4,8.8,6,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="1370.0" y="440.00000000000006">6</text>
 	<desc>#  Knight</desc>
-	<desc># ORIG: 9,19.1,8.9,5,0,.7</desc>
+	<desc># ORIG [0669]: 9,19.1,8.9,5,0,.7</desc>
 	<desc>text,19.1,8.9,5,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="955.0000000000001" y="445.0">5</text>
 	<desc>#  Ghouls</desc>
-	<desc># ORIG: 9,1.4,7.6,a,0,.5</desc>
+	<desc># ORIG [0671]: 9,1.4,7.6,a,0,.5</desc>
 	<desc>text,1.4,7.6,a,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="70.0" y="380.0">a</text>
-	<desc># ORIG: 9,0.4,9.6,b,0,.5</desc>
+	<desc># ORIG [0672]: 9,0.4,9.6,b,0,.5</desc>
 	<desc>text,0.4,9.6,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="20.0" y="480.0">b</text>
-	<desc># ORIG: 9,2.4,9.6,b,0,.5</desc>
+	<desc># ORIG [0673]: 9,2.4,9.6,b,0,.5</desc>
 	<desc>text,2.4,9.6,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="120.0" y="480.0">b</text>
-	<desc># ORIG: 9,0.4,11.6,b,0,.5</desc>
+	<desc># ORIG [0674]: 9,0.4,11.6,b,0,.5</desc>
 	<desc>text,0.4,11.6,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="20.0" y="580.0">b</text>
-	<desc># ORIG: 9,2.4,11.6,b,0,.5</desc>
+	<desc># ORIG [0675]: 9,2.4,11.6,b,0,.5</desc>
 	<desc>text,2.4,11.6,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="120.0" y="580.0">b</text>
-	<desc># ORIG: 9,0.4,13.6,b,0,.5</desc>
+	<desc># ORIG [0676]: 9,0.4,13.6,b,0,.5</desc>
 	<desc>text,0.4,13.6,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="20.0" y="680.0">b</text>
-	<desc># ORIG: 9,2.4,13.6,b,0,.5</desc>
+	<desc># ORIG [0677]: 9,2.4,13.6,b,0,.5</desc>
 	<desc>text,2.4,13.6,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="120.0" y="680.0">b</text>
-	<desc># ORIG: 9,1.2,10.8,22,0,.7</desc>
+	<desc># ORIG [0678]: 9,1.2,10.8,22,0,.7</desc>
 	<desc>text,1.2,10.8,22,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="60.0" y="540.0">22</text>
 	<desc>#  Quasqueton</desc>
-	<desc># ORIG: 9,22.4,18.7,a,0,.5</desc>
+	<desc># ORIG [0680]: 9,22.4,18.7,a,0,.5</desc>
 	<desc>text,22.4,18.7,a,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1120.0" y="935.0">a</text>
-	<desc># ORIG: 9,24.4,18.7,b,0,.5</desc>
+	<desc># ORIG [0681]: 9,24.4,18.7,b,0,.5</desc>
 	<desc>text,24.4,18.7,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1220.0" y="935.0">b</text>
-	<desc># ORIG: 9,26.4,18.7,c,0,.5</desc>
+	<desc># ORIG [0682]: 9,26.4,18.7,c,0,.5</desc>
 	<desc>text,26.4,18.7,c,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1320.0" y="935.0">c</text>
-	<desc># ORIG: 9,23.4,20.2,d,0,.5</desc>
+	<desc># ORIG [0683]: 9,23.4,20.2,d,0,.5</desc>
 	<desc>text,23.4,20.2,d,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1170.0" y="1010.0">d</text>
-	<desc># ORIG: 9,25.4,20.2,e,0,.5</desc>
+	<desc># ORIG [0684]: 9,25.4,20.2,e,0,.5</desc>
 	<desc>text,25.4,20.2,e,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1270.0" y="1010.0">e</text>
-	<desc># ORIG: 9,20.4,21.7,f,0,.5</desc>
+	<desc># ORIG [0685]: 9,20.4,21.7,f,0,.5</desc>
 	<desc>text,20.4,21.7,f,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1019.9999999999999" y="1085.0">f</text>
-	<desc># ORIG: 9,22.4,21.7,g,0,.5</desc>
+	<desc># ORIG [0686]: 9,22.4,21.7,g,0,.5</desc>
 	<desc>text,22.4,21.7,g,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1120.0" y="1085.0">g</text>
-	<desc># ORIG: 9,24.4,21.7,h,0,.5</desc>
+	<desc># ORIG [0687]: 9,24.4,21.7,h,0,.5</desc>
 	<desc>text,24.4,21.7,h,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1220.0" y="1085.0">h</text>
-	<desc># ORIG: 9,26.45,21.7,i,0,.5</desc>
+	<desc># ORIG [0688]: 9,26.45,21.7,i,0,.5</desc>
 	<desc>text,26.45,21.7,i,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1322.5" y="1085.0">i</text>
-	<desc># ORIG: 9,28.45,21.7,j,0,.5</desc>
+	<desc># ORIG [0689]: 9,28.45,21.7,j,0,.5</desc>
 	<desc>text,28.45,21.7,j,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1422.5" y="1085.0">j</text>
-	<desc># ORIG: 9,23.4,23.2,k,0,.5</desc>
+	<desc># ORIG [0690]: 9,23.4,23.2,k,0,.5</desc>
 	<desc>text,23.4,23.2,k,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1170.0" y="1160.0">k</text>
-	<desc># ORIG: 9,25.45,23.2,l,0,.5</desc>
+	<desc># ORIG [0691]: 9,25.45,23.2,l,0,.5</desc>
 	<desc>text,25.45,23.2,l,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1272.5" y="1160.0">l</text>
-	<desc># ORIG: 9,22.35,24.7,m,0,.5</desc>
+	<desc># ORIG [0692]: 9,22.35,24.7,m,0,.5</desc>
 	<desc>text,22.35,24.7,m,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1117.5" y="1235.0">m</text>
-	<desc># ORIG: 9,24.4,24.7,n,0,.5</desc>
+	<desc># ORIG [0693]: 9,24.4,24.7,n,0,.5</desc>
 	<desc>text,24.4,24.7,n,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1220.0" y="1235.0">n</text>
-	<desc># ORIG: 9,26.4,24.7,o,0,.5</desc>
+	<desc># ORIG [0694]: 9,26.4,24.7,o,0,.5</desc>
 	<desc>text,26.4,24.7,o,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1320.0" y="1235.0">o</text>
-	<desc># ORIG: 9,27.3,20.8,8,0,.7</desc>
+	<desc># ORIG [0695]: 9,27.3,20.8,8,0,.7</desc>
 	<desc>text,27.3,20.8,8,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="1365.0" y="1040.0">8</text>
 	<desc>#  Shadow Maze</desc>
-	<desc># ORIG: 9,4.3,12.2,a,0,.5</desc>
+	<desc># ORIG [0697]: 9,4.3,12.2,a,0,.5</desc>
 	<desc>text,4.3,12.2,a,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="215.0" y="610.0">a</text>
-	<desc># ORIG: 9,5.5,11.1,b,0,.5</desc>
+	<desc># ORIG [0698]: 9,5.5,11.1,b,0,.5</desc>
 	<desc>text,5.5,11.1,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="275.0" y="555.0">b</text>
-	<desc># ORIG: 9,4.9,10.4,c,0,.5</desc>
+	<desc># ORIG [0699]: 9,4.9,10.4,c,0,.5</desc>
 	<desc>text,4.9,10.4,c,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="245.00000000000003" y="520.0">c</text>
-	<desc># ORIG: 9,3.83,11.8,d,0,.5</desc>
+	<desc># ORIG [0700]: 9,3.83,11.8,d,0,.5</desc>
 	<desc>text,3.83,11.8,d,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="191.5" y="590.0">d</text>
-	<desc># ORIG: 9,3.4,9.3,e,0,.5</desc>
+	<desc># ORIG [0701]: 9,3.4,9.3,e,0,.5</desc>
 	<desc>text,3.4,9.3,e,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="170.0" y="465.00000000000006">e</text>
-	<desc># ORIG: 9,6.1,10.8,4,0,.7</desc>
+	<desc># ORIG [0702]: 9,6.1,10.8,4,0,.7</desc>
 	<desc>text,6.1,10.8,4,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="305.0" y="540.0">4</text>
 	<desc>#  Mummy Maze</desc>
-	<desc># ORIG: 9,12.4,17.7,a,0,.5</desc>
+	<desc># ORIG [0704]: 9,12.4,17.7,a,0,.5</desc>
 	<desc>text,12.4,17.7,a,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="620.0" y="885.0">a</text>
-	<desc># ORIG: 9,11.2,18.9,b,0,.5</desc>
+	<desc># ORIG [0705]: 9,11.2,18.9,b,0,.5</desc>
 	<desc>text,11.2,18.9,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="560.0" y="944.9999999999999">b</text>
-	<desc># ORIG: 9,11.4,16.7,c,0,.5</desc>
+	<desc># ORIG [0706]: 9,11.4,16.7,c,0,.5</desc>
 	<desc>text,11.4,16.7,c,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="570.0" y="835.0">c</text>
-	<desc># ORIG: 9,12.4,14.7,d,0,.5</desc>
+	<desc># ORIG [0707]: 9,12.4,14.7,d,0,.5</desc>
 	<desc>text,12.4,14.7,d,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="620.0" y="735.0">d</text>
-	<desc># ORIG: 9,10.8,14.7,e,0,.5</desc>
+	<desc># ORIG [0708]: 9,10.8,14.7,e,0,.5</desc>
 	<desc>text,10.8,14.7,e,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="540.0" y="735.0">e</text>
-	<desc># ORIG: 9,10.4,16.7,f,0,.5</desc>
+	<desc># ORIG [0709]: 9,10.4,16.7,f,0,.5</desc>
 	<desc>text,10.4,16.7,f,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="520.0" y="835.0">f</text>
 	<desc>#  Spiral Passage</desc>
-	<desc># ORIG: 9,27.4,14.8,7,0,.7</desc>
+	<desc># ORIG [0711]: 9,27.4,14.8,7,0,.7</desc>
 	<desc>text,27.4,14.8,7,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="1370.0" y="740.0">7</text>
 	<desc>#  Mummy labels</desc>
-	<desc># ORIG: 9,16.2,16.8,23,0,.7</desc>
+	<desc># ORIG [0713]: 9,16.2,16.8,23,0,.7</desc>
 	<desc>text,16.2,16.8,23,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="810.0" y="840.0">23</text>
-	<desc># ORIG: 9,11.2,15.8,24,0,.7</desc>
+	<desc># ORIG [0714]: 9,11.2,15.8,24,0,.7</desc>
 	<desc>text,11.2,15.8,24,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="560.0" y="790.0">24</text>
-	<desc># ORIG: 9,9.35,16.05,25,0,.6</desc>
+	<desc># ORIG [0715]: 9,9.35,16.05,25,0,.6</desc>
 	<desc>text,9.35,16.05,25,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="467.5" y="802.5">25</text>
 	<desc>#  Hall of Bone</desc>
-	<desc># ORIG: 9,5.3,15.8,2,0,.7</desc>
+	<desc># ORIG [0717]: 9,5.3,15.8,2,0,.7</desc>
 	<desc>text,5.3,15.8,2,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="265.0" y="790.0">2</text>
-	<desc># ORIG: 9,13.3,21.8,2,0,.7</desc>
+	<desc># ORIG [0718]: 9,13.3,21.8,2,0,.7</desc>
 	<desc>text,13.3,21.8,2,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="665.0" y="1090.0">2</text>
 	<desc>#  Stairway</desc>
-	<desc># ORIG: 9,8.3,20.8,1,0,.7</desc>
+	<desc># ORIG [0720]: 9,8.3,20.8,1,0,.7</desc>
 	<desc>text,8.3,20.8,1,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="415.00000000000006" y="1040.0">1</text>
 	<desc>#  Armory</desc>
-	<desc># ORIG: 9,28.2,18.3,9,0,.7</desc>
+	<desc># ORIG [0722]: 9,28.2,18.3,9,0,.7</desc>
 	<desc>text,28.2,18.3,9,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="1410.0" y="915.0">9</text>
-	<desc># ORIG: 9,29.4,23.2,S,0,.6</desc>
+	<desc># ORIG [0723]: 9,29.4,23.2,S,0,.6</desc>
 	<desc>text,29.4,23.2,S,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="1470.0" y="1160.0">S</text>
 	<desc>#  Zombocalypse</desc>
-	<desc># ORIG: 9,2.88,22.12,a,0,.5</desc>
+	<desc># ORIG [0725]: 9,2.88,22.12,a,0,.5</desc>
 	<desc>text,2.88,22.12,a,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="144.0" y="1106.0">a</text>
-	<desc># ORIG: 9,17.3,24.8,3,0,.7</desc>
+	<desc># ORIG [0726]: 9,17.3,24.8,3,0,.7</desc>
 	<desc>text,17.3,24.8,3,sans_serif,0.7</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="35px" fill="red" x="865.0" y="1240.0">3</text>
-	<desc># ORIG: 9,3.9,25.5,b,0,.5</desc>
+	<desc># ORIG [0727]: 9,3.9,25.5,b,0,.5</desc>
 	<desc>text,3.9,25.5,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="195.0" y="1275.0">b</text>
-	<desc># ORIG: 9,12.6,25.5,b,0,.5</desc>
+	<desc># ORIG [0728]: 9,12.6,25.5,b,0,.5</desc>
 	<desc>text,12.6,25.5,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="630.0" y="1275.0">b</text>
-	<desc># ORIG: 9,13.4,29.8,b,0,.5</desc>
+	<desc># ORIG [0729]: 9,13.4,29.8,b,0,.5</desc>
 	<desc>text,13.4,29.8,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="670.0" y="1490.0">b</text>
-	<desc># ORIG: 9,20.6,26.3,b,0,.5</desc>
+	<desc># ORIG [0730]: 9,20.6,26.3,b,0,.5</desc>
 	<desc>text,20.6,26.3,b,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="1030.0" y="1315.0">b</text>
 	<desc>#  Zombies%21</desc>
-	<desc># ORIG: 9,0.3,15.7,Z,0,.6</desc>
+	<desc># ORIG [0732]: 9,0.3,15.7,Z,0,.6</desc>
 	<desc>text,0.3,15.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="15.0" y="785.0">Z</text>
-	<desc># ORIG: 9,1.3,17.7,Z,0,.6</desc>
+	<desc># ORIG [0733]: 9,1.3,17.7,Z,0,.6</desc>
 	<desc>text,1.3,17.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="65.0" y="885.0">Z</text>
-	<desc># ORIG: 9,4.1,17,Z,0,.6</desc>
+	<desc># ORIG [0734]: 9,4.1,17,Z,0,.6</desc>
 	<desc>text,4.1,17.0,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="204.99999999999997" y="850.0">Z</text>
-	<desc># ORIG: 9,3.4,19.2,Z,0,.6</desc>
+	<desc># ORIG [0735]: 9,3.4,19.2,Z,0,.6</desc>
 	<desc>text,3.4,19.2,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="170.0" y="960.0">Z</text>
-	<desc># ORIG: 9,0.3,20.7,Z,0,.6</desc>
+	<desc># ORIG [0736]: 9,0.3,20.7,Z,0,.6</desc>
 	<desc>text,0.3,20.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="15.0" y="1035.0">Z</text>
 	<desc>#  5</desc>
-	<desc># ORIG: 9,0.5,24.7,Z,0,.6</desc>
+	<desc># ORIG [0738]: 9,0.5,24.7,Z,0,.6</desc>
 	<desc>text,0.5,24.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="25.0" y="1235.0">Z</text>
-	<desc># ORIG: 9,0.3,27.2,Z,0,.6</desc>
+	<desc># ORIG [0739]: 9,0.3,27.2,Z,0,.6</desc>
 	<desc>text,0.3,27.2,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="15.0" y="1360.0">Z</text>
-	<desc># ORIG: 9,0.3,29.7,Z,0,.6</desc>
+	<desc># ORIG [0740]: 9,0.3,29.7,Z,0,.6</desc>
 	<desc>text,0.3,29.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="15.0" y="1485.0">Z</text>
-	<desc># ORIG: 9,2.3,28.2,Z,0,.6</desc>
+	<desc># ORIG [0741]: 9,2.3,28.2,Z,0,.6</desc>
 	<desc>text,2.3,28.2,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="114.99999999999999" y="1410.0">Z</text>
-	<desc># ORIG: 9,3.2,29.7,Z,0,.6</desc>
+	<desc># ORIG [0742]: 9,3.2,29.7,Z,0,.6</desc>
 	<desc>text,3.2,29.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="160.0" y="1485.0">Z</text>
 	<desc>#  10</desc>
-	<desc># ORIG: 9,6.3,29.7,Z,0,.6</desc>
+	<desc># ORIG [0744]: 9,6.3,29.7,Z,0,.6</desc>
 	<desc>text,6.3,29.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="315.0" y="1485.0">Z</text>
-	<desc># ORIG: 9,8.3,28.7,Z,0,.6</desc>
+	<desc># ORIG [0745]: 9,8.3,28.7,Z,0,.6</desc>
 	<desc>text,8.3,28.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="415.00000000000006" y="1435.0">Z</text>
-	<desc># ORIG: 9,11.3,23.7,Z,0,.6</desc>
+	<desc># ORIG [0746]: 9,11.3,23.7,Z,0,.6</desc>
 	<desc>text,11.3,23.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="565.0" y="1185.0">Z</text>
-	<desc># ORIG: 9,12.3,23.7,Z,0,.6</desc>
+	<desc># ORIG [0747]: 9,12.3,23.7,Z,0,.6</desc>
 	<desc>text,12.3,23.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="615.0" y="1185.0">Z</text>
-	<desc># ORIG: 9,14.3,23.7,Z,0,.6</desc>
+	<desc># ORIG [0748]: 9,14.3,23.7,Z,0,.6</desc>
 	<desc>text,14.3,23.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="715.0" y="1185.0">Z</text>
 	<desc>#  15</desc>
-	<desc># ORIG: 9,13.3,26.7,Z,0,.6</desc>
+	<desc># ORIG [0750]: 9,13.3,26.7,Z,0,.6</desc>
 	<desc>text,13.3,26.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="665.0" y="1335.0">Z</text>
-	<desc># ORIG: 9,14.3,28.7,Z,0,.6</desc>
+	<desc># ORIG [0751]: 9,14.3,28.7,Z,0,.6</desc>
 	<desc>text,14.3,28.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="715.0" y="1435.0">Z</text>
-	<desc># ORIG: 9,17.3,29.7,Z,0,.6</desc>
+	<desc># ORIG [0752]: 9,17.3,29.7,Z,0,.6</desc>
 	<desc>text,17.3,29.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="865.0" y="1485.0">Z</text>
-	<desc># ORIG: 9,18.8,28.7,Z,0,.6</desc>
+	<desc># ORIG [0753]: 9,18.8,28.7,Z,0,.6</desc>
 	<desc>text,18.8,28.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="940.0" y="1435.0">Z</text>
-	<desc># ORIG: 9,19.3,24.7,Z,0,.6</desc>
+	<desc># ORIG [0754]: 9,19.3,24.7,Z,0,.6</desc>
 	<desc>text,19.3,24.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="965.0" y="1235.0">Z</text>
 	<desc>#  20</desc>
-	<desc># ORIG: 9,23.3,29.7,Z,0,.6</desc>
+	<desc># ORIG [0756]: 9,23.3,29.7,Z,0,.6</desc>
 	<desc>text,23.3,29.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="1165.0" y="1485.0">Z</text>
-	<desc># ORIG: 9,24.3,27.7,Z,0,.6</desc>
+	<desc># ORIG [0757]: 9,24.3,27.7,Z,0,.6</desc>
 	<desc>text,24.3,27.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="1215.0" y="1385.0">Z</text>
-	<desc># ORIG: 9,27.8,27.9,Z,0,.6</desc>
+	<desc># ORIG [0758]: 9,27.8,27.9,Z,0,.6</desc>
 	<desc>text,27.8,27.9,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="1390.0" y="1395.0">Z</text>
-	<desc># ORIG: 9,28.5,27.2,Z,0,.6</desc>
+	<desc># ORIG [0759]: 9,28.5,27.2,Z,0,.6</desc>
 	<desc>text,28.5,27.2,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="1425.0" y="1360.0">Z</text>
-	<desc># ORIG: 9,29.3,24.7,Z,0,.6</desc>
+	<desc># ORIG [0760]: 9,29.3,24.7,Z,0,.6</desc>
 	<desc>text,29.3,24.7,Z,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="1465.0" y="1235.0">Z</text>
 	<desc># Arrow and Scale</desc>
-	<desc># ORIG: 1,4,1,4,2.2,1</desc>
+	<desc># ORIG [0763]: 1,4,1,4,2.2,1</desc>
 	<desc>line,4.0,1.0,4.0,2.2,normal</desc>
 	<path stroke="red" stroke-width="5.0" d="M 200.0 50.0 L 200.0 110.00000000000001"/>
-	<desc># ORIG: 5,4,1,3.8,1.5,1</desc>
+	<desc># ORIG [0764]: 5,4,1,3.8,1.5,1</desc>
 	<desc>block,4.0,1.0,3.8,1.5,solid</desc>
-	<desc># ORIG: 99,3.8,1.5,4,1.5,1</desc>
+	<desc># ORIG [0765]: 99,3.8,1.5,4,1.5,1</desc>
 	<desc>continuation,3.8,1.5,4.0,1.5,solid</desc>
-	<desc># ORIG: 99,4,1.5,4,1,99</desc>
+	<desc># ORIG [0766]: 99,4,1.5,4,1,99</desc>
 	<desc>continuation,4.0,1.5,4.0,1.0,block_end</desc>
 	<polygon stroke="red" stroke-width="5.0" points="200.0,50.0 190.0,75.0 200.0,75.0 200.0,50.0" fill="red"/>
-	<desc># ORIG: 9,3.8,0.9,N,0,.6</desc>
+	<desc># ORIG [0767]: 9,3.8,0.9,N,0,.6</desc>
 	<desc>text,3.8,0.9,N,sans_serif,0.6</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="30px" fill="red" x="190.0" y="45.0">N</text>
-	<desc># ORIG: 9,4.2,1.5,1 sq.=,0,.5</desc>
+	<desc># ORIG [0768]: 9,4.2,1.5,1 sq.=,0,.5</desc>
 	<desc>text,4.2,1.5,1 sq.=,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="210.0" y="75.0">1 sq.=</text>
-	<desc># ORIG: 9,4.2,2.0,10 ft.,0,.5</desc>
+	<desc># ORIG [0769]: 9,4.2,2.0,10 ft.,0,.5</desc>
 	<desc>text,4.2,2.0,10 ft.,sans_serif,0.5</desc>
 	<text stroke="red" stroke-width="1.5" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="25px" fill="red" x="210.0" y="100.0">10 ft.</text>
 </svg>

@@ -100,7 +100,7 @@ class Creator(BaseSVGMapper):
         self._seed: str | None = "default"
         random.seed(self._seed)  # For repeatability
         self._elements: list[Element] = []
-        self._logger.debug("initialized")
+        self._logger.debug("creator initialized")
 
     def create(self) -> None:
         """Create SVG from input."""
@@ -112,10 +112,11 @@ class Creator(BaseSVGMapper):
     def _process_lines(self) -> None:
         self._process_preamble()
         for line in self._input_lines:
-            self._logger.debug(f"L: {line}")
+            self._input_line += 1
+            self._logger.debug(f"L [{self._input_line:04d}: {line}")
             if not line:  # Skip blank lines
                 continue
-            san_line = urllib.parse.quote(line, safe="=#/:, ")
+            san_line = urllib.parse.quote(line, safe="=#/:, []")
             self._elements.append(Desc(text=san_line))
             if san_line.startswith("#"):
                 continue  # Skip comments
@@ -128,17 +129,17 @@ class Creator(BaseSVGMapper):
         try:
             (obj_kind, startx, starty, endx, endy, obj_type) = line.split(",")
         except ValueError as exc:
-            raise SVGBadInputError(str(exc)) from exc
+            self._raise(SVGBadInputError(original_exception=exc))
         self._logger.debug(
             f"P: {obj_kind}, {startx}, {starty}, {endx}, {endy}, {obj_type}"
         )
         try:
             o_kind = MapObjectKind(obj_kind)
         except ValueError as exc:
-            raise SVGBadInputError(str(exc)) from exc
+            self._raise(SVGBadInputError(original_exception=exc))
         if o_kind == MapObjectKind.CONTINUATION:
             if self._prev_kind is None:
-                raise SVGBadInputError("Cannot continue unknown kind")
+                self._raise(SVGBadInputError("Cannot continue unknown kind"))
         # Check for directives and cease line processing afterwards if found
         if o_kind in (
             MapObjectKind.SEED,
@@ -162,7 +163,7 @@ class Creator(BaseSVGMapper):
         try:
             return float(n)
         except ValueError as exc:
-            raise SVGBadNumericInputError(str(exc)) from exc
+            self._raise(SVGBadNumericInputError(original_exception=exc))
 
     def _process_directive(
         self,
@@ -196,7 +197,7 @@ class Creator(BaseSVGMapper):
                     self._seed = seed  # All falsy seeds are nonreproducible.
                     random.seed(self._seed)
                 case _:
-                    raise SVGBadInputError(o_kind)  # Should not happen
+                    self._raise(SVGBadInputError(o_kind))  # Should not happen
             return
         if o_kind == MapObjectKind.TEXT:
             fstartx = self._to_float(startx)
@@ -213,7 +214,7 @@ class Creator(BaseSVGMapper):
             iendx = int(endx)
             iendy = int(endy)
         except ValueError as exc:
-            raise SVGBadNumericInputError(str(exc)) from exc
+            self._raise(SVGBadNumericInputError(original_exception=exc))
         self._makegrid(istartx, istarty, iendx, iendy)
 
     def _process_svg_obj(
@@ -245,7 +246,7 @@ class Creator(BaseSVGMapper):
             case MapObjectKind.CONTINUATION:
                 self._process_continuation(x1, y1, x2, y2, obj_type)
             case _:
-                raise SVGBadInputError(o_kind)
+                self._raise(SVGBadInputError(o_kind))
         if o_kind != MapObjectKind.CONTINUATION:
             self._prev_kind = o_kind
 
@@ -394,32 +395,52 @@ class Creator(BaseSVGMapper):
                 try:
                     self._crinkle_type = CrinkleType(parts[3].lower())
                 except ValueError as exc:
-                    raise SVGBadInputError(f"Bad crinkle type: {exc}") from exc
+                    self._raise(
+                        SVGBadInputError(
+                            message=f"Bad crinkle type: {exc!s}",
+                            original_exception=exc,
+                        )
+                    )
             if subfields > 2:
                 try:
                     self._curviness = float(parts[2])
                     if self._curviness < 0:
-                        raise SVGBadNumericInputError(
-                            f"Bad curviness: {self._curviness}"
+                        self._raise(
+                            SVGBadNumericInputError(
+                                f"Bad curviness: {self._curviness}"
+                            )
                         )
                 except ValueError as exc:
-                    raise SVGBadNumericInputError(
-                        f"Bad curviness: {exc}"
-                    ) from exc
+                    self._raise(
+                        SVGBadNumericInputError(
+                            message=f"Bad curviness: {exc!s}",
+                            original_exception=exc,
+                        )
+                    )
             if subfields > 1:
                 try:
                     self._num_points = int(parts[1])
                     if self._num_points < 2:
-                        raise SVGBadNumericInputError(
-                            "Bad number of interpolated points:"
-                            f" {self._num_points}"
+                        self._raise(
+                            SVGBadNumericInputError(
+                                "Bad number of interpolated points:"
+                                f" {self._num_points}"
+                            )
                         )
                 except ValueError as exc:
-                    raise SVGBadNumericInputError(
-                        f"Bad number of interpolated points: {exc}"
-                    ) from exc
+                    self._raise(
+                        SVGBadNumericInputError(
+                            message=(
+                                f"Bad number of interpolated points: {exc!s}"
+                            ),
+                            original_exception=exc,
+                        )
+                    )
         else:
-            style = Line(sstyle)
+            try:
+                style = Line(sstyle)
+            except Exception as exc:
+                raise SVGBadInputError(original_exception=exc) from exc
 
         da: list[Number] | None = None
         match style:
@@ -642,7 +663,7 @@ class Creator(BaseSVGMapper):
                 xx = x1 + (0.2 * sc)
                 yy = y1 - (0.1 * sc)
             case _:
-                raise SVGBadInputError(style)
+                self._raise(SVGBadInputError(style))
         self._elements.append(
             Rect(
                 height=ht,
@@ -702,17 +723,32 @@ class Creator(BaseSVGMapper):
             try:
                 rotation = float(parts[3])
             except ValueError as exc:
-                raise SVGBadNumericInputError(f"Bad rotation: {exc}") from exc
+                self._raise(
+                    SVGBadNumericInputError(
+                        message=f"Bad rotation: {exc!s}",
+                        original_exception=exc,
+                    )
+                )
         if subfields > 2:
             try:
                 dy = float(parts[2]) * sc
             except ValueError as exc:
-                raise SVGBadNumericInputError(f"Bad y-radius: {exc}") from exc
+                self._raise(
+                    SVGBadNumericInputError(
+                        message=f"Bad y-radius: {exc!s}",
+                        original_exception=exc,
+                    )
+                )
         if subfields > 1:
             try:
                 dx = float(parts[1]) * sc
             except ValueError as exc:
-                raise SVGBadNumericInputError(f"Bad x-radius: {exc}") from exc
+                self._raise(
+                    SVGBadNumericInputError(
+                        message=f"Bad x-radius: {exc!s}",
+                        original_exception=exc,
+                    )
+                )
 
         da: list[Number] | None = None
         match style:
@@ -787,7 +823,7 @@ class Creator(BaseSVGMapper):
             case Block.BLOCK_END:
                 fill = cl  # Not used
             case _:
-                raise SVGBadInputError(style)
+                self._raise(SVGBadInputError(style))
 
         if self._current_polygon is None:
             self._current_polygon = Polygon(
@@ -826,7 +862,7 @@ class Creator(BaseSVGMapper):
             or (self._current_polygon.points is None)
             or len(self._current_polygon.points) < 1
         ):
-            raise SVGMapperError("No block to close")
+            self._raise(SVGMapperError("No block to close"))
         self._logger.debug(
             f"CLOSE_BLOCK current polygon: {self._current_polygon}"
             f" len={len(self._current_polygon.points)}"
@@ -863,23 +899,35 @@ class Creator(BaseSVGMapper):
             try:
                 self._curviness = float(parts[2])
                 if self._curviness < 0:
-                    raise SVGBadNumericInputError(
-                        f"Bad curviness: {self._curviness}"
+                    self._raise(
+                        SVGBadNumericInputError(
+                            f"Bad curviness: {self._curviness}"
+                        )
                     )
             except ValueError as exc:
-                raise SVGBadNumericInputError(f"Bad curviness: {exc}") from exc
+                self._raise(
+                    SVGBadNumericInputError(
+                        message=f"Bad curviness: {exc!s}",
+                        original_exception=exc,
+                    )
+                )
         if subfields > 1:
             try:
                 self._num_points = int(parts[1])
                 if self._num_points < 2:
-                    raise SVGBadNumericInputError(
-                        "Bad number of interpolated points:"
-                        f" {self._num_points}"
+                    self._raise(
+                        SVGBadNumericInputError(
+                            "Bad number of interpolated points:"
+                            f" {self._num_points}"
+                        )
                     )
             except ValueError as exc:
-                raise SVGBadNumericInputError(
-                    f"Bad number of interpolated points: {exc}"
-                ) from exc
+                self._raise(
+                    SVGBadNumericInputError(
+                        message=f"Bad number of interpolated points: {exc!s}",
+                        original_exception=exc,
+                    )
+                )
         self._logger.debug(
             f"CAVE: {style!s}, n={self._num_points}, c={self._curviness}"
         )
@@ -907,7 +955,7 @@ class Creator(BaseSVGMapper):
             case Cave.CAVE_END:
                 fill = cl  # Not used
             case _:
-                raise SVGBadInputError(style)
+                self._raise(SVGBadInputError(style))
 
         self._logger.debug(f"CAVE style {style}")
 
@@ -975,7 +1023,7 @@ class Creator(BaseSVGMapper):
                 fill = self._wave()
                 sw = self._settings.thin_stroke
             case _:
-                raise SVGBadInputError(style)
+                self._raise(SVGBadInputError(style))
         self._elements.append(
             SVGEllipse(
                 fill=fill,
@@ -1076,7 +1124,7 @@ class Creator(BaseSVGMapper):
                 cx2 = x1 + (0.05 * sc)
                 cy2 = y1
             case _:
-                raise SVGBadInputError(style)
+                self._raise(SVGBadInputError(style))
         self._elements.append(
             SVGEllipse(
                 stroke=cl,
@@ -1120,7 +1168,7 @@ class Creator(BaseSVGMapper):
                 family = "serif"
                 # Close to X3-X4
             case _:
-                raise SVGBadInputError(font)
+                self._raise(SVGBadInputError(font))
         self._elements.append(
             SVGText(
                 x=x1,
@@ -1138,8 +1186,11 @@ class Creator(BaseSVGMapper):
         self, x1: Number, y1: Number, x2: Number, y2: Number, obj_type: str
     ) -> None:
         if self._prev_kind not in (MapObjectKind.BLOCK, MapObjectKind.CAVE):
-            raise SVGBadInputError(
-                f"Can only continue Blocks and Caves, not {self._prev_kind}"
+            self._raise(
+                SVGBadInputError(
+                    "Can only continue Blocks and Caves, not"
+                    f" {self._prev_kind}"
+                )
             )
         match self._prev_kind:
             case MapObjectKind.BLOCK:
