@@ -145,9 +145,6 @@ extend = "ruff-shared.toml"
     "S311",     # we're drawing D&D maps, not securing financial transactions
     "S318",     # we trust this XML since we wrote it
 ]
-"src/svgmapper/services/converter.py" = [
-    "RET503",   # We covered all the cases; it never makes it out of the match
-]
 
 [tool.ruff.lint.isort]
 known-first-party = ["svgmapper", "tests"]

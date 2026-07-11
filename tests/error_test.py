@@ -41,6 +41,7 @@ def test_errors(tmp_path: Path) -> None:
         SVGBadInputError,
         match=(
             "SVGBadInputError from 'ValueError: 'goofy' is not a valid Line'"
+            " at input line 2"
         ),
     ):
         creator.create()

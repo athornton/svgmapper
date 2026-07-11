@@ -224,8 +224,15 @@ class Door(MapObject):
                 raise SVGBadNumericInputError(f"{cls.__name__}: {number}")
 
 
+# SpiralStairs, Seed, Color, and Regrid are never actually used; they are
+# just placeholders so that all fields in the input map to some object in the
+# input model.
+
+
 class SpiralStairs(MapObject):
     """Spiral Staircase."""
+
+    # There are no variants of SpiralStairs.
 
 
 class Toilet(MapObject):

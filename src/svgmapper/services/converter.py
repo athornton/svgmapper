@@ -124,9 +124,11 @@ class Converter(BaseSVGMapper):
             self._raise(SVGBadNumericInputError(original_exception=exc))
         return str(Text.from_int(i_endy))
 
-    def _get_o_type_other(
+    def _get_o_type_other(  # noqa: RET503
         self, o_kind: MapObject, i_type: int, obj_type: str
     ) -> MapObject | None:
+        # Ruff doesn't understand that we always either return or raise inside
+        # the match, hence the "noqa".
         match o_kind:
             case MapObjectKind.LINE:
                 return Line.from_int(i_type)

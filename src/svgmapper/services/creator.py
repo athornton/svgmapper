@@ -113,7 +113,7 @@ class Creator(BaseSVGMapper):
         self._process_preamble()
         for line in self._input_lines:
             self._input_line += 1
-            self._logger.debug(f"L [{self._input_line:04d}: {line}")
+            self._logger.debug(f"L [{self._input_line:04d}]: {line}")
             if not line:  # Skip blank lines
                 continue
             san_line = urllib.parse.quote(line, safe="=#/:, []")
@@ -440,7 +440,7 @@ class Creator(BaseSVGMapper):
             try:
                 style = Line(sstyle)
             except Exception as exc:
-                raise SVGBadInputError(original_exception=exc) from exc
+                self._raise(SVGBadInputError(original_exception=exc))
 
         da: list[Number] | None = None
         match style:
