@@ -1,0 +1,574 @@
+# Labyrinth
+
+# Background
+block,0,0,30,0,solid
+continuation,30,0,30,30,solid
+continuation,30,30,0,30,solid
+continuation,0,30,0,0,block_end
+
+# Gelatinous cube maze
+color,white,,,,
+block,0,30,0,13,white
+continuation,0,12,2,12,white
+continuation,2,12,2,15,white
+continuation,2,15,15,15,white
+continuation,15,15,15,30,white
+continuation,15,30,0,30,block_end
+
+# Minotaur maze
+ellipse,7.5,7.5,7,7,white
+
+# Longbeards' realm
+block,14,2,15,2,white
+continuation,15,2,15,3,white
+continuation,15,3,14,3,white
+continuation,14,3,14,2,block_end
+
+block,14,3,15,3,white
+continuation,15,3,15,5,white
+continuation,15,5,14,4,white
+continuation,14,4,14,3,block_end
+
+block,15,2,20,2,white
+continuation,20,2,20,5,white
+continuation,20,5,18,5,white
+continuation,18,5,16,5,white
+continuation,16,5,16,13,white
+continuation,16,13,17,13,white
+continuation,17,13,17,14,white
+continuation,17,14,14,14,white
+continuation,14,14,14,12,white
+continuation,14,12,15,12,white
+continuation,15,2,15,2,block_end
+
+block,17,7,17,9,white
+continuation,17,9,20,9,white
+continuation,20,9,20,8,white
+continuation,20,8,21,8,white
+continuation,21,8,21,7,white
+continuation,21,7,17,7,block_end
+
+block,17,5,18,5,white
+block,18,5,18,7,white
+block,18,7,17,7,white
+block,17,7,17,5,block_end
+
+block,26,0,29,0,white
+continuation,29,0,29,2,white
+continuation,29,2,26,2,white
+continuation,26,2,26,0,block_end
+
+block,28,3,29,3,white
+continuation,29,3,29,5,white
+continuation,29,5,28,5,white
+continuation,28,5,28,3,block_end
+
+block,28,5,30,5,white
+continuation,30,5,30,7,white
+continuation,30,7,28,7,white
+continuation,28,7,28,5,block_end
+
+# Jack and Ennis
+
+block,27,7,30,7,white
+continuation,30,7,30,17,white
+continuation,30,17,26,17,white
+continuation,26,17,26,16,white
+continuation,26,16,27,16,white
+continuation,27,16,27,7,block_end
+
+block,30,17,30,21,white
+continuation,30,21,28,21,white
+continuation,28,21,28,22,white
+continuation,28,22,29,22,white
+continuation,29,22,29,23,white
+continuation,29,23,27,23,white
+continuation,27,23,27,20,white
+continuation,27,20,26,20,white
+continuation,26,20,26,19,white
+continuation,26,19,29,19,white
+continuation,29,19,29,17,white
+continuation,29,17,30,17,block_end
+
+cave,26.5,19,27,19,white:4:0.8
+continuation,27,19,24,16,white:10
+continuation,24,16,18,16,white
+continuation,18,16,17,15,white:4
+continuation,17,15,17,29,white:20
+continuation,17,29,18,30,white
+continuation,18,30,30,30,white
+continuation,30,30,30,25,white
+continuation,30,25,29,24,white:4
+continuation,29,25,26.5,25,white:10
+continuation,26.5,25,26.5,19,cave_end
+
+block,18,30,30,30,white
+continuation,30,30,30,27,white
+continuation,30,27,29,27,white
+continuation,29,27,29,29,white
+continuation,29,29,18,29,white
+continuation,18,29,18,30,block_end
+
+# Teleporter maze
+
+## Cross at (22,1): 15.1
+block,23,1,24,1,white
+continuation,24,1,24,4,white
+continuation,24,4,23,4,white
+continuation,23,4,23,1,block_end
+block,22,2,25,2,white
+continuation,25,2,25,3,white
+continuation,25,3,22,3,white
+continuation,22,3,22,2,block_end
+
+## Cross at (24,4): 15.2
+block,25,4,26,4,white
+continuation,26,4,26,7,white
+continuation,26,7,25,7,white
+continuation,25,7,25,4,block_end
+block,24,5,27,5,white
+continuation,27,5,27,6,white
+continuation,27,6,24,6,white
+continuation,24,6,24,5,block_end
+
+## Cross at (23,8): 15.3
+block,24,8,25,8,white
+continuation,25,8,25,11,white
+continuation,25,11,24,11,white
+continuation,24,11,24,8,block_end
+block,23,9,26,9,white
+continuation,26,9,26,10,white
+continuation,26,10,23,10,white
+continuation,23,10,23,9,block_end
+
+## Cross at (19,10): 15.4
+block,20,10,21,10,white
+continuation,21,10,21,13,white
+continuation,21,13,20,13,white
+continuation,20,13,20,10,block_end
+block,19,11,22,11,white
+continuation,22,11,22,12,white
+continuation,22,12,19,12,white
+continuation,19,12,19,11,block_end
+
+## Cross at (22,12): 15.5
+block,23,12,24,12,white
+continuation,24,12,24,15,white
+continuation,24,15,23,15,white
+continuation,23,15,23,12,block_end
+block,22,13,25,13,white
+continuation,25,13,25,14,white
+continuation,25,14,22,14,white
+continuation,22,14,22,13,block_end
+
+# Concealed passages
+
+block,20,4.25,24.25,4.25,white
+continuation,24.25,4.25,24.25,3.25,white
+continuation,24.25,3.25,26.25,3.25,white
+continuation,26.25,3.25,26.25,2,white
+continuation,26.25,2,26.75,2,white
+continuation,26.75,2,26.75,3.25,white
+continuation,26.75,3.25,28,3.25,white
+continuation,28,3.25,28,3.75,white
+continuation,28,3.75,24.75,3.75,white
+continuation,24.75,3.75,24.75,4.75,white
+continuation,24.75,4.75,20,4.75,white
+continuation,20,4.75,20,4.25,block_end
+
+# Corridors to Minotaur
+block,7,15,7,14,white
+continuation,7,14,8,14,white
+continuation,8,14,8,15,white
+continuation,8,15,7,15,block_end
+
+block,14,7,14,8,white
+continuation,14,8,15,8,white
+continuation,15,8,15,7,white
+continuation,15,7,14,7,block_end
+
+# Back to drawing blue-on-white
+color,#1EAED0,,,,
+
+## Pits
+block,14,3,15,3,hatched_thin
+continuation,15,3,15,5,hatched_thin
+continuation,15,5,14,4,hatched_thin
+continuation,14,4,14,3,block_end
+#continuation,14,4.5,14,3,hatched_thin
+#continuation,14,5,14,3,block_end
+
+block,27,7,30,7,hatched_thin
+continuation,30,7,30,13,hatched_thin
+continuation,30,13,27,13,hatched_thin
+continuation,27,13,27,7,block_end
+
+block,6,21,8,21,hatched_thin
+block,8,21,8,23,hatched_thin
+block,8,23,6,23,hatched_thin
+block,6,23,6,21,block_end
+
+block,0,12,2,12,hatched_thin
+block,2,12,2,18,hatched_thin
+block,2,18,0,18,hatched_thin
+block,0,18,0,12,block_end
+
+block,27,27,30,27,hatched_thin
+block,30,27,30,30,hatched_thin
+block,30,30,27,30,hatched_thin
+block,27,30,27,27,block_end
+
+block,9,28,14,28,hatched
+block,14,28,14,30,hatched
+block,14,30,9,30,hatched
+block,9,30,9,28,block_end
+
+# River
+cave,16,0,16,5.5,wave_thin:10:0.6
+cave,16,5.5,18,8,wave_thin:30
+cave,18,8,18,24,wave_thin
+cave,18,24,27,27.7,wave_thin
+cave,27,27.7,27,27,wave_thin
+cave,27,27,18.5,23.5,wave_thin
+cave,18.5,23.5,18.5,8,wave_thin
+cave,18.5,8,16.5,5,wave_thin
+cave,16.5,5,16.5,0,wave_thin
+cave,16.5,0,16,0,cave_end
+
+# Minotaur Maze
+## Big circles
+ellipse,7.5,7.5,7,7,white
+ellipse,7.5,7.5,6,6,white
+ellipse,7.5,7.5,5,5,white
+ellipse,7.5,7.5,4,4,white
+ellipse,7.5,7.5,3,3,white
+ellipse,7.5,7.5,2,2,white
+ellipse,7.5,7.5,1,1,white
+
+# Punch some holes
+color,white,,,,
+## Holes for doors
+ellipse,7.5,1.5,0.5,0.5,white
+#ellipse,7.5,13.5,0.5,0.5,white
+#ellipse,7.5,3.5,0.5,0.5,white
+#ellipse,7.5,11.5,0.5,0.5,white
+#ellipse,7.5,5.5,0.5,0.5,white
+ellipse,7.5,9.5,0.5,0.5,white
+#ellipse,1.5,7.5,0.5,0.5,white
+#ellipse,13.5,7.5,0.5,0.5,white
+#ellipse,3.5,7.5,0.5,0.5,white
+#ellipse,11.5,7.5,0.5,0.5,white
+#ellipse,5.5,7.5,0.5,0.5,white
+#ellipse,9.5,7.5,0.5,0.5,white
+ellipse,11.5,7.5,0.5,0.5,white
+
+#ellipse,8.207,8.207,0.5,0.5,white
+#ellipse,8.207,6.793,0.5,0.5,white
+#ellipse,6.793,8.207,0.5,0.5,white
+ellipse,6.793,6.793,0.5,0.5,white
+#ellipse,9.621,9.621,0.5,0.5,white
+#ellipse,9.621,5.379,0.5,0.5,white
+#ellipse,5.379,9.621,0.5,0.5,white
+ellipse,5.379,5.379,0.5,0.5,white
+#ellipse,11.036,11.036,0.5,0.5,white
+#ellipse,11.036,3.964,0.5,0.5,white
+ellipse,3.964,11.036,0.5,0.5,white
+#ellipse,3.964,3.964,0.5,0.5,white
+
+# Back to blue
+color,#1EAED0,,,,
+# Regrid
+regrid,0,0,30,30,
+# Edge
+line,0,0,0,30,thick
+line,0,30,30,30,thick
+line,30,30,30,0,thick
+line,30,0,0,0,thick
+
+# Cube maze edge
+line,2,15,15,15,normal
+line,15,15,15,30,normal
+
+## Continuations from other levels
+### Grand Staircase
+line,9,24,5,24,normal
+line,5,24,5,20,normal
+line,5,20,9,20,normal
+line,9,20,9,24,normal
+
+### Well
+ellipse,15.5,14.5,0.25,0.25,white
+ellipse,15.5,14.5,0.25,0.25,hatched
+
+# Gelatinous Cube Maze
+
+## Hubert's Lair
+
+line,12,22,14,22,normal
+line,14,22,14,24,normal
+line,14,24,12,24,normal
+line,12,24,12,22,normal
+
+### Horizontal
+line,14,26,15,26,normal
+line,12,21,15,21,normal
+line,11,18,15,18,normal
+line,14,16,15,16,normal
+line,12,27,14,27,normal
+line,13,25,14,25,normal
+line,13,17,14,17,normal
+line,12,19,13,19,normal
+line,9,26,11,26,normal
+line,10,23,11,23,normal
+line,9,21,11,21,normal
+line,7,16,9,16,normal
+line,10,22,12,22,normal
+line,9,19,10,19,normal
+line,8,28,9,28,normal
+line,6,29,8,29,normal
+line,2,28,6,28,normal
+line,1,21,5,21,normal
+line,0,22,2,22,normal
+line,1,23,2,23,normal
+line,3,25,5,25,normal
+line,4,26,6,26,normal
+line,2,20,4,20,normal
+line,5,18,6,18,normal
+line,4,16,5,16,normal
+line,4,19,5,19,normal
+line,4,27,5,27,normal
+
+### Vertical
+line,13,24,13,26,normal
+line,12,25,12,27,normal
+line,14,19,14,20,normal
+line,13,19,13,21,normal
+line,14,16,14,17,normal
+line,13,16,13,17,normal
+line,12,16,12,18,normal
+line,11,16,11,19,normal
+line,11,20,11,21,normal
+line,12,19,12,20,normal
+line,10,15,10,16,normal
+line,10,17,10,20,normal
+line,9,17,9,18,normal
+line,11,27,11,28,normal
+line,10,27,10,28,normal
+line,9,27,9,25,normal
+line,10,24,10,25,normal
+line,11,24,11,25,normal
+line,10,24,11,24,normal
+line,7,16,7,19,normal
+line,8,17,8,20,normal
+line,7,29,7,25,normal
+line,8,27,8,24,normal
+line,3,15,3,18,normal
+line,2,18,2,19,normal
+line,1,19,1,21,normal
+line,3,21,3,22,normal
+line,4,22,4,24,normal
+line,3,23,3,26,normal
+line,2,25,2,29,normal
+line,1,28,1,30,normal
+line,3,30,3,29,normal
+line,5,30,5,29,normal
+line,2,22,2,23,normal
+line,4,28,4,29,normal
+line,6,27,6,28,normal
+line,6,15,6,17,normal
+line,6,18,6,20,normal
+line,4,16,4,19,normal
+line,5,17,5,18,normal
+line,1,24,1,27,normal
+line,3,19,3,20,normal
+line,5,27,5,28,normal
+line,3,27,3,28,normal
+line,6,24,6,25,normal
+
+# Minotaur Maze
+line,11.743,3.257,12.45,2.55,normal
+line,1.5,7.5,2.5,7.5,normal
+line,10.328,10.328,11.036,11.036,normal
+line,7.5,4.5,7.5,3.5,normal
+line,6.086,8.914,5.379,9.621,normal
+line,5.5,7.5,6.5,7.5,normal
+
+# Longbeards' and Ogres'
+line,15,5,15,12,normal
+line,14,12,16,12,normal
+line,16,5,20,5,normal
+line,17,2,17,5,normal
+line,20,2,20,5,normal
+line,20,7,20,9,normal
+line,26,2,29,2,normal
+line,27,7,27,24,normal
+line,28,2.5,28,7,normal
+line,28,0,28,2,normal
+line,27,14,30,14,normal
+line,28,13,28,14,normal
+line,26.7,21,30,21,normal
+line,27,19,30,19,normal
+line,26,17,30,17,normal
+
+# Toilet Partitions
+line,14,2.5,15,2.5,thin
+line,15,2.5,15,4,thin
+line,28,6.5,30,6.5,thin
+line,28.5,6.5,28.5,7,thin
+line,29,6.5,29,7,thin
+line,29.5,6.5,29.5,7,thin
+
+# Grand Staircase
+line,5,23,6,23,thin
+line,5,22.8,6,22.8,thin
+line,5,22.6,6,22.6,thin
+line,5,22.4,6,22.4,thin
+line,5,22.2,6,22.2,thin
+line,6,23,6,24,thin
+line,6.2,23.1,6.2,23.9,thin
+line,6.4,23.2,6.4,23.8,thin
+line,6.6,23.3,6.6,23.6,thin
+line,6.8,23.4,6.8,23.5,thin
+line,6,21,6,20,dashed
+
+# Stairways
+spiral_stairs,1.5,22.5,0,0,
+spiral_stairs,28.5,22.5,0,0,
+spiral_stairs,16.5,13.5,0,0,
+
+# Doors
+door,7,15,0,0,horizontal
+door,7,14.5,0,0,horizontal
+door,5,24,0,0,horizontal
+door,13.75,2.5,0,0,horizontal
+door,14.25,2.5,0,0,horizontal
+door,27.75,6.5,0,0,horizontal
+door,28.25,6.5,0,0,horizontal
+door,28.75,6.5,0,0,horizontal
+door,29.25,6.5,0,0,horizontal
+door,29,17,0,0,horizontal
+door,29,19,0,0,horizontal
+door,27,21,0,0,horizontal
+door,15,12,0,0,horizontal
+door,17,5,0,0,horizontal
+door,26,2,0,0,horizontal
+door,29,14,0,0,horizontal
+
+door,12,22,0,0,vertical
+door,14.5,7,0,0,vertical
+door,15,7,0,0,vertical
+door,17,3,0,0,vertical
+door,27,16,0,0,vertical
+door,27,19,0,0,vertical
+door,28,13,0,0,vertical
+door,28,1,0,0,vertical
+door,28,3,0,0,vertical
+door,20,4,0,0,vertical
+door,20,7,0,0,vertical
+
+# Toilets
+toilet,14.25,2.75,0,0,vertical_reversed
+toilet,14.75,2.75,0,0,vertical_reversed
+toilet,28.25,6.75,0,0,vertical_reversed
+toilet,28.75,6.75,0,0,vertical_reversed
+toilet,29.25,6.75,0,0,vertical_reversed
+toilet,29.75,6.75,0,0,vertical_reversed
+toilet,27.5,13.5,0,0,horizontal
+
+# Stairway labels
+text,0.2,22.7,dn,sans_serif,0.6
+text,27.2,22.7,dn,sans_serif,0.6
+text,15.2,13.7,dn,sans_serif,0.6
+
+# Text
+## Cube Maze
+text,3.35,27.65,a,sans_serif,0.5
+text,13.35,24.65,b,sans_serif,0.5
+text,13.35,16.65,c,sans_serif,0.5
+
+## Teleporters
+### 15.1
+text,23.35,1.65,B,sans_serif,0.5
+text,22.35,2.65,A,sans_serif,0.5
+text,24.35,2.65,C,sans_serif,0.5
+text,23.35,3.65,D,sans_serif,0.5
+### 15.2
+text,25.35,4.65,B,sans_serif,0.5
+text,24.35,5.65,E,sans_serif,0.5
+text,26.35,5.65,G,sans_serif,0.5
+text,25.35,6.65,F,sans_serif,0.5
+### 15.3
+text,24.35,8.65,C,sans_serif,0.5
+text,23.35,9.65,H,sans_serif,0.5
+text,25.35,9.65,I,sans_serif,0.5
+text,24.35,10.65,E,sans_serif,0.5
+### 15.4
+text,20.35,10.65,D,sans_serif,0.5
+text,19.35,11.65,J,sans_serif,0.5
+text,21.35,11.65,H,sans_serif,0.5
+text,20.35,12.65,F,sans_serif,0.5
+### 15.5
+text,23.35,12.65,G,sans_serif,0.5
+text,22.35,13.65,J,sans_serif,0.5
+text,24.35,13.65,I,sans_serif,0.5
+text,23.35,14.65,K,sans_serif,0.5
+### Longbeards'
+text,20.35,7.65,A,sans_serif,0.5
+### Ogres'
+text,26.35,16.65,K,sans_serif,0.5
+
+## Room numbers
+### Grand Staircase
+text,8.3,20.9,1,sans_serif,0.6
+### Gelatinous Cube Maze
+text,8.3,19.9,2,sans_serif,0.6
+### Hubert's Lair
+text,15.3,22.9,3,sans_serif,0.6
+### Minotaur Labyrinth
+text,7.3,7.9,4,sans_serif,0.6
+### Watering Hole
+text,15.3,5.9,5,sans_serif,0.6
+### Grono's Room
+text,14.3,12.9,6,sans_serif,0.6
+### Janice's Shop
+text,18.3,3.9,7,sans_serif,0.6
+### Longbeards' Larder
+text,19.3,7.9,8,sans_serif,0.6
+### Longbeards' Living Room
+text,26.3,0.9,9,sans_serif,0.6
+### Longbeards' Bedroom
+text,28.2,1.9,10,sans_serif,0.6
+### Toilets
+text,15.2,2.9,11,sans_serif,0.6
+text,28.2,13.9,11,sans_serif,0.6
+text,28.2,5.9,11,sans_serif,0.6
+### Ranch House
+text,28.2,15.9,12,sans_serif,0.6
+### Ogres' Bedroom
+text,28.2,19.9,13,sans_serif,0.6
+### Brokeback Cavern
+text,22.2,22.9,14,sans_serif,0.6
+### Pit to Sewers
+text,11.2,28.9,16,sans_serif,0.6
+text,1.2,14.9,16,sans_serif,0.6
+text,28.2,9.9,16,sans_serif,0.6
+text,28.2,28.9,16,sans_serif,0.6
+
+# Arrow and scale
+line,24.2,28,24.2,29.2,normal
+block,24.2,28,24,28.5,solid
+continuation,24,28.5,24.2,28.5,solid
+continuation,24.2,28.5,24.2,28,block_end
+text,24,27.9,N,sans_serif,0.6
+text,24.4,28.5,1 sq.=,sans_serif,0.5
+text,24.4,29,10 ft.,sans_serif,0.5
+# Back to white
+color,white,,,,
+## Label well
+text,14.5,14.5,well,sans_serif,0.4
+## Label teleporters
+text,21.7,1.8,15.1,sans_serif,0.6
+text,23.7,6.8,15.2,sans_serif,0.6
+text,22.7,8.8,15.3,sans_serif,0.6
+text,18.7,10.8,15.4,sans_serif,0.6
+text,24.1,12.8,15.5,sans_serif,0.6

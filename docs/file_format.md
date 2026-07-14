@@ -64,7 +64,8 @@ If any of these is omitted, the previous value of that parameter will be retaine
 
 ### Door
 
-The center of the door is at (`startx`,`starty`).
+The left edge of the ten feet a horizontal door is centered in is at `startx`, and the center of the thickness of a horizontal door is at `starty`.
+For a vertical door, the center of the thickness is at `startx` and the top of the ten feet it is centered in is `starty`.
 The `endx` and `endy` parameters for a door are ignored, and are conventionally set to `0`.
 
 #### Type for door

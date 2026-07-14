@@ -43,10 +43,9 @@ def _build_examples(here: Path) -> None:
     examples = here.parent / "examples"
     svg = examples / "svg"
     svg.mkdir(exist_ok=True)
-    for fn in ("entry", "caves", "crypt"):
-        creator = Creator(
-            inp=examples / f"{fn}.svgmap", output=svg / f"{fn}.svg"
-        )
+    for fn in examples.glob("*.svgmap"):
+        out = svg / f"{fn.stem}.svg"
+        creator = Creator(inp=fn, output=out)
         creator.create()
 
 
