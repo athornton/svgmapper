@@ -25,6 +25,7 @@ dependencies = [
     "safir>=13",
     "structlog>=25",
     "svg.py>=1.10.0",
+    "typst"
 ]
 dynamic = ["version"]
 

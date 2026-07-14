@@ -1198,7 +1198,7 @@ class Creator(BaseSVGMapper):
             case MapObjectKind.CAVE:
                 self._process_cave(x1, y1, x2, y2, obj_type)
             case _:
-                pass
+                pass  # type:ignore[unreachable]
 
     def _write_output(self) -> None:
         svgstr = str(
