@@ -1,44 +1,48 @@
 #set page(
-  "us-letter",
-  margin: 1cm
+    "us-letter",
+    margin: 1cm
 )
 #show title: set align(center)
 #set document(
-  title: [Megadungeon of the Mad Archmage Gary-Stu, Level 1: Entry],
+    title: [
+        Megadungeon of the Mad Archmage Gary-Stu, Level 1: Entry
+    ]
 )
 #set text(
-  font: "Helvetica Neue",
-  weight: "light",
-  size: 8pt,
+    font: "Helvetica Neue",
+    weight: "light",
+    size: 8pt
 )
 #set par(
-  leading: 0.3em
+    leading: 0.3em
 )
 #set heading(numbering: "1.")
 #title()
 #grid(
-  columns: (69%, 2%, 28%),
-  grid.cell(
-    image("./svg/entry.svg", width: 100%),
-  ),
-  grid.cell([]),
-  grid.cell(
-    [
-    *Wandering Monsters*
-    + Giant Toad (AC 14; HP 15; Bite +3 1d6+swallow)
-    + 2 human bandits (AC 13 [leather + shield]; HP 9, 3; Longsword +1 1d8+1)
-    + Rat swarm (AC 13; HP 8; Bite + 0 1d2 + disease)
-    + Giant Centipede (AC 12; HP 4; Bite + 0 1d4 + poison)
-    + Skeleton Warrior (AC 15, HP 6; Scimitar + 1 1d6+1)
-    + Ghostly moaning
-    + Sewage stench
-    + Discarded, bloody bandages and empty potion flask
-
-    *Legend*
-    + *C* Concealed Door
-    + *X* Pit in floor
-    ]
-  )
+    columns: (69%, 2%, 28%),
+    grid.cell(
+        image(
+            "svg/entry.svg",
+             width: 100%
+        )
+    ),
+    grid.cell([]),
+    grid.cell(
+        [
+                *Wandering Monsters*
+                + Giant Toad (AC 14; HP 15; Bite +3 1d6+swallow)
+                + 2 human bandits (AC 13 [leather + shield]; HP 9, 3; Longsword +1 1d8+1)
+                + Rat swarm (AC 13; HP 8; Bite + 0 1d2 + disease)
+                + Giant Centipede (AC 12; HP 4; Bite + 0 1d4 + poison)
+                + Skeleton Warrior (AC 15, HP 6; Scimitar + 1 1d6+1)
+                + Ghostly moaning
+                + Sewage stench
+                + Discarded, bloody bandages and empty potion flask
+                *Legend*
+                + *C* Concealed Door
+                + *X* Pit in floor
+        ]
+    )
 )
 *Room Key*
 + *Guard Post*: 2 goblin guards (AC 14 [scale mail]; HP 5,2; Morningstar +2 1d6).  Each has 8 sp, 12cp.
@@ -71,4 +75,3 @@
 + *Koan Hall*: Master Wu (AC 16; HP 24; 2 fists/feet +2, 1d8+3).  No treasure.
 + *Archery Range*: 2 monks (AC 12; HP 5,5; light crossbow +1, 1d6).  No treasure.
 + *Sluice*: clean, fast-flowing water.
-

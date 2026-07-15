@@ -26,6 +26,7 @@ def help(ctx: click.Context, topic: str | None) -> None:
 
 
 @click.option(
+    "--inp",
     "--file",
     "--input",
     "-f",
@@ -40,7 +41,7 @@ def help(ctx: click.Context, topic: str | None) -> None:
     "-o",
     envvar="SVGMAPPER_OUTPUT_PATH",
     type=click.Path(path_type=Path),
-    required=True,
+    default=None,
     help="Output map file.",
 )
 @click.option(
@@ -52,13 +53,15 @@ def help(ctx: click.Context, topic: str | None) -> None:
     help="Enable debug logging",
 )
 @main.command()
-def convert(*, file: Path, output: Path, debug: bool) -> None:
+def convert(*, inp: Path, output: Path, debug: bool) -> None:
     """Convert from old-style ``makemap.pl`` input to current format."""
-    svc = Converter(inp=file, output=output, debug=debug)
+    output = _check_output(inp, output)
+    svc = Converter(inp=inp, output=output, debug=debug)
     svc.convert()
 
 
 @click.option(
+    "--inp",
     "--file",
     "--input",
     "-f",
@@ -73,8 +76,24 @@ def convert(*, file: Path, output: Path, debug: bool) -> None:
     "-o",
     envvar="SVGMAPPER_OUTPUT_PATH",
     type=click.Path(path_type=Path),
-    required=True,
-    help="Input map file.",
+    required=False,
+    help="Output svg file.",
+)
+@click.option(
+    "--typst",
+    "-t",
+    envvar="SVGMAPPER_TYPST_PATH",
+    type=click.Path(path_type=Path),
+    required=False,
+    help="Output typst file.",
+)
+@click.option(
+    "--pdf",
+    "-p",
+    envvar="SVGMAPPER_PDF_PATH",
+    type=click.Path(path_type=Path),
+    required=False,
+    help="Output PDF file.",
 )
 @click.option(
     "--debug",
@@ -92,7 +111,47 @@ def convert(*, file: Path, output: Path, debug: bool) -> None:
     help="Global settings file",
 )
 @main.command()
-def create(*, file: Path, output: Path, settings: Path, debug: bool) -> None:
+def create(
+    *,
+    inp: Path,
+    output: Path | None,
+    typst: Path | None,
+    pdf: Path | None,
+    settings: Path,
+    debug: bool,
+) -> None:
     """Create SVG from description file."""
-    svc = Creator(inp=file, output=output, settings=settings, debug=debug)
+    output = _check_output(inp, output)
+    typst = _check_typst(inp, typst)
+    pdf = _check_pdf(inp, pdf)
+
+    svc = Creator(
+        inp=inp,
+        output=output,
+        typst=typst,
+        pdf=pdf,
+        settings=settings,
+        debug=debug,
+    )
     svc.create()
+
+
+# Helper functions
+
+
+def _check_param(inp: Path, var: Path | None, ext: str) -> Path:
+    if var is not None:
+        return var
+    return inp.parent / f"{inp.stem}.{ext}"
+
+
+def _check_output(inp: Path, outp: Path | None) -> Path:
+    return _check_param(inp, outp, "svg")
+
+
+def _check_typst(inp: Path, outp: Path | None) -> Path:
+    return _check_param(inp, outp, "typ")
+
+
+def _check_pdf(inp: Path, outp: Path | None) -> Path:
+    return _check_param(inp, outp, "pdf")

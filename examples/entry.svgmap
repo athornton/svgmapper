@@ -2,6 +2,15 @@
 # Each line has six fields: kind, startx, starty, endx, endy, type
 # is a comment line
 
+# Comments have their own structure: "#" plus one character plus a space means
+# the rest should be read as a text line.
+
+# a line starting with #T specifies the document title.
+# a line starting with #R specifies a line in the right block
+#  (wandering monsters, legend, notes)
+# a line starting with #K specifies a line in the key
+# a line starting with #B is a blank line
+
 # Edge
 line,0,0,0,30,thick
 line,0,30,30,30,thick
@@ -979,3 +988,52 @@ text,3,25.9,N,sans_serif,0.6
 text,3.4,26.5,1 sq.=,sans_serif,0.5
 text,3.4,27,10 ft.,sans_serif,0.5
 
+# Comments to populate document template
+
+#T Megadungeon of the Mad Archmage Gary-Stu, Level 1: Entry
+
+#R *Wandering Monsters*
+#R + Giant Toad (AC 14; HP 15; Bite +3 1d6+swallow)
+#R + 2 human bandits (AC 13 [leather + shield]; HP 9, 3; Longsword +1 1d8+1)
+#R + Rat swarm (AC 13; HP 8; Bite + 0 1d2 + disease)
+#R + Giant Centipede (AC 12; HP 4; Bite + 0 1d4 + poison)
+#R + Skeleton Warrior (AC 15, HP 6; Scimitar + 1 1d6+1)
+#R + Ghostly moaning
+#R + Sewage stench
+#R + Discarded, bloody bandages and empty potion flask
+#B
+#R *Legend*
+#R + *C* Concealed Door
+#R + *X* Pit in floor
+
+#K *Room Key*
+#K + *Guard Post*: 2 goblin guards (AC 14 [scale mail]; HP 5,2; Morningstar +2 1d6).  Each has 8 sp, 12cp.
+#K + *Orc and Pie*: Snouty the orc (AC 16 [chain mail and shield]); HP 8; Falchion +4 (2d4 +4).  Tasty pie (cherry).
+#K + *Pit Trap*: Covered 30' pit in center of floor, DC 19 to not fall in, DC 5 to detect if anyone looks for it.  3d6 falling damage to room 19 of Level 2, Caves.
+#K + *Tripwire and spears*: tripwire 18" off floor, DC 12 to spot if anyone asks.  If triggered, 2 spears +6, 1d8 each.
+#K + *Barracks*: 11 bunks, 8 goblins.  If asleep, will take 2 rounds to wake up, 3 more rounds to get dressed and armored.  HP 7, 3, 4, 2, 7, 7, 3, 4.
+#K + *Feast Hall*: 6 goblins playing craps.  233 sp, a Lucky Amulet (+1 to hit), and 33cp in the pot.  HP 4, 2, 9, 9, 5, 3.
+#K + *Goblins' Kitchen*: Kobold _chef de cuisine_ (AC 13; HP 4; Cleaver +0, 1d6-1).  3 halfling line cooks (speak only Spanish) (AC 18; HP 3, 2, 3; Knife +0, 1d4).
+#K + *Goblins' Storeroom*: 6 barrels of beer (20gp/200lb), bunch of flour/salt pork/coffee.  Well and spiral stairs to wine cellar.
+#K + *Throne Room*: Hobgoblin Chieftain Grak (AC 15 [chain mail]; HP 13; Greataxe +5 (1d12+2) and 2 goblin guards (HP 6,2).  Grak has 125 gp gem, 38 gp.
+#K + *Chief's Quarters*: big waterbed, silk sheets, incense.  Total value 150gp, but bulky.  1 female goblin, asleep (HP 2).  Tapestry conceals door.
+#K + *Harem*: 3 noncombatant female goblins, 1 orc crone (AC 12; HP 6; club +3 1d6+1). 225 gp in assorted jewelry, cosmetics, etc.
+#K + *Vizier's Quarters*: Joey Granitethighs, Dwarf (AC 18 [plate]; HP 11; Waraxe +4 (1d8+1)). Gold Chain Of Office worth 55 gp, 22 gp, 18 sp.
+#K + *Lieutenant's Quarters*: Urgh the Hobgoblin.  (AC 15 [scale mail + shield], HP 13, Longsword +3, 1d8+2).  11 gp.
+#K + *Treasure Room*: Golden idol of Grummush worth 270 gp, 113 gp, 19 pp, 344 sp, 12 gems 10-60 gp each. Cask of cognac worth 200 gp (40 lbs).
+#K + *Bath*: Unguents and incenses worth 15 gp.
+#K + *Ramp to Surface*: roll logs, barrels, etc. down to storeroom.
+#K + *Guard Post*: 2 goblin guards (HP 5, 7).
+#K + *Corwyn's Room*: Corwyn, Fighter 2: (AC 19 [plate + shield]; HP 24; longsword +4 1d8+2). 25 gp, potion of cure light wounds.
+#K + *Grand Staircase*: Up to surface, down to level 8.
+#K + *Jenna's Room*: Jenna, MU 2. (AC 11; HP 13; dagger +1, 1d4). _Sleep_, _Charm Person_. Spellbook with those spells, 38 gp.
+#K + *Dojo*: Master Chu (AC 14; HP 20; 2 fists/feet +2, 1d6+3).  No treasure.
+#K + *Mess Hall*: 1 monk sweeping (AC 12; HP 14; punch +1, 1d6).  No treasure.
+#K + *Kitchen*: Kobold _chef de cuisine_, 3 halfling line cooks (see room 7).
+#K + *Monks' Cells*: All empty; contain only pallet, bowl, spoon.
+#K + *Toilets*: Actual flushing toilets.  This is a classy dungeon.
+#K + *Entry Hall*: 3 human monks (AC 12; HP 10, 12, 9; punch +1, 1d6).  No treasure.
+#K + *Monks' Storeroom*: Flour, dried vegetables, potatoes, turnips, etc.  Monks are vegetarian.
+#K + *Koan Hall*: Master Wu (AC 16; HP 24; 2 fists/feet +2, 1d8+3).  No treasure.
+#K + *Archery Range*: 2 monks (AC 12; HP 5,5; light crossbow +1, 1d6).  No treasure.
+#K + *Sluice*: clean, fast-flowing water.

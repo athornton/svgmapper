@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 """Rebuild our test outputs."""
 
-import os
 from pathlib import Path
-
-import typst
 
 from svgmapper.services.converter import Converter
 from svgmapper.services.creator import Creator
@@ -42,26 +39,6 @@ def _build_tests(data: Path, output: Path) -> None:
         creator.create()
 
 
-def _build_examples(here: Path) -> None:
-    examples = here.parent / "examples"
-    os.environ["TYPST_ROOT"] = f"{examples!s}"
-    svgdir = examples / "svg"
-    pdfdir = examples / "pdf"
-    for dr in (svgdir, pdfdir):
-        dr.mkdir(exist_ok=True)
-    for fn in examples.glob("*.svgmap"):
-        st = fn.stem
-        svg = svgdir / f"{st}.svg"
-        typ = examples / f"{st}.typ"
-        pdf = pdfdir / f"{st}.pdf"
-        creator = Creator(inp=fn, output=svg)
-        creator.create()
-        if typ.exists():
-            typst.compile(
-                f"{typ!s}", output=f"{pdf!s}", package_path=f"{examples!s}"
-            )
-
-
 def main() -> None:
     """Rebuild the test outputs."""
     here = Path(__file__).parent
@@ -69,7 +46,6 @@ def main() -> None:
     output = data / "output"
 
     _build_tests(data, output)
-    _build_examples(here)
 
 
 if __name__ == "__main__":

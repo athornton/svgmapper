@@ -17,6 +17,13 @@
 	<desc># Level description file:</desc>
 	<desc># Each line has six fields: kind, startx, starty, endx, endy, type</desc>
 	<desc># is a comment line</desc>
+	<desc># Comments have their own structure: "#" plus one character plus a space means</desc>
+	<desc># the rest should be read as a text line.</desc>
+	<desc># a line starting with #T specifies the document title.</desc>
+	<desc># a line starting with #R specifies a line in the right block</desc>
+	<desc>#  (wandering monsters, legend, notes)</desc>
+	<desc># a line starting with #K specifies a line in the key</desc>
+	<desc># a line starting with #B is a blank line</desc>
 	<desc># Edge</desc>
 	<desc>line,0,0,0,30,thick</desc>
 	<path stroke="#1EAED0" stroke-width="15.0" d="M 0.0 0.0 L 0.0 3000.0"/>
@@ -59,7 +66,7 @@
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 400.0 L 1000.0 400.0"/>
 	<desc>line,10,4.5,9,4.5,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 450.0 L 900.0 450.0"/>
-	<desc>## Vizier%27s</desc>
+	<desc>## Vizier's</desc>
 	<desc>line,10,2,12,2,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 200.0 L 1200.0 200.0"/>
 	<desc>line,12,2,12,4,normal</desc>
@@ -79,7 +86,7 @@
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 500.0 L 1000.0 500.0"/>
 	<desc>line,10,5,10,4,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 500.0 L 1000.0 400.0"/>
-	<desc>## Lt.%27s</desc>
+	<desc>## Lt.'s</desc>
 	<desc>line,14,3,14,1,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1400.0 300.0 L 1400.0 100.0"/>
 	<desc>line,14,1,12,1,normal</desc>
@@ -273,7 +280,7 @@
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1000.0 1100.0 L 900.0 1100.0"/>
 	<desc>line,9,12,12,12,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 1200.0 L 1200.0 1200.0"/>
-	<desc>## Chief%27s quarters</desc>
+	<desc>## Chief's quarters</desc>
 	<desc>line,9,10,9,13,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 900.0 1000.0 L 900.0 1300.0"/>
 	<desc>line,9,13,7,13,normal</desc>
@@ -350,7 +357,7 @@
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 2100.0 1800.0 L 2100.0 2000.0"/>
 	<desc>line,21,20,24,20,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 2100.0 2000.0 L 2400.0 2000.0"/>
-	<desc>## Corwyn%27s room</desc>
+	<desc>## Corwyn's room</desc>
 	<desc>line,18,18,18,20,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1800.0 1800.0 L 1800.0 2000.0"/>
 	<desc>line,18,20,16,20,normal</desc>
@@ -359,7 +366,7 @@
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1600.0 2000.0 L 1600.0 1800.0"/>
 	<desc>line,16,18,18,18,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1600.0 1800.0 L 1800.0 1800.0"/>
-	<desc>## Jenna%27s room</desc>
+	<desc>## Jenna's room</desc>
 	<desc>line,12,22,12,24,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 2200.0 L 1200.0 2400.0"/>
 	<desc>line,12,24,10,24,normal</desc>
@@ -425,7 +432,7 @@
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 2900.0 L 1400.0 2900.0"/>
 	<desc>line,14,29,14,27,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1400.0 2900.0 L 1400.0 2700.0"/>
-	<desc>## Monks%27 cells</desc>
+	<desc>## Monks' cells</desc>
 	<desc>line,13,28,7,28,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1300.0 2800.0 L 700.0 2800.0"/>
 	<desc>line,7,28,7,25,normal</desc>
@@ -471,7 +478,7 @@
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 2500.0 2200.0 L 2500.0 2400.0"/>
 	<desc>line,25,24,22,24,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 2500.0 2400.0 L 2200.0 2400.0"/>
-	<desc>## Monks%27 Storeroom</desc>
+	<desc>## Monks' Storeroom</desc>
 	<desc>line,24,24,24,28,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 2400.0 2400.0 L 2400.0 2800.0"/>
 	<desc>line,24,28,22,28,normal</desc>
@@ -527,7 +534,7 @@
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 1500.0 2950.0 L 1500.0 3000.0"/>
 	<desc>line,15.5,29.5,15.5,30,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 1550.0 2950.0 L 1550.0 3000.0"/>
-	<desc>## Monks%27 cells</desc>
+	<desc>## Monks' cells</desc>
 	<desc>line,8,25,8,26,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 800.0 2500.0 L 800.0 2600.0"/>
 	<desc>line,9,25,9,26,normal</desc>
@@ -648,19 +655,19 @@
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 830.0000000000001 325.0 L 830.0000000000001 375.0"/>
 	<desc>line,8.3,3.75,9,3.75,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 830.0000000000001 375.0 L 900.0 375.0"/>
-	<desc>## Vizier%27s bed</desc>
+	<desc>## Vizier's bed</desc>
 	<desc>line,10,2.5,10.75,2.5,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 1000.0 250.0 L 1075.0 250.0"/>
 	<desc>line,10.75,2.5,10.75,3.25,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 1075.0 250.0 L 1075.0 325.0"/>
 	<desc>line,10.75,3.25,10,3.25,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 1075.0 325.0 L 1000.0 325.0"/>
-	<desc>## Lieutenant%27s bed</desc>
+	<desc>## Lieutenant's bed</desc>
 	<desc>line,13.5,1,13.5,1.75,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 1350.0 100.0 L 1350.0 175.0"/>
 	<desc>line,13.5,1.75,14,1.75,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 1350.0 175.0 L 1400.0 175.0"/>
-	<desc>## Snouty%27s table</desc>
+	<desc>## Snouty's table</desc>
 	<desc>ellipse,29.5,3.5,0.15,0.15,white_thin</desc>
 	<ellipse stroke="#1EAED0" stroke-width="2.0" cx="2950.0" cy="350.0" rx="15.0" ry="15.0" fill="white"/>
 	<desc>## Barracks bunks</desc>
@@ -820,7 +827,7 @@
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 950.0 780.0 L 900.0 780.0"/>
 	<desc>line,9.3,7.3,9.3,7.7,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 930.0000000000001 730.0 L 930.0000000000001 770.0"/>
-	<desc>## Goblins%27 Kitchen</desc>
+	<desc>## Goblins' Kitchen</desc>
 	<desc>line,20,14,20.5,14,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 2000.0 1400.0 L 2050.0 1400.0"/>
 	<desc>line,20.5,14,20.5,14.2,thin</desc>
@@ -850,7 +857,7 @@
 	<desc>## Well</desc>
 	<desc>ellipse,15.5,14.5,0.25,0.25,hatched</desc>
 	<ellipse stroke="#1EAED0" stroke-width="5.0" cx="1550.0" cy="1450.0" rx="25.0" ry="25.0" fill="url(#hatch00)"/>
-	<desc>## Monks%27 kitchen</desc>
+	<desc>## Monks' kitchen</desc>
 	<desc>line,25,22,24.5,22,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 2500.0 2200.0 L 2450.0 2200.0"/>
 	<desc>line,24.5,22,24.5,22.2,thin</desc>
@@ -871,7 +878,7 @@
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 2300.0 2200.0 A 50.0 50.0 0.0 0 0 2400.0 2200.0" fill="none"/>
 	<desc>ellipse,23.5,22,0.15,0.15,solid</desc>
 	<ellipse stroke="#1EAED0" stroke-width="5.0" cx="2350.0" cy="2200.0" rx="15.0" ry="15.0" fill="#1EAED0"/>
-	<desc>## Monks%27 Mess Hall</desc>
+	<desc>## Monks' Mess Hall</desc>
 	<desc>line,20.9,22.75,21.1,22.75,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 2090.0 2275.0 L 2110.0 2275.0"/>
 	<desc>line,21.1,22.75,21.1,26.25,thin</desc>
@@ -888,12 +895,12 @@
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 2010.0000000000002 2625.0 L 1989.9999999999998 2625.0"/>
 	<desc>line,19.9,26.25,19.9,22.75,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 1989.9999999999998 2625.0 L 1989.9999999999998 2275.0"/>
-	<desc>## Corwyn%27s bed</desc>
+	<desc>## Corwyn's bed</desc>
 	<desc>line,16.5,18,16.5,18.75,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 1650.0 1800.0 L 1650.0 1875.0"/>
 	<desc>line,16.5,18.75,16,18.75,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 1650.0 1875.0 L 1600.0 1875.0"/>
-	<desc>## Jenna%27s bed</desc>
+	<desc>## Jenna's bed</desc>
 	<desc>line,10.5,24,10.5,23.25,thin</desc>
 	<path stroke="#1EAED0" stroke-width="2.0" d="M 1050.0 2400.0 L 1050.0 2325.0"/>
 	<desc>line,10.5,23.25,10,23.25,thin</desc>
@@ -918,25 +925,25 @@
 	<desc>### Feast Hall</desc>
 	<desc>text,21.3,9.9,6,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2130.0" y="990.0">6</text>
-	<desc>### Goblins%27 Kitchen</desc>
+	<desc>### Goblins' Kitchen</desc>
 	<desc>text,22.3,13.9,7,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2230.0" y="1390.0">7</text>
-	<desc>### Goblins%27 Storeroom</desc>
+	<desc>### Goblins' Storeroom</desc>
 	<desc>text,16.3,14.9,8,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1630.0" y="1490.0">8</text>
 	<desc>### Throne Room</desc>
 	<desc>text,11.3,9.9,9,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1130.0" y="990.0">9</text>
-	<desc>### Chief%27s Quarters</desc>
+	<desc>### Chief's Quarters</desc>
 	<desc>text,8.2,10.9,10,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="819.9999999999999" y="1090.0">10</text>
 	<desc>### Harem</desc>
 	<desc>text,8.2,4.9,11,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="819.9999999999999" y="490.00000000000006">11</text>
-	<desc>### Vizier%27s Quarters</desc>
+	<desc>### Vizier's Quarters</desc>
 	<desc>text,10.2,3.9,12,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1019.9999999999999" y="390.0">12</text>
-	<desc>### Lieutenant%27s Quarters</desc>
+	<desc>### Lieutenant's Quarters</desc>
 	<desc>text,12.2,2.9,13,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1220.0" y="290.0">13</text>
 	<desc>### Treasure Room</desc>
@@ -951,13 +958,13 @@
 	<desc>### Guard Post</desc>
 	<desc>text,25.2,19.9,17,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2520.0" y="1989.9999999999998">17</text>
-	<desc>### Corwyn%27s Room</desc>
+	<desc>### Corwyn's Room</desc>
 	<desc>text,17.2,19.9,18,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1720.0" y="1989.9999999999998">18</text>
 	<desc>### Grand Stairway</desc>
 	<desc>text,6.2,20.9,19,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="620.0" y="2090.0">19</text>
-	<desc>### Jenna%27s Room</desc>
+	<desc>### Jenna's Room</desc>
 	<desc>text,10.2,22.9,20,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1019.9999999999999" y="2290.0">20</text>
 	<desc>### Dojo</desc>
@@ -966,10 +973,10 @@
 	<desc>### Mess Hall</desc>
 	<desc>text,20.2,22.9,22,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2020.0" y="2290.0">22</text>
-	<desc>### Monks%27 Kitchen</desc>
+	<desc>### Monks' Kitchen</desc>
 	<desc>text,22.2,22.9,23,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2220.0" y="2290.0">23</text>
-	<desc>### Monks%27 Cells</desc>
+	<desc>### Monks' Cells</desc>
 	<desc>text,9.2,26.7,24,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="919.9999999999999" y="2670.0">24</text>
 	<desc>### Toilets</desc>
@@ -980,7 +987,7 @@
 	<desc>### Entry Hall</desc>
 	<desc>text,4.2,27.7,26,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="420.0" y="2770.0">26</text>
-	<desc>### Monks%27 Storeroom</desc>
+	<desc>### Monks' Storeroom</desc>
 	<desc>text,22.2,29.9,27,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2220.0" y="2990.0">27</text>
 	<desc>### Koan Hall</desc>
@@ -1440,4 +1447,50 @@
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="50px" fill="#1EAED0" x="340.0" y="2650.0">1 sq.=</text>
 	<desc>text,3.4,27,10 ft.,sans_serif,0.5</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="50px" fill="#1EAED0" x="340.0" y="2700.0">10 ft.</text>
+	<desc># Comments to populate document template</desc>
+	<desc>#T Megadungeon of the Mad Archmage Gary-Stu, Level 1: Entry</desc>
+	<desc>#R *Wandering Monsters*</desc>
+	<desc>#R + Giant Toad (AC 14; HP 15; Bite +3 1d6+swallow)</desc>
+	<desc>#R + 2 human bandits (AC 13 [leather + shield]; HP 9, 3; Longsword +1 1d8+1)</desc>
+	<desc>#R + Rat swarm (AC 13; HP 8; Bite + 0 1d2 + disease)</desc>
+	<desc>#R + Giant Centipede (AC 12; HP 4; Bite + 0 1d4 + poison)</desc>
+	<desc>#R + Skeleton Warrior (AC 15, HP 6; Scimitar + 1 1d6+1)</desc>
+	<desc>#R + Ghostly moaning</desc>
+	<desc>#R + Sewage stench</desc>
+	<desc>#R + Discarded, bloody bandages and empty potion flask</desc>
+	<desc>#B</desc>
+	<desc>#R *Legend*</desc>
+	<desc>#R + *C* Concealed Door</desc>
+	<desc>#R + *X* Pit in floor</desc>
+	<desc>#K *Room Key*</desc>
+	<desc>#K + *Guard Post*: 2 goblin guards (AC 14 [scale mail]; HP 5,2; Morningstar +2 1d6).  Each has 8 sp, 12cp.</desc>
+	<desc>#K + *Orc and Pie*: Snouty the orc (AC 16 [chain mail and shield]); HP 8; Falchion +4 (2d4 +4).  Tasty pie (cherry).</desc>
+	<desc>#K + *Pit Trap*: Covered 30' pit in center of floor, DC 19 to not fall in, DC 5 to detect if anyone looks for it.  3d6 falling damage to room 19 of Level 2, Caves.</desc>
+	<desc>#K + *Tripwire and spears*: tripwire 18" off floor, DC 12 to spot if anyone asks.  If triggered, 2 spears +6, 1d8 each.</desc>
+	<desc>#K + *Barracks*: 11 bunks, 8 goblins.  If asleep, will take 2 rounds to wake up, 3 more rounds to get dressed and armored.  HP 7, 3, 4, 2, 7, 7, 3, 4.</desc>
+	<desc>#K + *Feast Hall*: 6 goblins playing craps.  233 sp, a Lucky Amulet (+1 to hit), and 33cp in the pot.  HP 4, 2, 9, 9, 5, 3.</desc>
+	<desc>#K + *Goblins' Kitchen*: Kobold _chef de cuisine_ (AC 13; HP 4; Cleaver +0, 1d6-1).  3 halfling line cooks (speak only Spanish) (AC 18; HP 3, 2, 3; Knife +0, 1d4).</desc>
+	<desc>#K + *Goblins' Storeroom*: 6 barrels of beer (20gp/200lb), bunch of flour/salt pork/coffee.  Well and spiral stairs to wine cellar.</desc>
+	<desc>#K + *Throne Room*: Hobgoblin Chieftain Grak (AC 15 [chain mail]; HP 13; Greataxe +5 (1d12+2) and 2 goblin guards (HP 6,2).  Grak has 125 gp gem, 38 gp.</desc>
+	<desc>#K + *Chief's Quarters*: big waterbed, silk sheets, incense.  Total value 150gp, but bulky.  1 female goblin, asleep (HP 2).  Tapestry conceals door.</desc>
+	<desc>#K + *Harem*: 3 noncombatant female goblins, 1 orc crone (AC 12; HP 6; club +3 1d6+1). 225 gp in assorted jewelry, cosmetics, etc.</desc>
+	<desc>#K + *Vizier's Quarters*: Joey Granitethighs, Dwarf (AC 18 [plate]; HP 11; Waraxe +4 (1d8+1)). Gold Chain Of Office worth 55 gp, 22 gp, 18 sp.</desc>
+	<desc>#K + *Lieutenant's Quarters*: Urgh the Hobgoblin.  (AC 15 [scale mail + shield], HP 13, Longsword +3, 1d8+2).  11 gp.</desc>
+	<desc>#K + *Treasure Room*: Golden idol of Grummush worth 270 gp, 113 gp, 19 pp, 344 sp, 12 gems 10-60 gp each. Cask of cognac worth 200 gp (40 lbs).</desc>
+	<desc>#K + *Bath*: Unguents and incenses worth 15 gp.</desc>
+	<desc>#K + *Ramp to Surface*: roll logs, barrels, etc. down to storeroom.</desc>
+	<desc>#K + *Guard Post*: 2 goblin guards (HP 5, 7).</desc>
+	<desc>#K + *Corwyn's Room*: Corwyn, Fighter 2: (AC 19 [plate + shield]; HP 24; longsword +4 1d8+2). 25 gp, potion of cure light wounds.</desc>
+	<desc>#K + *Grand Staircase*: Up to surface, down to level 8.</desc>
+	<desc>#K + *Jenna's Room*: Jenna, MU 2. (AC 11; HP 13; dagger +1, 1d4). _Sleep_, _Charm Person_. Spellbook with those spells, 38 gp.</desc>
+	<desc>#K + *Dojo*: Master Chu (AC 14; HP 20; 2 fists/feet +2, 1d6+3).  No treasure.</desc>
+	<desc>#K + *Mess Hall*: 1 monk sweeping (AC 12; HP 14; punch +1, 1d6).  No treasure.</desc>
+	<desc>#K + *Kitchen*: Kobold _chef de cuisine_, 3 halfling line cooks (see room 7).</desc>
+	<desc>#K + *Monks' Cells*: All empty; contain only pallet, bowl, spoon.</desc>
+	<desc>#K + *Toilets*: Actual flushing toilets.  This is a classy dungeon.</desc>
+	<desc>#K + *Entry Hall*: 3 human monks (AC 12; HP 10, 12, 9; punch +1, 1d6).  No treasure.</desc>
+	<desc>#K + *Monks' Storeroom*: Flour, dried vegetables, potatoes, turnips, etc.  Monks are vegetarian.</desc>
+	<desc>#K + *Koan Hall*: Master Wu (AC 16; HP 24; 2 fists/feet +2, 1d8+3).  No treasure.</desc>
+	<desc>#K + *Archery Range*: 2 monks (AC 12; HP 5,5; light crossbow +1, 1d6).  No treasure.</desc>
+	<desc>#K + *Sluice*: clean, fast-flowing water.</desc>
 </svg>

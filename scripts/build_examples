@@ -1,0 +1,33 @@
+#!/usr/bin/env python3
+"""Rebuild our test outputs."""
+
+import os
+from pathlib import Path
+
+from svgmapper.services.creator import Creator
+
+
+def _build_examples(here: Path) -> None:
+    examples = here.parent / "examples"
+    os.environ["TYPST_ROOT"] = f"{examples!s}"
+    svgdir = examples / "svg"
+    pdfdir = examples / "pdf"
+    for dr in (svgdir, pdfdir):
+        dr.mkdir(exist_ok=True)
+    for fn in examples.glob("*.svgmap"):
+        st = fn.stem
+        svg = svgdir / f"{st}.svg"
+        typ = examples / f"{st}.typ"
+        pdf = pdfdir / f"{st}.pdf"
+        creator = Creator(inp=fn, output=svg, typst=typ, pdf=pdf)
+        creator.create()
+
+
+def main() -> None:
+    """Rebuild the test outputs."""
+    here = Path(__file__).parent
+    _build_examples(here)
+
+
+if __name__ == "__main__":
+    main()

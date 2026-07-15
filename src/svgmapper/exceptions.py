@@ -1,6 +1,7 @@
 """Exceptions for SVGMapper."""
 
 from dataclasses import dataclass
+from pathlib import Path
 from typing import override
 
 
@@ -11,6 +12,8 @@ class SVGMapperError(Exception):
     message: str | None = None
     original_exception: Exception | None = None
     input_line: int | None = None
+    input_file: Path | None = None
+    current_line: str | None = None
 
     @override
     def __str__(self) -> str:
@@ -24,6 +27,10 @@ class SVGMapperError(Exception):
             )
         if self.input_line:
             msg += f" at input line {self.input_line}"
+        if self.input_file:
+            msg += f" of file '{self.input_file}"
+        if self.current_line:
+            msg += f": '{self.current_line}'"
         return msg
 
 

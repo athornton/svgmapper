@@ -45,7 +45,7 @@
 	<desc># Minotaur maze</desc>
 	<desc>ellipse,7.5,7.5,7,7,white</desc>
 	<ellipse stroke="white" stroke-width="5.0" cx="750.0" cy="750.0" rx="700.0" ry="700.0" fill="white"/>
-	<desc># Longbeards%27 realm</desc>
+	<desc># Longbeards' realm</desc>
 	<desc>block,14,2,15,2,white</desc>
 	<desc>continuation,15,2,15,3,white</desc>
 	<desc>continuation,15,3,14,3,white</desc>
@@ -136,7 +136,7 @@
 	<desc>continuation,18,29,18,30,block_end</desc>
 	<polygon stroke="white" stroke-width="5.0" points="1800.0,3000.0 3000.0,3000.0 3000.0,2700.0 2900.0,2700.0 2900.0,2900.0 1800.0,2900.0 1800.0,3000.0" fill="white"/>
 	<desc># Teleporter maze</desc>
-	<desc>## Cross at %2822,1%29: 15.1</desc>
+	<desc>## Cross at (22,1): 15.1</desc>
 	<desc>block,23,1,24,1,white</desc>
 	<desc>continuation,24,1,24,4,white</desc>
 	<desc>continuation,24,4,23,4,white</desc>
@@ -147,7 +147,7 @@
 	<desc>continuation,25,3,22,3,white</desc>
 	<desc>continuation,22,3,22,2,block_end</desc>
 	<polygon stroke="white" stroke-width="5.0" points="2200.0,200.0 2500.0,200.0 2500.0,300.0 2200.0,300.0 2200.0,200.0" fill="white"/>
-	<desc>## Cross at %2824,4%29: 15.2</desc>
+	<desc>## Cross at (24,4): 15.2</desc>
 	<desc>block,25,4,26,4,white</desc>
 	<desc>continuation,26,4,26,7,white</desc>
 	<desc>continuation,26,7,25,7,white</desc>
@@ -158,7 +158,7 @@
 	<desc>continuation,27,6,24,6,white</desc>
 	<desc>continuation,24,6,24,5,block_end</desc>
 	<polygon stroke="white" stroke-width="5.0" points="2400.0,500.0 2700.0,500.0 2700.0,600.0 2400.0,600.0 2400.0,500.0" fill="white"/>
-	<desc>## Cross at %2823,8%29: 15.3</desc>
+	<desc>## Cross at (23,8): 15.3</desc>
 	<desc>block,24,8,25,8,white</desc>
 	<desc>continuation,25,8,25,11,white</desc>
 	<desc>continuation,25,11,24,11,white</desc>
@@ -169,7 +169,7 @@
 	<desc>continuation,26,10,23,10,white</desc>
 	<desc>continuation,23,10,23,9,block_end</desc>
 	<polygon stroke="white" stroke-width="5.0" points="2300.0,900.0 2600.0,900.0 2600.0,1000.0 2300.0,1000.0 2300.0,900.0" fill="white"/>
-	<desc>## Cross at %2819,10%29: 15.4</desc>
+	<desc>## Cross at (19,10): 15.4</desc>
 	<desc>block,20,10,21,10,white</desc>
 	<desc>continuation,21,10,21,13,white</desc>
 	<desc>continuation,21,13,20,13,white</desc>
@@ -180,7 +180,7 @@
 	<desc>continuation,22,12,19,12,white</desc>
 	<desc>continuation,19,12,19,11,block_end</desc>
 	<polygon stroke="white" stroke-width="5.0" points="1900.0,1100.0 2200.0,1100.0 2200.0,1200.0 1900.0,1200.0 1900.0,1100.0" fill="white"/>
-	<desc>## Cross at %2822,12%29: 15.5</desc>
+	<desc>## Cross at (22,12): 15.5</desc>
 	<desc>block,23,12,24,12,white</desc>
 	<desc>continuation,24,12,24,15,white</desc>
 	<desc>continuation,24,15,23,15,white</desc>
@@ -349,7 +349,7 @@
 	<desc>ellipse,15.5,14.5,0.25,0.25,hatched</desc>
 	<ellipse stroke="#1EAED0" stroke-width="5.0" cx="1550.0" cy="1450.0" rx="25.0" ry="25.0" fill="url(#hatch00)"/>
 	<desc># Gelatinous Cube Maze</desc>
-	<desc>## Hubert%27s Lair</desc>
+	<desc>## Hubert's Lair</desc>
 	<desc>line,12,22,14,22,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1200.0 2200.0 L 1400.0 2200.0"/>
 	<desc>line,14,22,14,24,normal</desc>
@@ -517,7 +517,7 @@
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 608.6 891.4 L 537.9 962.1"/>
 	<desc>line,5.5,7.5,6.5,7.5,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 550.0 750.0 L 650.0 750.0"/>
-	<desc># Longbeards%27 and Ogres%27</desc>
+	<desc># Longbeards' and Ogres'</desc>
 	<desc>line,15,5,15,12,normal</desc>
 	<path stroke="#1EAED0" stroke-width="5.0" d="M 1500.0 500.0 L 1500.0 1200.0"/>
 	<desc>line,14,12,16,12,normal</desc>
@@ -741,10 +741,10 @@
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="50px" fill="#1EAED0" x="2435.0" y="1365.0">I</text>
 	<desc>text,23.35,14.65,K,sans_serif,0.5</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="50px" fill="#1EAED0" x="2335.0" y="1465.0">K</text>
-	<desc>### Longbeards%27</desc>
+	<desc>### Longbeards'</desc>
 	<desc>text,20.35,7.65,A,sans_serif,0.5</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="50px" fill="#1EAED0" x="2035.0000000000002" y="765.0">A</text>
-	<desc>### Ogres%27</desc>
+	<desc>### Ogres'</desc>
 	<desc>text,26.35,16.65,K,sans_serif,0.5</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="50px" fill="#1EAED0" x="2635.0" y="1664.9999999999998">K</text>
 	<desc>## Room numbers</desc>
@@ -754,7 +754,7 @@
 	<desc>### Gelatinous Cube Maze</desc>
 	<desc>text,8.3,19.9,2,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="830.0000000000001" y="1989.9999999999998">2</text>
-	<desc>### Hubert%27s Lair</desc>
+	<desc>### Hubert's Lair</desc>
 	<desc>text,15.3,22.9,3,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1530.0" y="2290.0">3</text>
 	<desc>### Minotaur Labyrinth</desc>
@@ -763,19 +763,19 @@
 	<desc>### Watering Hole</desc>
 	<desc>text,15.3,5.9,5,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1530.0" y="590.0">5</text>
-	<desc>### Grono%27s Room</desc>
+	<desc>### Grono's Room</desc>
 	<desc>text,14.3,12.9,6,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1430.0" y="1290.0">6</text>
-	<desc>### Janice%27s Shop</desc>
+	<desc>### Janice's Shop</desc>
 	<desc>text,18.3,3.9,7,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1830.0" y="390.0">7</text>
-	<desc>### Longbeards%27 Larder</desc>
+	<desc>### Longbeards' Larder</desc>
 	<desc>text,19.3,7.9,8,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="1930.0" y="790.0">8</text>
-	<desc>### Longbeards%27 Living Room</desc>
+	<desc>### Longbeards' Living Room</desc>
 	<desc>text,26.3,0.9,9,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2630.0" y="90.0">9</text>
-	<desc>### Longbeards%27 Bedroom</desc>
+	<desc>### Longbeards' Bedroom</desc>
 	<desc>text,28.2,1.9,10,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2820.0" y="190.0">10</text>
 	<desc>### Toilets</desc>
@@ -788,7 +788,7 @@
 	<desc>### Ranch House</desc>
 	<desc>text,28.2,15.9,12,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2820.0" y="1590.0">12</text>
-	<desc>### Ogres%27 Bedroom</desc>
+	<desc>### Ogres' Bedroom</desc>
 	<desc>text,28.2,19.9,13,sans_serif,0.6</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="60px" fill="#1EAED0" x="2820.0" y="1989.9999999999998">13</text>
 	<desc>### Brokeback Cavern</desc>

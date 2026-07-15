@@ -1,45 +1,88 @@
+# ORIG [0001]: # Level description file:
 # Level description file:
+# ORIG [0002]: # Each line has six fields: kind, startx, starty, endx, endy, type
 # Each line has six fields: kind, startx, starty, endx, endy, type
+# ORIG [0003]: # is a comment line
 # is a comment line
+# ORIG [0004]:
 
+# ORIG [0005]: # kind: 1 = straight wall
 # kind: 1 = straight wall
+# ORIG [0006]: #       2 = arc (not implemented yet)
 #       2 = arc (not implemented yet)
+# ORIG [0007]: #    3 = door (startx,starty are left/top of door)
 #    3 = door (startx,starty are left/top of door)
+# ORIG [0008]: #       5 = filled block
 #       5 = filled block
+# ORIG [0009]: #    6 = filled ellipse (endx/endy are rx/ry)
 #    6 = filled ellipse (endx/endy are rx/ry)
+# ORIG [0010]: #    7 = spiral stairs (startx/starty are center)
 #    7 = spiral stairs (startx/starty are center)
+# ORIG [0011]: #    8 = toilet (hey, there are a lot)
 #    8 = toilet (hey, there are a lot)
+# ORIG [0012]: #       9 = text (endx is text to print, endy is "b" for bold, type is size)
 #       9 = text (endx is text to print, endy is "b" for bold, type is size)
+# ORIG [0013]: #      99 = continuation of previous (useful for blocks)
 #      99 = continuation of previous (useful for blocks)
+# ORIG [0014]:
 
+# ORIG [0015]: # Type for lines
 # Type for lines
+# ORIG [0016]: # type: 1 = normal
 # type: 1 = normal
+# ORIG [0017]: #       2 = thick
 #       2 = thick
+# ORIG [0018]: #       3 = dashed
 #       3 = dashed
+# ORIG [0019]: #       4 = dotted
 #       4 = dotted
+# ORIG [0020]: #       5 = thin
 #       5 = thin
+# ORIG [0021]:
 
+# ORIG [0022]: # Type for fill
 # Type for fill
+# ORIG [0023]: # type: 1 = solid
 # type: 1 = solid
+# ORIG [0024]: #       2 = white
 #       2 = white
+# ORIG [0025]: #       3 = hatched
 #       3 = hatched
+# ORIG [0026]: #    4+n = Thin outline
 #    4+n = Thin outline
+# ORIG [0027]: #       99 = end of polygon
 #       99 = end of polygon
+# ORIG [0028]:
 
+# ORIG [0029]: # Type for door
 # Type for door
+# ORIG [0030]: #  type: 1 = vertical
 #  type: 1 = vertical
+# ORIG [0031]: #        2 = horizontal
 #        2 = horizontal
+# ORIG [0032]: #        3 = vertical double
 #        3 = vertical double
+# ORIG [0033]: #        4 = horizontal double
 #        4 = horizontal double
+# ORIG [0034]:
 
+# ORIG [0035]: # Type for toilet
 # Type for toilet
+# ORIG [0036]: #  type: 1 = vertical
 #  type: 1 = vertical
+# ORIG [0037]: #  type: 2 = horizontal
 #  type: 2 = horizontal
+# ORIG [0038]:
 
+# ORIG [0039]: # For text
 # For text
+# ORIG [0040]: #  endx: Text to use (Can't contain commas)
 #  endx: Text to use (Can't contain commas)
+# ORIG [0041]: #  endy: "s" means use Soutane font (serif)
 #  endy: "s" means use Soutane font (serif)
+# ORIG [0042]:
 
+# ORIG [0043]: # Map Edge
 # Map Edge
 # ORIG [0044]: 1,0,0,0,30,2
 line,0.0,0.0,0.0,30.0,thick
@@ -49,7 +92,9 @@ line,0.0,30.0,30.0,30.0,thick
 line,30.0,30.0,30.0,0.0,thick
 # ORIG [0047]: 1,30,0,0,0,2
 line,30.0,0.0,0.0,0.0,thick
+# ORIG [0048]:
 
+# ORIG [0049]: # Carlotta's apartments
 # Carlotta's apartments
 # ORIG [0050]: 1,2,0,2,3,1
 line,2.0,0.0,2.0,3.0,normal
@@ -59,7 +104,9 @@ line,3.0,0.0,3.0,3.0,normal
 line,0.0,1.0,2.0,1.0,normal
 # ORIG [0053]: 1,0,3,3,3,1
 line,0.0,3.0,3.0,3.0,normal
+# ORIG [0054]:
 
+# ORIG [0055]: # Yorick's apartments
 # Yorick's apartments
 # ORIG [0056]: 1,6,0,6,3,1
 line,6.0,0.0,6.0,3.0,normal
@@ -85,7 +132,9 @@ line,13.0,1.0,14.0,1.0,normal
 line,18.0,3.0,18.0,2.0,normal
 # ORIG [0067]: 1,18,2,19,2,1
 line,18.0,2.0,19.0,2.0,normal
+# ORIG [0068]:
 
+# ORIG [0069]: # Rest of Church outline
 # Rest of Church outline
 # ORIG [0070]: 1,0,6,3,6,1
 line,0.0,6.0,3.0,6.0,normal
@@ -99,8 +148,11 @@ line,6.0,9.0,6.0,6.0,normal
 line,6.0,6.0,18.0,6.0,normal
 # ORIG [0075]: 1,18,6,18,3,1
 line,18.0,6.0,18.0,3.0,normal
+# ORIG [0076]:
 
+# ORIG [0077]: # Edgar's apartments
 # Edgar's apartments
+# ORIG [0078]: #  Interior walls
 #  Interior walls
 # ORIG [0079]: 1,26,0,26,1,1
 line,26.0,0.0,26.0,1.0,normal
@@ -122,6 +174,7 @@ line,25.0,1.0,27.0,1.0,normal
 line,27.0,1.0,27.0,5.0,normal
 # ORIG [0088]: 1,25,3,27,3,1
 line,25.0,3.0,27.0,3.0,normal
+# ORIG [0089]: #  Exterior Wall: fill polygon
 #  Exterior Wall: fill polygon
 # ORIG [0090]: 5,24,0,24,6,1
 block,24.0,0.0,24.0,6.0,solid
@@ -135,7 +188,9 @@ continuation,30.0,5.0,25.0,5.0,solid
 continuation,25.0,5.0,25.0,0.0,solid
 # ORIG [0095]: 99,25,0,24,0,99
 continuation,25.0,0.0,24.0,0.0,block_end
+# ORIG [0096]:
 
+# ORIG [0097]: # Corner of church and Knight Bridge
 # Corner of church and Knight Bridge
 # ORIG [0098]: 5,6,6,6,9,1
 block,6.0,6.0,6.0,9.0,solid
@@ -143,7 +198,9 @@ block,6.0,6.0,6.0,9.0,solid
 continuation,6.0,9.0,9.0,6.0,solid
 # ORIG [0100]: 99,9,6,6,6,99
 continuation,9.0,6.0,6.0,6.0,block_end
+# ORIG [0101]:
 
+# ORIG [0102]: # Knight Bridge Pits
 # Knight Bridge Pits
 # ORIG [0103]: 5,11,6,19,6,6
 block,11.0,6.0,19.0,6.0,white_thin
@@ -161,6 +218,7 @@ continuation,19.0,6.0,19.0,8.5,hatched
 continuation,19.0,8.5,11.0,8.5,hatched
 # ORIG [0110]: 99,11,8.5,11,6,99
 continuation,11.0,8.5,11.0,6.0,block_end
+# ORIG [0111]:
 
 # ORIG [0112]: 5,11,9,19,9,6
 block,11.0,9.0,19.0,9.0,white_thin
@@ -178,6 +236,7 @@ continuation,19.0,9.0,19.0,12.0,hatched
 continuation,19.0,12.0,11.0,12.0,hatched
 # ORIG [0119]: 99,11,12,11,9,99
 continuation,11.0,12.0,11.0,9.0,block_end
+# ORIG [0120]:
 
 # ORIG [0121]: 5,19.5,6,23,6,6
 block,19.5,6.0,23.0,6.0,white_thin
@@ -195,6 +254,7 @@ continuation,23.0,6.0,23.0,8.5,hatched
 continuation,23.0,8.5,19.5,8.5,hatched
 # ORIG [0128]: 99,19.5,8.5,19.5,6,99
 continuation,19.5,8.5,19.5,6.0,block_end
+# ORIG [0129]:
 
 # ORIG [0130]: 5,19.5,9,23,9,6
 block,19.5,9.0,23.0,9.0,white_thin
@@ -212,8 +272,10 @@ continuation,23.0,9.0,23.0,12.0,hatched
 continuation,23.0,12.0,19.5,12.0,hatched
 # ORIG [0137]: 99,19.5,12,19.5,9,99
 continuation,19.5,12.0,19.5,9.0,block_end
+# ORIG [0138]:
 
-#Knight Bridge Walls
+# ORIG [0139]: # Knight Bridge Walls
+# Knight Bridge Walls
 # ORIG [0140]: 1,6,6,18,6,1
 line,6.0,6.0,18.0,6.0,normal
 # ORIG [0141]: 1,6,9,8,11,1
@@ -234,6 +296,7 @@ line,23.0,17.0,26.0,17.0,thick
 line,25.0,17.0,25.0,12.0,normal
 # ORIG [0149]: 1,24,12,23,12,1
 line,24.0,12.0,23.0,12.0,normal
+# ORIG [0150]:
 
 # ORIG [0151]: 5,21,13,24,13,1
 block,21.0,13.0,24.0,13.0,solid
@@ -241,6 +304,7 @@ block,21.0,13.0,24.0,13.0,solid
 continuation,24.0,13.0,24.0,16.0,solid
 # ORIG [0153]: 99,24,16,21,13,99
 continuation,24.0,16.0,21.0,13.0,block_end
+# ORIG [0154]:
 
 # ORIG [0155]: 5,23,16,24,17,1
 block,23.0,16.0,24.0,17.0,solid
@@ -248,7 +312,9 @@ block,23.0,16.0,24.0,17.0,solid
 continuation,24.0,17.0,23.0,17.0,solid_thin
 # ORIG [0157]: 99,23,17,23,16,99
 continuation,23.0,17.0,23.0,16.0,block_end
+# ORIG [0158]:
 
+# ORIG [0159]: # Sewer Drain
 # Sewer Drain
 # ORIG [0160]: 6,10.5,12.5,1.5,1.5,1
 ellipse,10.5,12.5,1.5,1.5,solid
@@ -256,8 +322,11 @@ ellipse,10.5,12.5,1.5,1.5,solid
 ellipse,10.5,12.5,0.8,0.8,white
 # ORIG [0162]: 6,10.5,12.5,0.8,0.8,3
 ellipse,10.5,12.5,0.8,0.8,hatched
+# ORIG [0163]:
 
+# ORIG [0164]: # Wight Lairs
 # Wight Lairs
+# ORIG [0165]: #  Columns
 #  Columns
 # ORIG [0166]: 5,24,7,25,7,1
 block,24.0,7.0,25.0,7.0,solid
@@ -267,6 +336,7 @@ continuation,25.0,7.0,25.0,8.0,solid
 continuation,25.0,8.0,24.0,8.0,solid
 # ORIG [0169]: 99,24,8,24,7,99
 continuation,24.0,8.0,24.0,7.0,block_end
+# ORIG [0170]:
 
 # ORIG [0171]: 5,24,9,25,9,1
 block,24.0,9.0,25.0,9.0,solid
@@ -276,11 +346,13 @@ continuation,25.0,9.0,25.0,10.0,solid
 continuation,25.0,10.0,24.0,10.0,solid
 # ORIG [0174]: 99,24,10,24,9,99
 continuation,24.0,10.0,24.0,9.0,block_end
+# ORIG [0175]: #  Shaft
 #  Shaft
 # ORIG [0176]: 6,24.5,9.5,.4,.4,2
 ellipse,24.5,9.5,0.4,0.4,white
 # ORIG [0177]: 6,24.5,9.5,.4,.4,3
 ellipse,24.5,9.5,0.4,0.4,hatched
+# ORIG [0178]:
 
 # ORIG [0179]: 5,23,11,25,11,1
 block,23.0,11.0,25.0,11.0,solid
@@ -290,7 +362,9 @@ continuation,25.0,11.0,25.0,12.0,solid
 continuation,25.0,12.0,23.0,12.0,solid
 # ORIG [0182]: 99,23,12,23,11,99
 continuation,23.0,12.0,23.0,11.0,block_end
+# ORIG [0183]:
 
+# ORIG [0184]: # Walls
 # Walls
 # ORIG [0185]: 1,24.5,6,24.5,7,1
 line,24.5,6.0,24.5,7.0,normal
@@ -308,7 +382,9 @@ line,25.0,9.0,30.0,9.0,normal
 line,25.0,10.0,30.0,10.0,normal
 # ORIG [0192]: 1,25,11,30,11,1
 line,25.0,11.0,30.0,11.0,normal
+# ORIG [0193]:
 
+# ORIG [0194]: # Churchyard
 # Churchyard
 # ORIG [0195]: 1,1,7,2,7,1
 line,1.0,7.0,2.0,7.0,normal
@@ -318,6 +394,7 @@ line,2.0,7.0,2.0,8.0,normal
 line,2.0,8.0,1.0,8.0,normal
 # ORIG [0198]: 1,1,8,1,7,1
 line,1.0,8.0,1.0,7.0,normal
+# ORIG [0199]:
 
 # ORIG [0200]: 1,0,9,1,9,1
 line,0.0,9.0,1.0,9.0,normal
@@ -327,6 +404,7 @@ line,1.0,9.0,1.0,10.0,normal
 line,1.0,10.0,0.0,10.0,normal
 # ORIG [0203]: 1,1,10,0,10,1
 line,1.0,10.0,0.0,10.0,normal
+# ORIG [0204]:
 
 # ORIG [0205]: 1,2,9,3,9,1
 line,2.0,9.0,3.0,9.0,normal
@@ -336,6 +414,7 @@ line,3.0,9.0,3.0,10.0,normal
 line,3.0,10.0,2.0,10.0,normal
 # ORIG [0208]: 1,2,10,2,9,1
 line,2.0,10.0,2.0,9.0,normal
+# ORIG [0209]:
 
 # ORIG [0210]: 1,0,11,1,11,1
 line,0.0,11.0,1.0,11.0,normal
@@ -345,6 +424,7 @@ line,1.0,11.0,1.0,12.0,normal
 line,1.0,12.0,0.0,12.0,normal
 # ORIG [0213]: 1,0,12,0,11,1
 line,0.0,12.0,0.0,11.0,normal
+# ORIG [0214]:
 
 # ORIG [0215]: 1,2,11,3,11,1
 line,2.0,11.0,3.0,11.0,normal
@@ -354,6 +434,7 @@ line,3.0,11.0,3.0,12.0,normal
 line,3.0,12.0,2.0,12.0,normal
 # ORIG [0218]: 1,2,12,2,11,1
 line,2.0,12.0,2.0,11.0,normal
+# ORIG [0219]:
 
 # ORIG [0220]: 1,0,13,1,13,1
 line,0.0,13.0,1.0,13.0,normal
@@ -363,6 +444,7 @@ line,1.0,13.0,1.0,14.0,normal
 line,1.0,14.0,0.0,14.0,normal
 # ORIG [0223]: 1,0,14,0,13,1
 line,0.0,14.0,0.0,13.0,normal
+# ORIG [0224]:
 
 # ORIG [0225]: 1,2,13,3,13,1
 line,2.0,13.0,3.0,13.0,normal
@@ -372,6 +454,7 @@ line,3.0,13.0,3.0,14.0,normal
 line,3.0,14.0,2.0,14.0,normal
 # ORIG [0228]: 1,2,14,2,13,1
 line,2.0,14.0,2.0,13.0,normal
+# ORIG [0229]:
 
 # ORIG [0230]: 1,3,10,3,11,4
 line,3.0,10.0,3.0,11.0,dotted
@@ -381,7 +464,9 @@ line,3.0,12.0,3.0,13.0,dotted
 line,0.0,15.0,3.0,15.0,dotted
 # ORIG [0233]: 1,3,15,3,14,1
 line,3.0,15.0,3.0,14.0,normal
+# ORIG [0234]:
 
+# ORIG [0235]: # Shadow Maze
 # Shadow Maze
 # ORIG [0236]: 5,7,13,9.5,13,1
 block,7.0,13.0,9.5,13.0,solid
@@ -399,6 +484,7 @@ continuation,9.0,16.0,9.0,17.0,solid
 continuation,9.0,17.0,7.0,15.0,solid
 # ORIG [0243]: 99,7,15,7,13,99
 continuation,7.0,15.0,7.0,13.0,block_end
+# ORIG [0244]: #  Walls
 #  Walls
 # ORIG [0245]: 1,6,14,3,11,1
 line,6.0,14.0,3.0,11.0,normal
@@ -414,6 +500,7 @@ block,3.0,9.0,4.0,10.0,solid
 continuation,4.0,10.0,3.0,10.0,solid
 # ORIG [0251]: 99,3,10,3,9,99
 continuation,3.0,10.0,3.0,9.0,block_end
+# ORIG [0252]: #  Rectangle
 #  Rectangle
 # ORIG [0253]: 5,5,12,6,11,1
 block,5.0,12.0,6.0,11.0,solid
@@ -423,6 +510,7 @@ continuation,6.0,11.0,6.4,11.4,solid
 continuation,6.4,11.4,5.4,12.4,solid
 # ORIG [0256]: 99,5.4,12.4,5,12,99
 continuation,5.4,12.4,5.0,12.0,block_end
+# ORIG [0257]: #  Triangle
 #  Triangle
 # ORIG [0258]: 5,6,13,7,12,1
 block,6.0,13.0,7.0,12.0,solid
@@ -432,7 +520,9 @@ continuation,7.0,12.0,7.0,13.0,solid
 continuation,7.0,13.0,6.0,13.0,block_end
 # ORIG [0261]: 1,6,13,5,12,1
 line,6.0,13.0,5.0,12.0,normal
+# ORIG [0262]:
 
+# ORIG [0263]: # Hall of Bone
 # Hall of Bone
 # ORIG [0264]: 1,3,15,8,20,2
 line,3.0,15.0,8.0,20.0,thick
@@ -472,7 +562,9 @@ line,19.0,22.0,19.0,21.0,dotted
 line,19.0,21.0,15.0,21.0,dotted
 # ORIG [0282]: 1,14,21,10,21,4
 line,14.0,21.0,10.0,21.0,dotted
+# ORIG [0283]:
 
+# ORIG [0284]: # Staircase
 # Staircase
 # ORIG [0285]: 1,5,20,9,20,1
 line,5.0,20.0,9.0,20.0,normal
@@ -498,7 +590,9 @@ continuation,8.0,21.0,8.0,23.0,hatched
 continuation,8.0,23.0,6.0,23.0,hatched
 # ORIG [0296]: 99,6,23,6,21,99
 continuation,6.0,23.0,6.0,21.0,block_end
+# ORIG [0297]:
 
+# ORIG [0298]: # Spiral Passage
 # Spiral Passage
 # ORIG [0299]: 1,25,17,25,12,1
 line,25.0,17.0,25.0,12.0,normal
@@ -524,7 +618,9 @@ block,26.0,17.0,27.0,17.0,solid
 continuation,27.0,17.0,27.0,18.0,solid
 # ORIG [0310]: 99,27,18,26,17,99
 continuation,27.0,18.0,26.0,17.0,block_end
+# ORIG [0311]:
 
+# ORIG [0312]: # Mummy's Tomb
 # Mummy's Tomb
 # ORIG [0313]: 1,20,20,23,17,2
 line,20.0,20.0,23.0,17.0,thick
@@ -590,6 +686,7 @@ ellipse,14.5,18.5,0.4,0.4,hatched
 ellipse,16.5,17.5,0.5,0.5,solid
 # ORIG [0344]: 1,13,13,13,20,1
 line,13.0,13.0,13.0,20.0,normal
+# ORIG [0345]: #  Mummy Maze
 #  Mummy Maze
 # ORIG [0346]: 1,12,16,12,18,1
 line,12.0,16.0,12.0,18.0,normal
@@ -611,7 +708,9 @@ block,12.0,19.0,12.0,18.0,hatched
 continuation,12.0,18.0,11.0,18.0,hatched
 # ORIG [0355]: 99,11,18,12,19,99
 continuation,11.0,18.0,12.0,19.0,block_end
+# ORIG [0356]:
 
+# ORIG [0357]: # Quasqueton Room
 # Quasqueton Room
 # ORIG [0358]: 1,26,17,29,20,2
 line,26.0,17.0,29.0,20.0,thick
@@ -623,7 +722,9 @@ line,29.0,23.0,26.0,26.0,thick
 line,26.0,26.0,23.0,26.0,thick
 # ORIG [0362]: 1,23,26,20,23,2
 line,23.0,26.0,20.0,23.0,thick
+# ORIG [0363]:
 
+# ORIG [0364]: # Armory
 # Armory
 # ORIG [0365]: 1,27,17,30,17,1
 line,27.0,17.0,30.0,17.0,normal
@@ -631,7 +732,9 @@ line,27.0,17.0,30.0,17.0,normal
 line,29.0,20.0,30.0,20.0,normal
 # ORIG [0367]: 1,29,23,30,23,1
 line,29.0,23.0,30.0,23.0,normal
+# ORIG [0368]:
 
+# ORIG [0369]: #Zombocalypse
 #Zombocalypse
 # ORIG [0370]: 1,29,26,27,28,1
 line,29.0,26.0,27.0,28.0,normal
@@ -697,13 +800,17 @@ line,12.0,24.0,13.0,26.0,dashed
 line,13.5,30.0,13.5,29.0,dashed
 # ORIG [0401]: 1,19,28,22,25,3
 line,19.0,28.0,22.0,25.0,dashed
+# ORIG [0402]:
 
+# ORIG [0403]: # Doors
 # Doors
+# ORIG [0404]: #  Carlotta
 #  Carlotta
 # ORIG [0405]: 3,2,0,2,1,1
 door,2.0,0.0,2.0,1.0,vertical
 # ORIG [0406]: 3,2,2,2,3,1
 door,2.0,2.0,2.0,3.0,vertical
+# ORIG [0407]: #  Abbey
 #  Abbey
 # ORIG [0408]: 3,6,1,6,2,1
 door,6.0,1.0,6.0,2.0,vertical
@@ -719,6 +826,7 @@ door,18.0,0.0,17.0,1.0,vertical
 door,18.0,2.0,19.0,2.0,horizontal
 # ORIG [0414]: 3,18,4,18,5,3
 door,18.0,4.0,18.0,5.0,vertical_double
+# ORIG [0415]: #  Edgar
 #  Edgar
 # ORIG [0416]: 3,26,0,26,1,1
 door,26.0,0.0,26.0,1.0,vertical
@@ -732,6 +840,7 @@ door,29.0,2.0,30.0,2.0,horizontal
 door,28.0,3.0,29.0,3.0,horizontal
 # ORIG [0421]: 3,27,4,27,5,1
 door,27.0,4.0,27.0,5.0,vertical
+# ORIG [0422]: #  Ghoulyard
 #  Ghoulyard
 # ORIG [0423]: 3,1,8,2,8,2
 door,1.0,8.0,2.0,8.0,horizontal
@@ -749,6 +858,7 @@ door,1.0,13.0,1.0,14.0,vertical
 door,2.0,13.0,2.0,14.0,vertical
 # ORIG [0430]: 3,3,14,3,15,3
 door,3.0,14.0,3.0,15.0,vertical_double
+# ORIG [0431]: #  Knight Bridge
 #  Knight Bridge
 # ORIG [0432]: 3,8,11,8,12,1
 door,8.0,11.0,8.0,12.0,vertical
@@ -758,6 +868,7 @@ door,17.0,13.0,18.0,13.0,horizontal
 door,24.0,17.0,25.0,17.0,horizontal
 # ORIG [0435]: 3,25,16,25,16,1
 door,25.0,16.0,25.0,16.0,vertical
+# ORIG [0436]: #  Wights
 #  Wights
 # ORIG [0437]: 3,24.5,6,24.5,7,1
 door,24.5,6.0,24.5,7.0,vertical
@@ -773,6 +884,7 @@ door,26.0,8.0,27.0,8.0,horizontal
 door,26.0,9.0,27.0,9.0,horizontal
 # ORIG [0443]: 3,26,10,27,10,2
 door,26.0,10.0,27.0,10.0,horizontal
+# ORIG [0444]: #  Mummy
 #  Mummy
 # ORIG [0445]: 3,17,20,18,20,2
 door,17.0,20.0,18.0,20.0,horizontal
@@ -780,42 +892,57 @@ door,17.0,20.0,18.0,20.0,horizontal
 door,13.0,16.0,13.0,17.0,vertical_double
 # ORIG [0447]: 3,10,16,10,17,3
 door,10.0,16.0,10.0,17.0,vertical_double
+# ORIG [0448]: #  Armory
 #  Armory
 # ORIG [0449]: 3,29,20,30,20,2
 door,29.0,20.0,30.0,20.0,horizontal
+# ORIG [0450]: #  Stairway
 #  Stairway
 # ORIG [0451]: 3,9,20,9,21,1
 door,9.0,20.0,9.0,21.0,vertical
+# ORIG [0452]: #  Zombocalypse
 #  Zombocalypse
 # ORIG [0453]: 3,17,23,18,23,2
 door,17.0,23.0,18.0,23.0,horizontal
 # ORIG [0454]: 3,24,26,25,26,2
 door,24.0,26.0,25.0,26.0,horizontal
+# ORIG [0455]: # Spiral Stairs
 # Spiral Stairs
+# ORIG [0456]: #  Church
 #  Church
 # ORIG [0457]: 7,4.5,4.5,1,1,1
 spiral_stairs,4.5,4.5,1.0,1.0,None
+# ORIG [0458]: #  Edgar
 #  Edgar
 # ORIG [0459]: 7,28.5,1.5,1,1,1
 spiral_stairs,28.5,1.5,1.0,1.0,None
+# ORIG [0460]: #  Spiral Passage
 #  Spiral Passage
 # ORIG [0461]: 7,27.5,13.5,1,1,1
 spiral_stairs,27.5,13.5,1.0,1.0,None
+# ORIG [0462]: #  Mummy
 #  Mummy
 # ORIG [0463]: 7,21.5,16.5,1,1,1
 spiral_stairs,21.5,16.5,1.0,1.0,None
+# ORIG [0464]:
 
+# ORIG [0465]: # Toilets
 # Toilets
+# ORIG [0466]: #  Abbey
 #  Abbey
 # ORIG [0467]: 8,13.5,0.4,0,0,1
 toilet,13.5,0.4,0.0,0.0,vertical
+# ORIG [0468]: #  Yorick's
 #  Yorick's
 # ORIG [0469]: 8,18.2,2.4,0,0,2
 toilet,18.2,2.4,0.0,0.0,horizontal
+# ORIG [0470]: #  Edgar's
 #  Edgar's
 # ORIG [0471]: 8,25.3,0.5,0,0,2
 toilet,25.3,0.5,0.0,0.0,horizontal
+# ORIG [0472]:
 
+# ORIG [0473]: # Quasqueton pools
 # Quasqueton pools
 # ORIG [0474]: 6,22.5,18.5,0.4,0.4,6
 ellipse,22.5,18.5,0.4,0.4,white_thin
@@ -847,13 +974,17 @@ ellipse,22.5,24.5,0.4,0.4,white_thin
 ellipse,24.5,24.5,0.4,0.4,white_thin
 # ORIG [0488]: 6,26.5,24.5,0.4,0.4,6
 ellipse,26.5,24.5,0.4,0.4,white_thin
+# ORIG [0489]:
 
+# ORIG [0490]: # Zombocalypse Fountain
 # Zombocalypse Fountain
 # ORIG [0491]: 6,3,22,0.6,0.6,6
 ellipse,3.0,22.0,0.6,0.6,white_thin
 # ORIG [0492]: 6,3,22,0.3,0.3,6
 ellipse,3.0,22.0,0.3,0.3,white_thin
+# ORIG [0493]:
 
+# ORIG [0494]: # Altar
 # Altar
 # ORIG [0495]: 5,1.5,4,2,4,6
 block,1.5,4.0,2.0,4.0,white_thin
@@ -863,7 +994,9 @@ continuation,2.0,4.0,2.0,5.0,white_thin
 continuation,2.0,5.0,1.5,5.0,white_thin
 # ORIG [0498]: 99,1.5,5,1.5,4,99
 continuation,1.5,5.0,1.5,4.0,block_end
+# ORIG [0499]:
 
+# ORIG [0500]: # Carlotta's Furniture
 # Carlotta's Furniture
 # ORIG [0501]: 1,0,2,0.3,2,5
 line,0.0,2.0,0.3,2.0,thin
@@ -873,6 +1006,7 @@ line,0.3,2.0,0.3,1.3,thin
 line,0.3,1.3,1.0,1.3,thin
 # ORIG [0504]: 1,1,1.3,1,1,5
 line,1.0,1.3,1.0,1.0,thin
+# ORIG [0505]:
 
 # ORIG [0506]: 5,0.8,1.8,1.7,1.8,6
 block,0.8,1.8,1.7,1.8,white_thin
@@ -882,7 +1016,9 @@ continuation,1.7,1.8,1.7,2.3,white_thin
 continuation,1.7,2.3,0.8,2.3,white_thin
 # ORIG [0509]: 99,0.8,2.3,0.8,1.8,99
 continuation,0.8,2.3,0.8,1.8,block_end
+# ORIG [0510]:
 
+# ORIG [0511]: # Carlotta's Coffin
 # Carlotta's Coffin
 # ORIG [0512]: 5,0.2,0.4,0.4,0.3,6
 block,0.2,0.4,0.4,0.3,white_thin
@@ -896,7 +1032,9 @@ continuation,0.9,0.6,0.4,0.7,white_thin
 continuation,0.4,0.7,0.2,0.6,white_thin
 # ORIG [0517]: 99,0.2,0.6,0.2,0.4,99
 continuation,0.2,0.6,0.2,0.4,block_end
+# ORIG [0518]:
 
+# ORIG [0519]: # Pillars in Refectory
 # Pillars in Refectory
 # ORIG [0520]: 6,7,1,0.2,0.2,5
 ellipse,7.0,1.0,0.2,0.2,solid_thin
@@ -914,11 +1052,15 @@ ellipse,8.0,2.0,0.2,0.2,solid_thin
 ellipse,11.0,2.0,0.2,0.2,solid_thin
 # ORIG [0527]: 6,12,2,0.2,0.2,5
 ellipse,12.0,2.0,0.2,0.2,solid_thin
+# ORIG [0528]:
 
+# ORIG [0529]: # Table in Refectory
 # Table in Refectory
 # ORIG [0530]: 6,9.5,1.5,0.7,0.3,6
 ellipse,9.5,1.5,0.7,0.3,white_thin
+# ORIG [0531]:
 
+# ORIG [0532]: # Hearth
 # Hearth
 # ORIG [0533]: 1,14,0.6,14.2,0.6,5
 line,14.0,0.6,14.2,0.6,thin
@@ -940,7 +1082,9 @@ continuation,14.8,0.1,14.8,0.3,solid_thin
 continuation,14.8,0.3,14.2,0.3,solid_thin
 # ORIG [0542]: 99,14.2,0.3,14.2,0.1,99
 continuation,14.2,0.3,14.2,0.1,block_end
+# ORIG [0543]:
 
+# ORIG [0544]: # Sink
 # Sink
 # ORIG [0545]: 1,13,2.4,14.5,2.4,5
 line,13.0,2.4,14.5,2.4,thin
@@ -948,7 +1092,9 @@ line,13.0,2.4,14.5,2.4,thin
 line,14.5,2.4,14.5,3.0,thin
 # ORIG [0547]: 6,13.7,2.6,0.2,0.1,6
 ellipse,13.7,2.6,0.2,0.1,white_thin
+# ORIG [0548]:
 
+# ORIG [0549]: # Beds
 # Beds
 # ORIG [0550]: 1,16,1.4,16.7,1.4,5
 line,16.0,1.4,16.7,1.4,thin
@@ -956,6 +1102,7 @@ line,16.0,1.4,16.7,1.4,thin
 line,16.7,1.4,16.7,1.7,thin
 # ORIG [0552]: 1,16.7,1.7,16,1.7,5
 line,16.7,1.7,16.0,1.7,thin
+# ORIG [0553]:
 
 # ORIG [0554]: 1,16,2.4,16.7,2.4,5
 line,16.0,2.4,16.7,2.4,thin
@@ -963,6 +1110,7 @@ line,16.0,2.4,16.7,2.4,thin
 line,16.7,2.4,16.7,2.7,thin
 # ORIG [0556]: 1,16.7,2.7,16,2.7,5
 line,16.7,2.7,16.0,2.7,thin
+# ORIG [0557]:
 
 # ORIG [0558]: 1,18,1.4,17.3,1.4,5
 line,18.0,1.4,17.3,1.4,thin
@@ -970,6 +1118,7 @@ line,18.0,1.4,17.3,1.4,thin
 line,17.3,1.4,17.3,1.7,thin
 # ORIG [0560]: 1,17.3,1.7,18,1.7,5
 line,17.3,1.7,18.0,1.7,thin
+# ORIG [0561]:
 
 # ORIG [0562]: 1,18,2.4,17.3,2.4,5
 line,18.0,2.4,17.3,2.4,thin
@@ -977,7 +1126,9 @@ line,18.0,2.4,17.3,2.4,thin
 line,17.3,2.4,17.3,2.7,thin
 # ORIG [0564]: 1,17.3,2.7,18,2.7,5
 line,17.3,2.7,18.0,2.7,thin
+# ORIG [0565]:
 
+# ORIG [0566]: # Abbot
 # Abbot
 # ORIG [0567]: 1,19,1.1,18.7,1.1,5
 line,19.0,1.1,18.7,1.1,thin
@@ -985,8 +1136,11 @@ line,19.0,1.1,18.7,1.1,thin
 line,18.7,1.1,18.7,1.8,thin
 # ORIG [0569]: 1,18.7,1.8,19,1.8,5
 line,18.7,1.8,19.0,1.8,thin
+# ORIG [0570]:
 
+# ORIG [0571]: # Edgar
 # Edgar
+# ORIG [0572]: #  Hearth
 #  Hearth
 # ORIG [0573]: 1,28,0,28,0.3,5
 line,28.0,0.0,28.0,0.3,thin
@@ -1008,6 +1162,7 @@ continuation,29.8,0.4,29.8,0.6,solid_thin
 continuation,29.8,0.6,29.6,0.6,solid_thin
 # ORIG [0582]: 99,29.6,0.6,29.6,0.4,99
 continuation,29.6,0.6,29.6,0.4,block_end
+# ORIG [0583]: #  Bedroom
 #  Bedroom
 # ORIG [0584]: 1,25,4.5,25.9,4.5,5
 line,25.0,4.5,25.9,4.5,thin
@@ -1025,9 +1180,11 @@ continuation,27.0,3.8,27.0,3.0,white_thin
 continuation,27.0,3.0,25.0,3.0,white_thin
 # ORIG [0591]: 99,25,3,25,3.2,99
 continuation,25.0,3.0,25.0,3.2,block_end
+# ORIG [0592]: #  Table
 #  Table
 # ORIG [0593]: 6,26,2,.7,.3,6
 ellipse,26.0,2.0,0.7,0.3,white_thin
+# ORIG [0594]: #  Beds
 #  Beds
 # ORIG [0595]: 1,28,3.4,28.7,3.4,5
 line,28.0,3.4,28.7,3.4,thin
@@ -1035,6 +1192,7 @@ line,28.0,3.4,28.7,3.4,thin
 line,28.7,3.4,28.7,3.7,thin
 # ORIG [0597]: 1,28.7,3.7,28,3.7,5
 line,28.7,3.7,28.0,3.7,thin
+# ORIG [0598]:
 
 # ORIG [0599]: 1,28,4.4,28.7,4.4,5
 line,28.0,4.4,28.7,4.4,thin
@@ -1042,6 +1200,7 @@ line,28.0,4.4,28.7,4.4,thin
 line,28.7,4.4,28.7,4.7,thin
 # ORIG [0601]: 1,28.7,4.7,28,4.7,5
 line,28.7,4.7,28.0,4.7,thin
+# ORIG [0602]:
 
 # ORIG [0603]: 1,30,3.4,29.3,3.4,5
 line,30.0,3.4,29.3,3.4,thin
@@ -1049,6 +1208,7 @@ line,30.0,3.4,29.3,3.4,thin
 line,29.3,3.4,29.3,3.7,thin
 # ORIG [0605]: 1,29.3,3.7,30,3.7,5
 line,29.3,3.7,30.0,3.7,thin
+# ORIG [0606]:
 
 # ORIG [0607]: 1,30,4.4,29.3,4.4,5
 line,30.0,4.4,29.3,4.4,thin
@@ -1056,12 +1216,17 @@ line,30.0,4.4,29.3,4.4,thin
 line,29.3,4.4,29.3,4.7,thin
 # ORIG [0609]: 1,29.3,4.7,30,4.7,5
 line,29.3,4.7,30.0,4.7,thin
+# ORIG [0610]:
 
+# ORIG [0611]: # Sarcophagus
 # Sarcophagus
 # ORIG [0612]: 6,9.2,16.5,0.15,0.4,6
 ellipse,9.2,16.5,0.15,0.4,white_thin
+# ORIG [0613]:
 
+# ORIG [0614]: # Stairway decorations
 # Stairway decorations
+# ORIG [0615]: #  Down
 #  Down
 # ORIG [0616]: 1,7.9,20.1,7.9,20.9,1
 line,7.9,20.1,7.9,20.9,normal
@@ -1071,6 +1236,7 @@ line,7.7,20.2,7.7,20.8,normal
 line,7.5,20.3,7.5,20.7,normal
 # ORIG [0619]: 1,7.3,20.4,7.3,20.6,1
 line,7.3,20.4,7.3,20.6,normal
+# ORIG [0620]: #  Up
 #  Up
 # ORIG [0621]: 1,8.1,21.1,8.9,21.1,1
 line,8.1,21.1,8.9,21.1,normal
@@ -1080,13 +1246,17 @@ line,8.1,21.3,8.9,21.3,normal
 line,8.1,21.5,8.9,21.5,normal
 # ORIG [0624]: 1,8.1,21.7,8.9,21.7,1
 line,8.1,21.7,8.9,21.7,normal
+# ORIG [0625]: #  Opposite corner
 #  Opposite corner
 # ORIG [0626]: 1,6,23,5,23,3
 line,6.0,23.0,5.0,23.0,dashed
 # ORIG [0627]: 1,6,23,6,24,3
 line,6.0,23.0,6.0,24.0,dashed
+# ORIG [0628]:
 
+# ORIG [0629]: # Text
 # Text
+# ORIG [0630]: #  Church
 #  Church
 # ORIG [0631]: 9,1.1,0.8,12,0,.7
 text,1.1,0.8,12,sans_serif,0.7
@@ -1112,6 +1282,7 @@ text,18.1,1.2,16,sans_serif,0.7
 text,18.84,0.8,S,sans_serif,0.6
 # ORIG [0642]: 9,19.2,0.8,17,0,.7
 text,19.2,0.8,17,sans_serif,0.7
+# ORIG [0643]: #  Churchyard
 #  Churchyard
 # ORIG [0644]: 9,21.2,4.8,18,0,.7
 text,21.2,4.8,18,sans_serif,0.7
@@ -1123,6 +1294,7 @@ text,21.4,2.3,t,sans_serif,0.5
 text,22.6,1.4,t,sans_serif,0.5
 # ORIG [0648]: 9,23.3,3.6,t,0,.5
 text,23.3,3.6,t,sans_serif,0.5
+# ORIG [0649]: #  Edgar's
 #  Edgar's
 # ORIG [0650]: 9,25.48,0.82,26,0,.4
 text,25.48,0.82,26,sans_serif,0.4
@@ -1136,6 +1308,7 @@ text,25.7,2.9,20,sans_serif,0.7
 text,25.7,4.3,21,sans_serif,0.7
 # ORIG [0655]: 9,28.6,4.3,15,0,.7
 text,28.6,4.3,15,sans_serif,0.7
+# ORIG [0656]: #  Spiral Stairs
 #  Spiral Stairs
 # ORIG [0657]: 9,27.4,1.5,dn,0,.4
 text,27.4,1.5,dn,sans_serif,0.4
@@ -1145,6 +1318,7 @@ text,26.4,13.5,dn,sans_serif,0.4
 text,20.4,16.5,up,sans_serif,0.4
 # ORIG [0660]: 9,3.4,4.5,dn,0,.4
 text,3.4,4.5,dn,sans_serif,0.4
+# ORIG [0661]: #  Wights
 #  Wights
 # ORIG [0662]: 9,29.3,6.8,a,0,.5
 text,29.3,6.8,a,sans_serif,0.5
@@ -1158,9 +1332,11 @@ text,29.3,9.8,d,sans_serif,0.5
 text,29.3,10.8,e,sans_serif,0.5
 # ORIG [0667]: 9,27.4,8.8,6,0,.7
 text,27.4,8.8,6,sans_serif,0.7
+# ORIG [0668]: #  Knight
 #  Knight
 # ORIG [0669]: 9,19.1,8.9,5,0,.7
 text,19.1,8.9,5,sans_serif,0.7
+# ORIG [0670]: #  Ghouls
 #  Ghouls
 # ORIG [0671]: 9,1.4,7.6,a,0,.5
 text,1.4,7.6,a,sans_serif,0.5
@@ -1178,6 +1354,7 @@ text,0.4,13.6,b,sans_serif,0.5
 text,2.4,13.6,b,sans_serif,0.5
 # ORIG [0678]: 9,1.2,10.8,22,0,.7
 text,1.2,10.8,22,sans_serif,0.7
+# ORIG [0679]: #  Quasqueton
 #  Quasqueton
 # ORIG [0680]: 9,22.4,18.7,a,0,.5
 text,22.4,18.7,a,sans_serif,0.5
@@ -1211,6 +1388,7 @@ text,24.4,24.7,n,sans_serif,0.5
 text,26.4,24.7,o,sans_serif,0.5
 # ORIG [0695]: 9,27.3,20.8,8,0,.7
 text,27.3,20.8,8,sans_serif,0.7
+# ORIG [0696]: #  Shadow Maze
 #  Shadow Maze
 # ORIG [0697]: 9,4.3,12.2,a,0,.5
 text,4.3,12.2,a,sans_serif,0.5
@@ -1224,6 +1402,7 @@ text,3.83,11.8,d,sans_serif,0.5
 text,3.4,9.3,e,sans_serif,0.5
 # ORIG [0702]: 9,6.1,10.8,4,0,.7
 text,6.1,10.8,4,sans_serif,0.7
+# ORIG [0703]: #  Mummy Maze
 #  Mummy Maze
 # ORIG [0704]: 9,12.4,17.7,a,0,.5
 text,12.4,17.7,a,sans_serif,0.5
@@ -1237,9 +1416,11 @@ text,12.4,14.7,d,sans_serif,0.5
 text,10.8,14.7,e,sans_serif,0.5
 # ORIG [0709]: 9,10.4,16.7,f,0,.5
 text,10.4,16.7,f,sans_serif,0.5
+# ORIG [0710]: #  Spiral Passage
 #  Spiral Passage
 # ORIG [0711]: 9,27.4,14.8,7,0,.7
 text,27.4,14.8,7,sans_serif,0.7
+# ORIG [0712]: #  Mummy labels
 #  Mummy labels
 # ORIG [0713]: 9,16.2,16.8,23,0,.7
 text,16.2,16.8,23,sans_serif,0.7
@@ -1247,19 +1428,23 @@ text,16.2,16.8,23,sans_serif,0.7
 text,11.2,15.8,24,sans_serif,0.7
 # ORIG [0715]: 9,9.35,16.05,25,0,.6
 text,9.35,16.05,25,sans_serif,0.6
+# ORIG [0716]: #  Hall of Bone
 #  Hall of Bone
 # ORIG [0717]: 9,5.3,15.8,2,0,.7
 text,5.3,15.8,2,sans_serif,0.7
 # ORIG [0718]: 9,13.3,21.8,2,0,.7
 text,13.3,21.8,2,sans_serif,0.7
+# ORIG [0719]: #  Stairway
 #  Stairway
 # ORIG [0720]: 9,8.3,20.8,1,0,.7
 text,8.3,20.8,1,sans_serif,0.7
+# ORIG [0721]: #  Armory
 #  Armory
 # ORIG [0722]: 9,28.2,18.3,9,0,.7
 text,28.2,18.3,9,sans_serif,0.7
 # ORIG [0723]: 9,29.4,23.2,S,0,.6
 text,29.4,23.2,S,sans_serif,0.6
+# ORIG [0724]: #  Zombocalypse
 #  Zombocalypse
 # ORIG [0725]: 9,2.88,22.12,a,0,.5
 text,2.88,22.12,a,sans_serif,0.5
@@ -1273,6 +1458,7 @@ text,12.6,25.5,b,sans_serif,0.5
 text,13.4,29.8,b,sans_serif,0.5
 # ORIG [0730]: 9,20.6,26.3,b,0,.5
 text,20.6,26.3,b,sans_serif,0.5
+# ORIG [0731]: #  Zombies!
 #  Zombies!
 # ORIG [0732]: 9,0.3,15.7,Z,0,.6
 text,0.3,15.7,Z,sans_serif,0.6
@@ -1284,6 +1470,7 @@ text,4.1,17.0,Z,sans_serif,0.6
 text,3.4,19.2,Z,sans_serif,0.6
 # ORIG [0736]: 9,0.3,20.7,Z,0,.6
 text,0.3,20.7,Z,sans_serif,0.6
+# ORIG [0737]: #  5
 #  5
 # ORIG [0738]: 9,0.5,24.7,Z,0,.6
 text,0.5,24.7,Z,sans_serif,0.6
@@ -1295,6 +1482,7 @@ text,0.3,29.7,Z,sans_serif,0.6
 text,2.3,28.2,Z,sans_serif,0.6
 # ORIG [0742]: 9,3.2,29.7,Z,0,.6
 text,3.2,29.7,Z,sans_serif,0.6
+# ORIG [0743]: #  10
 #  10
 # ORIG [0744]: 9,6.3,29.7,Z,0,.6
 text,6.3,29.7,Z,sans_serif,0.6
@@ -1306,6 +1494,7 @@ text,11.3,23.7,Z,sans_serif,0.6
 text,12.3,23.7,Z,sans_serif,0.6
 # ORIG [0748]: 9,14.3,23.7,Z,0,.6
 text,14.3,23.7,Z,sans_serif,0.6
+# ORIG [0749]: #  15
 #  15
 # ORIG [0750]: 9,13.3,26.7,Z,0,.6
 text,13.3,26.7,Z,sans_serif,0.6
@@ -1317,6 +1506,7 @@ text,17.3,29.7,Z,sans_serif,0.6
 text,18.8,28.7,Z,sans_serif,0.6
 # ORIG [0754]: 9,19.3,24.7,Z,0,.6
 text,19.3,24.7,Z,sans_serif,0.6
+# ORIG [0755]: #  20
 #  20
 # ORIG [0756]: 9,23.3,29.7,Z,0,.6
 text,23.3,29.7,Z,sans_serif,0.6
@@ -1328,7 +1518,9 @@ text,27.8,27.9,Z,sans_serif,0.6
 text,28.5,27.2,Z,sans_serif,0.6
 # ORIG [0760]: 9,29.3,24.7,Z,0,.6
 text,29.3,24.7,Z,sans_serif,0.6
+# ORIG [0761]:
 
+# ORIG [0762]: # Arrow and Scale
 # Arrow and Scale
 # ORIG [0763]: 1,4,1,4,2.2,1
 line,4.0,1.0,4.0,2.2,normal

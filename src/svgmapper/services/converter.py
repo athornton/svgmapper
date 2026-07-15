@@ -37,7 +37,9 @@ class Converter(BaseSVGMapper):
             for raw_line in f:
                 self._input_line += 1
                 line = raw_line.strip()
+                self._current_line = line
                 self._logger.debug(f"line: {line}")
+                output += f"# ORIG [{self._input_line:04d}]: {line}\n"
                 # Copy comments and blank lines
                 if not line:
                     output += "\n"
@@ -46,7 +48,6 @@ class Converter(BaseSVGMapper):
                     output += line + "\n"
                     continue
                 new_line = self._convert_numeric(line)
-                output += f"# ORIG [{self._input_line:04d}]: {line}\n"
                 output += new_line + "\n"
         self._output.write_text(output)
 

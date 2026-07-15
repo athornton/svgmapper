@@ -47,6 +47,7 @@ from ..exceptions import (
     SVGBadNumericInputError,
     SVGMapperError,
 )
+from ..models.domain.document import Document
 from ..models.v1.input import (
     Arc,
     Block,
@@ -61,6 +62,8 @@ from ..models.v1.input import (
 )
 from ..models.v1.settings import Settings
 from ._base import BaseSVGMapper
+from .pdf import PDFCreator
+from .typst import TypstCreator
 
 
 @dataclass
@@ -76,12 +79,16 @@ class Creator(BaseSVGMapper):
         self,
         inp: Path,
         output: Path,
+        typst: Path | None = None,
+        pdf: Path | None = None,
         settings: Path | None = None,
         *,
         debug: bool = False,
     ) -> None:
 
         super().__init__(inp=inp, output=output, debug=debug)
+        self._typst = typst
+        self._pdf = pdf
         if settings:
             obj = json.loads(settings.read_text())
             self._settings = Settings(**obj)
@@ -100,6 +107,7 @@ class Creator(BaseSVGMapper):
         self._seed: str | None = "default"
         random.seed(self._seed)  # For repeatability
         self._elements: list[Element] = []
+        self._document = Document()
         self._logger.debug("creator initialized")
 
     def create(self) -> None:
@@ -113,16 +121,20 @@ class Creator(BaseSVGMapper):
         self._process_preamble()
         for line in self._input_lines:
             self._input_line += 1
+            self._current_line = line
             self._logger.debug(f"L [{self._input_line:04d}]: {line}")
             if not line:  # Skip blank lines
                 continue
+            if line.startswith("#"):
+                self._process_comment(line)
+                self._elements.append(Desc(text=line))
+                continue
             san_line = urllib.parse.quote(line, safe="=#/:, []")
             self._elements.append(Desc(text=san_line))
-            if san_line.startswith("#"):
-                continue  # Skip comments
             self._process_line(san_line)
         self._process_postamble()
         self._write_output()
+        self._afterburn()
 
     def _process_line(self, line: str) -> None:
         # Select processing method based on object kind.
@@ -158,6 +170,38 @@ class Creator(BaseSVGMapper):
         x2 = self._to_float(endx) * sc
         y2 = self._to_float(endy) * sc
         self._process_svg_obj(o_kind, x1, y1, x2, y2, obj_type)
+
+    def _process_comment(self, in_line: str) -> None:
+        line = in_line.strip()
+        if line.startswith("#T"):
+            self._process_title(line)
+        elif line.startswith("#R"):
+            self._process_right(line)
+        elif line.startswith("#K"):
+            self._process_key(line)
+        else:
+            return
+
+    def _process_title(self, line: str) -> None:
+        self._process_comment_line(line, self._document.title)
+
+    def _process_right(self, line: str) -> None:
+        self._process_comment_line(line, self._document.right)
+
+    def _process_key(self, line: str) -> None:
+        self._process_comment_line(line, self._document.key)
+
+    def _process_comment_line(self, line: str, dest: list[str]) -> None:
+        if len(line) == 3:
+            if line[2] != " ":
+                self._raise(
+                    SVGBadInputError(
+                        f"No space after line type marker: '{line}'"
+                    )
+                )
+            else:
+                dest.append("")
+        dest.append(line[3:])
 
     def _to_float(self, n: str) -> float:
         try:
@@ -383,6 +427,21 @@ class Creator(BaseSVGMapper):
     def _process_postamble(self) -> None:
         # Currently there is no postamble added.
         pass
+
+    def _afterburn(self) -> None:
+        if (
+            (
+                self._document.title
+                or self._document.right
+                or self._document.key
+            )
+            and self._typst
+            and self._pdf
+        ):
+            typst = TypstCreator(self._document, self._typst, self._output)
+            typst.create()
+            pdf = PDFCreator(self._typst, self._pdf)
+            pdf.create()
 
     def _process_svgline(
         self, x1: Number, y1: Number, x2: Number, y2: Number, sstyle: str

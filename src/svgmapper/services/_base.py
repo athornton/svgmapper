@@ -24,16 +24,21 @@ class BaseSVGMapper:
         configure_logging(name="SVGMapper", log_level=loglevel)
         self._logger = structlog.getLogger("SVGMapper")
         self._input_line: int = 0
+        self._current_line = ""
         self._logger.debug("Logging initialized")
 
     def _raise(self, exc: Exception) -> Never:
         """Raise error, annotating with input line."""
         if isinstance(exc, SVGMapperError):
             exc.input_line = self._input_line
+            exc.input_file = self._input
+            exc.current_line = self._current_line
             raise exc
         err = SVGBadInputError(
             message=str(exc),
             input_line=self._input_line,
+            input_file=self._input,
+            current_line=self._current_line,
             original_exception=exc,
         )
         raise err from exc
