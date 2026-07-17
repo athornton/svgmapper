@@ -29,7 +29,8 @@
     grid.cell([]),
     grid.cell(
         [
-                *Wandering Monsters*
+                *Wandering Monsters*\
+                check every 2 turns, 1 in 8 chance.
                 + Giant Toad (AC 14; HP 15; Bite +3 1d6+swallow)
                 + 2 human bandits (AC 13 [leather + shield]; HP 9, 3; Longsword +1 1d8+1)
                 + Rat swarm (AC 13; HP 8; Bite + 0 1d2 + disease)
@@ -39,8 +40,8 @@
                 + Sewage stench
                 + Discarded, bloody bandages and empty potion flask
                 *Legend*
-                + *C* Concealed Door
-                + *X* Pit in floor
+                - *C* Concealed Door
+                - *X* Pit in floor
         ]
     )
 )

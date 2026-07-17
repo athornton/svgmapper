@@ -1447,9 +1447,10 @@
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="50px" fill="#1EAED0" x="340.0" y="2650.0">1 sq.=</text>
 	<desc>text,3.4,27,10 ft.,sans_serif,0.5</desc>
 	<text stroke="#1EAED0" stroke-width="2.0" font-family="HelveticaNeue-CondensedBold, sans-serif" font-size="50px" fill="#1EAED0" x="340.0" y="2700.0">10 ft.</text>
-	<desc># Comments to populate document template</desc>
+	<desc># Comments to populate OPD document template</desc>
 	<desc>#T Megadungeon of the Mad Archmage Gary-Stu, Level 1: Entry</desc>
-	<desc>#R *Wandering Monsters*</desc>
+	<desc>#R *Wandering Monsters*\</desc>
+	<desc>#R check every 2 turns, 1 in 8 chance.</desc>
 	<desc>#R + Giant Toad (AC 14; HP 15; Bite +3 1d6+swallow)</desc>
 	<desc>#R + 2 human bandits (AC 13 [leather + shield]; HP 9, 3; Longsword +1 1d8+1)</desc>
 	<desc>#R + Rat swarm (AC 13; HP 8; Bite + 0 1d2 + disease)</desc>
@@ -1460,8 +1461,8 @@
 	<desc>#R + Discarded, bloody bandages and empty potion flask</desc>
 	<desc>#B</desc>
 	<desc>#R *Legend*</desc>
-	<desc>#R + *C* Concealed Door</desc>
-	<desc>#R + *X* Pit in floor</desc>
+	<desc>#R - *C* Concealed Door</desc>
+	<desc>#R - *X* Pit in floor</desc>
 	<desc>#K *Room Key*</desc>
 	<desc>#K + *Guard Post*: 2 goblin guards (AC 14 [scale mail]; HP 5,2; Morningstar +2 1d6).  Each has 8 sp, 12cp.</desc>
 	<desc>#K + *Orc and Pie*: Snouty the orc (AC 16 [chain mail and shield]); HP 8; Falchion +4 (2d4 +4).  Tasty pie (cherry).</desc>

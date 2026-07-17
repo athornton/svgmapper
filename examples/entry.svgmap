@@ -988,11 +988,12 @@ text,3,25.9,N,sans_serif,0.6
 text,3.4,26.5,1 sq.=,sans_serif,0.5
 text,3.4,27,10 ft.,sans_serif,0.5
 
-# Comments to populate document template
+# Comments to populate OPD document template
 
 #T Megadungeon of the Mad Archmage Gary-Stu, Level 1: Entry
 
-#R *Wandering Monsters*
+#R *Wandering Monsters*\
+#R check every 2 turns, 1 in 8 chance.
 #R + Giant Toad (AC 14; HP 15; Bite +3 1d6+swallow)
 #R + 2 human bandits (AC 13 [leather + shield]; HP 9, 3; Longsword +1 1d8+1)
 #R + Rat swarm (AC 13; HP 8; Bite + 0 1d2 + disease)
@@ -1003,8 +1004,8 @@ text,3.4,27,10 ft.,sans_serif,0.5
 #R + Discarded, bloody bandages and empty potion flask
 #B
 #R *Legend*
-#R + *C* Concealed Door
-#R + *X* Pit in floor
+#R - *C* Concealed Door
+#R - *X* Pit in floor
 
 #K *Room Key*
 #K + *Guard Post*: 2 goblin guards (AC 14 [scale mail]; HP 5,2; Morningstar +2 1d6).  Each has 8 sp, 12cp.

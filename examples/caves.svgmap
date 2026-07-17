@@ -482,3 +482,58 @@ text,4.4,13,10 ft.,sans_serif,0.5
 color,white,,,,
 ## Label well
 text,14.5,14.5,well,sans_serif,0.4
+
+# Create OPD map
+
+#T Megadungeon of the Mad Archmage Gary-Stu, Level 2: Caves
+
+#R *Wandering Monsters*\
+#R check every 2 turns, 1 in 8 chance.
+#R
+#R + Giant Toad (AC 14; HP 15; Bite +3 1d6+swallow)
+#R + 2 human bandits (AC 13 [leather + shield]; HP 8, 4; Sword +1 1d8+1)
+#R + Zombie (AC 11; HP 13; Club+2 1d6+2)
+#R + Hyena (AC 12; HP 4; Bite +3 1d4, laugh)
+#R + Choker (AC 17; HP 19; Tentacle + 6 1d3+3)
+#R + Antfolk Patrol: 2 warriors (AC 16; HP 9, 13; Spear +5 1d6+1 or Sting+3 1d2+paralysis
+#R + Giant Tick (AC 15; HP 15; bite+3 1d6+1 + automatic 1d6/round blood loss)
+#R + Shriekers shriek (loudness determined by distance); now check for wandering monsters every turn
+#R + Skeleton Warrior (AC 15; HP 6; Scimitar +1 1d6+1)
+#R + Sewage stench
+#R + Ghostly moaning
+#R + Mostly-dried bloodstain on wall/floor
+#R
+#R *Legend*
+#R
+#R - *S*: Secret Door
+#R - *C*: Concealed Door
+#R - *X*: Pit in floor
+
+#K *Room Key*
+#K + *Grand Staircase*: Up to surface, down to level 8.
+#K + *Antfolk Guard Post*: antfolk warrior (AC 16 [chiton + shield]; HP 11; Spear+5 (1d6+1) or sting+3 (1d2+paralysis DC 14/DEX, 1d6 rd)), whistle.
+#K + *Antfolk Burrow*: 4 antfolk warriors (HP 8, 14, 11, 5), 58 sp, 22 gp, gem worth 100 gp.
+#K + *Antfolk Queen*: Antfolk Queen: (AC 13; HP 24; Sting+4, as above), 4 antfolk drones (AC 12; HP 2, 2; noncombatant), 2 warriors (HP 15,14), 228 gp.
+#K + *Gnoll Guard Post*: gnoll (AC 15; HP 11; Battleaxe +3 (1d8+2)), whistle.
+#K + *Gnoll Lair*: 6 gnolls (HP 13, 13, 5, 11, 9, 8). 68 sp, 12 gp, idol of Yeenoghu in marble and gilt worth 45 gp.
+#K + *Gnoll Harem*: 4 female gnolls (AC 10; HP 5,6,7,8, noncombatant).
+#K + *Larder*: Salt pork, dried mushrooms, mushroom flour, mushroom beer. Water source and pit to sewers for disposal.
+#K + *Kennels*:  5 hyenas (AC 12; HP 5, 6, 2, 4, 3; Bite+3 (1d4)). Hyenas and gnolls attempt to flank. Laugh startles: DC 15/WIS to save or -1 atk/dmg for 1d4 rounds.
+#K + *Paddocks*: A-D each contain 4 swine (AC 12; HP 14, 14, 15, 19; Gore +4 (1d6+3)). Not really a problem unless freed.
+#K + *Gnoll Chief's Lair*: Yiprack, Gnoll Chief (AC 16 [chainmail and shield], HP 19, Longsword +5 (1d8+4)). Furs worth 20gp.
+#K + *Treasury*: silver dinnerware worth 50 gp, trapped chest (DC 15) 1d4+poison (1d4/1d4 str, DC 15) containing 311 gp, 22 pp, 200 gp worth of jewelry.
+#K + *Wine Cellar*: 12 barrels of rotgut red wine (20 gallons each, worth 20gp each); hidden behind them, 7 bottles of good wine (10 gp each).
+#K + *Cellar Annex*: Thick webs cover everything. 6 small monstrous spiders lurk here (AC 13; HP 2, 3, 5, 6, 5, 8; Bite +2 1d4 + poison (DC 17/STR, 1d8/1d8).  5 1-gallon casks of cognac, each worth 50 gp. If fire is used, the casks of cognac ignite, doing 4d6 to everything in the room, save DC 16/DEX for half.
+#K + *No-Man's-Land*: rugged cave with rat swarm (AC 13, 13 hp), bite+1 1d3 + DC 12/STR disease (fever, 1d3 days, 1d3DEX, 1d3STR).
+#K + *Pit Trap*: Sluice is only about 2 feet deep. Pit DC 13 to avoid, DC 4 to detect, 3d6 damage, fall 30' into area 4 of Mazes, just north of center circle of labyrinth.
+#K + *Hidden Choker Cave*: Choker (AC 17; HP 19; Tentacle +6 (1d3+3), 10' reach), 2 50 gp gems, potion of _cure light wounds_.
+#K + *Stirge Flock*: 5 stirges: (AC 14; HP 4, 3, 5, 6, 2), Beak + 6, 1 HP + automatic 1d4 blood drain per round once attached). These stirges have been trained to flee from green light (bandits have green-lensed lantern). No treasure.
+#K + *Bandit Guard Post*: bandit (AC 13 [leather + shield]; HP 13; Sword +1 1d8+1), 33sp.
+#K + *Bandit Barracks*: 6 bandits (HP 11, 12, 12, 14, 13, 13), 21 gp, 19 sp, low-quality personal effects, wineskins, etc.
+#K + *Storeroom*: Salt pork, 4 barrels of sour beer (20 gallon, worth 5 gp), barrel of mushroom beer (valueless), big wheel of hard cheese (20 lb, worth 1 gp).
+#K + *Bandit Barracks*: 5 more bandits (HP 10, 11, 11, 14, 13). 3 pp, 12 gp, 35 sp. Nice set of ivory dice worth 2gp.
+#K + *Midden/Privy*: Excrement buckets and pit to sewers. Smells vile.
+#K + *Mushroom Cave*: Bandits have a mushroom farm here. 2 shriekers (AC 8; HP 14, 17; Shriek (alerts bandits, 50% chance of wandering monster)).
+#K + *Brewery*: Bandits and gnolls make mushroom beer in huge vats here. It gets you drunk, but tastes foul.
+#K + *Drop to Sewers*: 60' fall, 2d6 damage, land in muck.
+

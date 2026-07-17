@@ -223,3 +223,20 @@ Only the `block` and the `cave` kind may be continued.
 This is used to indicate that the polygon begun with the `cave` or `block` kind statement continues on the current line.
 It is necessary because `block` or `cave` may represent extremely complicated shapes.
 `block_end` or `cave_end`, respectively, as the `type` on the final line of the `block` or `cave` signals the end of the polygon.
+
+## PDF Generation
+
+If magic comments are placed in the file, a [typst](https://typst.app) document will be created from them, and that document will be compiled to PDF.
+
+This PDF will emulate the original format (now vanished from the Internet) of the [One Page Dungeon Contest](https://www.dungeoncontest.com/) by [Michael Shorten](https://chgowiz-games.etinerra.com/).
+
+There are three sorts of magic comments:
+
+* `#T` specifies a title: `#T` followed by a space followed by text will put that text into the title.
+* `#R` specifies content for the block to the right of the map. As with the title, the following text will be inserted into the document.
+* `#K` specifies content for the room key, a single column underneath the map.  As with the other two forms, the text that follows will be inserted.
+
+Any of these with nothing following will insert a blank line. This is most useful for the block on the right.
+
+Inserted text will be processed as [Typst markup](https://typst.app/docs/reference/syntax/).
+
