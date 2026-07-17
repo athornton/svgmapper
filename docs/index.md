@@ -46,14 +46,17 @@ Options:
 ```
 Usage: svgmapper create [OPTIONS]
 
-  Create SVG from description file.
+  Create SVG, and optionally typst and PDF, from description file.
 
 Options:
-  -s, --settings PATH           Global settings file
-  -d, --debug                   Enable debug logging
-  -o, --output PATH             Output map file.  [required]
-  -f, -i, --file, --input PATH  Input map file.  [required]
-  -h, --help                    Show this message and exit.
+  -s, --settings PATH             Global settings file
+  -d, --debug                     Enable debug logging
+  -p, --pdf PATH                  Output PDF file.
+  -t, --typst PATH                Output typst file.
+  -o, --output PATH               Output svg file.
+  -f, -i, --inp, --file, --input PATH
+                                  Input map file.  [required]
+  -h, --help                      Show this message and exit.
 ```
 
 ## Examples

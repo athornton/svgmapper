@@ -120,7 +120,7 @@ def create(
     settings: Path,
     debug: bool,
 ) -> None:
-    """Create SVG from description file."""
+    """Create SVG, and optionally typst and PDF, from description file."""
     output = _check_output(inp, output)
     typst = _check_typst(inp, typst)
     pdf = _check_pdf(inp, pdf)
