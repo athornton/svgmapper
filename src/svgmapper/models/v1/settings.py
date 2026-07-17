@@ -23,6 +23,9 @@ class Settings:
     _scaled: bool = False
 
     def __post_init__(self) -> None:
+        self._scale()
+
+    def _scale(self) -> None:
         if self._scaled:
             return
         scale = self.scale
@@ -31,3 +34,19 @@ class Settings:
         self.thick_wall_stroke *= scale
         self.thin_stroke *= scale
         self._scaled = True
+
+    def _unscale(self) -> None:
+        if not self._scaled:
+            return
+        scale = self.scale
+        self.grid_stroke /= scale
+        self.wall_stroke /= scale
+        self.thick_wall_stroke /= scale
+        self.thin_stroke /= scale
+        self._scaled = False
+
+    def update(self, new: dict[str, int | Number | str]) -> None:
+        self._unscale()
+        for k, v in new.items():
+            setattr(self, k, v)
+        self._scale()

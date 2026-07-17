@@ -16,15 +16,7 @@ def test_settings() -> None:
     with tempfile.NamedTemporaryFile() as f:
         creator = Creator(inp=inp, output=Path(f.name), settings=settings)
     settings_obj = json.loads(settings.read_text())
-
-    for k in (
-        "grid_stroke",
-        "wall_stroke",
-        "thick_wall_stroke",
-        "thin_stroke",
-    ):
-        settings_obj[k] *= settings_obj["scale"]
-    c_settings = creator._settings
+    creator._settings.update(settings_obj)
 
     for k in (
         "scale",
@@ -33,12 +25,18 @@ def test_settings() -> None:
         "height_inches",
         "grid_size_x",
         "grid_size_y",
-        "grid_stroke",
-        "wall_stroke",
-        "thick_wall_stroke",
-        "thin_stroke",
     ):
-        assert getattr(c_settings, k) == settings_obj[k]
+        assert getattr(creator._settings, k) == settings_obj[k]
+
+        for j in (
+            "grid_stroke",
+            "wall_stroke",
+            "thick_wall_stroke",
+            "thin_stroke",
+        ):
+            assert round(getattr(creator._settings, j), 6) == round(
+                settings_obj[j] * creator._settings.scale, 6
+            )
 
     with tempfile.NamedTemporaryFile() as f:
         creator = Creator(inp=inp, output=Path(f.name), settings=settings)

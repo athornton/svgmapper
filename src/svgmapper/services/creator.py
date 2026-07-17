@@ -89,9 +89,10 @@ class Creator(BaseSVGMapper):
         super().__init__(inp=inp, output=output, debug=debug)
         self._typst = typst
         self._pdf = pdf
+        self._settings = Settings()
         if settings:
             obj = json.loads(settings.read_text())
-            self._settings = Settings(**obj)
+            self._settings.update(obj)
         else:
             self._settings = Settings()
         self._prev_kind: MapObjectKind | None = None

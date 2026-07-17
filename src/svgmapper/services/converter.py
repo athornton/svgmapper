@@ -39,10 +39,12 @@ class Converter(BaseSVGMapper):
                 line = raw_line.strip()
                 self._current_line = line
                 self._logger.debug(f"line: {line}")
-                output += f"# ORIG [{self._input_line:04d}]: {line}\n"
-                # Copy comments and blank lines
+                output += (
+                    f"# ORIG [{self._input_line:04d}]:"
+                    f"{' ' if line else ''}{line}\n"
+                )
+                # Copy comments, skip blank lines
                 if not line:
-                    output += "\n"
                     continue
                 if line.startswith("#"):
                     output += line + "\n"
