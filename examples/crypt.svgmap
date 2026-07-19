@@ -1471,3 +1471,131 @@ text,3.8,0.9,N,sans_serif,0.6
 text,4.2,1.5,1 sq.=,sans_serif,0.5
 # ORIG [0769]: 9,4.2,2.0,10 ft.,0,.5
 text,4.2,2.0,10 ft.,sans_serif,0.5
+# ORIG [0770]:
+# ORIG [0771]: # Below here is not actually in the initial crypt.desc.
+# Below here is not actually in the initial crypt.desc.
+# ORIG [0772]: # These are comments that allow generation of the One-Page Dungeon.
+# These are comments that allow generation of the One-Page Dungeon.
+# ORIG [0773]:
+# ORIG [0774]: #T Megadungeon of the Mad Archmage Gary-Stu, Level 5: Crypt
+#T Megadungeon of the Mad Archmage Gary-Stu, Level 5: Crypt
+# ORIG [0775]:
+# ORIG [0776]: #R #set par(leading: 0.1em)
+#R #set par(leading: 0.1em)
+# ORIG [0777]: #R *Wandering Monsters*\
+#R *Wandering Monsters*\
+# ORIG [0778]: #R Check every 20 minutes, 1 in 8 chance; then d12:
+#R Check every 20 minutes, 1 in 8 chance; then d12:
+# ORIG [0779]: #R 1-4. Wraith of character previously slain in dungeon. Causes level drain. Silver or magic weapon to hit.
+#R 1-4. Wraith of character previously slain in dungeon. Causes level drain. Silver or magic weapon to hit.
+# ORIG [0780]: #R 5. 1d3 ghouls. Cause paralysis.
+#R 5. 1d3 ghouls. Cause paralysis.
+# ORIG [0781]: #R 6-7. 1d8 skeleton warriors armed with scimitars.
+#R 6-7. 1d8 skeleton warriors armed with scimitars.
+# ORIG [0782]: #R 8-9. 1d6 zombies with clubs and claws.
+#R 8-9. 1d6 zombies with clubs and claws.
+# ORIG [0783]: #R 10. 1 wight. Causes level drain. Silver or magic weapon to hit.
+#R 10. 1 wight. Causes level drain. Silver or magic weapon to hit.
+# ORIG [0784]: #R 11. Abbot Yorick (see below)
+#R 11. Abbot Yorick (see below)
+# ORIG [0785]: #R 12. Carlotta (see below)
+#R 12. Carlotta (see below)
+# ORIG [0786]: #R
+#R
+# ORIG [0787]: #R *Legend*
+#R *Legend*
+# ORIG [0788]: #R - *S*: Secret door.
+#R - *S*: Secret door.
+# ORIG [0789]: #R
+#R
+# ORIG [0790]: #R *Subtable A*: Quasqueton Room
+#R *Subtable A*: Quasqueton Room
+# ORIG [0791]: #R #set enum(numbering: "a")
+#R #set enum(numbering: "a")
+# ORIG [0792]: #R + cool water
+#R + cool water
+# ORIG [0793]: #R + illusory bottom, 30' drop to next level
+#R + illusory bottom, 30' drop to next level
+# ORIG [0794]: #R + murky water hides angry viper
+#R + murky water hides angry viper
+# ORIG [0795]: #R + treasure pool with gold and silver
+#R + treasure pool with gold and silver
+# ORIG [0796]: #R + firewater: belch flame or hold it in and explode
+#R + firewater: belch flame or hold it in and explode
+# ORIG [0797]: #R + green slime
+#R + green slime
+# ORIG [0798]: #R + dimensional portal
+#R + dimensional portal
+# ORIG [0799]: #R + acid pool with gold-plated key at bottom (no matching door)
+#R + acid pool with gold-plated key at bottom (no matching door)
+# ORIG [0800]: #R + boiling water
+#R + boiling water
+# ORIG [0801]: #R + lair of water weird
+#R + lair of water weird
+# ORIG [0802]: #R + fake dry pool: looks dry, holds tepid water
+#R + fake dry pool: looks dry, holds tepid water
+# ORIG [0803]: #R + healing pool, one drink/character/day
+#R + healing pool, one drink/character/day
+# ORIG [0804]: #R + living, pulsing entrails. Edible (ew!)
+#R + living, pulsing entrails. Edible (ew!)
+# ORIG [0805]: #R + cold lager
+#R + cold lager
+# ORIG [0806]: #R + blink juice: next five hits received may cause short-range teleport instead of damage
+#R + blink juice: next five hits received may cause short-range teleport instead of damage
+# ORIG [0807]:
+# ORIG [0808]: #K *Room Key*
+#K *Room Key*
+# ORIG [0809]: #K #set enum(numbering: "1.")
+#K #set enum(numbering: "1.")
+# ORIG [0810]: #K + *Grand Stairway*: up to surface, down to level 8. Ceilings generally 10' high.
+#K + *Grand Stairway*: up to surface, down to level 8. Ceilings generally 10' high.
+# ORIG [0811]: #K + *Halls of Bone*: each room has 10 skeleton warriors armed with crossbows behind the iron lattices indicated by dots.
+#K + *Halls of Bone*: each room has 10 skeleton warriors armed with crossbows behind the iron lattices indicated by dots.
+# ORIG [0812]: #K + *Zombocalypse*: 25 Zombies ("Z"). Appear to be corpses until one of the dotted lines "b" is crossed, then all animate at once. Ruined fountain at "a" with a little silver coinage, some copper coins, rusted _magical dagger_.
+#K + *Zombocalypse*: 25 Zombies ("Z"). Appear to be corpses until one of the dotted lines "b" is crossed, then all animate at once. Ruined fountain at "a" with a little silver coinage, some copper coins, rusted _magical dagger_.
+# ORIG [0813]: #K + *Hall of Shadows*: check at each of a-e. Torchlight or less: 4 in 6, lantern 3/6, _Magical Light_ 2/6, of a shadow appearing and attacking. Drains strength.
+#K + *Hall of Shadows*: check at each of a-e. Torchlight or less: 4 in 6, lantern 3/6, _Magical Light_ 2/6, of a shadow appearing and attacking. Drains strength.
+# ORIG [0814]: #K + *Catwalk*: Dark Knight (strong skeletal warrior, turn as ghoul) guards bridges, attacks with greatsword. If struck, target may fall in pit to next level (30' fall).  Ceiling is 16' high.
+#K + *Catwalk*: Dark Knight (strong skeletal warrior, turn as ghoul) guards bridges, attacks with greatsword. If struck, target may fall in pit to next level (30' fall).  Ceiling is 16' high.
+# ORIG [0815]: #K + *Barrows*: Wights drain levels. A: Wightsnake (4 platinum albums, constrict), B: Wighty Ford (4 world series rings, ranged attack (baseball)), C: Barry Wight (5 gold albums, 5 platinum albums, can charm), D: Great Wight ("Are you ready to rock, Rhode Island?" then self-immolates with fireball, half-melted gold album), E: Wight Zombie (2 platinum albums, dreadlocks, scary eyes). No entry to shaft in column from this level.
+#K + *Barrows*: Wights drain levels. A: Wightsnake (4 platinum albums, constrict), B: Wighty Ford (4 world series rings, ranged attack (baseball)), C: Barry Wight (5 gold albums, 5 platinum albums, can charm), D: Great Wight ("Are you ready to rock, Rhode Island?" then self-immolates with fireball, half-melted gold album), E: Wight Zombie (2 platinum albums, dreadlocks, scary eyes). No entry to shaft in column from this level.
+# ORIG [0816]: #K + *Winding Corridor*: nothing special, but roll dice at each corner, purse your lips, and shake your head sadly.
+#K + *Winding Corridor*: nothing special, but roll dice at each corner, purse your lips, and shake your head sadly.
+# ORIG [0817]: #K + *Quasqueton Room*: 15 pools. See subtable A or use Room 31 from B1 if you have it. Domed ceiling is 10' at walls, 16' in center.
+#K + *Quasqueton Room*: 15 pools. See subtable A or use Room 31 from B1 if you have it. Domed ceiling is 10' at walls, 16' in center.
+# ORIG [0818]: #K + *Secret Armory*: _magical sqord_, silver-plated warhammer, _magical bracers_.
+#K + *Secret Armory*: _magical sqord_, silver-plated warhammer, _magical bracers_.
+# ORIG [0819]: #K + *Unholy Church*: altar at "a", 2 gargoyles attack with horns and claws. Altar furnishings and 3 fairly valuable gems. Spiral staircase down. 16' ceiling.
+#K + *Unholy Church*: altar at "a", 2 gargoyles attack with horns and claws. Altar furnishings and 3 fairly valuable gems. Spiral staircase down. 16' ceiling.
+# ORIG [0820]: #K + *Parlor*: Comfy couches, bookshelves (books mostly lurid vampire romances). 25% chance Carlotta is here, reading.
+#K + *Parlor*: Comfy couches, bookshelves (books mostly lurid vampire romances). 25% chance Carlotta is here, reading.
+# ORIG [0821]: #K + *Carlotta's Lair*: home to Carlotta the Vampire (75% chance at home). Her bite drains levels. Magic/silver weapons to hit. Can take gaseous or bat form, cannot cross running water, only stays dead with stake through heart, etc. Coffin contains delicately scented scarlet silk pillow, dirt from homeland (local, so stealing it just pisses her off), jade erotic clockwork appurtenance worth a lot to a discerning buyer. Room contains stylish and expensive garments, potion of Giant Strength, Ruby of True Vision, a bit of platinum and gold coinage, and valuable gold jewelry.
+#K + *Carlotta's Lair*: home to Carlotta the Vampire (75% chance at home). Her bite drains levels. Magic/silver weapons to hit. Can take gaseous or bat form, cannot cross running water, only stays dead with stake through heart, etc. Coffin contains delicately scented scarlet silk pillow, dirt from homeland (local, so stealing it just pisses her off), jade erotic clockwork appurtenance worth a lot to a discerning buyer. Room contains stylish and expensive garments, potion of Giant Strength, Ruby of True Vision, a bit of platinum and gold coinage, and valuable gold jewelry.
+# ORIG [0822]: #K + *Cloister*: 25% chance of encountering Abbot Yorick here.
+#K + *Cloister*: 25% chance of encountering Abbot Yorick here.
+# ORIG [0823]: #K + *Kitchen*: Kobold _chef de cuisine_ and 3 halfling line cooks armed with knives. Various foodstuffs.
+#K + *Kitchen*: Kobold _chef de cuisine_ and 3 halfling line cooks armed with knives. Various foodstuffs.
+# ORIG [0824]: #K + *Kitchen Staff Dormitory*: 3 bottles of cheap wine, a few copper and silver coins, girlie magazines.
+#K + *Kitchen Staff Dormitory*: 3 bottles of cheap wine, a few copper and silver coins, girlie magazines.
+# ORIG [0825]: #K + *Yorick's Cell*: 50% chance of encountering Abbot Yorick, midlevel Evil Priest, here. Wears _magical plate mail_ and _magical shield_, attacks with _magical mace_ or any appropriate priestly spell. Carries some silver coins and an unholy symbol.
+#K + *Yorick's Cell*: 50% chance of encountering Abbot Yorick, midlevel Evil Priest, here. Wears _magical plate mail_ and _magical shield_, attacks with _magical mace_ or any appropriate priestly spell. Carries some silver coins and an unholy symbol.
+# ORIG [0826]: #K + *Treasury*: 25% chance Abbot Yorick is here. Lots of gold and platinum coins, 6 valuable gems, _Flying Carpet_, _magical dagger "Goblin-bane"_.
+#K + *Treasury*: 25% chance Abbot Yorick is here. Lots of gold and platinum coins, 6 valuable gems, _Flying Carpet_, _magical dagger "Goblin-bane"_.
+# ORIG [0827]: #K + *Lawn*: Stone tree trunks at "t" ascend to 16' ceiling. Central one has Assassin Vine, which grabs and constricts.
+#K + *Lawn*: Stone tree trunks at "t" ascend to 16' ceiling. Central one has Assassin Vine, which grabs and constricts.
+# ORIG [0828]: #K + *Stairs*: 19-21 are a separate lair not reachable from this level except via teleportation, magical wall-tunneling, or similar.  12' ceilings.
+#K + *Stairs*: 19-21 are a separate lair not reachable from this level except via teleportation, magical wall-tunneling, or similar.  12' ceilings.
+# ORIG [0829]: #K + *Dining Room*: 30% chance Edgar is here.  Table settings are valuable, bulk, and fragile.
+#K + *Dining Room*: 30% chance Edgar is here.  Table settings are valuable, bulk, and fragile.
+# ORIG [0830]: #K + *Study/Bedroom*: 70% chance Edgar is here. Edgar, Ogre Mage: attacks with large scimitar, can _fly_, turn _invisible_, _create darkness_, _sleep_, _charm_, _icy blast_. Carries a little platinum, some gold, and a _portable hole_.
+#K + *Study/Bedroom*: 70% chance Edgar is here. Edgar, Ogre Mage: attacks with large scimitar, can _fly_, turn _invisible_, _create darkness_, _sleep_, _charm_, _icy blast_. Carries a little platinum, some gold, and a _portable hole_.
+# ORIG [0831]: #K + *Churchyard*: Each crypt "b" holds a ghoul: claws paralyse, stench nauseates for 1-3 minutes.  Crypt "a" holds a ghast (like ghoul but stronger).
+#K + *Churchyard*: Each crypt "b" holds a ghoul: claws paralyse, stench nauseates for 1-3 minutes.  Crypt "a" holds a ghast (like ghoul but stronger).
+# ORIG [0832]: #K + *Egyptian Temple*: 2 cobras: bite paralyzes immediately/die in 1-3 minutes, spit poison.
+#K + *Egyptian Temple*: 2 cobras: bite paralyzes immediately/die in 1-3 minutes, spit poison.
+# ORIG [0833]: #K + *Temple Maze*: traps at a) swinging bladed pendulum, b) giant grinding rollers under illusory floor, c) north and south walls slam together, d) sleep gas released, e) corridor pivots longitudinally around centerline dumping party 30' into level below, f) floor-and-ceiling spear trap.
+#K + *Temple Maze*: traps at a) swinging bladed pendulum, b) giant grinding rollers under illusory floor, c) north and south walls slam together, d) sleep gas released, e) corridor pivots longitudinally around centerline dumping party 30' into level below, f) floor-and-ceiling spear trap.
+# ORIG [0834]: #K + *Mummy's Crypt*: Mummy. Vulnerable to fire. Touch causes horrible rotting disease. Gold sarcophagus, scepter, crown.
+#K + *Mummy's Crypt*: Mummy. Vulnerable to fire. Touch causes horrible rotting disease. Gold sarcophagus, scepter, crown.
+# ORIG [0835]: #K + *Toilet*.
+#K + *Toilet*.
