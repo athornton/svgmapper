@@ -32,11 +32,12 @@
                 #set par(leading: 0.1em)
                 *Wandering Monsters*\
                 Check every 20 minutes, 1 in 8 chance; then d12:
-                1-4. Wraith of character previously slain in dungeon. Causes level drain. Silver or magic weapon to hit.
-                5. 1d3 ghouls. Cause paralysis.
-                6-7. 1d8 skeleton warriors armed with scimitars.
+
+                1-3. Wraith of character previously slain in dungeon. Causes level drain. Silver or magic weapon to hit.\
+                4-5. 1d3 ghouls. Cause paralysis.\
+                6-7. 1d8 skeleton warriors armed with scimitars.\
                 8-9. 1d6 zombies with clubs and claws.
-                10. 1 wight. Causes level drain. Silver or magic weapon to hit.
+                10. 1 wight. Properties as wraith.
                 11. Abbot Yorick (see below)
                 12. Carlotta (see below)
 
@@ -63,6 +64,7 @@
         ]
     )
 )
+#set par(leading: 0.1em)
 *Room Key*
 #set enum(numbering: "1.")
 + *Grand Stairway*: up to surface, down to level 8. Ceilings generally 10' high.

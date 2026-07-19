@@ -71,5 +71,3 @@ The [generated SVG](../tests/data/output/crypt.svg) was generated with `svg crea
 
 Because the [old-format level description file](../tests/data/crypt.desc) has [magic comments](./file_format.md#pdf-generation) so too does the [level description file](../tests/data/output/crypt.svgmap).
 In turn, that means that a [typst level file](../examples/typst/crypt.typst) has been created, and then used to generate a [One Page Dungeon PDF](../examples/pdf/crypt.pdf).
-
-![One Page Dungeon PDF](../examples/pdf/crypt.pdf)
