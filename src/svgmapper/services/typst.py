@@ -78,7 +78,10 @@ class TypstCreator:
             self._output.append("        [")
 
             for line in self._document.right:
-                self._output.append("                " + line)
+                if line:
+                    self._output.append("                " + line)
+                else:
+                    self._output.append("")
             self._output.append("        ]")
             self._output.append("    )")
         else:
