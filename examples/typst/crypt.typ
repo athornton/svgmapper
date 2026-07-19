@@ -22,7 +22,7 @@
     columns: (69%, 2%, 28%),
     grid.cell(
         image(
-            "svg/crypt.svg",
+            "/Users/adam/git/svgmapper/examples/svg/crypt.svg",
              width: 100%
         )
     ),

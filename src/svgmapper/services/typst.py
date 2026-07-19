@@ -44,7 +44,8 @@ class TypstCreator:
         )
 
     def _make_midamble(self) -> None:
-        img = self._svg.relative_to(self._typst.parent)
+        # Fix any embedded double quotes in name.
+        svgstr = str(self._svg).replace('"', '\\"')
         self._output.extend(
             [
                 "#set text(",
@@ -66,7 +67,7 @@ class TypstCreator:
                 "    columns: (69%, 2%, 28%),",
                 "    grid.cell(",
                 "        image(",
-                f'            "{img!s}",',
+                f'            "{svgstr}",',
                 "             width: 100%",
                 "        )",
                 "    ),",
