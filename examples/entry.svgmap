@@ -1002,10 +1002,16 @@ text,3.4,27,10 ft.,sans_serif,0.5
 #R + Ghostly moaning
 #R + Sewage stench
 #R + Discarded, bloody bandages and empty potion flask
-#B
+#R
 #R *Legend*
 #R - *C* Concealed Door
 #R - *X* Pit in floor
+#R
+#R *Appendix A*
+#R Any time a wandering monster check indicates an encounter, on any level, roll d100.
+#R If the number rolled is less than or equal to the dungeon level, instead of rolling on the level-specific table, the party meets Gary-Stu
+#R
+#R Gary-Stu is a portly man with a gray ponytail and beard, wearing glasses and a garish Hawaiian shirt, smoking a cigar of remarkable vileness.
 
 #K *Room Key*
 #K + *Guard Post*: 2 goblin guards (AC 14 [scale mail]; HP 5,2; Morningstar +2 1d6).  Each has 8 sp, 12cp.

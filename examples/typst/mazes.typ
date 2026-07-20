@@ -35,6 +35,19 @@
                 Check every turn: 1 in 12 chance of one of the dwarf children showing up.\
 
                 No other wandering monsters on this level; it's not very friendly to them.
+
+                *Appendix A (continued)*
+
+                If the players have done anything truly awful, like murdering the Longbeard children, Gary-Stu will, at a minimum, turn them into toads and toss them into the sewers.
+
+                However, if they've just behaved like normal adventurers (mayhem is perfectly acceptable), he'll genially ask how they're enjoying the dungeon, make chit-chat, offer them healing or minor magical items, and wish them good luck.\
+
+                If they've made substantial progress and generally tried to avoid killing sentient beings unnecessarily, he may offer them the Bargain Of Residency, with its corresponding perks (primarily, immortality via the Flesh Vats).
+                He will not be offended if they decline.
+
+                If attacked, he will not defend himself competently, but instead will take the hit, moan "Oh no, kid!  You got me!  You got me real good!" and ham up an overly dramatic death scene.
+                Then he will wink and vanish in a cloud of blue smoke.
+                (He is, of course, not actually dead.)
         ]
     )
 )

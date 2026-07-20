@@ -39,9 +39,16 @@
                 + Ghostly moaning
                 + Sewage stench
                 + Discarded, bloody bandages and empty potion flask
+
                 *Legend*
                 - *C* Concealed Door
                 - *X* Pit in floor
+
+                *Appendix A*
+                Any time a wandering monster check indicates an encounter, on any level, roll d100.
+                If the number rolled is less than or equal to the dungeon level, instead of rolling on the level-specific table, the party meets Gary-Stu
+
+                Gary-Stu is a portly man with a gray ponytail and beard, wearing glasses and a garish Hawaiian shirt, smoking a cigar of remarkable vileness.
         ]
     )
 )

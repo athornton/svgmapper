@@ -1459,10 +1459,16 @@
 	<desc>#R + Ghostly moaning</desc>
 	<desc>#R + Sewage stench</desc>
 	<desc>#R + Discarded, bloody bandages and empty potion flask</desc>
-	<desc>#B</desc>
+	<desc>#R</desc>
 	<desc>#R *Legend*</desc>
 	<desc>#R - *C* Concealed Door</desc>
 	<desc>#R - *X* Pit in floor</desc>
+	<desc>#R</desc>
+	<desc>#R *Appendix A*</desc>
+	<desc>#R Any time a wandering monster check indicates an encounter, on any level, roll d100.</desc>
+	<desc>#R If the number rolled is less than or equal to the dungeon level, instead of rolling on the level-specific table, the party meets Gary-Stu</desc>
+	<desc>#R</desc>
+	<desc>#R Gary-Stu is a portly man with a gray ponytail and beard, wearing glasses and a garish Hawaiian shirt, smoking a cigar of remarkable vileness.</desc>
 	<desc>#K *Room Key*</desc>
 	<desc>#K + *Guard Post*: 2 goblin guards (AC 14 [scale mail]; HP 5,2; Morningstar +2 1d6).  Each has 8 sp, 12cp.</desc>
 	<desc>#K + *Orc and Pie*: Snouty the orc (AC 16 [chain mail and shield]); HP 8; Falchion +4 (2d4 +4).  Tasty pie (cherry).</desc>

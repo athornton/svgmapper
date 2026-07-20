@@ -839,6 +839,19 @@
 	<desc>#R Check every turn: 1 in 12 chance of one of the dwarf children showing up.\</desc>
 	<desc>#R</desc>
 	<desc>#R No other wandering monsters on this level; it's not very friendly to them.</desc>
+	<desc>#R</desc>
+	<desc>#R *Appendix A (continued)*</desc>
+	<desc>#R</desc>
+	<desc>#R If the players have done anything truly awful, like murdering the Longbeard children, Gary-Stu will, at a minimum, turn them into toads and toss them into the sewers.</desc>
+	<desc>#R</desc>
+	<desc>#R However, if they've just behaved like normal adventurers (mayhem is perfectly acceptable), he'll genially ask how they're enjoying the dungeon, make chit-chat, offer them healing or minor magical items, and wish them good luck.\</desc>
+	<desc>#R</desc>
+	<desc>#R If they've made substantial progress and generally tried to avoid killing sentient beings unnecessarily, he may offer them the Bargain Of Residency, with its corresponding perks (primarily, immortality via the Flesh Vats).</desc>
+	<desc>#R He will not be offended if they decline.</desc>
+	<desc>#R</desc>
+	<desc>#R If attacked, he will not defend himself competently, but instead will take the hit, moan "Oh no, kid!  You got me!  You got me real good!" and ham up an overly dramatic death scene.</desc>
+	<desc>#R Then he will wink and vanish in a cloud of blue smoke.</desc>
+	<desc>#R (He is, of course, not actually dead.)</desc>
 	<desc>#K *Room Key*</desc>
 	<desc>#K *Grand Stairway*: up to surface, down to level 8.</desc>
 	<desc>#K + *Gelatinous Cube Maze*: Cubes start at a, b, c. Move in straight lines, choose randomly at forks, don't reverse unless they hit a dead end. Gelatinous Cube: (AC 3; HP 22, 24, 29; Slam + 2 melee, 1d6 + 1d6 acid + paralyze, engulf DC 13/DEX (engulfed creatures take 1d6 acid damage per round), paralysis 1d12 rounds, DC 13/STR). Each cube has 2d8 gp, 2d4 pp, bits of glass, 1d2 base 10 gp gems.</desc>
