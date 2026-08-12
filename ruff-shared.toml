@@ -33,8 +33,10 @@ ignore = [
     "ARG003",   # unused class method arguments are often legitimate
     "ARG005",   # unused lambda arguments are often legitimate
     "ASYNC109", # many async functions use asyncio.timeout internally
+    "ASYNC240", # we don't want to run filesystem operations on threads
     "BLE001",   # we want to catch and report Exception in background tasks
     "C414",     # nested sorted is how you sort by multiple keys with reverse
+    "CPY001",   # No, every single file doesn't need its own copyright notice
     "D102",     # sometimes we use docstring inheritence
     "D104",     # don't see the point of documenting every package
     "D105",     # our style doesn't require docstrings for magic methods
@@ -145,6 +147,9 @@ builtins-ignorelist = [
 [lint.flake8-pytest-style]
 fixture-parentheses = false
 mark-parentheses = false
+
+[lint.isort]
+split-on-trailing-comma = false
 
 [lint.pydocstyle]
 convention = "numpy"
