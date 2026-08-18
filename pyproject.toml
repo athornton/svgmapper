@@ -143,6 +143,7 @@ extend = "ruff-shared.toml"
     "C901",     # yes, it's complex, all right
     "PLR0912",  # yes, it's complex, all right
     "PLR0915",  # yes, it's complex, all right
+    "PLR0917",  # verbosity makes it way uglier
     "S311",     # we're drawing D&D maps, not securing financial transactions
     "S318",     # we trust this XML since we wrote it
 ]
